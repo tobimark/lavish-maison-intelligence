@@ -1,0 +1,48 @@
+{
+  "recordedOn": "2026-11-05",
+  "purpose": "Internal Lavish AI Marketing POC",
+  "instruction": "User: 产品原图可以到lavish的官网去找。广告MP4暂无，我之后会提供。",
+  "review": "Original product files viewed; identity/label and proportions checked against official product pages. No edits.",
+  "usageScope": "User-authorized internal demo sourcing only; no public advertising license inferred.",
+  "assets": [
+    {
+      "id": "scn-scent-layering.asset.oud",
+      "kind": "product_image",
+      "mimeType": "image/jpeg",
+      "uri": "/scenario-media/scent-layering/1.0.0/lavish-oud.jpg",
+      "bytes": 123608,
+      "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3",
+      "width": 2000,
+      "height": 2000,
+      "durationMs": null,
+      "sourceUrl": "https://lavishperfumes.com/wp-content/uploads/2025/05/1-22.jpg",
+      "sourceNote": "Original image linked by the official LAVISH OUD product page, downloaded unchanged on 2026-11-05 and visually checked.",
+      "rightsStatus": "approved_for_demo",
+      "rightsNote": "User authorized official-site product sourcing and supplied the Logo for this internal Demo. This records project permission, not a transfer of copyright or permission for public advertising.",
+      "productIds": [
+        "scn-scent-layering.product.lavish-oud"
+      ],
+      "originalLocalPath": "assets/products/lavish-oud-2000.jpg"
+    },
+    {
+      "id": "scn-scent-layering.asset.perla",
+      "kind": "product_image",
+      "mimeType": "image/png",
+      "uri": "/scenario-media/scent-layering/1.0.0/perla-50ml-unisex.png",
+      "bytes": 1554254,
+      "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+      "width": 2000,
+      "height": 2000,
+      "durationMs": null,
+      "sourceUrl": "https://lavishperfumes.com/wp-content/uploads/2025/05/3-30.png",
+      "sourceNote": "Original image linked by the official PERLA 50ML UNISEX product page, downloaded unchanged on 2026-11-05 and visually checked.",
+      "rightsStatus": "approved_for_demo",
+      "rightsNote": "User authorized official-site product sourcing and supplied the Logo for this internal Demo. This records project permission, not a transfer of copyright or permission for public advertising.",
+      "productIds": [
+        "scn-scent-layering.product.perla"
+      ],
+      "originalLocalPath": "assets/products/perla-50ml-unisex-2000.png"
+    }
+  ],
+  "videoStatus": "Awaiting customer-provided MP4; no production service called."
+}

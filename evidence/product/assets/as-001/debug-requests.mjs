@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const browser=await chromium.launch();
+const page=await browser.newPage();
+const reqs=[];
+page.on('response',r=>{if(r.url().includes('content-scenarios')||r.url().includes('presentation-assets')||r.status()>=400) reqs.push({status:r.status(),url:r.url()});});
+page.on('requestfailed',r=>reqs.push({failed:r.failure()?.errorText,url:r.url()}));
+await page.goto('http://127.0.0.1:3000/deliverables',{waitUntil:'networkidle'});
+await page.waitForTimeout(5000);
+console.log(JSON.stringify(reqs.slice(0,20),null,2));
+await browser.close();

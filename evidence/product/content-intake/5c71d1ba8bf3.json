@@ -1,0 +1,73 @@
+{
+  "reviewDate": "2026-11-05",
+  "source": "D:\\下载\\scent-layering-en-preset-content-pack.zip",
+  "archiveSha256": "5c71d1ba8bf33dbf49af84315ba1a04d761cf9a13d901f536e72f4fec432b9f0",
+  "entryCount": 9,
+  "crcPass": true,
+  "attachmentChecks": [
+    {
+      "file": "brief.json",
+      "bytesMatch": true,
+      "sha256Match": true
+    },
+    {
+      "file": "script.json",
+      "bytesMatch": true,
+      "sha256Match": true
+    },
+    {
+      "file": "subtitles-en.vtt",
+      "bytesMatch": true,
+      "sha256Match": true
+    },
+    {
+      "file": "storyboard.html",
+      "bytesMatch": true,
+      "sha256Match": true
+    },
+    {
+      "file": "media/oud.jpg",
+      "bytesMatch": true,
+      "sha256Match": true
+    },
+    {
+      "file": "media/perla.png",
+      "bytesMatch": true,
+      "sha256Match": true
+    },
+    {
+      "file": "media/logo.png",
+      "bytesMatch": true,
+      "sha256Match": true
+    },
+    {
+      "file": "README.txt",
+      "bytesMatch": true,
+      "sha256Match": true
+    }
+  ],
+  "classification": "existing_product_export_not_scenario_authoring_package",
+  "scenarioVersion": "1.0.0",
+  "scriptVersion": "scn-scent-layering.script.en-v1",
+  "language": "en",
+  "products": [
+    "scn-scent-layering.product.oud",
+    "scn-scent-layering.product.perla"
+  ],
+  "noVideo": true,
+  "missingScenarioFiles": [
+    "manifest.json",
+    "brand.json",
+    "discovery.json",
+    "analysis.json",
+    "video.json",
+    "delivery.json",
+    "events.json",
+    "assets.json",
+    "expected.json"
+  ],
+  "scriptJsonNote": "Present but exported single-language script format, not the complete scene script contract",
+  "as003Intake": "not_applicable_wrong_package_type",
+  "published": false,
+  "acceptanceChanged": false
+}

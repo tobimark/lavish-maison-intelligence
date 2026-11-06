@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-11-03T16:36:09.536Z",
+  "browserVersion": "156.0.8078.4",
+  "fonts": {
+    "loadedFamilies": [
+      {
+        "family": "Inter",
+        "weight": "100 900"
+      },
+      {
+        "family": "Noto Sans Arabic",
+        "weight": "100 900"
+      },
+      {
+        "family": "Noto Sans Arabic",
+        "weight": "100 900"
+      }
+    ],
+    "interBodyCheck": true,
+    "interTitleCheck": true,
+    "notoArabicCheck": true,
+    "bodyFontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+    "arabicFontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+    "arabicLetterSpacing": "normal",
+    "arabicFontSize": "16px",
+    "arabicLineHeightRatio": 1.8
+  },
+  "console": {
+    "errors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  "externalRequests": [],
+  "fontResponses": [
+    {
+      "url": "http://127.0.0.1:3100/fonts/inter-latin-wght-normal.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3100/fonts/noto-sans-arabic-arabic-wght-normal.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3100/fonts/noto-sans-arabic-latin-wght-normal.woff2",
+      "status": 200
+    }
+  ],
+  "overflow": [
+    {
+      "viewport": "1920x1080",
+      "lang": "en",
+      "innerWidth": 1920,
+      "scrollWidth": 1920,
+      "bodyScrollWidth": 1920,
+      "offenders": []
+    },
+    {
+      "viewport": "1920x1080",
+      "lang": "ar",
+      "innerWidth": 1920,
+      "scrollWidth": 1920,
+      "bodyScrollWidth": 1920,
+      "offenders": []
+    },
+    {
+      "viewport": "1440x900",
+      "lang": "en",
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "offenders": []
+    },
+    {
+      "viewport": "1440x900",
+      "lang": "ar",
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "offenders": []
+    },
+    {
+      "viewport": "1366x768",
+      "lang": "en",
+      "innerWidth": 1366,
+      "scrollWidth": 1366,
+      "bodyScrollWidth": 1366,
+      "offenders": []
+    },
+    {
+      "viewport": "1366x768",
+      "lang": "ar",
+      "innerWidth": 1366,
+      "scrollWidth": 1366,
+      "bodyScrollWidth": 1366,
+      "offenders": []
+    },
+    {
+      "viewport": "390x844",
+      "lang": "en",
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "bodyScrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "viewport": "390x844",
+      "lang": "ar",
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "bodyScrollWidth": 390,
+      "offenders": []
+    }
+  ],
+  "reducedMotion": {
+    "reduce": {
+      "durationToken": "0s",
+      "baseToken": "0s",
+      "transitionDuration": "1e-05s",
+      "scrollBehavior": "auto",
+      "helpText": "prefers-reduced-motion: reduce — transitions are disabled by the token media query."
+    },
+    "full": {
+      "durationToken": ".22s",
+      "transitionDuration": "0.22s",
+      "helpText": "prefers-reduced-motion: no-preference — 220ms token transition."
+    }
+  },
+  "typographyRendering": {
+    "sample": "Design foundation",
+    "widthInter": 237.83,
+    "widthSegoe": 225,
+    "widthArial": 234.81,
+    "interLoaded": true
+  },
+  "screenshots": [
+    {
+      "path": "evidence/m1/theme/design-lab-1920x1080-en.png",
+      "viewport": "1920x1080",
+      "lang": "en",
+      "state": "default",
+      "bytes": 326097
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-1920x1080-ar.png",
+      "viewport": "1920x1080",
+      "lang": "ar",
+      "state": "default",
+      "bytes": 315230
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-1440x900-en.png",
+      "viewport": "1440x900",
+      "lang": "en",
+      "state": "default",
+      "bytes": 319026
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-1440x900-ar.png",
+      "viewport": "1440x900",
+      "lang": "ar",
+      "state": "default",
+      "bytes": 312614
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-1366x768-en.png",
+      "viewport": "1366x768",
+      "lang": "en",
+      "state": "default",
+      "bytes": 318815
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-1366x768-ar.png",
+      "viewport": "1366x768",
+      "lang": "ar",
+      "state": "default",
+      "bytes": 310659
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-390x844-en.png",
+      "viewport": "390x844",
+      "lang": "en",
+      "state": "default",
+      "bytes": 315970
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-390x844-ar.png",
+      "viewport": "390x844",
+      "lang": "ar",
+      "state": "default",
+      "bytes": 311531
+    },
+    {
+      "path": "evidence/m1/theme/design-lab-1440x900-focus-en.png",
+      "viewport": "1440x900",
+      "lang": "en",
+      "state": "focus",
+      "bytes": 121745
+    }
+  ]
+}

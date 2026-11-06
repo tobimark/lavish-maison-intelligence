@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "recipients": [
+      {
+        "id": "scn-scent-layering.recipient.brand-reviewer",
+        "displayName": "Lavish Brand Review — Demo Persona",
+        "role": "Simulated internal creative reviewer; no real person or mailbox",
+        "email": "brand-review@lavish-demo.invalid",
+        "isSimulated": true
+      }
+    ],
+    "plans": [
+      {
+        "id": "scn-scent-layering.delivery.review-pack",
+        "scriptVersionId": "scn-scent-layering.script.en-v1",
+        "videoId": "scn-scent-layering.video.en-v1",
+        "recipientIds": [
+          "scn-scent-layering.recipient.brand-reviewer"
+        ],
+        "attachmentAssetIds": [
+          "scn-scent-layering.asset.mp4-en",
+          "scn-scent-layering.asset.poster-en",
+          "scn-scent-layering.asset.vtt-en"
+        ],
+        "subject": "[SIMULATED] Lavish | Your signature. In layers. | Creative review pack",
+        "body": "Hello Brand Review,\n\nThis simulated review pack presents “Your signature. In layers.” for Lavish Perfumes. The concept connects illustrative layering signals to a restrained, product-led 15-second film featuring LAVISH OUD and PERLA 50ML UNISEX.\n\nProposed audience: adult fragrance enthusiasts in the UAE. Proposed action: discover the products. Attached in the completed demo: the pre-produced English MP4, poster and English subtitle track. The Arabic script is a separate draft awaiting localization review and is not represented as an Arabic video.\n\nPlease review product identity, the exploratory pairing concept, typography, timing and CTA. The pairing has not been sensory-tested. No growth, sales or performance claim is made.\n\nMOCK / SIMULATED: signals, analysis, render events and this delivery record are prepared demo content. No email is sent, and no external platform is contacted.\n\nLavish AI Marketing — Demo",
+        "channel": "email",
+        "scheduledVirtualMs": 46000,
+        "disclosure": "Simulated email review delivery to a .invalid demo persona; no external transport, real send or real open tracking."
+      }
+    ],
+    "records": [
+      {
+        "id": "scn-scent-layering.record.simulated-success",
+        "planId": "scn-scent-layering.delivery.review-pack",
+        "outcome": "simulated_delivered",
+        "attempt": 1,
+        "atMs": 48000,
+        "failureCode": null,
+        "mode": "mock"
+      },
+      {
+        "id": "scn-scent-layering.record.simulated-failure",
+        "planId": "scn-scent-layering.delivery.review-pack",
+        "outcome": "failed",
+        "attempt": 2,
+        "atMs": 50000,
+        "failureCode": "delivery_failed",
+        "mode": "mock"
+      }
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "data": {
+    "evidence": [
+      {
+        "id": "scn-scent-layering.evidence.e1",
+        "sourceType": "MOCK",
+        "platform": "Pinterest — simulated signal",
+        "title": "Fragrance facets as a visual story",
+        "summary": "A hypothetical editorial board groups light, floral forms and soft textures around one fragrance rather than pairing two products.",
+        "simulatedAt": "2026-10-13T09:00:00Z",
+        "disclosure": "Synthetic, offline-authored marketing-format example; no actual post, account, API measurement, reach, growth or verified live trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e2",
+        "sourceType": "MOCK",
+        "platform": "TikTok — simulated signal",
+        "title": "Short product close-ups with a sensory hook",
+        "summary": "An invented short-form example uses a brief question followed by precise product close-ups; no performance claim.",
+        "simulatedAt": "2026-10-16T09:00:00Z",
+        "disclosure": "Synthetic, offline-authored marketing-format example; no actual post, account, API measurement, reach, growth or verified live trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e3",
+        "sourceType": "MOCK",
+        "platform": "YouTube — simulated signal",
+        "title": "Ingredient-language explainers without performance claims",
+        "summary": "An invented educational format distinguishes an official fragrance description from inferred visual props.",
+        "simulatedAt": "2026-10-19T09:00:00Z",
+        "disclosure": "Synthetic, offline-authored marketing-format example; no actual post, account, API measurement, reach, growth or verified live trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e4",
+        "sourceType": "MOCK",
+        "platform": "Instagram — simulated signal",
+        "title": "Amber light and minimalist perfume still-life",
+        "summary": "A hypothetical visual-format signal features a single bottle, warm highlights and restrained material contrasts.",
+        "simulatedAt": "2026-10-22T09:00:00Z",
+        "disclosure": "Synthetic, offline-authored marketing-format example; no actual post, account, API measurement, reach, growth or verified live trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e5",
+        "sourceType": "MOCK",
+        "platform": "Pinterest — simulated signal",
+        "title": "Classic product identity photography",
+        "summary": "A synthetic baseline represents stable, clean single-bottle identification against a neutral background.",
+        "simulatedAt": "2026-10-25T09:00:00Z",
+        "disclosure": "Synthetic, offline-authored marketing-format example; no actual post, account, API measurement, reach, growth or verified live trend."
+      }
+    ],
+    "signals": [
+      {
+        "id": "scn-scent-layering.signal.s1",
+        "title": "Fragrance facets as a visual story",
+        "topic": "Visual storytelling in layers",
+        "region": "Dubai",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e1"
+        ],
+        "summary": "MOCK / Conceptual moodboards might help express multiple aspects of a single fragrance."
+      },
+      {
+        "id": "scn-scent-layering.signal.s2",
+        "title": "Short product close-ups with a sensory hook",
+        "topic": "Short-form brand story",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e2"
+        ],
+        "summary": "MOCK / A compact hook may guide viewers from mood to product identity."
+      },
+      {
+        "id": "scn-scent-layering.signal.s3",
+        "title": "Ingredient-language explainers without performance claims",
+        "topic": "Responsible fragrance explanation",
+        "region": "GCC",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e3"
+        ],
+        "summary": "MOCK / Explainer-style creative can reference verified citrus, floral and musk descriptions."
+      },
+      {
+        "id": "scn-scent-layering.signal.s4",
+        "title": "Amber light and minimalist perfume still-life",
+        "topic": "Premium single-product cinematography",
+        "region": "Dubai",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e4"
+        ],
+        "summary": "MOCK / The supplied SERENITY hero and short preview provide a visual reference for this format."
+      },
+      {
+        "id": "scn-scent-layering.signal.s5",
+        "title": "Classic product identity photography",
+        "topic": "Product-identity baseline",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e5"
+        ],
+        "summary": "MOCK / Product identity remains legible even when lifestyle visuals use dramatic lighting."
+      }
+    ],
+    "trends": [
+      {
+        "id": "scn-scent-layering.trend.main",
+        "title": "Layered storytelling for one fragrance (illustrative)",
+        "signalIds": [
+          "scn-scent-layering.signal.s1",
+          "scn-scent-layering.signal.s2",
+          "scn-scent-layering.signal.s3",
+          "scn-scent-layering.signal.s4"
+        ],
+        "direction": "rising",
+        "unit": "synthetic editorial interest index (0–100; NOT platform metrics)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 36
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 39
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 43
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 48
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 55
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 61
+          }
+        ],
+        "interpretation": "A designed rising sequence lets the mock analyst select a visual storytelling idea for SERENITY. It does not establish actual demand in Dubai or GCC.",
+        "disclosure": "All values are fictional for a workflow concept; not drawn from Pinterest, TikTok, YouTube, Instagram or sales."
+      },
+      {
+        "id": "scn-scent-layering.trend.control",
+        "title": "Clean product identity imagery (illustrative baseline)",
+        "signalIds": [
+          "scn-scent-layering.signal.s5"
+        ],
+        "direction": "stable",
+        "unit": "synthetic editorial interest index (0–100; NOT platform metrics)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 47
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 48
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 47
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 49
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 48
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 48
+          }
+        ],
+        "interpretation": "A nearly flat comparator, included to avoid the impression that every synthetic signal is rising.",
+        "disclosure": "Entire baseline is fictional, not evidence of real product-format performance."
+      }
+    ]
+  }
+}

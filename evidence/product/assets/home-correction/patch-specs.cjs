@@ -1,0 +1,11 @@
+const fs=require('fs');
+let p='apps/web/tests/product-navigation.spec.ts';
+let s=fs.readFileSync(p,'utf8');
+s=s.split("heading: 'Marketing opportunities for Lavish'").join("heading: 'From market insight to campaign-ready creative'");
+fs.writeFileSync(p,s);
+p='apps/web/tests/poc-prototype.spec.ts';
+s=fs.readFileSync(p,'utf8');
+s=s.split("await expect(page.getByRole('heading', { name: 'Marketing opportunities for Lavish' })).toBeVisible();").join("await expect(page.getByTestId('overview-page').getByRole('heading', { level: 1, name: 'From market insight to campaign-ready creative' })).toBeVisible();");
+s=s.split("await expect(page.getByText('Video deferred').first()).toBeVisible();").join("await expect(page.getByText('Six workspaces').first()).toBeVisible();");
+fs.writeFileSync(p,s);
+console.log('patched');

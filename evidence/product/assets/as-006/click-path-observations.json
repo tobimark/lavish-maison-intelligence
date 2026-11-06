@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-11-06T02:49:56.251Z",
+  "base": "http://127.0.0.1:3150",
+  "path": [
+    "overview",
+    "opportunity",
+    "brief",
+    "atelier-en",
+    "atelier-ar",
+    "library",
+    "deliverables",
+    "overview-1366",
+    "brief-1366",
+    "atelier-1366",
+    "overview-390",
+    "atelier-ar-390",
+    "library-390"
+  ],
+  "media": {
+    "controls": true,
+    "width": 720,
+    "height": 960,
+    "duration": 10.08,
+    "fit": "contain"
+  },
+  "played": 0.207458,
+  "paused": true,
+  "seekedTo": 7.56,
+  "overflow390": 0,
+  "errors": []
+}

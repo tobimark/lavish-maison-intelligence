@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "profile": "content_only",
+  "mode": "mock",
+  "id": "usr.usr.session-1793861003989-z2ktl9.script.2",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468",
+  "language": "ar",
+  "title": "لكل رائحة حكاية — edited AR",
+  "hook": "لكل رائحة حكاية.",
+  "message": "هذا تصور إبداعي تجريبي يستلهم المعلومات المعتمدة عن منتجات Lavish Perfumes، ولا يثبت اتجاهات سوقية أو نتائج استخدام.",
+  "cta": "اكتشف المجموعة.",
+  "durationMs": 15000,
+  "shots": [
+    {
+      "id": "scn-scent-layering.shot.ar-1",
+      "startMs": 0,
+      "durationMs": 3200,
+      "visual": "On an ivory field, place the approved LAVISH OUD original image at 55% frame width without repainting the bottle or obscuring its label. Slow 2D push-in within safe crop; generous text margin in upper negative space. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "لكل رائحة حكاية.",
+      "transition": "Cut from black; fade in text over 180ms.",
+      "assetIds": [
+        "scn-scent-layering.asset.oud"
+      ]
+    },
+    {
+      "id": "scn-scent-layering.shot.ar-2",
+      "startMs": 3200,
+      "durationMs": 3800,
+      "visual": "Editorial two-panel composition: approved LAVISH OUD image left, approved PERLA 50ML UNISEX image right. Introduce panels via restrained horizontal wipe; no visual implying actual mixing or test results. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "العود يلتقي بنفحات زهرية.",
+      "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+      "assetIds": [
+        "scn-scent-layering.asset.oud",
+        "scn-scent-layering.asset.perla"
+      ]
+    },
+    {
+      "id": "scn-scent-layering.shot.ar-3",
+      "startMs": 7000,
+      "durationMs": 4200,
+      "visual": "Balanced side-by-side composition of the two original product photos; use only 2D pan and cross-dissolve, respecting each original aspect ratio and legible packaging. Keep the visual exploratory, not instructional. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "اكتشف تنسيقك الخاص.",
+      "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+      "assetIds": [
+        "scn-scent-layering.asset.oud",
+        "scn-scent-layering.asset.perla"
+      ]
+    },
+    {
+      "id": "scn-scent-layering.shot.ar-4",
+      "startMs": 11200,
+      "durationMs": 3800,
+      "visual": "Set approved square Lavish logo intact in its own square tile over a matte ivory backdrop, with unobstructed CTA beneath in readable type. Do not stretch or key out the opaque gold logo. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "Lavish Perfumes · اكتشف المجموعة.",
+      "transition": "Hold final composition and fade to matte at exactly 15000ms.",
+      "assetIds": [
+        "scn-scent-layering.asset.logo"
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "id": "scn-scent-layering.subtitle.ar-1",
+      "startMs": 180,
+      "endMs": 3060,
+      "text": "لكل رائحة حكاية."
+    },
+    {
+      "id": "scn-scent-layering.subtitle.ar-2",
+      "startMs": 3380,
+      "endMs": 6860,
+      "text": "العود يلتقي بنفحات زهرية."
+    },
+    {
+      "id": "scn-scent-layering.subtitle.ar-3",
+      "startMs": 7180,
+      "endMs": 11060,
+      "text": "اكتشف تنسيقك الخاص."
+    },
+    {
+      "id": "scn-scent-layering.subtitle.ar-4",
+      "startMs": 11380,
+      "endMs": 14860,
+      "text": "Lavish Perfumes · اكتشف المجموعة."
+    }
+  ],
+  "caption": "تصور إبداعي توضيحي لعلامة Lavish Perfumes، وليس دليلاً على اتجاه سوقي فعلي أو نتيجة استخدام مؤكدة.",
+  "hashtags": [
+    "#LavishPerfumes",
+    "#عطور"
+  ],
+  "packageScriptId": "scn-scent-layering.script.ar-v1",
+  "parentVersionId": "scn-scent-layering.script.ar-v1",
+  "source": "user_derived"
+}

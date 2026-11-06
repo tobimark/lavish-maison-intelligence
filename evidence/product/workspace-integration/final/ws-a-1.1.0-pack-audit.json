@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-06T15:41:54.2472317+08:00",
+  "archive": "evidence/product/workspace-integration/final/ws-a-1.1.0-en-ar-pack.zip",
+  "archiveBytes": 10736352,
+  "entries": [
+    "EXPORT.json",
+    "README.txt",
+    "ar/brief.json",
+    "ar/README.txt",
+    "ar/script.json",
+    "ar/storyboard.html",
+    "ar/subtitles-ar.vtt",
+    "ar/media/logo.png",
+    "ar/media/serenity-hero.png",
+    "ar/media/serenity-original.png",
+    "en/brief.json",
+    "en/README.txt",
+    "en/script.json",
+    "en/storyboard.html",
+    "en/subtitles-en.vtt",
+    "en/media/logo.png",
+    "en/media/serenity-hero.png",
+    "en/media/serenity-original.png",
+    "provided/final-preview.mp4",
+    "provided/hero-serenity.png",
+    "provided/product-serenity.png"
+  ],
+  "noVideo": false,
+  "noRealEmail": true,
+  "providedAssetSetId": "provided.scent-layering.serenity-v1",
+  "includedVersions": [
+    {
+      "campaignId": "scn-scent-layering.brief.main",
+      "versionId": "scn-scent-layering.script.en-v2",
+      "sessionId": null,
+      "scenarioVersion": "1.1.0"
+    },
+    {
+      "campaignId": "scn-scent-layering.brief.main",
+      "versionId": "scn-scent-layering.script.ar-v2",
+      "sessionId": null,
+      "scenarioVersion": "1.1.0"
+    }
+  ],
+  "hashes": {
+    "hero": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+    "identity": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+    "video": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+  }
+}

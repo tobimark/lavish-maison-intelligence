@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-11-05T05:38:48.842Z",
+  "scope": "scenario",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "e1896c38cda535ab0cb8233eaadc9c41f1fefcb4be2679be4ad74ea42aae77bb",
+  "layers": [
+    {
+      "name": "L1",
+      "status": "fail"
+    },
+    {
+      "name": "L2",
+      "status": "pass"
+    },
+    {
+      "name": "L3",
+      "status": "pass"
+    },
+    {
+      "name": "L4",
+      "status": "fail"
+    },
+    {
+      "name": "L5",
+      "status": "not_run"
+    }
+  ],
+  "errors": [
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/0/uri",
+      "message": "Media file /scenario-media/luxury-gifting/1.0.0/lavish-logo.png does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/1/uri",
+      "message": "Media file /scenario-media/luxury-gifting/1.0.0/lavish-oud.jpg does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/2/uri",
+      "message": "Media file /scenario-media/luxury-gifting/1.0.0/perla-50ml-unisex.png does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/3/uri",
+      "message": "Media file /scenario-media/luxury-gifting/1.0.0/luxury-gifting-en.vtt does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/4/uri",
+      "message": "Media file /scenario-media/luxury-gifting/1.0.0/luxury-gifting-ar-review.vtt does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/bytes",
+      "message": "/data/assets/5/bytes must be integer"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/rightsStatus",
+      "message": "/data/assets/5/rightsStatus must be equal to constant"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/sha256",
+      "message": "/data/assets/5/sha256 must be string"
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/uri",
+      "message": "Media file /scenario-media/luxury-gifting/1.0.0/luxury-gifting-en-15s.mp4 does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/bytes",
+      "message": "/data/assets/6/bytes must be integer"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/rightsStatus",
+      "message": "/data/assets/6/rightsStatus must be equal to constant"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/sha256",
+      "message": "/data/assets/6/sha256 must be string"
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/uri",
+      "message": "Media file /scenario-media/luxury-gifting/1.0.0/luxury-gifting-en-poster.jpg does not exist under apps\\web\\public\\scenario-media."
+    }
+  ],
+  "warnings": [
+    "L3 checkpoint projection comparison passed via the POC-005 reducer for 5 expected checkpoint(s).",
+    "L5 media verification is NOT_RUN: no --media-report was supplied (POC-002 owns real HTTP/media checks).",
+    "Content reviewStatus is not reviewed; content acceptance is a main-control gate and cannot be inferred from schema validation."
+  ],
+  "runnable": false,
+  "checkpointProjection": {
+    "status": "pass",
+    "checked": 5,
+    "reason": null
+  }
+}

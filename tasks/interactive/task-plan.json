@@ -1,0 +1,98 @@
+[
+  {
+    "id": "IP-001",
+    "title": "统一只读产品查询与业务投影视图",
+    "dependencies": [],
+    "spec": "tasks/interactive/IP-001.md",
+    "status": "ready"
+  },
+  {
+    "id": "IP-002",
+    "title": "显式编辑上下文与独立内容包导出",
+    "dependencies": [
+      "IP-001"
+    ],
+    "spec": "tasks/interactive/IP-002.md",
+    "status": "planned"
+  },
+  {
+    "id": "IP-003",
+    "title": "六主路由、Overview与统一导航接线",
+    "dependencies": [
+      "IP-001",
+      "IP-002"
+    ],
+    "spec": "tasks/interactive/IP-003.md",
+    "status": "planned"
+  },
+  {
+    "id": "IP-004",
+    "title": "Radar自由筛选、热点证据与Agent活动",
+    "dependencies": [
+      "IP-001",
+      "IP-002",
+      "IP-003"
+    ],
+    "spec": "tasks/interactive/IP-004.md",
+    "status": "planned"
+  },
+  {
+    "id": "IP-005",
+    "title": "三营销机会与可解释策略详情",
+    "dependencies": [
+      "IP-001",
+      "IP-003"
+    ],
+    "spec": "tasks/interactive/IP-005.md",
+    "status": "planned"
+  },
+  {
+    "id": "IP-006",
+    "title": "Atelier结果预览与按需编辑版本",
+    "dependencies": [
+      "IP-001",
+      "IP-002",
+      "IP-003"
+    ],
+    "spec": "tasks/interactive/IP-006.md",
+    "status": "planned"
+  },
+  {
+    "id": "IP-007",
+    "title": "Creative Library统一内容浏览与版本定位",
+    "dependencies": [
+      "IP-001",
+      "IP-002",
+      "IP-003",
+      "IP-006"
+    ],
+    "spec": "tasks/interactive/IP-007.md",
+    "status": "planned"
+  },
+  {
+    "id": "IP-008",
+    "title": "Deliverables真实导出与次级模拟交付",
+    "dependencies": [
+      "IP-001",
+      "IP-002",
+      "IP-003",
+      "IP-006"
+    ],
+    "spec": "tasks/interactive/IP-008.md",
+    "status": "planned"
+  },
+  {
+    "id": "IP-009",
+    "title": "全站点击矩阵、跨页一致性与产品视觉验收",
+    "dependencies": [
+      "IP-003",
+      "IP-004",
+      "IP-005",
+      "IP-006",
+      "IP-007",
+      "IP-008"
+    ],
+    "spec": "tasks/interactive/IP-009.md",
+    "status": "planned"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "scope": "TEST_ONLY FIX-POC-003-01 domain probe; no customer content acceptance",
+  "executor": "DeepSeek 4.1 Flash 1017",
+  "checkedAt": "2026-11-04T21:10:00+08:00",
+  "package": {
+    "scenarioId": "scn-scent-layering",
+    "scenarioVersion": "1.0.0",
+    "testOnly": true
+  },
+  "confirmEditedBeforeFirstConfirmation": {
+    "ok": true,
+    "analysis": "completed",
+    "video": "stale",
+    "activeVideoId": null,
+    "warning": [
+      "此稿暂无对应预置视频；video阶段为stale，需选择预置脚本版本继续。"
+    ]
+  },
+  "restartVideoAfterReselect": {
+    "ok": true,
+    "workflow": {
+      "discovery": "completed",
+      "analysis": "completed",
+      "video": "completed",
+      "delivery": "ready"
+    },
+    "videoAttempts": [
+      {
+        "ordinal": 1,
+        "status": "completed"
+      },
+      {
+        "ordinal": 2,
+        "status": "completed"
+      }
+    ],
+    "replayCursor": 0
+  },
+  "delivery": {
+    "startState": "running",
+    "startRecords": 0,
+    "beforeDueState": "running",
+    "beforeDueRecords": 0,
+    "settledState": "completed",
+    "settledRecords": 1,
+    "failureState": "failed",
+    "failureAttempts": [
+      "failed"
+    ],
+    "retryState": "running",
+    "retrySuccessState": "completed",
+    "retrySuccessRecords": 1,
+    "retrySuccessAttempts": [
+      "failed",
+      "simulated_delivered"
+    ],
+    "oldFailedAttemptPreserved": true
+  },
+  "replayQueuedWithoutAvailable": {
+    "injectedCompletionOk": false,
+    "injectedCompletionCode": "CORRUPT_EVENT",
+    "sharedGuardIssue": "Video scn-scent-layering.video.video-en has not reached video.available (queued alone is insufficient).",
+    "availability": {
+      "scn-scent-layering.video.video-en": "queued"
+    }
+  },
+  "editedAnchorAndProductAsAsset": {
+    "ok": false,
+    "code": "INVALID_INPUT",
+    "fieldErrors": [
+      {
+        "path": "/content/shots/0/id",
+        "message": "Shot anchor must stay scn-scent-layering.shot.en-shot-1, found scn-scent-layering.shot.new-anchor."
+      },
+      {
+        "path": "/content/shots/0/assetIds/0",
+        "message": "scn-scent-layering.product.oud resolves to product, expected asset."
+      }
+    ]
+  }
+}

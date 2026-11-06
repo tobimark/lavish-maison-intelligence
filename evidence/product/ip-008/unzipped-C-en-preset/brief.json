@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "mode": "mock",
+  "campaignId": "scn-oud-storytelling.brief.main",
+  "opportunityId": "scn-oud-storytelling.analysis.main",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "6349f26e104b26df43dcbc634ed14068806cf9dd83933335121a0e056fdcb183",
+  "brief": {
+    "id": "scn-oud-storytelling.brief.main",
+    "analysisId": "scn-oud-storytelling.analysis.main",
+    "name": "Let the Scent Lead",
+    "objective": "Present LAVISH OUD in a calm, ingredient-inspired 15-second editorial video.",
+    "markets": [
+      "UAE",
+      "GCC"
+    ],
+    "audience": "Illustrative GCC fragrance audience interested in oud-themed storytelling; not a measured audience.",
+    "productIds": [
+      "scn-oud-storytelling.product.oud"
+    ],
+    "concept": "An abstract approach to oud, spices and floral description, resolved into a precise product hero and CTA.",
+    "tone": "Intimate, restrained, contemporary, culturally careful; no claims of origin or inherited craftsmanship.",
+    "channels": [
+      "Instagram Reels (concept)",
+      "YouTube Shorts (concept)"
+    ],
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "keyMessage": "A sensory introduction to LAVISH OUD based on the limited official description.",
+    "cta": "Explore LAVISH OUD"
+  },
+  "analysis": {
+    "id": "scn-oud-storytelling.analysis.main",
+    "insights": [
+      "The synthetic sample permits a concept study of ingredient-led oud storytelling, not a claim that this theme is currently trending.",
+      "LAVISH OUD official description mentions oud, spices and floral facets, which is sufficient for a sensory editorial structure.",
+      "Origin, artisanal production method, heritage endorsement, longevity and cultural authenticity claims are out of scope without proof."
+    ],
+    "rationale": "LAVISH OUD is an actual verified product. The official description provides enough high-level vocabulary to structure a restrained four-scene visual progression: oud, spice/floral contrast, bottle, brand.",
+    "recommendation": "Tell a concise sensorial story grounded only in the official LAVISH OUD description; invite exploration without cultural or performance claims.",
+    "assumptions": [
+      "An oud-led sensory visual could interest a conceptual GCC fragrance audience.",
+      "Abstract warm gradients and typographic forms can carry sensory associations without invented product photography.",
+      "The campaign is a creative sketch rather than a validated brand history."
+    ],
+    "uncertainties": [
+      "No real engagement series or current platform signals have been gathered.",
+      "Oud source, extraction process, dates and cultural credentials are not verified.",
+      "Arabic wording and sensory nuance need native/brand review.",
+      "MP4/poster are pending and frame-rate is a target, not observed."
+    ],
+    "evidenceIds": [
+      "scn-oud-storytelling.evidence.e1",
+      "scn-oud-storytelling.evidence.e2",
+      "scn-oud-storytelling.evidence.e3",
+      "scn-oud-storytelling.evidence.e4",
+      "scn-oud-storytelling.evidence.e5"
+    ],
+    "trendIds": [
+      "scn-oud-storytelling.trend.main",
+      "scn-oud-storytelling.trend.control"
+    ]
+  }
+}

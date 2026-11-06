@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "evidence": [
+      {
+        "id": "scn-scent-layering.evidence.layering-guide",
+        "platform": "Instagram — simulated editorial signal",
+        "title": "How-to content invites a layering explanation",
+        "summary": "A constructed signal asks how to explore two fragrance profiles without a complicated routine. It motivates a short, approachable creative treatment; it is not a real post or quote.",
+        "sourceType": "MOCK",
+        "simulatedAt": "2026-10-25T08:00:00Z",
+        "disclosure": "MOCK: ChatGPT-authored illustrative scenario, not collected platform data or a measured market trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.personal-signature",
+        "platform": "TikTok — simulated editorial signal",
+        "title": "Personal expression offers a useful creative hook",
+        "summary": "A constructed discovery example focuses on choosing an individual fragrance signature. It supports an exploration message, without inferring real audience size or purchasing intent.",
+        "sourceType": "MOCK",
+        "simulatedAt": "2026-10-26T08:00:00Z",
+        "disclosure": "MOCK: ChatGPT-authored illustrative scenario, not collected platform data or a measured market trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.gifting-control",
+        "platform": "Pinterest — simulated editorial signal",
+        "title": "Gifting is a stable comparison theme",
+        "summary": "A deliberately stable comparison prevents every fragrance topic being called a growth opportunity. It is a control in this demonstration, not a measured gifting trend.",
+        "sourceType": "MOCK",
+        "simulatedAt": "2026-10-27T08:00:00Z",
+        "disclosure": "MOCK: ChatGPT-authored illustrative scenario, not collected platform data or a measured market trend."
+      }
+    ],
+    "signals": [
+      {
+        "id": "scn-scent-layering.signal.layering-guide",
+        "title": "Make layering approachable",
+        "topic": "Perfume Layering",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.layering-guide"
+        ],
+        "summary": "Test an accessible visual explanation rather than a technical mixing tutorial. Mock editorial hypothesis."
+      },
+      {
+        "id": "scn-scent-layering.signal.personal-signature",
+        "title": "A personal fragrance signature",
+        "topic": "Premium Fragrance Lifestyle",
+        "region": "Dubai",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.personal-signature"
+        ],
+        "summary": "Use personal choice as the hook, without a promise that two scents create a guaranteed result. Mock editorial hypothesis."
+      },
+      {
+        "id": "scn-scent-layering.signal.gifting-control",
+        "title": "Gifting remains a comparison theme",
+        "topic": "Luxury Gifting",
+        "region": "GCC",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.gifting-control"
+        ],
+        "summary": "Keep gifting as context; this scenario prioritizes self-expression, not a claim of a gifting surge."
+      }
+    ],
+    "trends": [
+      {
+        "id": "scn-scent-layering.trend.layering-interest",
+        "title": "Illustrative interest in scent layering",
+        "signalIds": [
+          "scn-scent-layering.signal.layering-guide",
+          "scn-scent-layering.signal.personal-signature"
+        ],
+        "direction": "rising",
+        "interpretation": "The synthetic index rises to illustrate how an Agent might prioritize a topic. It cannot establish real growth, statistical significance or sales demand.",
+        "unit": "Illustrative interest index (synthetic 0–100; not counts or percentages)",
+        "window": {
+          "start": "2026-10-22T08:00:00Z",
+          "end": "2026-10-30T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-22T08:00:00Z",
+            "value": 30
+          },
+          {
+            "at": "2026-10-24T08:00:00Z",
+            "value": 34
+          },
+          {
+            "at": "2026-10-26T08:00:00Z",
+            "value": 43
+          },
+          {
+            "at": "2026-10-28T08:00:00Z",
+            "value": 51
+          },
+          {
+            "at": "2026-10-30T08:00:00Z",
+            "value": 58
+          }
+        ],
+        "disclosure": "MOCK: ChatGPT-authored illustrative scenario, not collected platform data or a measured market trend."
+      },
+      {
+        "id": "scn-scent-layering.trend.gifting-context",
+        "title": "Illustrative gifting baseline",
+        "signalIds": [
+          "scn-scent-layering.signal.gifting-control"
+        ],
+        "direction": "stable",
+        "interpretation": "The synthetic comparison remains broadly stable. No current market claim is made; the comparison supports a selective, explainable recommendation.",
+        "unit": "Illustrative interest index (synthetic 0–100; not counts or percentages)",
+        "window": {
+          "start": "2026-10-22T08:00:00Z",
+          "end": "2026-10-30T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-22T08:00:00Z",
+            "value": 42
+          },
+          {
+            "at": "2026-10-24T08:00:00Z",
+            "value": 43
+          },
+          {
+            "at": "2026-10-26T08:00:00Z",
+            "value": 42
+          },
+          {
+            "at": "2026-10-28T08:00:00Z",
+            "value": 44
+          },
+          {
+            "at": "2026-10-30T08:00:00Z",
+            "value": 43
+          }
+        ],
+        "disclosure": "MOCK: ChatGPT-authored illustrative scenario, not collected platform data or a measured market trend."
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "data": {
+    "recipients": [
+      {
+        "id": "scn-scent-layering.recipient.brand-review",
+        "displayName": "Lavish Demo Brand Review (simulated)",
+        "role": "Brand reviewer — hypothetical",
+        "email": "brand-review@lavish-demo.invalid",
+        "isSimulated": true
+      },
+      {
+        "id": "scn-scent-layering.recipient.creative-ops",
+        "displayName": "Lavish Demo Creative Operations (simulated)",
+        "role": "Creative operations — hypothetical",
+        "email": "creative-ops@lavish-demo.invalid",
+        "isSimulated": true
+      }
+    ],
+    "plans": [
+      {
+        "id": "scn-scent-layering.plan.en-v2",
+        "scriptVersionId": "scn-scent-layering.script.en-v2",
+        "videoId": "scn-scent-layering.video.en-v2",
+        "recipientIds": [
+          "scn-scent-layering.recipient.brand-review",
+          "scn-scent-layering.recipient.creative-ops"
+        ],
+        "attachmentAssetIds": [
+          "scn-scent-layering.asset.concept-video-en-v2",
+          "scn-scent-layering.asset.vtt-en-v2"
+        ],
+        "subject": "[SIMULATED / NOT SENT] Lavish SERENITY — A Story in Layers",
+        "body": "SIMULATED CONTENT HANDOFF — NO EMAIL WAS SENT.\n\nDear Lavish Demo Review Team,\n\nProposed campaign: SERENITY — A Story in Layers. This is a single-product editorial concept inspired by the verified SERENITY description referencing citrus, floral and musk. There is no verified performance result, physical layering test, ingredient-origin statement or market measurement.\n\nIncluded as authored concept: a proposed 15-second, four-shot English script plus an Arabic script draft and respective timed concept subtitles. The Arabic version requires native and brand review.\n\nIMPORTANT MEDIA DISTINCTION: The matching 15-second 1080x1920 concept MP4/poster have NOT been produced or supplied. A separate 10.08-second, 720x960 user-provided SERENITY preview is available through the presentation-assets sidecar; it is not this script-matched concept video and is not generated live. The future event protocol includes a counterfactual media/delivery completion for replay only, not a statement of actual file availability or transmission.\n\nReview requested: brand tone; product claim accuracy; Arabic copy; final visual and music rights; script-to-film alignment before public use.\n\nThis message is a never-sent fixture using .invalid recipients. No social, email or video-generation service was contacted.",
+        "channel": "email",
+        "scheduledVirtualMs": 104000,
+        "disclosure": "Simulated delivery only. Counterfactual future demo delivery plan. Attachment IDs include a PLANNED 15-second media asset not present; no actual email, attachment transfer or delivery occurred."
+      }
+    ],
+    "records": [
+      {
+        "id": "scn-scent-layering.record.failed-v2-1",
+        "planId": "scn-scent-layering.plan.en-v2",
+        "outcome": "failed",
+        "attempt": 1,
+        "atMs": 106000,
+        "failureCode": "delivery_failed",
+        "mode": "mock"
+      },
+      {
+        "id": "scn-scent-layering.record.delivered-v2-2",
+        "planId": "scn-scent-layering.plan.en-v2",
+        "outcome": "simulated_delivered",
+        "attempt": 2,
+        "atMs": 112000,
+        "failureCode": null,
+        "mode": "mock"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-05T15:23:18.420Z",
+  "browserLoaderShape": "pass",
+  "scenarioVersion": "1.1.0",
+  "soleProduct": "scn-scent-layering.product.serenity",
+  "scriptAndVtt": [
+    {
+      "language": "en",
+      "scriptId": "scn-scent-layering.script.en-v2",
+      "cueCount": 4,
+      "exactTextAndTimingMatch": true,
+      "shotDurationMs": 15000
+    },
+    {
+      "language": "ar",
+      "scriptId": "scn-scent-layering.script.ar-v2",
+      "cueCount": 4,
+      "exactTextAndTimingMatch": true,
+      "shotDurationMs": 15000
+    }
+  ],
+  "orderedMockEvents": 28,
+  "replay": {
+    "prefixEnd": 16,
+    "checkpoints": [
+      0,
+      9,
+      16
+    ],
+    "ok": true,
+    "issues": [],
+    "checked": 3,
+    "hashes": []
+  },
+  "futureVideoDeliveryReplay": "not_run; outside content-only runtime",
+  "retainedLegacyRunKeyLabels": [
+    "scent-layering-1.0.0-discovery-demo",
+    "scent-layering-1.0.0-analysis-demo",
+    "scent-layering-1.0.0-video-demo",
+    "scent-layering-1.0.0-delivery-demo"
+  ],
+  "runKeyNote": "Author label retained; authoritative scenarioVersion is 1.1.0 on every event. Do not use runKey as a cross-package storage key.",
+  "productBrowserAcceptance": "not_run; binding is DSH AS-003 work",
+  "pass": true
+}

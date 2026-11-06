@@ -1,0 +1,238 @@
+{
+  "checkedAt": "2026-11-05T14:14:09.682Z",
+  "baseUrl": "http://127.0.0.1:3120",
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "h1": "From market insight to campaign-ready creative",
+      "domOrder": [
+        "identity",
+        "hero",
+        "video"
+      ],
+      "purposeFirst": true,
+      "cardWidthSpread": 0,
+      "cardTopSpread": 0,
+      "cardBottomSpread": 0,
+      "mediaHeightSpread": 0,
+      "mediaTopSpread": 0,
+      "mediaBottomSpread": 0,
+      "captionTopSpread": 0,
+      "actionTopSpread": 0,
+      "mediaHeights": [
+        240,
+        240,
+        240
+      ],
+      "overflow": 0,
+      "cards": [
+        {
+          "stage": "identity",
+          "card": {
+            "top": 529.3,
+            "bottom": 901.38,
+            "height": 372.08
+          },
+          "header": {
+            "top": 542.3,
+            "bottom": 562.3,
+            "height": 20
+          },
+          "media": {
+            "top": 570.3,
+            "bottom": 810.3,
+            "height": 240
+          },
+          "caption": {
+            "top": 818.3,
+            "bottom": 861.19,
+            "height": 42.89
+          },
+          "action": {
+            "top": 869.19,
+            "bottom": 888.38,
+            "height": 19.19
+          }
+        },
+        {
+          "stage": "hero",
+          "card": {
+            "top": 529.3,
+            "bottom": 901.38,
+            "height": 372.08
+          },
+          "header": {
+            "top": 542.3,
+            "bottom": 562.3,
+            "height": 20
+          },
+          "media": {
+            "top": 570.3,
+            "bottom": 810.3,
+            "height": 240
+          },
+          "caption": {
+            "top": 818.3,
+            "bottom": 861.19,
+            "height": 42.89
+          },
+          "action": {
+            "top": 869.19,
+            "bottom": 888.38,
+            "height": 19.19
+          }
+        },
+        {
+          "stage": "video",
+          "card": {
+            "top": 529.3,
+            "bottom": 901.38,
+            "height": 372.08
+          },
+          "header": {
+            "top": 542.3,
+            "bottom": 562.3,
+            "height": 20
+          },
+          "media": {
+            "top": 570.3,
+            "bottom": 810.3,
+            "height": 240
+          },
+          "caption": {
+            "top": 818.3,
+            "bottom": 861.19,
+            "height": 42.89
+          },
+          "action": {
+            "top": 869.19,
+            "bottom": 888.38,
+            "height": 19.19
+          }
+        }
+      ],
+      "headerTopSpread": 0,
+      "actionBottomSpread": 0
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "h1": "From market insight to campaign-ready creative",
+      "domOrder": [
+        "identity",
+        "hero",
+        "video"
+      ],
+      "purposeFirst": true,
+      "cardWidthSpread": 0,
+      "cardTopSpread": 0,
+      "cardBottomSpread": 0,
+      "mediaHeightSpread": 0,
+      "mediaTopSpread": 0,
+      "mediaBottomSpread": 0,
+      "captionTopSpread": 0,
+      "actionTopSpread": 0,
+      "mediaHeights": [
+        220,
+        220,
+        220
+      ],
+      "overflow": 0,
+      "cards": [
+        {
+          "stage": "identity",
+          "card": {
+            "top": 499.7,
+            "bottom": 851.78,
+            "height": 352.08
+          },
+          "header": {
+            "top": 512.7,
+            "bottom": 532.7,
+            "height": 20
+          },
+          "media": {
+            "top": 540.7,
+            "bottom": 760.7,
+            "height": 220
+          },
+          "caption": {
+            "top": 768.7,
+            "bottom": 811.59,
+            "height": 42.89
+          },
+          "action": {
+            "top": 819.59,
+            "bottom": 838.78,
+            "height": 19.19
+          }
+        },
+        {
+          "stage": "hero",
+          "card": {
+            "top": 499.7,
+            "bottom": 851.78,
+            "height": 352.08
+          },
+          "header": {
+            "top": 512.7,
+            "bottom": 532.7,
+            "height": 20
+          },
+          "media": {
+            "top": 540.7,
+            "bottom": 760.7,
+            "height": 220
+          },
+          "caption": {
+            "top": 768.7,
+            "bottom": 811.59,
+            "height": 42.89
+          },
+          "action": {
+            "top": 819.59,
+            "bottom": 838.78,
+            "height": 19.19
+          }
+        },
+        {
+          "stage": "video",
+          "card": {
+            "top": 499.7,
+            "bottom": 851.78,
+            "height": 352.08
+          },
+          "header": {
+            "top": 512.7,
+            "bottom": 532.7,
+            "height": 20
+          },
+          "media": {
+            "top": 540.7,
+            "bottom": 760.7,
+            "height": 220
+          },
+          "caption": {
+            "top": 768.7,
+            "bottom": 811.59,
+            "height": 42.89
+          },
+          "action": {
+            "top": 819.59,
+            "bottom": 838.78,
+            "height": 19.19
+          }
+        }
+      ],
+      "headerTopSpread": 0,
+      "actionBottomSpread": 0
+    }
+  ],
+  "correctedAt": "2026-11-05T14:14:24.974Z",
+  "note": "Direct-child measurements: header, media, caption, action. Spread = max-min."
+}

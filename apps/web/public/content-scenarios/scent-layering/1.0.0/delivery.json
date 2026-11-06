@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "recipients": [
+      {
+        "id": "scn-scent-layering.recipient.brand-review",
+        "displayName": "Lavish Demo Brand Review (simulated)",
+        "role": "Brand reviewer — hypothetical",
+        "email": "brand-review@lavish-demo.invalid",
+        "isSimulated": true
+      },
+      {
+        "id": "scn-scent-layering.recipient.creative-ops",
+        "displayName": "Lavish Demo Creative Operations (simulated)",
+        "role": "Creative operations — hypothetical",
+        "email": "creative-ops@lavish-demo.invalid",
+        "isSimulated": true
+      }
+    ],
+    "plans": [
+      {
+        "id": "scn-scent-layering.plan.en-v1",
+        "scriptVersionId": "scn-scent-layering.script.en-v1",
+        "videoId": "scn-scent-layering.video.en-v1",
+        "recipientIds": [
+          "scn-scent-layering.recipient.brand-review",
+          "scn-scent-layering.recipient.creative-ops"
+        ],
+        "attachmentAssetIds": [
+          "scn-scent-layering.asset.video-en",
+          "scn-scent-layering.asset.vtt-en"
+        ],
+        "subject": "[SIMULATED / NOT SENT] Lavish creative concept: Your Scent, Your Expression",
+        "body": "SIMULATED DELIVERY — NO EMAIL WAS SENT.\n\nDear Lavish Demo Review Team,\n\nPlease find the conceptual creative pack for \"Your Scent, Your Expression\".\n\nCreative rationale: An editorial concept exploring personal scent expression with LAVISH OUD and PERLA 50ML UNISEX. No verified layering outcome is claimed.\n\nScript: English, 15 seconds, four shots; editable in the mock workflow.\nArabic: a separate complete text/subtitle draft exists and requires native/brand review.\n\nPre-produced video: PLANNED (scent-layering-en-15s.mp4). This draft currently has no MP4 or poster; do not use a broken link as a delivered asset. The future POC replay will show a simulated attachment after actual media handoff and validation.\n\nRequested review: brand tone; exact product identity and claims; Arabic copy; video-to-script alignment; media rights.\n\nThis email is a scenario fixture only. Recipient addresses use .invalid. No platform, rendering API or email service was contacted.\n\nLavish AI Marketing POC / Mock-only concept.",
+        "channel": "email",
+        "scheduledVirtualMs": 104000,
+        "disclosure": "Pre-authored simulated delivery plan only. No actual email, link, attachment transfer or external delivery receipt."
+      }
+    ],
+    "records": [
+      {
+        "id": "scn-scent-layering.record.failed-1",
+        "planId": "scn-scent-layering.plan.en-v1",
+        "outcome": "failed",
+        "attempt": 1,
+        "atMs": 106000,
+        "failureCode": "delivery_failed",
+        "mode": "mock"
+      },
+      {
+        "id": "scn-scent-layering.record.delivered-2",
+        "planId": "scn-scent-layering.plan.en-v1",
+        "outcome": "simulated_delivered",
+        "attempt": 2,
+        "atMs": 112000,
+        "failureCode": null,
+        "mode": "mock"
+      }
+    ]
+  }
+}

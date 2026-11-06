@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-11-05T15:38:05.619Z",
+  "mappingPath": "apps/web/public/presentation-assets/scent-layering.json",
+  "root": "D:\\workspace\\maison-intelligence",
+  "receiptPath": "evidence/brand/provided-serenity-assets-receipt.json",
+  "contentStatus": "bound",
+  "scenarioVersion": "1.1.0",
+  "product": {
+    "id": "scn-scent-layering.product.serenity",
+    "officialName": "SERENITY",
+    "sku": "6290360533636 / 100014",
+    "factsSourceUrl": "https://lavishperfumes.com/product/serenity/",
+    "verifiedFacts": [
+      "Official product title: SERENITY.",
+      "Official description refers to citrus, floral and musk notes.",
+      "Capacity has not been verified."
+    ],
+    "identityAssetId": "provided.scent-layering.product-serenity",
+    "campaignRole": "featured_product"
+  },
+  "ok": false,
+  "errors": [],
+  "warnings": [],
+  "assets": [
+    {
+      "id": "provided.scent-layering.hero-serenity",
+      "type": "hero_image",
+      "uri": "/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "resolvedPath": "D:\\workspace\\maison-intelligence\\provided-assets\\scent-layering\\1.0.0\\hero-serenity.png",
+      "error": "ENOENT: no such file or directory, open 'D:\\workspace\\maison-intelligence\\provided-assets\\scent-layering\\1.0.0\\hero-serenity.png'"
+    },
+    {
+      "id": "provided.scent-layering.product-serenity",
+      "type": "product_original_image",
+      "uri": "/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "resolvedPath": "D:\\workspace\\maison-intelligence\\provided-assets\\scent-layering\\1.0.0\\product-serenity.png",
+      "error": "ENOENT: no such file or directory, open 'D:\\workspace\\maison-intelligence\\provided-assets\\scent-layering\\1.0.0\\product-serenity.png'"
+    },
+    {
+      "id": "provided.scent-layering.final-preview",
+      "type": "final_preview_video",
+      "uri": "/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "resolvedPath": "D:\\workspace\\maison-intelligence\\provided-assets\\scent-layering\\1.0.0\\final-preview.mp4",
+      "error": "ENOENT: no such file or directory, open 'D:\\workspace\\maison-intelligence\\provided-assets\\scent-layering\\1.0.0\\final-preview.mp4'"
+    }
+  ],
+  "http": [
+    {
+      "id": "provided.scent-layering.hero-serenity",
+      "uri": "/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "url": "http://127.0.0.1:54203/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "status": 404,
+      "mimeType": null,
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+      "matchesFile": false,
+      "rangeStatus": 404,
+      "rangeBytes": 9,
+      "supportsRange": false
+    },
+    {
+      "id": "provided.scent-layering.product-serenity",
+      "uri": "/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "url": "http://127.0.0.1:54203/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "status": 404,
+      "mimeType": null,
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+      "matchesFile": false,
+      "rangeStatus": 404,
+      "rangeBytes": 9,
+      "supportsRange": false
+    },
+    {
+      "id": "provided.scent-layering.final-preview",
+      "uri": "/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "url": "http://127.0.0.1:54203/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "status": 404,
+      "mimeType": null,
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+      "matchesFile": false,
+      "rangeStatus": 404,
+      "rangeBytes": 9,
+      "supportsRange": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+import { chromium } from 'playwright';
+const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1440,height:900}});
+const log=[]; p.on('pageerror',e=>log.push('ERR '+e.message));
+await p.goto('http://127.0.0.1:3150/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social',{waitUntil:'load'}); await p.waitForTimeout(1000);
+log.push('stage='+await p.getByTestId('social-stage').count());
+log.push('draft='+((await p.getByTestId('SOC-draft-state').innerText().catch(()=>''))));
+log.push('reviewDisabled='+await p.getByTestId('SOC-review').isDisabled());
+log.push('simulateDisabled='+await p.getByTestId('SOC-simulate').isDisabled());
+await p.getByTestId('SOC-edit-post').click(); await p.waitForTimeout(800);
+log.push('afterEdit draft='+await p.getByTestId('SOC-draft-state').innerText());
+log.push('caption='+await p.getByTestId('SOC-caption-input').inputValue());
+await p.getByTestId('SOC-caption-input').fill('E2E custom EN caption for SERENITY.'); await p.waitForTimeout(100);
+log.push('dirtyNote='+await p.getByTestId('SOC-dirty-note').count()+' saveDisabled='+await p.getByTestId('SOC-save').isDisabled());
+await p.getByTestId('SOC-save').click(); await p.waitForTimeout(800);
+log.push('afterSave draft='+await p.getByTestId('SOC-draft-state').innerText().catch(()=>'')+' notice='+await p.getByTestId('SOC-notice').innerText().catch(()=>''));
+await p.getByTestId('SOC-review').click(); await p.waitForTimeout(800);
+log.push('reviewDialog='+await p.getByTestId('SOC-review-dialog').count()+' confirmCreativePanel='+await p.getByTestId('SOC-confirm-creative-panel').count()+' err='+await p.getByTestId('SOC-error').innerText().catch(()=>''));
+if(await p.getByTestId('SOC-confirm-creative-panel').count()){ log.push('panelText='+(await p.getByTestId('SOC-confirm-creative-panel').innerText()).slice(0,300)); await p.screenshot({path:'evidence/product/connected-flow/probe-confirm-panel.png'}); }
+console.log(log.join('\n'));
+await b.close();

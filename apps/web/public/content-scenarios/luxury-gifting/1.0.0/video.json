@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "videos": [
+      {
+        "id": "scn-luxury-gifting.video.en-v1",
+        "scriptVersionId": "scn-luxury-gifting.script.en-v1",
+        "storyboardShotIds": [
+          "scn-luxury-gifting.shot.en-1",
+          "scn-luxury-gifting.shot.en-2",
+          "scn-luxury-gifting.shot.en-3",
+          "scn-luxury-gifting.shot.en-4"
+        ],
+        "mp4AssetId": "scn-luxury-gifting.asset.video-en",
+        "posterAssetId": "scn-luxury-gifting.asset.poster-en",
+        "subtitleAssetIds": [
+          "scn-luxury-gifting.asset.vtt-en"
+        ],
+        "durationMs": 15000,
+        "width": 1080,
+        "height": 1920,
+        "frameRate": 30,
+        "productionMode": "preproduced",
+        "disclosure": "PLANNED pre-produced English video for Mock POC; MP4 and poster are pending customer delivery; 1080×1920, 30fps, 15s are TARGET specifications, not probed media; cannot play/download or pass L5 until supplied and validated."
+      }
+    ]
+  }
+}

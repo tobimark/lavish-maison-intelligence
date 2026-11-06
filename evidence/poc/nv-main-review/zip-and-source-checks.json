@@ -1,0 +1,35 @@
+[
+  {
+    "file": "evidence\\poc\\content-only\\e2e-content-pack.zip",
+    "zipCRC": "pass",
+    "attachmentHashes": "pass",
+    "subject": "[SIMULATED · CONTENT ONLY] E2E content review",
+    "recipients": [
+      "brand-review@lavish-demo.invalid",
+      "creative-ops@lavish-demo.invalid"
+    ]
+  },
+  {
+    "file": "evidence\\poc\\content-only\\e2e-content-delivery-pack.zip",
+    "zipCRC": "pass",
+    "attachmentHashes": "pass",
+    "subject": "[SIMULATED · CONTENT ONLY] Browser delivery test",
+    "recipients": [
+      "brand-review@lavish-demo.invalid",
+      "creative-ops@lavish-demo.invalid"
+    ]
+  },
+  {
+    "file": "evidence\\poc\\nv-main-review\\main-stale-delivery.zip",
+    "zipCRC": "pass",
+    "attachmentHashes": "pass",
+    "subject": "[SIMULATED] MAIN SAVED SUBJECT",
+    "recipients": [
+      "brand-review@lavish-demo.invalid",
+      "creative-ops@lavish-demo.invalid"
+    ]
+  },
+  {
+    "publishedThirtyJSON": "byte_identical"
+  }
+]

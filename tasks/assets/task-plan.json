@@ -1,0 +1,85 @@
+[
+  {
+    "id": "AS-001",
+    "title": "提供素材发布与真实文件验证",
+    "status": "accepted",
+    "dependencies": [],
+    "spec": "tasks/assets/AS-001.md",
+    "scopeNote": "FAST_06 AS closed; FLOW and 15s/AR follow-up excluded",
+    "acceptedAt": "2026-11-06",
+    "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md"
+  },
+  {
+    "id": "AS-002",
+    "title": "资产映射Source与Mock API扩展",
+    "status": "accepted",
+    "dependencies": [
+      "AS-001",
+      "IP-001"
+    ],
+    "spec": "tasks/assets/AS-002.md",
+    "scopeNote": "FAST_06 AS closed; FLOW and 15s/AR follow-up excluded",
+    "acceptedAt": "2026-11-06",
+    "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md"
+  },
+  {
+    "id": "AS-003",
+    "title": "接收SERENITY A 1.1.0内容并绑定",
+    "status": "accepted",
+    "dependencies": [
+      "AS-001"
+    ],
+    "spec": "tasks/assets/AS-003.md",
+    "scopeNote": "FAST_06 AS closed; FLOW and 15s/AR follow-up excluded",
+    "contentReviewReport": "docs/reviews/SERENITY-A-1.1.0-CONTENT-INTAKE.md",
+    "approvedInput": "content-inbox/web-chatgpt-prepared/a8d1ef5f54da/scent-layering/1.1.0",
+    "approvedPackageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+    "acceptedAt": "2026-11-06",
+    "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md"
+  },
+  {
+    "id": "AS-004",
+    "title": "成果主视觉、Brief与播放器组件接线",
+    "status": "accepted",
+    "dependencies": [
+      "AS-002",
+      "IP-003",
+      "IP-005",
+      "IP-006",
+      "IP-007"
+    ],
+    "spec": "tasks/assets/AS-004.md",
+    "scopeNote": "FAST_06 AS closed; FLOW and 15s/AR follow-up excluded",
+    "acceptedAt": "2026-11-06",
+    "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md"
+  },
+  {
+    "id": "AS-005",
+    "title": "双语成果包与原视频下载",
+    "status": "accepted",
+    "dependencies": [
+      "AS-002",
+      "IP-002",
+      "IP-008"
+    ],
+    "spec": "tasks/assets/AS-005.md",
+    "scopeNote": "FAST_06 AS closed; FLOW and 15s/AR follow-up excluded",
+    "acceptedAt": "2026-11-06",
+    "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md"
+  },
+  {
+    "id": "AS-006",
+    "title": "资产版完整点击与产品视觉验收",
+    "status": "accepted",
+    "dependencies": [
+      "AS-003",
+      "AS-004",
+      "AS-005",
+      "IP-009"
+    ],
+    "spec": "tasks/assets/AS-006.md",
+    "scopeNote": "FAST_06 AS closed; FLOW and 15s/AR follow-up excluded",
+    "acceptedAt": "2026-11-06",
+    "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md"
+  }
+]

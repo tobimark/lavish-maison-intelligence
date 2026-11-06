@@ -1,0 +1,10 @@
+{
+  "captionCtaHashtagReusePass": [
+    "en",
+    "ar"
+  ],
+  "providedZipCrc": true,
+  "providedZipEntries": 21,
+  "providedZipAttachmentHashesPass": 20,
+  "sidecarSha256": "d816938ea8ad27deef8c54a329fd5cc7e865bcfb2ed76643fbd1cd8f1a6d164a"
+}

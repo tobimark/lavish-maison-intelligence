@@ -1,0 +1,137 @@
+{
+  "incident": "IP-BATCH-FIX-01",
+  "restoredAt": "2026-11-05T18:33:19.7966408+08:00",
+  "sourceDir": "evidence/poc/reviews/POC-008/submitted",
+  "targetDir": "evidence/poc/prototype",
+  "submittedFileCount": 14,
+  "readmeUntouched": true,
+  "allHashesMatch": true,
+  "files": [
+    {
+      "name": "home-1366-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/home-1366-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/home-1366-en.png",
+      "sourceSha256": "ed8372df0fc45f34965aad1aae22c57197e72d5b4f8a487cfbfac640f8724220",
+      "targetSha256": "ed8372df0fc45f34965aad1aae22c57197e72d5b4f8a487cfbfac640f8724220",
+      "bytes": 179068,
+      "match": true
+    },
+    {
+      "name": "home-1440-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/home-1440-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/home-1440-en.png",
+      "sourceSha256": "8d9ecfb836a2b9a8684d6f5db5751edc281bee12bd89e26d0725ec80905c3967",
+      "targetSha256": "8d9ecfb836a2b9a8684d6f5db5751edc281bee12bd89e26d0725ec80905c3967",
+      "bytes": 181021,
+      "match": true
+    },
+    {
+      "name": "home-1920-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/home-1920-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/home-1920-en.png",
+      "sourceSha256": "5e8b61c107b73d5d362e4b9318ae976e47d49a261debe1886380b260422a3c2a",
+      "targetSha256": "5e8b61c107b73d5d362e4b9318ae976e47d49a261debe1886380b260422a3c2a",
+      "bytes": 184081,
+      "match": true
+    },
+    {
+      "name": "home-390-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/home-390-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/home-390-en.png",
+      "sourceSha256": "b346da059f65649eb3448e21061c1c62e2487c0257defa567899b9173d5b0e41",
+      "targetSha256": "b346da059f65649eb3448e21061c1c62e2487c0257defa567899b9173d5b0e41",
+      "bytes": 149669,
+      "match": true
+    },
+    {
+      "name": "preview-1366-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-1366-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-1366-en.png",
+      "sourceSha256": "314fa5d3011da4e70799b2aa24fae0aa51c3167c3c2830a441f99c78c1dafd63",
+      "targetSha256": "314fa5d3011da4e70799b2aa24fae0aa51c3167c3c2830a441f99c78c1dafd63",
+      "bytes": 176061,
+      "match": true
+    },
+    {
+      "name": "preview-1440-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-1440-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-1440-en.png",
+      "sourceSha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+      "targetSha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+      "bytes": 179807,
+      "match": true
+    },
+    {
+      "name": "preview-1920-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-1920-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-1920-en.png",
+      "sourceSha256": "2cbfb57a618cc6840dec4bac11bd09cfb5699453675737021b6ea770ea8b587d",
+      "targetSha256": "2cbfb57a618cc6840dec4bac11bd09cfb5699453675737021b6ea770ea8b587d",
+      "bytes": 177259,
+      "match": true
+    },
+    {
+      "name": "preview-390-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-390-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-390-en.png",
+      "sourceSha256": "a02c2f3fdc8690df3314ed2a8f0c4bbbad9464c28fe852d0195462fae1296aa3",
+      "targetSha256": "a02c2f3fdc8690df3314ed2a8f0c4bbbad9464c28fe852d0195462fae1296aa3",
+      "bytes": 140941,
+      "match": true
+    },
+    {
+      "name": "preview-analysis-1440-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-analysis-1440-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-analysis-1440-en.png",
+      "sourceSha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+      "targetSha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+      "bytes": 179807,
+      "match": true
+    },
+    {
+      "name": "preview-delivery-1440-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-delivery-1440-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-delivery-1440-en.png",
+      "sourceSha256": "58ea41493f860fdd1a12f2e194caedea0f8aa4999b19a8ccfaf66bf3dbcbf2c1",
+      "targetSha256": "58ea41493f860fdd1a12f2e194caedea0f8aa4999b19a8ccfaf66bf3dbcbf2c1",
+      "bytes": 189329,
+      "match": true
+    },
+    {
+      "name": "preview-delivery-390-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-delivery-390-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-delivery-390-en.png",
+      "sourceSha256": "4d16c9b4e56f2f30aa5fd872a69681a56457345b5e211bfe6f343059be82a112",
+      "targetSha256": "4d16c9b4e56f2f30aa5fd872a69681a56457345b5e211bfe6f343059be82a112",
+      "bytes": 152307,
+      "match": true
+    },
+    {
+      "name": "preview-discovery-1440-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-discovery-1440-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-discovery-1440-en.png",
+      "sourceSha256": "d88f353cced7bbfad44a0c8751af0996bb6acce47532f8fddc2f00dcacf140ed",
+      "targetSha256": "d88f353cced7bbfad44a0c8751af0996bb6acce47532f8fddc2f00dcacf140ed",
+      "bytes": 167527,
+      "match": true
+    },
+    {
+      "name": "preview-evidence-drawer-1440.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-evidence-drawer-1440.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-evidence-drawer-1440.png",
+      "sourceSha256": "ddc39bcadb03576b3cfb829137351e629bb322ac336d3539ba35a989a62c5041",
+      "targetSha256": "ddc39bcadb03576b3cfb829137351e629bb322ac336d3539ba35a989a62c5041",
+      "bytes": 120919,
+      "match": true
+    },
+    {
+      "name": "preview-video-1440-en.png",
+      "source": "D:/workspace/maison-intelligence/evidence/poc/reviews/POC-008/submitted/preview-video-1440-en.png",
+      "target": "D:/workspace/maison-intelligence/evidence/poc/prototype/preview-video-1440-en.png",
+      "sourceSha256": "f257c0ba51c2840cf6e5cc74fdd5d5b17aefe1bf3bcc3790e84e74c057a5ea17",
+      "targetSha256": "f257c0ba51c2840cf6e5cc74fdd5d5b17aefe1bf3bcc3790e84e74c057a5ea17",
+      "bytes": 177472,
+      "match": true
+    }
+  ]
+}

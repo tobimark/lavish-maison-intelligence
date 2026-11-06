@@ -1,0 +1,413 @@
+{
+  "checkedAt": "2026-11-06T03:42:54.964Z",
+  "base": "http://127.0.0.1:3167",
+  "steps": [
+    {
+      "step": "accept-01-home-1440",
+      "url": "http://127.0.0.1:3167/"
+    },
+    {
+      "step": "accept-02-insight-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0"
+    },
+    {
+      "step": "accept-03-insight-evidence-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0"
+    },
+    {
+      "step": "accept-04-strategy-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=strategy"
+    },
+    {
+      "step": "accept-05-brief-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/brief"
+    },
+    {
+      "step": "accept-06-creative-video-playing-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=creative"
+    },
+    {
+      "step": "accept-07-creative-ar-script-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=creative"
+    },
+    {
+      "step": "accept-08-social-preset-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social"
+    },
+    {
+      "step": "accept-09-social-saved-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social"
+    },
+    {
+      "step": "accept-10-social-review-dialog-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social"
+    },
+    {
+      "step": "accept-11-social-publish-dialog-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social"
+    },
+    {
+      "step": "accept-12-social-published-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social"
+    },
+    {
+      "step": "accept-13-social-post-detail-1440",
+      "url": "http://127.0.0.1:3167/campaigns/scn-scent-layering.brief.main/social/social-attempt.7f27561b.1"
+    },
+    {
+      "step": "accept-14-deliverables-1440",
+      "url": "http://127.0.0.1:3167/deliverables"
+    },
+    {
+      "step": "accept-15-radar-1440",
+      "url": "http://127.0.0.1:3167/radar"
+    },
+    {
+      "step": "accept-16-atelier-1440",
+      "url": "http://127.0.0.1:3167/atelier?campaignId=scn-scent-layering.brief.main&language=en"
+    }
+  ],
+  "media": {
+    "m": {
+      "controls": true,
+      "width": 720,
+      "height": 960,
+      "duration": 10.08,
+      "fit": "contain"
+    },
+    "played": 0.221902,
+    "seek": 7.56
+  },
+  "enShots": 4,
+  "why": "SERENITY is a verified Lavish product whose official description references citrus, floral and musk. A single-product, restrained editorial concept keeps the bottle identity legible and uses only those verified descriptors, without inventing note order, layering, ingredient or performance claims.",
+  "original": "SERENITY, by Lavish Perfumes. A quieter way to explore fragrance through light, floral feeling and a soft musk-inspired mood. Editorial concept for review; no verified application or performance claim.",
+  "caption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+  "reviewText": "Review the saved post\n\nThis is the exact saved language, caption, CTA, hashtags and provided video that review will lock to a review hash.\n\n×\nLanguage\nEnglish (EN)\nCaption\nFLOW acceptance caption — saved before review and kept on the simulated post.\nCTA\nDiscover SERENITY\nHashtags\n#LavishPerfumes#SERENITY\nAccount\nLavish Perfumes · Demo account\nChannel\ninstagram · video_post\nVideo\nSERENITY — Final Video Preview · video/mp4 · 10.08s · 720×960 · 3:4 native, not regenerated\nVideo SHA-256\n15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e\nDraft revision\n2\n\nReviewing computes a hash over this exact snapshot. Editing and saving afterwards clears the review, so a simulated post can never publish stale copy.\n\nCancel\nReview this saved post",
+  "publishText": "Simulate publish\n\nRecords an internal simulated Instagram post from the reviewed snapshot. No content is sent to Instagram.\n\n×\nLanguage\nEnglish (EN)\nCaption\nFLOW acceptance caption — saved before review and kept on the simulated post.\nCTA\nDiscover SERENITY\nHashtags\n#LavishPerfumes#SERENITY\nAccount\nLavish Perfumes · Demo account\nChannel\ninstagram · video_post\nVideo\nSERENITY — Final Video Preview · video/mp4 · 10.08s · 720×960 · 3:4 native, not regenerated\nVideo SHA-256\n15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e\nDraft revision\n3\nReview hash\n9577afb5b6199101c7d95f900bfd576d0178dd8fcd13653e5be2c8869f4f34fe\n\nOne local transaction stores this immutable attempt, the idempotency receipt and the draft status. Success appears only after that commit; no external service is called.\n\nCancel\nSimulate publish",
+  "href": "/campaigns/scn-scent-layering.brief.main/social/social-attempt.7f27561b.1",
+  "detailCaption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+  "detailCaptionAfterReload": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+  "downloads": {
+    "zipPath": "evidence\\product\\connected-flow\\main-review-2026-11-06\\flow-a-1.1.0-en-ar-pack.zip",
+    "zipBytes": 10736352,
+    "zipSha256": "bc01e465b867c7432c18ada49459f119d348ee32302005143349853b95a40775",
+    "mp4Path": "evidence\\product\\connected-flow\\main-review-2026-11-06\\flow-provided-final-preview.mp4",
+    "mp4Bytes": 1315394,
+    "mp4Sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+  },
+  "socialWorkflows": [
+    {
+      "campaignId": "scn-scent-layering.brief.main",
+      "scenarioVersion": "1.1.0",
+      "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+      "drafts": [
+        {
+          "id": "social-draft.8595760e",
+          "campaignId": "scn-scent-layering.brief.main",
+          "scenarioVersion": "1.1.0",
+          "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+          "presetPostId": "scn-scent-layering.social.instagram.en-v1",
+          "sourceScript": {
+            "campaignId": "scn-scent-layering.brief.main",
+            "versionId": "scn-scent-layering.script.en-v2",
+            "sessionId": null,
+            "scenarioVersion": "1.1.0"
+          },
+          "video": {
+            "assetSetId": "provided.scent-layering.serenity-v1",
+            "assetId": "provided.scent-layering.final-preview",
+            "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+          },
+          "language": "en",
+          "channel": "instagram",
+          "placement": "video_post",
+          "accountLabel": "Lavish Perfumes · Demo account",
+          "caption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+          "cta": "Discover SERENITY",
+          "hashtags": [
+            "#LavishPerfumes",
+            "#SERENITY"
+          ],
+          "revision": 3,
+          "status": "published_simulated",
+          "reviewHash": "9577afb5b6199101c7d95f900bfd576d0178dd8fcd13653e5be2c8869f4f34fe",
+          "createdAt": "2026-11-06T03:42:39.117Z",
+          "updatedAt": "2026-11-06T03:42:46.863Z"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "social-attempt.7f27561b.1",
+          "draftId": "social-draft.8595760e",
+          "draftRevision": 3,
+          "campaignId": "scn-scent-layering.brief.main",
+          "scenarioVersion": "1.1.0",
+          "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+          "mode": "mock",
+          "status": "published_simulated",
+          "snapshot": {
+            "sourceScript": {
+              "campaignId": "scn-scent-layering.brief.main",
+              "versionId": "scn-scent-layering.script.en-v2",
+              "sessionId": null,
+              "scenarioVersion": "1.1.0"
+            },
+            "video": {
+              "assetSetId": "provided.scent-layering.serenity-v1",
+              "assetId": "provided.scent-layering.final-preview",
+              "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+            },
+            "channel": "instagram",
+            "placement": "video_post",
+            "accountLabel": "Lavish Perfumes · Demo account",
+            "language": "en",
+            "caption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+            "cta": "Discover SERENITY",
+            "hashtags": [
+              "#LavishPerfumes",
+              "#SERENITY"
+            ]
+          },
+          "reviewHash": "9577afb5b6199101c7d95f900bfd576d0178dd8fcd13653e5be2c8869f4f34fe",
+          "createdAt": "2026-11-06T03:42:46.863Z",
+          "error": null
+        }
+      ],
+      "receipts": [
+        {
+          "key": "prepareSocialDraft|social-prepare-mw4fiby3-0blnvj",
+          "operation": "prepareSocialDraft",
+          "idempotencyKey": "social-prepare-mw4fiby3-0blnvj",
+          "bodyHash": "d12176b6bcda1ed0777739fbc277fb51217648ffd11a27e88bc2791837b1d159",
+          "response": {
+            "ok": true,
+            "data": {
+              "id": "social-draft.8595760e",
+              "campaignId": "scn-scent-layering.brief.main",
+              "scenarioVersion": "1.1.0",
+              "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+              "presetPostId": "scn-scent-layering.social.instagram.en-v1",
+              "sourceScript": {
+                "campaignId": "scn-scent-layering.brief.main",
+                "versionId": "scn-scent-layering.script.en-v2",
+                "sessionId": null,
+                "scenarioVersion": "1.1.0"
+              },
+              "video": {
+                "assetSetId": "provided.scent-layering.serenity-v1",
+                "assetId": "provided.scent-layering.final-preview",
+                "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+              },
+              "language": "en",
+              "channel": "instagram",
+              "placement": "video_post",
+              "accountLabel": "Lavish Perfumes · Demo account",
+              "caption": "SERENITY, by Lavish Perfumes. A quieter way to explore fragrance through light, floral feeling and a soft musk-inspired mood. Editorial concept for review; no verified application or performance claim.",
+              "cta": "Discover SERENITY",
+              "hashtags": [
+                "#LavishPerfumes",
+                "#SERENITY"
+              ],
+              "revision": 1,
+              "status": "draft",
+              "reviewHash": null,
+              "createdAt": "2026-11-06T03:42:39.117Z",
+              "updatedAt": "2026-11-06T03:42:39.117Z"
+            },
+            "meta": {
+              "mode": "mock",
+              "schemaVersion": "1.0.0",
+              "requestId": "social-1",
+              "sessionId": null,
+              "revision": 1
+            }
+          },
+          "createdAt": "2026-11-06T03:42:39.117Z"
+        },
+        {
+          "key": "saveSocialDraft|social-save-mw4ficg4-jhvtse",
+          "operation": "saveSocialDraft",
+          "idempotencyKey": "social-save-mw4ficg4-jhvtse",
+          "bodyHash": "3099612c80f29682acad4406e30d3158ef4bf19d30fb069f0124181299495b56",
+          "response": {
+            "ok": true,
+            "data": {
+              "id": "social-draft.8595760e",
+              "campaignId": "scn-scent-layering.brief.main",
+              "scenarioVersion": "1.1.0",
+              "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+              "presetPostId": "scn-scent-layering.social.instagram.en-v1",
+              "sourceScript": {
+                "campaignId": "scn-scent-layering.brief.main",
+                "versionId": "scn-scent-layering.script.en-v2",
+                "sessionId": null,
+                "scenarioVersion": "1.1.0"
+              },
+              "video": {
+                "assetSetId": "provided.scent-layering.serenity-v1",
+                "assetId": "provided.scent-layering.final-preview",
+                "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+              },
+              "language": "en",
+              "channel": "instagram",
+              "placement": "video_post",
+              "accountLabel": "Lavish Perfumes · Demo account",
+              "caption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+              "cta": "Discover SERENITY",
+              "hashtags": [
+                "#LavishPerfumes",
+                "#SERENITY"
+              ],
+              "revision": 2,
+              "status": "draft",
+              "reviewHash": null,
+              "createdAt": "2026-11-06T03:42:39.117Z",
+              "updatedAt": "2026-11-06T03:42:39.761Z"
+            },
+            "meta": {
+              "mode": "mock",
+              "schemaVersion": "1.0.0",
+              "requestId": "social-2",
+              "sessionId": null,
+              "revision": 2
+            }
+          },
+          "createdAt": "2026-11-06T03:42:39.761Z"
+        },
+        {
+          "key": "reviewSocialDraft|social-review-mw4figd9-lztrbv",
+          "operation": "reviewSocialDraft",
+          "idempotencyKey": "social-review-mw4figd9-lztrbv",
+          "bodyHash": "ed4118a769899f1ff9cec04e87e07217c42dda5ae2a92585f88ee030090f0beb",
+          "response": {
+            "ok": true,
+            "data": {
+              "draft": {
+                "id": "social-draft.8595760e",
+                "campaignId": "scn-scent-layering.brief.main",
+                "scenarioVersion": "1.1.0",
+                "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+                "presetPostId": "scn-scent-layering.social.instagram.en-v1",
+                "sourceScript": {
+                  "campaignId": "scn-scent-layering.brief.main",
+                  "versionId": "scn-scent-layering.script.en-v2",
+                  "sessionId": null,
+                  "scenarioVersion": "1.1.0"
+                },
+                "video": {
+                  "assetSetId": "provided.scent-layering.serenity-v1",
+                  "assetId": "provided.scent-layering.final-preview",
+                  "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+                },
+                "language": "en",
+                "channel": "instagram",
+                "placement": "video_post",
+                "accountLabel": "Lavish Perfumes · Demo account",
+                "caption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+                "cta": "Discover SERENITY",
+                "hashtags": [
+                  "#LavishPerfumes",
+                  "#SERENITY"
+                ],
+                "revision": 3,
+                "status": "ready",
+                "reviewHash": "9577afb5b6199101c7d95f900bfd576d0178dd8fcd13653e5be2c8869f4f34fe",
+                "createdAt": "2026-11-06T03:42:39.117Z",
+                "updatedAt": "2026-11-06T03:42:44.847Z"
+              },
+              "snapshot": {
+                "sourceScript": {
+                  "campaignId": "scn-scent-layering.brief.main",
+                  "versionId": "scn-scent-layering.script.en-v2",
+                  "sessionId": null,
+                  "scenarioVersion": "1.1.0"
+                },
+                "video": {
+                  "assetSetId": "provided.scent-layering.serenity-v1",
+                  "assetId": "provided.scent-layering.final-preview",
+                  "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+                },
+                "channel": "instagram",
+                "placement": "video_post",
+                "accountLabel": "Lavish Perfumes · Demo account",
+                "language": "en",
+                "caption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+                "cta": "Discover SERENITY",
+                "hashtags": [
+                  "#LavishPerfumes",
+                  "#SERENITY"
+                ]
+              },
+              "reviewHash": "9577afb5b6199101c7d95f900bfd576d0178dd8fcd13653e5be2c8869f4f34fe"
+            },
+            "meta": {
+              "mode": "mock",
+              "schemaVersion": "1.0.0",
+              "requestId": "social-3",
+              "sessionId": null,
+              "revision": 3
+            }
+          },
+          "createdAt": "2026-11-06T03:42:44.847Z"
+        },
+        {
+          "key": "simulateSocialPublish|social-publish-mw4fihxb-q82u77",
+          "operation": "simulateSocialPublish",
+          "idempotencyKey": "social-publish-mw4fihxb-q82u77",
+          "bodyHash": "93eac1cabfc58437669fb2d2484d95a8ac727cc13cad5bc6b218d55c8f9db546",
+          "response": {
+            "ok": true,
+            "data": {
+              "attempt": {
+                "id": "social-attempt.7f27561b.1",
+                "draftId": "social-draft.8595760e",
+                "draftRevision": 3,
+                "campaignId": "scn-scent-layering.brief.main",
+                "scenarioVersion": "1.1.0",
+                "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+                "mode": "mock",
+                "status": "published_simulated",
+                "snapshot": {
+                  "sourceScript": {
+                    "campaignId": "scn-scent-layering.brief.main",
+                    "versionId": "scn-scent-layering.script.en-v2",
+                    "sessionId": null,
+                    "scenarioVersion": "1.1.0"
+                  },
+                  "video": {
+                    "assetSetId": "provided.scent-layering.serenity-v1",
+                    "assetId": "provided.scent-layering.final-preview",
+                    "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+                  },
+                  "channel": "instagram",
+                  "placement": "video_post",
+                  "accountLabel": "Lavish Perfumes · Demo account",
+                  "language": "en",
+                  "caption": "FLOW acceptance caption — saved before review and kept on the simulated post.",
+                  "cta": "Discover SERENITY",
+                  "hashtags": [
+                    "#LavishPerfumes",
+                    "#SERENITY"
+                  ]
+                },
+                "reviewHash": "9577afb5b6199101c7d95f900bfd576d0178dd8fcd13653e5be2c8869f4f34fe",
+                "createdAt": "2026-11-06T03:42:46.863Z",
+                "error": null
+              }
+            },
+            "meta": {
+              "mode": "mock",
+              "schemaVersion": "1.0.0",
+              "requestId": "social-4",
+              "sessionId": null,
+              "revision": 3
+            }
+          },
+          "createdAt": "2026-11-06T03:42:46.863Z"
+        }
+      ],
+      "updatedAt": "2026-11-06T03:42:46.863Z"
+    }
+  ],
+  "errors": []
+}

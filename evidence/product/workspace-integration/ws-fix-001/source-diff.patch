@@ -1,0 +1,280 @@
+# warning: 'evidence/product/workspace-integration/ws-fix-001/before/AppShell.tsx', LF will be replaced by CRLF the next time Git touches it
+diff --git a/apps/web/components/shell/AppShell.tsx b/apps/web/components/shell/AppShell.tsx
+index 0578d00..e363250 100644
+--- a/apps/web/components/shell/AppShell.tsx
++++ b/apps/web/components/shell/AppShell.tsx
+@@ -1,8 +1,8 @@
+ 'use client';
+ 
+-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+-import type { ReactNode } from 'react';
+-import { usePathname } from 'next/navigation';
++import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
++import type { ReactNode, RefObject } from 'react';
++import { usePathname, useSearchParams } from 'next/navigation';
+ 
+ import { Header } from './Header';
+ import { Sidebar, type ShellNavItem } from './Sidebar';
+@@ -27,45 +27,57 @@ type AppShellProps = {
+   breadcrumb: ShellBreadcrumb[];
+ };
+ 
++type SidebarQuery = { get(name: string): string | null };
++
++function navItemsForContext(searchParams: SidebarQuery): readonly ShellNavItem[] {
+# warning: 'apps/web/components/shell/AppShell.tsx', LF will be replaced by CRLF the next time Git touches it
++  const campaignId = searchParams.get('campaignId');
++  const scenarioVersion = searchParams.get('scenarioVersion');
++  const language = searchParams.get('language');
++  if (!campaignId && !scenarioVersion && !language) return NAV_ITEMS;
++
++  return NAV_ITEMS.map((item) => {
++    const next = new URLSearchParams();
++    if (campaignId) next.set('campaignId', campaignId);
++    if (scenarioVersion) next.set('scenarioVersion', scenarioVersion);
++    if (language && (item.id === 'atelier' || item.id === 'library' || item.id === 'deliverables')) {
++      next.set('language', language);
++    }
++    const suffix = next.toString();
++    return { ...item, href: suffix ? `${item.href}?${suffix}` : item.href };
++  });
++}
++
++type ReactiveSidebarProps = {
++  pathname: string;
++  collapsed: boolean;
++  mobileOpen: boolean;
++  onToggleCollapsed: () => void;
++  onCloseMobile: () => void;
++  sidebarRef: RefObject<HTMLElement | null>;
++  inert: boolean;
++};
++
++/**
++ * The sidebar links must follow any query change, including a router.replace()
++ * on the same pathname (Library Campaign select). useSearchParams is the
++ * reactive source; keeping it in this small child confines the required
++ * Suspense boundary to the sidebar instead of the whole application shell.
++ */
++function ReactiveSidebar({ pathname, ...props }: ReactiveSidebarProps) {
++  const searchParams = useSearchParams();
++  const navItems = useMemo(() => navItemsForContext(searchParams), [searchParams]);
++  return <Sidebar navItems={navItems} currentPath={pathname} {...props} />;
++}
++
+ export function AppShell({ children, breadcrumb }: AppShellProps) {
+   const pathname = usePathname() ?? '/';
+   const [collapsed, setCollapsed] = useState(false);
+   const [menuOpen, setMenuOpen] = useState(false);
+   const [isMobile, setIsMobile] = useState(false);
+-  const [contextQuery, setContextQuery] = useState('');
+ 
+-  // WS-001: preserve the current case when navigating the six workspaces.
+-  // Read `window.location.search` after mount instead of useSearchParams so the
+-  // shell never needs an extra Suspense boundary and never writes business data.
+-  useEffect(() => {
+-    const params = new URLSearchParams(window.location.search);
+-    const next = new URLSearchParams();
+-    const campaignId = params.get('campaignId');
+-    const scenarioVersion = params.get('scenarioVersion');
+-    const language = params.get('language');
+-    if (campaignId) next.set('campaignId', campaignId);
+-    if (scenarioVersion) next.set('scenarioVersion', scenarioVersion);
+-    if (language === 'en' || language === 'ar') next.set('language', language);
+-    setContextQuery(next.toString());
+-  }, [pathname]);
+-
+-  const navItems = useMemo<readonly ShellNavItem[]>(() => {
+-    const query = contextQuery ? new URLSearchParams(contextQuery) : null;
+-    return NAV_ITEMS.map((item) => {
+-      if (!query) return item;
+-      const next = new URLSearchParams();
+-      const campaignId = query.get('campaignId');
+-      const scenarioVersion = query.get('scenarioVersion');
+-      const language = query.get('language');
+-      if (campaignId) next.set('campaignId', campaignId);
+-      if (scenarioVersion) next.set('scenarioVersion', scenarioVersion);
+-      if (language && (item.id === 'atelier' || item.id === 'library' || item.id === 'deliverables')) {
+-        next.set('language', language);
+-      }
+-      const suffix = next.toString();
+-      return { ...item, href: suffix ? `${item.href}${item.href.includes('?') ? '&' : '?'}${suffix}` : item.href };
+-    });
+-  }, [contextQuery]);
++  // WS-001/WS-FIX-001: the sidebar context is derived from Next's reactive
++  // search params in ReactiveSidebar below; no polling, storage or history
++  // monkey-patching is used.
+ 
+   const sidebarRef = useRef<HTMLElement | null>(null);
+   const menuButtonRef = useRef<HTMLButtonElement | null>(null);
+@@ -188,16 +200,30 @@ export function AppShell({ children, breadcrumb }: AppShellProps) {
+         Skip to content
+       </a>
+ 
+-      <Sidebar
+-        navItems={navItems}
+-        currentPath={pathname}
+-        collapsed={collapsed}
+-        mobileOpen={menuOpen}
+-        onToggleCollapsed={toggleCollapsed}
+-        onCloseMobile={closeMenu}
+-        sidebarRef={sidebarRef}
+-        inert={isMobile && !menuOpen}
+-      />
++      <Suspense
++        fallback={(
++          <Sidebar
++            navItems={NAV_ITEMS}
++            currentPath={pathname}
++            collapsed={collapsed}
++            mobileOpen={menuOpen}
++            onToggleCollapsed={toggleCollapsed}
++            onCloseMobile={closeMenu}
++            sidebarRef={sidebarRef}
++            inert={isMobile && !menuOpen}
++          />
++        )}
++      >
++        <ReactiveSidebar
++          pathname={pathname}
++          collapsed={collapsed}
++          mobileOpen={menuOpen}
++          onToggleCollapsed={toggleCollapsed}
++          onCloseMobile={closeMenu}
++          sidebarRef={sidebarRef}
++          inert={isMobile && !menuOpen}
++        />
++      </Suspense>
+ 
+       {menuOpen ? (
+         <div className={styles.backdrop} onClick={closeMenu} aria-hidden="true" data-testid="shell-backdrop" />
+# warning: 'evidence/product/workspace-integration/ws-fix-001/before/LibraryPage.tsx', LF will be replaced by CRLF the next time Git touches it
+# warning: 'apps/web/components/product/library/LibraryPage.tsx', LF will be replaced by CRLF the next time Git touches it
+diff --git a/apps/web/components/product/library/LibraryPage.tsx b/apps/web/components/product/library/LibraryPage.tsx
+index b9eac0e..3ba5994 100644
+--- a/apps/web/components/product/library/LibraryPage.tsx
++++ b/apps/web/components/product/library/LibraryPage.tsx
+@@ -36,6 +36,7 @@ export function LibraryPage() {
+   const originParam = searchParams.get('origin') === 'saved' ? 'saved' : searchParams.get('origin') === 'preset' ? 'preset' : '';
+   const versionParam = searchParams.get('versionId') ?? '';
+   const sessionParam = searchParams.get('sessionId') ?? '';
++  const scenarioVersionParam = (searchParams.get('scenarioVersion') ?? '').trim();
+ 
+   const [state, setState] = useState<LoadState>('loading');
+   const [error, setError] = useState('');
+@@ -46,6 +47,7 @@ export function LibraryPage() {
+   const [preview, setPreview] = useState<CreativeItem | null>(null);
+   const [exportingId, setExportingId] = useState<string | null>(null);
+   const [toasts, setToasts] = useState<ToastMessage[]>([]);
++  const [versionError, setVersionError] = useState('');
+ 
+   const pushToast = (message: string, tone: ToastMessage['tone'] = 'neutral') => {
+     setToasts((current) => [...current, { id: `library-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`, message, tone }].slice(-3));
+@@ -94,6 +96,47 @@ export function LibraryPage() {
+     void load();
+   }, [load]);
+ 
++  // WS-FIX-001: when a campaign is explicit but the URL has no version, resolve
++  // that campaign's real published default instead of letting the shared helper
++  // fall back to A's 1.1.0. An explicit version is never overwritten here.
++  useEffect(() => {
++    if (!campaignParam || scenarioVersionParam) return;
++    const campaign = campaigns.find((item) => item.campaignId === campaignParam);
++    if (campaign?.scenarioVersion) updateQuery({ scenarioVersion: campaign.scenarioVersion });
++  }, [campaignParam, campaigns, scenarioVersionParam, updateQuery]);
++
++  const selectCampaign = (value: string) => {
++    const campaign = value ? campaigns.find((item) => item.campaignId === value) : undefined;
++    // Switching case must not carry the previous case's exact version/session
++    // or leave its preview open. The new campaign's own version is resolved
++    // from the read-only campaign list; All campaigns clears it.
++    setPreview(null);
++    setProvidedPreview(null);
++    updateQuery({
++      campaignId: value,
++      scenarioVersion: value ? (campaign?.scenarioVersion ?? '') : '',
++      versionId: '',
++      sessionId: '',
++    });
++  };
++
++  useEffect(() => {
++    if (!campaignParam || !scenarioVersionParam) { setVersionError(''); return; }
++    let cancelled = false;
++    (async () => {
++      const result = await getBrowserApi().getCampaignJourney({ campaignId: campaignParam, scenarioVersion: scenarioVersionParam });
++      if (cancelled) return;
++      setVersionError(result.ok ? '' : `${result.error.code}: ${result.error.message}`);
++    })().catch((cause) => { if (!cancelled) setVersionError(cause instanceof Error ? cause.message : String(cause)); });
++    return () => { cancelled = true; };
++  }, [campaignParam, scenarioVersionParam]);
++
++  const clearFilters = () => {
++    setPreview(null);
++    setProvidedPreview(null);
++    updateQuery({ campaignId: '', scenarioVersion: '', language: '', kind: '', origin: '', versionId: '', sessionId: '' });
++  };
++
+   // A shared deep link can open an exact creative asset.
+   useEffect(() => {
+     if (!versionParam || state !== 'ready' || preview) return;
+@@ -143,6 +186,32 @@ export function LibraryPage() {
+   const previewTitle = preview ? `${preview.campaign.name} · ${preview.version.language.toUpperCase()} ${KIND_LABELS[preview.kind]}` : 'Preview';
+   const providedPreviewTitle = providedPreview ? `${PROVIDED_KIND_LABELS[providedPreview.type]} · SERENITY` : 'Provided asset preview';
+ 
++  if (state === 'ready' && campaignParam && campaigns.length > 0 && !campaigns.some((campaign) => campaign.campaignId === campaignParam)) {
++    return (
++      <div className={styles.page} data-testid="library-unknown-campaign">
++        <StateBlock
++          kind="error"
++          title="Campaign not found"
++          body={`No prepared campaign matches “${campaignParam}”. The exact Campaign was not replaced with SERENITY.`}
++          action={<Button variant="secondary" onClick={clearFilters} data-testid="LIB-unknown-clear">Show all campaigns</Button>}
++        />
++      </div>
++    );
++  }
++
++  if (versionError) {
++    return (
++      <div className={styles.page} data-testid="library-version-error">
++        <StateBlock
++          kind="error"
++          title="Campaign version unavailable"
++          body={`${versionError} Nothing was switched to another version.`}
++          action={<Button variant="secondary" onClick={clearFilters} data-testid="LIB-version-clear">Back to all campaigns</Button>}
++        />
++      </div>
++    );
++  }
++
+   return (
+     <div className={styles.page} data-testid="library-page">
+       <header className={styles.pageHeader}>
+@@ -159,7 +228,7 @@ export function LibraryPage() {
+       <section className={styles.toolbar} aria-label="Library filters">
+         <label className={styles.field}>
+           <span className={styles.label}>Campaign</span>
+-          <select className={styles.select} value={campaignParam} onChange={(event) => updateQuery({ campaignId: event.target.value })} data-control-id="LIB-campaign" data-testid="LIB-campaign">
++          <select className={styles.select} value={campaignParam} onChange={(event) => selectCampaign(event.target.value)} data-control-id="LIB-campaign" data-testid="LIB-campaign">
+             <option value="">All campaigns</option>
+             {campaigns.map((campaign) => (
+               <option key={campaign.campaignId} value={campaign.campaignId}>{campaign.name}</option>
+@@ -193,7 +262,7 @@ export function LibraryPage() {
+             <option value="saved">Saved versions</option>
+           </select>
+         </label>
+-        <Button variant="ghost" onClick={() => updateQuery({ campaignId: '', language: '', kind: '', origin: '', versionId: '', sessionId: '' })} data-control-id="LIB-clear" data-testid="LIB-clear">
++        <Button variant="ghost" onClick={clearFilters} data-control-id="LIB-clear" data-testid="LIB-clear">
+           Clear filters
+         </Button>
+       </section>
+@@ -253,7 +322,7 @@ export function LibraryPage() {
+           <p className={styles.muted}>
+             {activeFilters ? 'Clear the filters to see every prepared and saved version.' : 'No prepared or saved versions are available in this browser.'}
+           </p>
+-          <Button variant="secondary" onClick={() => updateQuery({ campaignId: '', language: '', kind: '', origin: '', versionId: '', sessionId: '' })} data-control-id="LIB-clear-empty" data-testid="LIB-clear-empty">
++          <Button variant="secondary" onClick={clearFilters} data-control-id="LIB-clear-empty" data-testid="LIB-clear-empty">
+             Clear filters
+           </Button>
+         </div>

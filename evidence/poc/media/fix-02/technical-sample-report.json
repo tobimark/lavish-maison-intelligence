@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-11-04T11:27:10.751Z",
+  "scope": "scenario",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "ef34545a892d51543db2a1cbf35b83afee5502a84a8cd147a3c96b5f0a0ec925",
+  "layers": [
+    {
+      "name": "L1",
+      "status": "not_run"
+    },
+    {
+      "name": "L2",
+      "status": "not_run"
+    },
+    {
+      "name": "L3",
+      "status": "not_run"
+    },
+    {
+      "name": "L4",
+      "status": "not_run"
+    },
+    {
+      "name": "L5",
+      "status": "not_run"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "ffprobe is NOT_RUN: no local ffprobe executable was found. Browser metadata/playback/seek checks still run, but L5 cannot be reported as PASS without codec/pixel-format/duration probing.",
+    "L5 is NOT_RUN because ffprobe is missing; do not treat browser-only results as full media PASS."
+  ],
+  "runnable": false,
+  "media": [
+    {
+      "id": "scn-scent-layering.asset.test-video",
+      "kind": "video",
+      "uri": "/scenario-media/scent-layering/1.0.0/good-1080x1920-15s.mp4",
+      "status": "pass",
+      "httpStatus": 200,
+      "finalUrl": "http://127.0.0.1:64468/scenario-media/scent-layering/1.0.0/good-1080x1920-15s.mp4",
+      "contentType": "video/mp4",
+      "bytes": 20937,
+      "sha256": "b41e789ad90d58644f00369dc520174413401d12a53df5727033a50e1323333f",
+      "video": {
+        "shotStartsMs": [
+          0,
+          2000,
+          5000,
+          9000
+        ],
+        "seekTargetsMs": [
+          2000,
+          5000,
+          9000,
+          14500
+        ],
+        "event": "loadedmetadata",
+        "durationMs": 15000,
+        "width": 1080,
+        "height": 1920,
+        "seekableRanges": 1,
+        "canPlayReady": true,
+        "startAtZero": true,
+        "seekTargets": [
+          2000,
+          5000,
+          9000,
+          14500
+        ],
+        "seeks": [
+          {
+            "targetMs": 2000,
+            "seeked": true,
+            "actualMs": 2000
+          },
+          {
+            "targetMs": 5000,
+            "seeked": true,
+            "actualMs": 5000
+          },
+          {
+            "targetMs": 9000,
+            "seeked": true,
+            "actualMs": 9000
+          },
+          {
+            "targetMs": 14500,
+            "seeked": true,
+            "actualMs": 14500
+          }
+        ],
+        "playback": {
+          "beforeMs": 14500,
+          "afterMs": 14905,
+          "deltaMs": 405,
+          "playResolved": true
+        },
+        "played": true,
+        "errorCode": null
+      }
+    },
+    {
+      "id": "scn-scent-layering.asset.test-poster",
+      "kind": "poster",
+      "uri": "/scenario-media/scent-layering/1.0.0/poster-1080x1920.png",
+      "status": "pass",
+      "httpStatus": 200,
+      "finalUrl": "http://127.0.0.1:64468/scenario-media/scent-layering/1.0.0/poster-1080x1920.png",
+      "contentType": "image/png",
+      "bytes": 12248,
+      "sha256": "5af047be9134cdf3c4ea404952e4c8d92d972cfaa7577604c8651d2feeb2f863",
+      "image": {
+        "width": 1080,
+        "height": 1920
+      }
+    },
+    {
+      "id": "scn-scent-layering.asset.test-subtitles",
+      "kind": "subtitle",
+      "uri": "/scenario-media/scent-layering/1.0.0/good.vtt",
+      "status": "pass",
+      "httpStatus": 200,
+      "finalUrl": "http://127.0.0.1:64468/scenario-media/scent-layering/1.0.0/good.vtt",
+      "contentType": "text/vtt",
+      "bytes": 166,
+      "sha256": "bd937b1ae5738e04aa70d2a2e469865fedfaf07b6fc54838c722e00be814aabc",
+      "subtitle": {
+        "cues": 3,
+        "scriptVersionId": "scn-scent-layering.scriptversion.test-en",
+        "textMatched": true,
+        "parseErrors": []
+      }
+    }
+  ],
+  "baseUrl": "http://127.0.0.1:64468",
+  "ffprobe": "not_run",
+  "probeAttempted": false
+}

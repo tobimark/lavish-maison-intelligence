@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "profile": "content_only",
+  "mode": "mock",
+  "deliveryKind": "script_pack",
+  "attempt": {
+    "id": "usr.session-1793861003989-z2ktl9.content.attempt.2",
+    "attempt": 2,
+    "draftId": "usr.session-1793861003989-z2ktl9.content.draft.1",
+    "draftRevision": 1,
+    "scriptVersionId": "usr.usr.session-1793861003989-z2ktl9.script.2",
+    "recipientSnapshot": [
+      {
+        "id": "scn-scent-layering.recipient.brand-review",
+        "displayName": "Lavish Demo Brand Review (simulated)",
+        "email": "brand-review@lavish-demo.invalid"
+      },
+      {
+        "id": "scn-scent-layering.recipient.creative-ops",
+        "displayName": "Lavish Demo Creative Operations (simulated)",
+        "email": "creative-ops@lavish-demo.invalid"
+      }
+    ],
+    "subject": "[SIMULATED · CONTENT ONLY] E2E content review",
+    "body": "SIMULATED CONTENT-ONLY DELIVERY — NO EMAIL WAS SENT.\n\nScenario: The Art of Scent Layering\nScript: Saved AR v2\n\nThis content demo has no video and no poster. No MP4 is attached or implied. Review the selected script, subtitles and product images.\n\nNo real email service was contacted. Recipient addresses use .invalid.",
+    "attachmentManifest": [
+      {
+        "filename": "scent-layering-ar-2-script.json",
+        "mimeType": "application/json",
+        "bytes": 4583,
+        "sha256": "022afd94de42542530a35ead91079685334db25877a447250a4106718fd61967"
+      },
+      {
+        "filename": "scent-layering-ar-subtitles.vtt",
+        "mimeType": "text/vtt",
+        "bytes": 300,
+        "sha256": "1c51668562b9ab6391dedb555244d95f6fdcff116626f50fa9a9ab4edf2fb2cd"
+      },
+      {
+        "filename": "scent-layering-ar-email.txt",
+        "mimeType": "text/plain",
+        "bytes": 604,
+        "sha256": "a3dc4ca2ffda94e611ae909a70f6bd39d5cd4c6ca40fff598960a20462ef33d3"
+      },
+      {
+        "filename": "README.txt",
+        "mimeType": "text/plain",
+        "bytes": 652,
+        "sha256": "63949073537e773ffdb7dcbb7a1bb8e2fa1766e332c33cd6fd9b7b7f1c10f422"
+      }
+    ],
+    "outcome": "simulated_delivered",
+    "failureCode": null,
+    "mode": "mock",
+    "deliveryKind": "script_pack",
+    "createdAt": "2026-11-05T06:43:32.103Z"
+  },
+  "note": "SIMULATED content delivery record; no email was sent and no video is attached.",
+  "noVideo": true,
+  "noRealEmail": true
+}

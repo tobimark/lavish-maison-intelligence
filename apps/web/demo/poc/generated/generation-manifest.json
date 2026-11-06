@@ -1,0 +1,13 @@
+{
+  "generator": "scripts/poc/generate-types.mjs",
+  "generatorVersion": "1.0.0",
+  "schemaVersion": "1.0.0",
+  "source": "contracts/poc/scenario.schema.json",
+  "schemaSha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a",
+  "schemaBytes": 108148,
+  "typesFile": "scenario.types.ts",
+  "typesSha256": "a5583f08345fd353336ffb897d8c9bb857640669f91493e1d17a8f7eda2ba71b",
+  "typesBytes": 22863,
+  "prefixItemsTuples": 1,
+  "contractDefects": []
+}

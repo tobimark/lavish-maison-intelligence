@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-05T11:11:01.272Z",
+  "base": "http://127.0.0.1:3000",
+  "metadata": {
+    "duration": 10.08,
+    "videoWidth": 720,
+    "videoHeight": 960,
+    "readyState": 4,
+    "mime": "http://127.0.0.1:3000/provided-assets/scent-layering/1.0.0/final-preview.mp4"
+  },
+  "seek": {
+    "currentTime": 7.56,
+    "seeked": true
+  },
+  "hero": {
+    "naturalWidth": 2560,
+    "naturalHeight": 1440
+  },
+  "identity": {
+    "naturalWidth": 2000,
+    "naturalHeight": 2000
+  },
+  "error": null
+}

@@ -1,0 +1,63 @@
+MAISON INTELLIGENCE / Lavish — WS-001..004 独立验收报告
+**日期：**2026-11-06
+**结论口径：**基于上传的实际截图、源码摘录、历史测试日志、独立核对的导出 ZIP / MP4 / 帖子快照进行材料级复核；未访问用户本机服务、未重新运行全站 Playwright / 构建，不代替项目主控的正式审批。
+1. 结论
+- Demo 功能和视觉：Accepted with disclosed exceptions（资料审查层面）。 六个一级工作区均有实际内容；SERENITY 作为同一案例贯穿 Radar → Opportunities → Atelier → Deliverables；素材、视频、双语脚本和 Instagram 模拟帖子具有可核对的关联。当前演示可以面向客户进行清楚标注为 Mock 的单案例 POC 展示。
+- 证据完整性：Fail（历史只读隔离要求未达成）。 旧 FLOW/AS/IP 目录存在被重写或覆盖的记录，历史原字节没有恢复。本次交接包内 129 份文件的字节数与 SHA-256 全部匹配，只证明本次复制的完整性，不能追认旧证据未发生改变。
+- **结项建议：**已完成范围可作为功能里程碑候选结项，但建议先补 Library 同路径切换 Campaign → 左侧导航 的单项复验；并将证据事故单列为不合格的过程记录，不能合并成“全部通过”。若该复验复现下述上下文错误，应先作小修复后再结项。
+- 商业演示：可以。 但准确表述为预置数据驱动的互动 Mock Demo、使用提供的 10.08 秒 SERENITY 视频、支持 Instagram 本地模拟发布，绝非真实抓取/实时生成/多平台实际投放。
+- 生产上线：不具备。 未接真实社媒/LLM/视频生成/邮件/后台，未有生产级并发、鉴权与跨浏览器验证；AR 文案尚待母语与品牌审稿。
+2. 本次独立核对方式与证据级别
+1. 查看 03_截图审查册.pdf 页码目录，并逐张审查 source/evidence/product/workspace-integration/final/accept-*.png 原始截图（1440、1366），另看 ws-003/social-stage-ar-390.png。
+2. 阅读 docs/reviews/WS-BATCH-MAIN-REVIEW.md、`WS-BATCH-DSH.md`、`docs/CONNECTED_MARKETING_FLOW.md`、`docs/SOCIAL_MOCK_CONTRACT.md` 及关键前端代码和测试摘录。
+3. 独立核对 ws-a-1.1.0-en-ar-pack.zip：21 项、CRC 无误、10,736,352 字节、`noVideo=false`、en-v2/ar-v2@1.1.0。
+4. 独立核对 MP4：1,315,394 字节、SHA-256 15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e、H.264、720×960、10.08 秒；导出包内 MP4 与独立 MP4 字节相同，Hero / 产品原图 / MP4 哈希与素材回执对应。抽取视频若干真实帧查看，均为 SERENITY 产品广告画面。
+5. 独立核对 simulated-post-snapshot.json：1 条 published_simulated、EN、revision 3；caption、CTA、hashtags、video SHA 与观察记录相符。该文件代表测试时保存的模拟帖子快照，并非真实 Instagram 回执。
+6. 独立逐项重算本次证据包 129 个 source/ 文件的 SHA-256 与文件长度，129/129 一致。这不代表重跑了网页产品测试。
+3. 验收矩阵
+ID	检查项	结论	主要证据（PDF 页码、原始文件及证据类型）	依据与限定
+C01	六菜单原名原序、无 Soon/虚假一级入口	Pass	PDF 3、18–20 页；`accept-01/15/16/17` 实际截图；`Sidebar.tsx`、`AppShell.tsx` 静态代码；历史导航 E2E	六个可见菜单与源代码匹配；截图证明有实际工作区内容。
+C02	旧四 stage replace 路由与上下文	Pass（材料证明）	workspace-routes.ts、`JourneyPage.tsx` 静态代码；`product-workspace-integration.spec.ts` 与 E2E 运行日志	insight→radar、strategy→opportunities、creative→atelier、social→deliverables；未在本环境现场打开链接。
+C03	Brief / Post Detail 的左栏归属与非法上下文	Pass（材料证明）	PDF 7、15 页；`workspace-routes.ts`；历史 E2E	Brief 归 Opportunities，social detail 归 Deliverables；invalid journey 链接存在显式错误分支。
+C04	Overview 主 CTA、Radar 信号与证据	Pass	PDF 3–5、18 页；原始截图；`InsightStage.tsx`	首屏价值相较旧版明确；Radar 已优先表达创意判断，证据可展开。
+C05	Opportunities 策略与完整 Brief	Pass	PDF 6、7 页；`StrategyStage.tsx`；原始截图	SERENITY 单商品与分析依据同一场景关联。
+C06	Atelier 产品原图→Hero→视频及 EN/AR 脚本	Pass（素材独立验证，页面运行依历史记录）	PDF 8、9、19、22 页；`CreativeStage.tsx`、`accept-06/07`、实物 MP4；媒体 hash、ffprobe	三素材按逻辑排列，10.08s 视频文件真实存在。它不是 15 秒概念脚本的逐镜头渲染成片。
+C07	Creative Library 浏览和版本	Pass（材料证明）	PDF 20 页；`LibraryPage.tsx`；历史 Library E2E	资源缩略图、Campaign/Language/Type/Origin 筛选及跳转已呈现；另见本报告 P1 上下文复验。
+C08	Deliverables 默认是帖子审阅工作台	Pass	PDF 10、16、17、23–27 页；`DeliverablesPage.tsx`、`SocialStage.tsx`	左文案、右 Instagram 预览；Review/模拟发布优先，下载折叠，邮件次级。1366 时视频主体需滚动才能看到。
+C09	编辑→保存→审阅→模拟发布→详情/刷新/旧快照	Pass（历史日志＋文件快照；本次未重跑）	PDF 11–16 页；`acceptance-observations.json`、`simulated-post-snapshot.json`、`product-social-publish.spec.ts`、历史 E2E	观测与代码/日志相互印证；不以单张截图声称幂等/持久化已独立重跑。
+C10	AR 独立、静默刷新、幂等、Guard、失败/Retry	部分 Pass；失败/Retry = NOT_RUN	PDF 9、24、27–29 页；`NavigationGuard.tsx`、`flow-commands.ts`、social 单测/E2E	双语草稿及保护有代码和历史测试；未有发布失败/Retry 的真实 UI E2E。PDF 第 29 页文件名含 AR，但截图实际 EN 被选中，不能作为 390 阿语正文验证。
+C11	B/C 不借用 SERENITY 素材	Pass（静态与历史 E2E）；视觉覆盖有限	product-workspace-integration.spec.ts、`product-cross-page.spec.ts`、历史 29 E2E；PDF 3、8、20 页	A 专属资产边界已见代码/测试；无 B/C 全流程逐屏视觉证据，不扩大结论。
+C12	导出 ZIP、MP4、receipt、帖子快照	Pass（本次独立核对）	final/ws-a-1.1.0-en-ar-pack.zip、`final/ws-provided-final-preview.mp4`、`ws-a-1.1.0-pack-audit.json`、`simulated-post-snapshot.json`、`provided-serenity-assets-receipt.json`	21 文件、CRC、脚本版本、媒体 SHA 一致；无真实发布记录。
+C13	1440/1366 可读性、EN/AR、390 关键页	Pass（桌面样本）；移动 AR = Not verified	PDF 3–10、21–29 页；原始截图	桌面构图/字号普遍可读、无明显横向溢出；移动仅关键页截图，且标 AR 的 390 样本显示 EN，不能推断全站或 AR 390 通过。
+C14	交互审计 155 行、6 DEPRECATED	Pass（清单数据核对）	docs/INTERACTION_AUDIT_MATRIX.csv	独立统计 155 行、6 条 DEPRECATED；这不是对 155 个按钮逐一现场点击。
+C15	历史证据不被覆盖	Fail（已披露）	WS-BATCH-MAIN-REVIEW.md、`WS-BATCH-DSH.md` 后追加事故章节	FLOW 5 张截图、FLOW 9 件 provided-assets、AS-005 6 件、ip-009 3 ZIP 曾被覆盖/重写；旧原字节未恢复，不能抹除。
+
+
+4. 具体问题与复验
+P0 — 当前未发现已证实的、阻断 SERENITY 单案例演示的问题
+这是在材料与既有实际截图范围内的判断，不是本环境已执行过完整浏览器回归的保证。
+P1 — Campaign 同路径切换后的侧栏上下文同步：静态代码发现风险，需定点复验
+- 位置：`AppShell.tsx`、`LibraryPage.tsx`、`workspace-routes.ts`。
+- 观察：`AppShell` 使用 useEffect(..., [pathname]) 才从 window.location.search 更新左栏 contextQuery。而 LibraryPage 的 Campaign 筛选使用 router.replace('/library?...')，可以只改变 query、不改变 /library pathname。因此用户在 Creative Library 内由 A 切换 B 时，左栏导航 href 可能继续指向 A，与当前筛选 Campaign 不一致。另外如果旧 query 带 scenarioVersion=1.1.0，换到 B/C 时这个版本可能仍被保留。
+- **影响：**违背“所选 Campaign 在各工作区持续一致”的重要产品约束，尤其是用户自主探索 B/C 时。
+- 证据等级：静态源码明确提示的风险；本会话未现场复现，现有 E2E 主要覆盖从带固定 query 的页面跨 pathname 导航，未证明“同 pathname 切换 Campaign 后再点击左栏”。
+- **最小修复：**使 Shell 使用随 URL query 变化而响应的 search params / 路由状态；Library Campaign 变更时清理或重新选择 scenarioVersion、versionId/sessionId；新增一条 Playwright 测试，按 A→B→左栏 Atelier/Deliverables→刷新→返回，断言 campaignId / scenarioVersion / language 不回退或串用。
+- **复验条件：**测试在本地实际浏览器通过，提供测试日志和目标链接/截图。若现场确证无 bug，可直接记录不需修复。
+P2 — 保持视觉品质的低成本优化（非阻断）
+- **首屏信息略冗长：**Overview、Radar 和 Deliverables 在顶部多处重复 Demo · Mock data，并重复解释模拟限制。保留每页一个持续可见的真实性提示，把其余较长说明移到上下文说明，有助于突出业务结论（PDF 3、4、10、23 页）。不可删到让人误认为真实采集/发布。
+- **Deliverables 成果预览可再上移：**1366×768 截图的主要视频位于屏幕下方，用户需要滚动才能直接看到广告画面（PDF 23 页）。在不牺牲安全提示的前提下收紧章节间距/重复副标题即可。
+- **390 响应式证据不足：**PDF 29 页只能显示关键页顶部的 EN 状态，后续需要 390 英文与阿语实际正文/预览各一张，并确认抽屉、操作按钮和下载区域可用。不是要求本轮扩展全站移动端范围。
+已披露限制，不要求本轮返工
+- 失败/Retry UI 未运行，属于 NOT_RUN；单测不能取代 UI 实测。若要宣称该分支已验收，需单独注入一次失败并走 Retry。
+- 真实社媒采集、AI 文案/视频生成、Instagram 真实发布、后端/真实邮件、15 秒完整成片、Poster、AR 母语/品牌审稿、跨浏览器及生产并发均未在本次范围内验证。
+- **多社媒发布不是本次 WS 已证明的能力。**当前仅证明 Instagram 本地模拟帖子；此前产品愿景里的 TikTok、Facebook 等不能写入“已完成”声明。
+- 本轮测试 caption 为验收用文案，不能当作已批准的 Lavish 正式广告文案。
+5. 可结项性与下一步
+1. **WS 里程碑：**建议将“功能及视觉验收有证据支撑”的结论保持为 Accepted with disclosed exceptions（材料复核）；在主控正式结项前跑完 P1 的定点验证，并在交付记录上附历史证据事故。不要以新包当前 hash 宣称旧证据恢复。
+2. **面对客户演示：**可以；重点演示从模拟热点发现、SERENITY 策略、商品原图/主视觉、提供视频到双语 Instagram 社交帖审阅、模拟发布和详情。演示时明确：Mock、Provided video、No real posting；不要用测试 caption 作为正式素材。
+3. **真实上线：**不可以；须另行进入真实 API、权限、安全、运维、内容审核和平台发布合规阶段。
+4. **不建议重新做首页或扩大工程。**补定点上下文复验；其他仅做低风险视觉整理，并且不要扰动已验证的草稿/快照/ZIP 导出机制。
+6. 给 Astra / DSH 的最小复验任务
+只补一个针对性的 E2E：在干净浏览器中打开 /library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en，通过 Campaign 筛选切换到 B（Luxury Gifting），核对当前 URL、左栏 /atelier 和 /deliverables 的 href 是否立即切为 B 的合法场景版本；点击进入，再刷新、返回，确认不会重回 A。若失败，按上述 AppShell query 同步和 Library 版本清理作最小修复；截图并保存到新的 EVIDENCE_ROOT。不得重跑会覆盖历史 accepted 证据目录的旧脚本。
+
+本报告未修改原 ZIP、源码、截图或任何历史验收记

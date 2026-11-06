@@ -1,0 +1,37 @@
+{
+  "name": "maison-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MAISON INTELLIGENCE workspace for Lavish Perfumes — M0 foundation shell only (TASK-001).",
+  "engines": {
+    "node": ">=22.22.2 <23",
+    "npm": ">=11.0.0"
+  },
+  "packageManager": "npm@11.6.2",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @maison/web",
+    "build": "npm run build --workspace @maison/web",
+    "start": "npm run start --workspace @maison/web",
+    "typecheck": "npm run typecheck --workspace @maison/web",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "poc:validate": "node scripts/poc/validate-scenario.mjs",
+    "poc:types": "node scripts/poc/generate-types.mjs",
+    "poc:types:check": "node scripts/poc/generate-types.mjs --check",
+    "check:contract": "node scripts/check-contract.mjs",
+    "backend:dev": "python -m uvicorn app.main:app --app-dir backend --port 8000 --reload",
+    "backend:start": "python -m uvicorn app.main:app --app-dir backend --port 8000",
+    "backend:test": "python -m pytest backend -q"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "fake-indexeddb": "^6.2.4",
+    "json-schema-to-typescript": "16.0.0",
+    "vitest": "5.1.0"
+  }
+}

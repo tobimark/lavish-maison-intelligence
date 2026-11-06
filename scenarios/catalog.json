@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {"scenarioId":"scn-scent-layering","title":"Scent Layering","slug":"scent-layering","scenarioVersion":null,"readiness":"awaiting_content","packagePath":null,"issues":["完整ChatGPT场景包及脚本匹配媒体尚未交接"]},
+    {"scenarioId":"scn-luxury-gifting","title":"Luxury Gifting","slug":"luxury-gifting","scenarioVersion":null,"readiness":"awaiting_content","packagePath":null,"issues":["完整ChatGPT场景包及脚本匹配媒体尚未交接"]},
+    {"scenarioId":"scn-oud-storytelling","title":"Oud Storytelling","slug":"oud-storytelling","scenarioVersion":null,"readiness":"awaiting_content","packagePath":null,"issues":["完整ChatGPT场景包及脚本匹配媒体尚未交接"]}
+  ]
+}

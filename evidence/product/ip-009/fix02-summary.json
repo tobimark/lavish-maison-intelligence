@@ -1,0 +1,20 @@
+{
+  "task": "IP-FIX-02",
+  "checkedAt": "2026-11-05T19:17:53+08:00",
+  "buildId": "ig2YZwK2WtBg11q8cPLVO",
+  "commands": [
+    { "command": "npm run typecheck", "exitCode": 0 },
+    { "command": "npm run build", "exitCode": 0 },
+    { "command": "PLAYWRIGHT_PORT=3100 npm run test:e2e -- product-matrix-dom.spec.ts", "exitCode": 0, "result": "1 passed" },
+    { "command": "PLAYWRIGHT_PORT=3100 npm run test:e2e -- product-navigation/radar/opportunities/atelier/library/deliverables/cross-page", "exitCode": 0, "result": "30 passed" }
+  ],
+  "matrixDomAudit": "evidence/product/ip-009/matrix-dom-audit.json",
+  "baseMatrixRows": 101,
+  "found": 100,
+  "guarded": 1,
+  "notFound": 0,
+  "unexpected": 0,
+  "guardedControl": "DEL-retry",
+  "totalMatrixRows": 119,
+  "pendingAssetRows": 18
+}

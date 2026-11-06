@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-11-05T10:26:48.380Z",
+  "observations": [
+    {
+      "control": "AT-field-title",
+      "changed": true,
+      "dirtyShown": true
+    },
+    {
+      "control": "AT-field-hook",
+      "changed": true,
+      "dirtyShown": true
+    },
+    {
+      "control": "AT-field-cta",
+      "changed": true,
+      "dirtyShown": true
+    },
+    {
+      "control": "AT-field-message",
+      "changed": true,
+      "dirtyShown": true
+    },
+    {
+      "control": "AT-field-caption",
+      "changed": true,
+      "dirtyShown": true
+    },
+    {
+      "control": "AT-field-hashtags",
+      "changed": true,
+      "dirtyShown": true
+    },
+    {
+      "control": "AT-shot-text-1",
+      "before": "A scent begins a story.",
+      "after": "Advanced audit value"
+    },
+    {
+      "control": "AT-shot-start-1",
+      "before": "0",
+      "after": "100"
+    },
+    {
+      "control": "AT-shot-duration-1",
+      "before": "3200",
+      "after": "100"
+    },
+    {
+      "control": "AT-subtitle-start-1",
+      "before": "180",
+      "after": "100"
+    },
+    {
+      "control": "AT-subtitle-end-1",
+      "before": "3060",
+      "after": "100"
+    },
+    {
+      "control": "AT-subtitle-text-1",
+      "before": "A scent begins a story.",
+      "after": "Advanced audit value"
+    },
+    {
+      "control": "AT-campaign",
+      "switching": true,
+      "h1": "Let the Scent Lead"
+    },
+    {
+      "control": "ACT-speed2",
+      "pressed": "true"
+    },
+    {
+      "control": "ACT-speed4",
+      "pressed": "true"
+    },
+    {
+      "control": "ACT-speed1",
+      "pressed": "true"
+    },
+    {
+      "control": "ACT-seek",
+      "value": "4"
+    },
+    {
+      "control": "ACT-campaign",
+      "value": "scn-luxury-gifting.brief.main",
+      "title": true
+    },
+    {
+      "control": "LIB-atelier-drawer",
+      "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&language=en&versionId=scn-luxury-gifting.script.en-v1&tab=copy"
+    },
+    {
+      "control": "LIB-export-drawer",
+      "file": "luxury-gifting-en-preset-content-pack.zip"
+    },
+    {
+      "control": "MAIL-discard",
+      "restored": true
+    },
+    {
+      "control": "MAIL-cancel",
+      "confirmationOpened": true,
+      "attemptsAfterCancel": 0,
+      "confirmationClosed": true
+    },
+    {
+      "control": "DEL-retry",
+      "visibleWithoutError": false
+    }
+  ],
+  "consoleErrors": []
+}

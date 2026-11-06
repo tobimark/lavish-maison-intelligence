@@ -1,0 +1,18 @@
+{
+  "scope": "provided_asset_only",
+  "originalUnchanged": true,
+  "httpUrl": "http://127.0.0.1:3133/final-preview.mp4",
+  "metadata": {
+    "durationSeconds": 10.08,
+    "width": 720,
+    "height": 960,
+    "readyState": 4
+  },
+  "mutedPlayback": {
+    "currentTime": 1.565334,
+    "error": null
+  },
+  "seekSeconds": 0,
+  "result": "playback_pass_seek_not_verified",
+  "note": "Simple HTTP fixture did not support the expected seek; not a product acceptance. Recheck with byte-range-capable fixture."
+}

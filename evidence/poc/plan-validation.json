@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-04T09:40:39.294Z",
+  "scope": "Planning structure, references, task DAG and preserved theme hash only",
+  "passed": 300,
+  "failures": [],
+  "schemaDefinitions": 36,
+  "schemaReferences": 36,
+  "pocTasks": 16,
+  "notRun": [
+    "Standard JSON Schema metaschema/validator execution (POC-001)",
+    "Scenario content/typed reference/media validation: complete packages not supplied",
+    "Mock API/state/replay product tests: implementation pending",
+    "Current POC browser visual acceptance: implementation pending"
+  ]
+}

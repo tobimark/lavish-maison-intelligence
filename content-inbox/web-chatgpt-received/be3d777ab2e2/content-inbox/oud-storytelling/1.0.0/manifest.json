@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "title": "A Story in Oud",
+  "slug": "oud-storytelling",
+  "mode": "mock",
+  "timeZone": "Asia/Dubai",
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "stages": [
+    "discovery",
+    "analysis",
+    "video",
+    "delivery"
+  ],
+  "entryBriefId": "scn-oud-storytelling.brief.main",
+  "entryScriptVersionId": "scn-oud-storytelling.script.en-v1",
+  "entryVideoId": "scn-oud-storytelling.video.en-v1",
+  "entryDeliveryId": "scn-oud-storytelling.plan.en-v1",
+  "authoring": {
+    "producer": "ChatGPT",
+    "authoredAt": "2026-11-05T05:31:20Z",
+    "reasoningSummary": "Offline concept simulation: Oud-led ingredient storytelling without origin claims. Five invented source signals and two illustrative indices support a carefully limited product-grounded four-shot EN/AR script and a planned pre-produced media/never-sent delivery path.",
+    "assumptions": [
+      "An oud-led sensory visual could interest a conceptual GCC fragrance audience.",
+      "Abstract warm gradients and typographic forms can carry sensory associations without invented product photography.",
+      "The campaign is a creative sketch rather than a validated brand history."
+    ],
+    "limitations": [
+      "No real engagement series or current platform signals have been gathered.",
+      "Oud source, extraction process, dates and cultural credentials are not verified.",
+      "Arabic wording and sensory nuance need native/brand review.",
+      "MP4/poster are pending and frame-rate is a target, not observed.",
+      "All platform inputs, plotted indices, execution events and delivery records are fabricated for a labelled Mock POC, not collected, rendered or sent.",
+      "Final video and poster are not present; asset bytes/hash/rights are null/pending so the immutable runnable Schema intentionally fails until customer media handoff.",
+      "30 fps video metadata is a target specification, not a measured file property.",
+      "Simulated delivery records depict counterfactual demo outcomes only; no real email was sent."
+    ],
+    "reviewStatus": "pending"
+  },
+  "files": [
+    {
+      "path": "brand.json",
+      "bytes": 2420,
+      "sha256": "5e43e5de81ce26edcaee1721e173e863edc8cef3b405f7535a1cfb4741d5b4f7"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 7842,
+      "sha256": "b04a4cc8b899e093ec9ed536b6d648638e7d41463ad337c0b07e55a7549f0d8e"
+    },
+    {
+      "path": "analysis.json",
+      "bytes": 3295,
+      "sha256": "bd62f076554554029565a24dc967a037333efc42ce8efcbcdfeb4f816d54684c"
+    },
+    {
+      "path": "script.json",
+      "bytes": 9225,
+      "sha256": "ed6fc02f99cb374ebc36e32607776de6c2625574b4fc7265667552e4130b20f2"
+    },
+    {
+      "path": "video.json",
+      "bytes": 1091,
+      "sha256": "2552f45e58d58856a8f9a1507506d5bdac14cf88d76925146017a3ee87dcf1a9"
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 3110,
+      "sha256": "c6df3cb30330229e170f51e552c948c0d54a8a3d15ac92bb711436f2ba219fa6"
+    },
+    {
+      "path": "events.json",
+      "bytes": 16694,
+      "sha256": "aa98cf5e8d41466629056fd9e0875698aeb555a84d1da10af96353e4c2727f3d"
+    },
+    {
+      "path": "assets.json",
+      "bytes": 5584,
+      "sha256": "0e682327addb0b0b977b5c7eba6bb1e9bcc212d8150ec55b8721c965eee1120b"
+    },
+    {
+      "path": "expected.json",
+      "bytes": 6290,
+      "sha256": "664805caf362af2cdeedfa73cc2f5b6ce2c66ce11563a9bf4d7e27e35db3c77c"
+    }
+  ]
+}

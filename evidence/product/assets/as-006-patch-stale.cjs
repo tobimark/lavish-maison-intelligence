@@ -1,0 +1,10 @@
+const fs=require('fs');
+let p='apps/web/tests/product-opportunities.spec.ts';
+let s=fs.readFileSync(p,'utf8');
+s=s.replace("title: 'Your Scent, Your Expression' },","title: 'SERENITY — A Story in Layers' },");
+fs.writeFileSync(p,s);
+p='apps/web/tests/product-cross-page.spec.ts';
+s=fs.readFileSync(p,'utf8');
+s=s.replace("toBe('Your Scent, Your Expression')","toBe('SERENITY — A Story in Layers')");
+fs.writeFileSync(p,s);
+console.log('patched constants');

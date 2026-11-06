@@ -1,0 +1,1303 @@
+{
+  "schemaVersion": 1,
+  "dispatched": true,
+  "executionEndpoint": "not_configured",
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "milestone": "M0",
+      "title": "建立最小工程与检查入口",
+      "dependencies": [],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-001.md",
+      "acceptedScope": "Frontend foundation only",
+      "reviewReport": "docs/reviews/M0.md"
+    },
+    {
+      "id": "TASK-002",
+      "milestone": "M0",
+      "title": "实现公共Schema与OpenAPI契约验证",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-002.md",
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-003",
+      "milestone": "M0",
+      "title": "建立核心关系数据库迁移",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-003.md",
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-004",
+      "milestone": "M1",
+      "title": "登记Demo实际使用的Lavish品牌与商品素材",
+      "dependencies": [],
+      "status": "ready",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-004.md"
+    },
+    {
+      "id": "TASK-005",
+      "milestone": "M1",
+      "title": "建立前端统一演示类型与本地场景数据",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-005.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-006",
+      "milestone": "M1",
+      "title": "封装主题Tokens与双语字体",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-006.md",
+      "reviewReport": "docs/reviews/TASK-006-ACCEPTANCE.md",
+      "fixTask": "tasks/fixes/FIX-TASK-006-01.md",
+      "acceptedAt": "2026-11-04",
+      "acceptedScope": "Theme, local fonts, design-lab and FIX-TASK-006-01",
+      "fixStatus": "closed"
+    },
+    {
+      "id": "TASK-007",
+      "milestone": "M1",
+      "title": "实现统一壳体导航与响应布局",
+      "dependencies": [
+        "TASK-006"
+      ],
+      "status": "review",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-007.md",
+      "releaseNote": "Submitted; main browser/code acceptance pending. Existing shell can be reused only after review.",
+      "releasedAt": "2026-11-04",
+      "submissionReport": "docs/reviews/TASK-007-DSH.md"
+    },
+    {
+      "id": "TASK-008",
+      "milestone": "M1",
+      "title": "实现控件与页面状态组件",
+      "dependencies": [
+        "TASK-006"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-008.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-009",
+      "milestone": "M1",
+      "title": "实现共享Dialog与Drawer交互原语",
+      "dependencies": [
+        "TASK-008"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-009.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-010",
+      "milestone": "M1",
+      "title": "实现Home有限高保真场景入口",
+      "dependencies": [
+        "TASK-007",
+        "TASK-008"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-010.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-011",
+      "milestone": "M1",
+      "title": "实现Radar核心视觉原型并先行审查",
+      "dependencies": [
+        "TASK-005",
+        "TASK-009",
+        "TASK-010"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-011.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-012",
+      "milestone": "M1",
+      "title": "实现Atelier核心画布与Brief原型",
+      "dependencies": [
+        "TASK-011"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-012.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-013",
+      "milestone": "M1",
+      "title": "打通三页本地原型与刷新恢复",
+      "dependencies": [
+        "TASK-012"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": "tasks/TASK-013.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-014",
+      "milestone": "M1",
+      "title": "执行核心原型视觉门禁与修复闭环",
+      "dependencies": [
+        "TASK-004",
+        "TASK-013"
+      ],
+      "status": "deferred",
+      "owner": "主控审查；DeepSeek执行取证与修复",
+      "spec": "tasks/TASK-014.md",
+      "scopeNote": "Superseded by POC-* scenario-driven contracts; do not generate scenario content or execute old business-page scope."
+    },
+    {
+      "id": "TASK-015",
+      "milestone": "M2",
+      "title": "后台任务队列、租约与运行生命周期",
+      "dependencies": [
+        "TASK-003",
+        "TASK-014"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-016",
+      "milestone": "M2",
+      "title": "Autonomous Demo Feed持久调度",
+      "dependencies": [
+        "TASK-015"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-017",
+      "milestone": "M2",
+      "title": "纯事件投影与快照重建",
+      "dependencies": [
+        "TASK-015"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-018",
+      "milestone": "M2",
+      "title": "Replay控制、恢复与SSE补读",
+      "dependencies": [
+        "TASK-017"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-019",
+      "milestone": "M2",
+      "title": "确定性、隔离与关闭浏览器测试",
+      "dependencies": [
+        "TASK-016",
+        "TASK-018"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-020",
+      "milestone": "M3",
+      "title": "DEMO/IMPORTED Source Adapter与证据接入",
+      "dependencies": [
+        "TASK-019"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-021",
+      "milestone": "M3",
+      "title": "标准化去重聚类与统一机会评分",
+      "dependencies": [
+        "TASK-020"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-022",
+      "milestone": "M3",
+      "title": "机会详情与幂等Campaign交接",
+      "dependencies": [
+        "TASK-021"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-023",
+      "milestone": "M4",
+      "title": "Brief版本与Concept工作流",
+      "dependencies": [
+        "TASK-022"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-024",
+      "milestone": "M4",
+      "title": "双语文案Provider与离线Preset",
+      "dependencies": [
+        "TASK-023"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-025",
+      "milestone": "M4",
+      "title": "品牌模板图像与实际文件导出",
+      "dependencies": [
+        "TASK-024"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-026",
+      "milestone": "M4",
+      "title": "素材版本与Copilot目标差异应用",
+      "dependencies": [
+        "TASK-025"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-027",
+      "milestone": "M5",
+      "title": "四镜头Storyboard与双语字幕编辑",
+      "dependencies": [
+        "TASK-026"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-028",
+      "milestone": "M5",
+      "title": "真实Render Worker与MP4验证",
+      "dependencies": [
+        "TASK-027"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-029",
+      "milestone": "M5",
+      "title": "版本绑定审批状态机",
+      "dependencies": [
+        "TASK-028"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-030",
+      "milestone": "M5",
+      "title": "周月日历与模拟发布调度",
+      "dependencies": [
+        "TASK-029"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-031",
+      "milestone": "M5",
+      "title": "统一反馈指标与优化建议",
+      "dependencies": [
+        "TASK-030"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-032",
+      "milestone": "M6",
+      "title": "全链路、reset隔离与离线回归",
+      "dependencies": [
+        "TASK-031"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-033",
+      "milestone": "M6",
+      "title": "全页面视觉审查与缺陷修复",
+      "dependencies": [
+        "TASK-032"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-034",
+      "milestone": "M6",
+      "title": "Compose部署与恢复演练",
+      "dependencies": [
+        "TASK-033"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "TASK-035",
+      "milestone": "M6",
+      "title": "商业演示脚本与重复验收",
+      "dependencies": [
+        "TASK-034"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017",
+      "spec": null,
+      "scopeNote": "Historical full-system task; outside frontend demo scope. Future frontend detail tasks are issued after M1 review."
+    },
+    {
+      "id": "POC-001",
+      "milestone": "P0",
+      "title": "场景校验器与公共类型",
+      "dependencies": [],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-001.md",
+      "scope": "fully_mocked_poc",
+      "submissionReport": "docs/reviews/POC-001-DSH.md",
+      "reviewReport": "docs/reviews/POC-001-ACCEPTANCE.md",
+      "fixTask": "tasks/poc/fixes/FIX-POC-001-01.md",
+      "reviewedAt": "2026-11-04",
+      "acceptedAt": "2026-11-04",
+      "fixStatus": "closed",
+      "acceptedScope": "L1/L2/L4 and static L3 validation, type generation; actual L3 projection and L5 media excluded per task"
+    },
+    {
+      "id": "POC-002",
+      "milestone": "P0",
+      "title": "实际媒体校验工具",
+      "dependencies": [
+        "POC-001"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-002.md",
+      "scope": "fully_mocked_poc",
+      "releasedAt": "2026-11-04",
+      "releaseNote": "POC-001 accepted; media validation tooling only; not dispatched",
+      "submissionReport": "docs/reviews/POC-002-DSH.md",
+      "reviewReport": "docs/reviews/POC-002-ACCEPTANCE.md",
+      "fixTask": "tasks/poc/fixes/FIX-POC-002-02.md",
+      "reviewedAt": "2026-11-04",
+      "latestFixSubmission": "docs/reviews/FIX-POC-002-01-DSH.md",
+      "fixStatus": "closed",
+      "acceptedAt": "2026-11-04",
+      "closedFixes": [
+        "FIX-POC-002-01",
+        "FIX-POC-002-02"
+      ],
+      "acceptedScope": "Media verifier and technical regression tests; actual customer L5 and installed ffprobe execution remain NOT_RUN"
+    },
+    {
+      "id": "POC-003",
+      "milestone": "P0",
+      "title": "四阶段纯状态机",
+      "dependencies": [
+        "POC-001"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-003.md",
+      "scope": "fully_mocked_poc",
+      "releasedAt": "2026-11-04",
+      "releaseNote": "POC-002 accepted; pure domain state machine only; not dispatched",
+      "submissionReport": "docs/reviews/POC-003-DSH.md",
+      "reviewReport": "docs/reviews/POC-003-ACCEPTANCE.md",
+      "fixTask": "tasks/poc/fixes/FIX-POC-003-01.md",
+      "reviewedAt": "2026-11-04",
+      "acceptedAt": "2026-11-04",
+      "fixStatus": "closed",
+      "latestFixSubmission": "docs/reviews/FIX-POC-003-01-DSH.md",
+      "acceptedScope": "Pure domain state machine, stage attempts, guards, script versions, scheduled delivery settlement; no persistence/clock/UI acceptance"
+    },
+    {
+      "id": "POC-004",
+      "milestone": "P0",
+      "title": "统一Mock API与浏览器持久化",
+      "dependencies": [
+        "POC-003"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-004.md",
+      "scope": "fully_mocked_poc",
+      "releasedAt": "2026-11-04",
+      "releaseNote": "POC-003 accepted; use accepted domain reducers, not separate state transitions; not dispatched",
+      "submissionReport": "docs/reviews/POC-004-DSH.md",
+      "reviewReport": "docs/reviews/POC-004-ACCEPTANCE.md",
+      "fixTask": "tasks/poc/fixes/FIX-POC-004-01.md",
+      "reviewedAt": "2026-11-04",
+      "acceptedAt": "2026-11-04",
+      "fixStatus": "closed",
+      "latestFixSubmission": "docs/reviews/FIX-POC-004-01-DSH.md",
+      "acceptedScope": "Demo Mock API and storage, core tests and real Chromium smoke; no product visual acceptance"
+    },
+    {
+      "id": "POC-005",
+      "milestone": "P0",
+      "title": "确定性回放与操作隔离",
+      "dependencies": [
+        "POC-003",
+        "POC-004"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-005.md",
+      "scope": "fully_mocked_poc",
+      "releasedAt": "2026-11-04",
+      "releaseNote": "Demo fast delivery; may submit 005+007 together, not dispatched",
+      "acceptedAt": "2026-11-04",
+      "reviewReport": "docs/reviews/POC-005-007-ACCEPTANCE.md",
+      "acceptedScope": "Replay/checkpoint foundation; customer workflow integration pending"
+    },
+    {
+      "id": "POC-006",
+      "milestone": "P0",
+      "title": "接收并验证Scent Layering内容包",
+      "dependencies": [
+        "POC-001",
+        "POC-002",
+        "POC-005"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-006.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "Full-video intake/workbench deferred by user on 2026-11-05; non-video scope released under NV-001/002/003, no MP4 wait."
+    },
+    {
+      "id": "POC-007",
+      "milestone": "M1",
+      "title": "四步共享交互组件",
+      "dependencies": [
+        "POC-001"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-007.md",
+      "scope": "fully_mocked_poc",
+      "releasedAt": "2026-11-04",
+      "releaseNote": "Demo fast delivery; may submit 005+007 together, not dispatched",
+      "acceptedAt": "2026-11-04",
+      "reviewReport": "docs/reviews/POC-005-007-ACCEPTANCE.md",
+      "acceptedScope": "Shared components with actual browser interaction and screenshot review; not M1 full workflow acceptance"
+    },
+    {
+      "id": "POC-008",
+      "milestone": "M1",
+      "title": "A场景四步有限视觉原型",
+      "dependencies": [
+        "POC-004",
+        "POC-005",
+        "POC-007"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-008.md",
+      "scope": "fully_mocked_poc",
+      "contentDependency": "POC-006 for populated A workflow; layout/awaiting-content UI may start now",
+      "releasedAt": "2026-11-04",
+      "releaseNote": "Follow DSH_HANDOFF_DEMO_FAST_02; no fake customer content",
+      "acceptedAt": "2026-11-05",
+      "submissionReport": "docs/reviews/POC-008-DSH.md",
+      "reviewReport": "docs/reviews/POC-008-ACCEPTANCE.md",
+      "acceptedScope": "Homepage and empty four-step scaffold only; no scenario A populated workflow or full M1 visual acceptance",
+      "remainingScope": "Approved scenario package loader, actual session/media/replay integration and browser verification after POC-006"
+    },
+    {
+      "id": "POC-009",
+      "milestone": "M1",
+      "title": "M1实际视觉门禁",
+      "dependencies": [
+        "POC-008"
+      ],
+      "status": "planned",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-009.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "For current content-only delivery follow NV batch and FAST_04; original video-dependent order does not block implementation. Original full scope not accepted."
+    },
+    {
+      "id": "POC-010",
+      "milestone": "P1",
+      "title": "分析与脚本版本编辑交互",
+      "dependencies": [
+        "POC-009"
+      ],
+      "status": "planned",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-010.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "For current content-only delivery follow NV batch and FAST_04; original video-dependent order does not block implementation. Original full scope not accepted."
+    },
+    {
+      "id": "POC-011",
+      "milestone": "P1",
+      "title": "脚本匹配的预置视频工作台",
+      "dependencies": [
+        "POC-010"
+      ],
+      "status": "deferred",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-011.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "Full-video intake/workbench deferred by user on 2026-11-05; non-video scope released under NV-001/002/003, no MP4 wait."
+    },
+    {
+      "id": "POC-012",
+      "milestone": "P1",
+      "title": "模拟交付确认与尝试记录",
+      "dependencies": [
+        "POC-011"
+      ],
+      "status": "planned",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-012.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "For current content-only delivery follow NV batch and FAST_04; original video-dependent order does not block implementation. Original full scope not accepted."
+    },
+    {
+      "id": "POC-013",
+      "milestone": "P1",
+      "title": "真实交付文件导出",
+      "dependencies": [
+        "POC-012"
+      ],
+      "status": "planned",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-013.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "For current content-only delivery follow NV batch and FAST_04; original video-dependent order does not block implementation. Original full scope not accepted."
+    },
+    {
+      "id": "POC-014",
+      "milestone": "P1",
+      "title": "会话历史与可重复演示入口",
+      "dependencies": [
+        "POC-013"
+      ],
+      "status": "planned",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-014.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "For current content-only delivery follow NV batch and FAST_04; original video-dependent order does not block implementation. Original full scope not accepted."
+    },
+    {
+      "id": "POC-015",
+      "milestone": "P2",
+      "title": "接收B和C完整场景",
+      "dependencies": [
+        "POC-006",
+        "POC-009"
+      ],
+      "status": "planned",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-015.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "For current content-only delivery follow NV batch and FAST_04; original video-dependent order does not block implementation. Original full scope not accepted."
+    },
+    {
+      "id": "POC-016",
+      "milestone": "P2",
+      "title": "全链路及最终视觉演示验收",
+      "dependencies": [
+        "POC-014",
+        "POC-015"
+      ],
+      "status": "planned",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/POC-016.md",
+      "scope": "fully_mocked_poc",
+      "scopeNote": "For current content-only delivery follow NV batch and FAST_04; original video-dependent order does not block implementation. Original full scope not accepted."
+    },
+    {
+      "id": "NV-001",
+      "title": "接收三场景非视频内容并连接会话",
+      "milestone": "M1",
+      "dependencies": [
+        "POC-004",
+        "POC-005",
+        "POC-008"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/DSH_HANDOFF_DEMO_FAST_04.md",
+      "scope": "content_only_demo",
+      "batch": "NV-001/002/003 may execute consecutively; one main review",
+      "releasedAt": "2026-11-05",
+      "submissionReport": "docs/reviews/NV-BATCH-DSH.md",
+      "reviewReport": "docs/reviews/FIX-NV-BATCH-01-ACCEPTANCE.md",
+      "reviewDecision": "accepted",
+      "reviewedAt": "2026-11-05",
+      "fixTask": "tasks/poc/fixes/FIX-NV-BATCH-01.md",
+      "acceptedAt": "2026-11-05",
+      "acceptedScope": "Content-only demo and focused fix; video deferred; no customer final/native AR acceptance claimed",
+      "fixStatus": "closed"
+    },
+    {
+      "id": "NV-002",
+      "title": "首页/情报/脚本/分镜可操作前端",
+      "milestone": "M1",
+      "dependencies": [
+        "NV-001"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/DSH_HANDOFF_DEMO_FAST_04.md",
+      "scope": "content_only_demo",
+      "batch": "NV-001/002/003 may execute consecutively; one main review",
+      "releasedAt": "2026-11-05",
+      "submissionReport": "docs/reviews/NV-BATCH-DSH.md",
+      "reviewReport": "docs/reviews/FIX-NV-BATCH-01-ACCEPTANCE.md",
+      "reviewDecision": "accepted",
+      "reviewedAt": "2026-11-05",
+      "fixTask": "tasks/poc/fixes/FIX-NV-BATCH-01.md",
+      "acceptedAt": "2026-11-05",
+      "acceptedScope": "Content-only demo and focused fix; video deferred; no customer final/native AR acceptance claimed",
+      "fixStatus": "closed"
+    },
+    {
+      "id": "NV-003",
+      "title": "文案包模拟交付/下载/历史",
+      "milestone": "M1",
+      "dependencies": [
+        "NV-001",
+        "NV-002"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/DSH_HANDOFF_DEMO_FAST_04.md",
+      "scope": "content_only_demo",
+      "batch": "NV-001/002/003 may execute consecutively; one main review",
+      "releasedAt": "2026-11-05",
+      "submissionReport": "docs/reviews/NV-BATCH-DSH.md",
+      "reviewReport": "docs/reviews/FIX-NV-BATCH-01-ACCEPTANCE.md",
+      "reviewDecision": "accepted",
+      "reviewedAt": "2026-11-05",
+      "fixTask": "tasks/poc/fixes/FIX-NV-BATCH-01.md",
+      "acceptedAt": "2026-11-05",
+      "acceptedScope": "Content-only demo and focused fix; video deferred; no customer final/native AR acceptance claimed",
+      "fixStatus": "closed"
+    },
+    {
+      "id": "FIX-NV-BATCH-01",
+      "title": "修复交付快照与脚本丢弃一致性",
+      "milestone": "M1",
+      "dependencies": [
+        "NV-001",
+        "NV-002",
+        "NV-003"
+      ],
+      "status": "accepted",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "spec": "tasks/poc/fixes/FIX-NV-BATCH-01.md",
+      "scope": "content_only_demo_fix",
+      "dependencyNote": "Repairs submitted batch; no prior acceptance or video required",
+      "releasedAt": "2026-11-05",
+      "acceptedAt": "2026-11-05",
+      "reviewedAt": "2026-11-05",
+      "reviewDecision": "accepted",
+      "reviewReport": "docs/reviews/FIX-NV-BATCH-01-ACCEPTANCE.md",
+      "acceptedScope": "Content-only demo and focused fix; video deferred; no customer final/native AR acceptance claimed",
+      "submissionReport": "docs/reviews/FIX-NV-BATCH-01-DSH.md",
+      "fixStatus": "closed"
+    },
+    {
+      "id": "IP-001",
+      "title": "统一只读产品查询与业务投影视图",
+      "dependencies": [],
+      "spec": "tasks/interactive/IP-001.md",
+      "status": "review",
+      "milestone": "IP-M1",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-001-DSH.md"
+    },
+    {
+      "id": "IP-002",
+      "title": "显式编辑上下文与独立内容包导出",
+      "dependencies": [
+        "IP-001"
+      ],
+      "spec": "tasks/interactive/IP-002.md",
+      "status": "review",
+      "milestone": "IP-M1",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-002-DSH.md"
+    },
+    {
+      "id": "IP-003",
+      "title": "六主路由、Overview与统一导航接线",
+      "dependencies": [
+        "IP-001",
+        "IP-002"
+      ],
+      "spec": "tasks/interactive/IP-003.md",
+      "status": "review",
+      "milestone": "IP-M2/M3",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-003-DSH.md"
+    },
+    {
+      "id": "IP-004",
+      "title": "Radar自由筛选、热点证据与Agent活动",
+      "dependencies": [
+        "IP-001",
+        "IP-002",
+        "IP-003"
+      ],
+      "spec": "tasks/interactive/IP-004.md",
+      "status": "review",
+      "milestone": "IP-M2/M3",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-004-DSH.md"
+    },
+    {
+      "id": "IP-005",
+      "title": "三营销机会与可解释策略详情",
+      "dependencies": [
+        "IP-001",
+        "IP-003"
+      ],
+      "spec": "tasks/interactive/IP-005.md",
+      "status": "review",
+      "milestone": "IP-M2/M3",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-005-DSH.md"
+    },
+    {
+      "id": "IP-006",
+      "title": "Atelier结果预览与按需编辑版本",
+      "dependencies": [
+        "IP-001",
+        "IP-002",
+        "IP-003"
+      ],
+      "spec": "tasks/interactive/IP-006.md",
+      "status": "review",
+      "milestone": "IP-M2/M3",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-006-DSH.md"
+    },
+    {
+      "id": "IP-007",
+      "title": "Creative Library统一内容浏览与版本定位",
+      "dependencies": [
+        "IP-001",
+        "IP-002",
+        "IP-003",
+        "IP-006"
+      ],
+      "spec": "tasks/interactive/IP-007.md",
+      "status": "review",
+      "milestone": "IP-M2/M3",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-007-DSH.md"
+    },
+    {
+      "id": "IP-008",
+      "title": "Deliverables真实导出与次级模拟交付",
+      "dependencies": [
+        "IP-001",
+        "IP-002",
+        "IP-003",
+        "IP-006"
+      ],
+      "spec": "tasks/interactive/IP-008.md",
+      "status": "review",
+      "milestone": "IP-M2/M3",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-008-DSH.md"
+    },
+    {
+      "id": "IP-009",
+      "title": "全站点击矩阵、跨页一致性与产品视觉验收",
+      "dependencies": [
+        "IP-003",
+        "IP-004",
+        "IP-005",
+        "IP-006",
+        "IP-007",
+        "IP-008"
+      ],
+      "spec": "tasks/interactive/IP-009.md",
+      "status": "review",
+      "milestone": "IP-M4",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_product",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Implementation complete; main functional verification passed; no standalone acceptance; carried into FAST_06 combined acceptance",
+      "reviewReport": "docs/reviews/IP-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/IP-009-DSH.md"
+    },
+    {
+      "id": "AS-001",
+      "title": "提供素材发布与真实文件验证",
+      "status": "accepted",
+      "dependencies": [],
+      "spec": "tasks/assets/AS-001.md",
+      "milestone": "IP-Assets",
+      "owner": "DeepSeek 4.1 Flash 1017; sole implementation session that delivered AS-004 home correction; main controller reviews only",
+      "scope": "interactive_mock_with_provided_assets",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "FAST_06 AS closed; no remaining AS content/publication/asset-export blocker",
+      "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md",
+      "submissionReport": "docs/reviews/AS-001-DSH.md",
+      "acceptedAt": "2026-11-06",
+      "acceptedScope": "Internal Mock Demo SERENITY 1.1.0 asset integration, bound workspaces and real export; excludes current FLOW homepage/journey/social, 15s core film/poster and native/brand AR approval"
+    },
+    {
+      "id": "AS-002",
+      "title": "资产映射Source与Mock API扩展",
+      "status": "accepted",
+      "dependencies": [
+        "AS-001",
+        "IP-001"
+      ],
+      "spec": "tasks/assets/AS-002.md",
+      "milestone": "IP-Assets",
+      "owner": "DeepSeek 4.1 Flash 1017; sole implementation session that delivered AS-004 home correction; main controller reviews only",
+      "scope": "interactive_mock_with_provided_assets",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "FAST_06 AS closed; no remaining AS content/publication/asset-export blocker",
+      "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md",
+      "submissionReport": "docs/reviews/AS-002-DSH.md",
+      "acceptedAt": "2026-11-06",
+      "acceptedScope": "Internal Mock Demo SERENITY 1.1.0 asset integration, bound workspaces and real export; excludes current FLOW homepage/journey/social, 15s core film/poster and native/brand AR approval"
+    },
+    {
+      "id": "AS-003",
+      "title": "接收SERENITY A 1.1.0内容并绑定",
+      "status": "accepted",
+      "dependencies": [
+        "AS-001"
+      ],
+      "spec": "tasks/assets/AS-003.md",
+      "milestone": "IP-Assets",
+      "owner": "DeepSeek 4.1 Flash 1017; main controller review",
+      "scope": "interactive_mock_with_provided_assets",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "FAST_06 AS closed; no remaining AS content/publication/asset-export blocker",
+      "contentReviewReport": "docs/reviews/SERENITY-A-1.1.0-CONTENT-INTAKE.md",
+      "approvedInput": "content-inbox/web-chatgpt-prepared/a8d1ef5f54da/scent-layering/1.1.0",
+      "approvedPackageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md",
+      "acceptedScope": "Internal Mock Demo SERENITY 1.1.0 asset integration, bound workspaces and real export; excludes current FLOW homepage/journey/social, 15s core film/poster and native/brand AR approval",
+      "submissionReport": "docs/reviews/AS-003-DSH.md"
+    },
+    {
+      "id": "AS-004",
+      "title": "成果主视觉、Brief与播放器组件接线",
+      "status": "accepted",
+      "dependencies": [
+        "AS-002",
+        "IP-003",
+        "IP-005",
+        "IP-006",
+        "IP-007"
+      ],
+      "spec": "tasks/assets/AS-004.md",
+      "milestone": "IP-Assets",
+      "owner": "DeepSeek 4.1 Flash 1017; sole implementation session that delivered AS-004 home correction; main controller reviews only",
+      "scope": "interactive_mock_with_provided_assets",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "FAST_06 AS closed; no remaining AS content/publication/asset-export blocker",
+      "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md",
+      "submissionReport": "docs/reviews/AS-004-DSH.md",
+      "homeCorrectionReview": "docs/reviews/AS-004-HOME-CORRECTION-MAIN-REVIEW.md",
+      "acceptedAt": "2026-11-06",
+      "acceptedScope": "Internal Mock Demo SERENITY 1.1.0 asset integration, bound workspaces and real export; excludes current FLOW homepage/journey/social, 15s core film/poster and native/brand AR approval"
+    },
+    {
+      "id": "AS-005",
+      "title": "双语成果包与原视频下载",
+      "status": "accepted",
+      "dependencies": [
+        "AS-002",
+        "IP-002",
+        "IP-008"
+      ],
+      "spec": "tasks/assets/AS-005.md",
+      "milestone": "IP-Assets",
+      "owner": "DeepSeek 4.1 Flash 1017; sole implementation session that delivered AS-004 home correction; main controller reviews only",
+      "scope": "interactive_mock_with_provided_assets",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "FAST_06 AS closed; no remaining AS content/publication/asset-export blocker",
+      "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md",
+      "acceptedAt": "2026-11-06",
+      "acceptedScope": "Internal Mock Demo SERENITY 1.1.0 asset integration, bound workspaces and real export; excludes current FLOW homepage/journey/social, 15s core film/poster and native/brand AR approval",
+      "submissionReport": "docs/reviews/AS-005-DSH.md"
+    },
+    {
+      "id": "AS-006",
+      "title": "资产版完整点击与产品视觉验收",
+      "status": "accepted",
+      "dependencies": [
+        "AS-003",
+        "AS-004",
+        "AS-005",
+        "IP-009"
+      ],
+      "spec": "tasks/assets/AS-006.md",
+      "milestone": "IP-Assets",
+      "owner": "DeepSeek 4.1 Flash 1017; sole implementation session that delivered AS-004 home correction; main controller reviews only",
+      "scope": "interactive_mock_with_provided_assets",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "FAST_06 AS closed; no remaining AS content/publication/asset-export blocker",
+      "reviewReport": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md",
+      "acceptedAt": "2026-11-06",
+      "acceptedScope": "Internal Mock Demo SERENITY 1.1.0 asset integration, bound workspaces and real export; excludes current FLOW homepage/journey/social, 15s core film/poster and native/brand AR approval",
+      "submissionReport": "docs/reviews/AS-006-DSH.md"
+    },
+    {
+      "id": "FLOW-001",
+      "title": "统一案例投影与本地社媒状态",
+      "dependencies": [
+        "AS-002"
+      ],
+      "status": "accepted",
+      "spec": "tasks/flow/FLOW-001.md",
+      "milestone": "Interactive POC connected flow",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "connected_mock_marketing_flow",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Normal golden path independently verified; no blocking fix; optional UX simplification recorded",
+      "submissionReport": "docs/reviews/FLOW-001-DSH.md",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/FLOW-BATCH-ACCEPTANCE.md",
+      "acceptedScope": "Internal Mock POC SERENITY connected journey, current homepage, saved EN/AR social draft and simulated-post workflow; excludes 15s film/poster, native/brand AR approval and untested UI failure injection"
+    },
+    {
+      "id": "FLOW-002",
+      "title": "首页到四段营销Journey",
+      "dependencies": [
+        "FLOW-001"
+      ],
+      "status": "accepted",
+      "spec": "tasks/flow/FLOW-002.md",
+      "milestone": "Interactive POC connected flow",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "connected_mock_marketing_flow",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Normal golden path independently verified; no blocking fix; optional UX simplification recorded",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/FLOW-BATCH-ACCEPTANCE.md",
+      "submissionReport": "docs/reviews/FLOW-002-DSH.md",
+      "acceptedScope": "Internal Mock POC SERENITY connected journey, current homepage, saved EN/AR social draft and simulated-post workflow; excludes 15s film/poster, native/brand AR approval and untested UI failure injection"
+    },
+    {
+      "id": "FLOW-003",
+      "title": "视频和文案的社媒帖子与模拟发布",
+      "dependencies": [
+        "FLOW-001",
+        "FLOW-002"
+      ],
+      "status": "accepted",
+      "spec": "tasks/flow/FLOW-003.md",
+      "milestone": "Interactive POC connected flow",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "connected_mock_marketing_flow",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Normal golden path independently verified; no blocking fix; optional UX simplification recorded",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/FLOW-BATCH-ACCEPTANCE.md",
+      "submissionReport": "docs/reviews/FLOW-003-DSH.md",
+      "acceptedScope": "Internal Mock POC SERENITY connected journey, current homepage, saved EN/AR social draft and simulated-post workflow; excludes 15s film/poster, native/brand AR approval and untested UI failure injection"
+    },
+    {
+      "id": "FLOW-004",
+      "title": "一次完整营销路径与视觉验收",
+      "dependencies": [
+        "FLOW-001",
+        "FLOW-002",
+        "FLOW-003",
+        "AS-003",
+        "AS-005"
+      ],
+      "status": "accepted",
+      "spec": "tasks/flow/FLOW-004.md",
+      "milestone": "Interactive POC connected flow",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "connected_mock_marketing_flow",
+      "releasedAt": "2026-11-05",
+      "scopeNote": "Normal golden path independently verified; no blocking fix; optional UX simplification recorded",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/FLOW-BATCH-ACCEPTANCE.md",
+      "submissionReport": "docs/reviews/FLOW-004-DSH.md",
+      "acceptedScope": "Internal Mock POC SERENITY connected journey, current homepage, saved EN/AR social draft and simulated-post workflow; excludes 15s film/poster, native/brand AR approval and untested UI failure injection"
+    },
+    {
+      "id": "WS-001",
+      "title": "统一案例上下文、路由兼容与左栏高亮",
+      "dependencies": [
+        "FLOW-001",
+        "FLOW-004"
+      ],
+      "status": "accepted",
+      "spec": "tasks/DSH_HANDOFF_SIX_WORKSPACES.md",
+      "taskSection": "WS-001",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "six_workspace_integration",
+      "releasedAt": "2026-11-06",
+      "scopeNote": "Sync existing main WS acceptance; WS-FIX-001 P1 closed separately; P2 and historical evidence incident retain disclosed status",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/WS-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/WS-001-DSH.md"
+    },
+    {
+      "id": "WS-002",
+      "title": "首页与前三业务工作区整合",
+      "dependencies": [
+        "WS-001"
+      ],
+      "status": "accepted",
+      "spec": "tasks/DSH_HANDOFF_SIX_WORKSPACES.md",
+      "taskSection": "WS-002",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "six_workspace_integration",
+      "releasedAt": "2026-11-06",
+      "scopeNote": "Sync existing main WS acceptance; WS-FIX-001 P1 closed separately; P2 and historical evidence incident retain disclosed status",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/WS-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/WS-002-DSH.md"
+    },
+    {
+      "id": "WS-003",
+      "title": "Deliverables成果审阅与社媒模拟发布",
+      "dependencies": [
+        "WS-001"
+      ],
+      "status": "accepted",
+      "spec": "tasks/DSH_HANDOFF_SIX_WORKSPACES.md",
+      "taskSection": "WS-003",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "six_workspace_integration",
+      "releasedAt": "2026-11-06",
+      "scopeNote": "Sync existing main WS acceptance; WS-FIX-001 P1 closed separately; P2 and historical evidence incident retain disclosed status",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/WS-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/WS-003-DSH.md"
+    },
+    {
+      "id": "WS-004",
+      "title": "六工作区集中浏览器与视觉验收",
+      "dependencies": [
+        "WS-002",
+        "WS-003"
+      ],
+      "status": "accepted",
+      "spec": "tasks/DSH_HANDOFF_SIX_WORKSPACES.md",
+      "taskSection": "WS-004",
+      "owner": "Existing sole DSH implementation session; main controller reviews only",
+      "scope": "six_workspace_integration",
+      "releasedAt": "2026-11-06",
+      "scopeNote": "Sync existing main WS acceptance; WS-FIX-001 P1 closed separately; P2 and historical evidence incident retain disclosed status",
+      "acceptedAt": "2026-11-06",
+      "reviewReport": "docs/reviews/WS-BATCH-MAIN-REVIEW.md",
+      "submissionReport": "docs/reviews/WS-004-DSH.md"
+    },
+    {
+      "id": "WS-FIX-001",
+      "title": "Library同路径Campaign切换的左栏上下文同步",
+      "dependencies": [
+        "WS-001",
+        "WS-004"
+      ],
+      "owner": "Existing sole DSH implementation session; main controller review",
+      "spec": "docs/reviews/WS-FIX-001-DSH.md",
+      "status": "accepted",
+      "acceptedAt": "2026-11-06",
+      "fixStatus": "closed",
+      "reviewReport": "docs/reviews/WS-FIX-001-ACCEPTANCE.md",
+      "submissionReport": "docs/reviews/WS-FIX-001-DSH.md",
+      "acceptedScope": "P1 only: reactive sidebar query context and Library campaign-version cleanup; excludes P2 layout and other deferred checks",
+      "evidenceIsolation": "not_met: DSH 17:05 regression overwrote 4 WS-001 + 8 WS-002 screenshots; supplement disclosed; no restoration claimed",
+      "nonBlockingFollowups": [
+        "Invalid campaign/version context propagates in sidebar; honest errors retained",
+        "P2 layout unchanged"
+      ]
+    }
+  ],
+  "scope": "interactive_mock_product",
+  "reviewedAt": "2026-11-04",
+  "reviewReport": "docs/reviews/M0.md",
+  "scopeContract": "docs/INTERACTIVE_MOCK_PRODUCT.md",
+  "deliveryPolicy": "docs/DEMO_DELIVERY_POLICY.md",
+  "activeHandoff": "tasks/DSH_HANDOFF_SIX_WORKSPACES.md",
+  "activeScopeContract": "tasks/DSH_HANDOFF_SIX_WORKSPACES.md",
+  "implementationAssignment": {
+    "executor": "Existing DSH session that submitted docs/reviews/AS-004-DSH.md and completed the home correction",
+    "scope": [
+      "WS-001",
+      "WS-002",
+      "WS-003",
+      "WS-004"
+    ],
+    "singleWriter": true,
+    "dispatchAcknowledged": false,
+    "note": "Original sole DSH session assigned to six-workspace integration; no automatic dispatch or acknowledgement claimed"
+  },
+  "asBatchClosure": {
+    "status": "accepted",
+    "date": "2026-11-06",
+    "report": "docs/reviews/FAST_06-AS-CLOSURE-REVIEW.md",
+    "excluded": [
+      "FLOW current homepage/journey/social and additive contracts",
+      "15-second core film/poster",
+      "Native/brand Arabic review"
+    ]
+  },
+  "flowBatchClosure": {
+    "status": "accepted",
+    "date": "2026-11-06",
+    "report": "docs/reviews/FLOW-BATCH-ACCEPTANCE.md",
+    "blockingFixes": [],
+    "remaining": [
+      "15-second core film/poster",
+      "Native/brand Arabic review"
+    ],
+    "optional": [
+      "Controlled failure UI test",
+      "Simplify technical details and post-card header layout"
+    ]
+  },
+  "activeHandoffStatus": "closed_accepted",
+  "wsFix001Closure": {
+    "status": "accepted",
+    "fixStatus": "closed",
+    "report": "docs/reviews/WS-FIX-001-ACCEPTANCE.md",
+    "date": "2026-11-06",
+    "remainingP2": "unchanged",
+    "historicalEvidenceIncident": "disclosed, not restored",
+    "supplementalEvidenceIncident": {
+      "affectedScreenshots": 12,
+      "directories": [
+        "workspace-integration/ws-001",
+        "workspace-integration/ws-002"
+      ],
+      "reportedTimeShanghai": "2026-11-06 17:05",
+      "currentMtimeConfirmed": true,
+      "originalBytesRestored": false,
+      "initialSubmissionDisclosure": "incomplete; now supplemented",
+      "functionalAcceptance": "retained"
+    }
+  }
+}

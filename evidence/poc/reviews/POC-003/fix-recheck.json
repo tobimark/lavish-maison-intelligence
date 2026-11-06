@@ -1,0 +1,65 @@
+{
+  "scope": "TEST_ONLY independent full-path domain recheck",
+  "editedConfirmation": {
+    "discovery": "completed",
+    "analysis": "completed",
+    "video": "stale",
+    "delivery": "locked"
+  },
+  "videoReentry": {
+    "state": {
+      "discovery": "completed",
+      "analysis": "completed",
+      "video": "completed",
+      "delivery": "ready"
+    },
+    "videoAttemptCount": 2,
+    "replayUnchanged": true
+  },
+  "delivery": {
+    "started": "running",
+    "beforeDue": "running",
+    "failed": "failed",
+    "retry": "running",
+    "completed": "completed",
+    "outcomes": [
+      "failed",
+      "simulated_delivered"
+    ],
+    "records": 1,
+    "duplicateSettlementIsNoop": true
+  },
+  "prematureReplay": {
+    "ok": false,
+    "error": {
+      "code": "CORRUPT_EVENT",
+      "message": "Event at sequence 14 differs from the package's canonical event (order/payload/id/atMs tampering)."
+    }
+  },
+  "invalidAnchor": {
+    "ok": false,
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "The edited script version is not valid.",
+      "fieldErrors": [
+        {
+          "path": "/content/shots/0/id",
+          "message": "Shot anchor must stay scn-scent-layering.shot.en-shot-1, found scn-scent-layering.shot.changed."
+        }
+      ]
+    }
+  },
+  "productAsAsset": {
+    "ok": false,
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "The edited script version is not valid.",
+      "fieldErrors": [
+        {
+          "path": "/content/shots/0/assetIds/0",
+          "message": "scn-scent-layering.product.oud resolves to product, expected asset."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "profile": "content_only",
+  "mode": "mock",
+  "deliveryKind": "script_pack",
+  "attempt": {
+    "id": "usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.content.attempt.1",
+    "attempt": 1,
+    "draftId": "usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.content.draft.1",
+    "draftRevision": 1,
+    "scriptVersionId": "scn-scent-layering.script.en-v1",
+    "recipientSnapshot": [
+      {
+        "id": "scn-scent-layering.recipient.brand-review",
+        "displayName": "Lavish Demo Brand Review (simulated)",
+        "email": "brand-review@lavish-demo.invalid"
+      },
+      {
+        "id": "scn-scent-layering.recipient.creative-ops",
+        "displayName": "Lavish Demo Creative Operations (simulated)",
+        "email": "creative-ops@lavish-demo.invalid"
+      }
+    ],
+    "subject": "[SIMULATED · NOT SENT] Dirty subject",
+    "body": "SIMULATED DELIVERY — NO EMAIL WAS SENT.\n\nPlease review the prepared EN script for \"Your Scent, Your Expression\".\nVersion: Your Scent, Your Expression (Preset).\n\nAttached content includes the script JSON, subtitle VTT and a README. No video, poster or rendered advertisement is attached.\nRecipient addresses use the reserved .invalid domain. No platform, renderer or email service is contacted.",
+    "attachmentManifest": [
+      {
+        "filename": "scent-layering-en-v1-script.json",
+        "mimeType": "application/json",
+        "bytes": 4186,
+        "sha256": "f6e1034f978b7cfedfa95ce46c73e37646cc08b425eb9cf6945029d884eb4bd0"
+      },
+      {
+        "filename": "scent-layering-en-subtitles.vtt",
+        "mimeType": "text/vtt",
+        "bytes": 257,
+        "sha256": "ecaf195e95db412d68fd5e5ac5c9f83a30728f808963730f7070be415aaeee2a"
+      },
+      {
+        "filename": "scent-layering-en-email.txt",
+        "mimeType": "text/plain",
+        "bytes": 671,
+        "sha256": "9c52eb845e8def3376c5a3bfbef8ee08567c4021444c57248a7518b72db00c77"
+      },
+      {
+        "filename": "README.txt",
+        "mimeType": "text/plain",
+        "bytes": 639,
+        "sha256": "cec9d9a7b7b3dba1b9e36546bb2c9f4649972b39633c1ed6e23c6ed40d72a686"
+      }
+    ],
+    "outcome": "simulated_delivered",
+    "failureCode": null,
+    "mode": "mock",
+    "deliveryKind": "script_pack",
+    "createdAt": "2026-11-05T10:04:01.099Z"
+  },
+  "note": "SIMULATED content delivery record; no email was sent and no video is attached.",
+  "noVideo": true,
+  "noRealEmail": true
+}

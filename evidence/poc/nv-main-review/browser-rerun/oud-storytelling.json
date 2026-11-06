@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "profile": "content_only",
+  "mode": "mock",
+  "checkedAt": "2026-11-05T06:34:47.135Z",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "6349f26e104b26df43dcbc634ed14068806cf9dd83933335121a0e056fdcb183",
+  "contentRunnable": true,
+  "mediaStatus": "deferred",
+  "analysisPrefix": 16,
+  "media": {
+    "realFiles": 5,
+    "pendingFiles": 2
+  },
+  "layers": [
+    {
+      "name": "L1",
+      "status": "pass"
+    },
+    {
+      "name": "L2",
+      "status": "pass"
+    },
+    {
+      "name": "L3",
+      "status": "pass"
+    },
+    {
+      "name": "L4",
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "Pending MP4/poster are allowed only as deferred media; no video playback/download is claimed.",
+    "Content authoring reviewStatus remains pending; content acceptance is a main-control gate."
+  ]
+}

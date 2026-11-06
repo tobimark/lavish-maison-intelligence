@@ -1,0 +1,90 @@
+{
+  "scope": "TEST_ONLY independent code probes; no customer video acceptance",
+  "playbackDisabledButReportedPlayed": false,
+  "playbackMetadata": {
+    "event": "loadedmetadata",
+    "durationMs": 15000,
+    "width": 1080,
+    "height": 1920,
+    "seekableRanges": 1,
+    "canPlayReady": true,
+    "startAtZero": true,
+    "seekTargets": [
+      2000,
+      5000,
+      9000,
+      14500
+    ],
+    "seeks": [
+      {
+        "targetMs": 2000,
+        "seeked": true,
+        "actualMs": 2000
+      },
+      {
+        "targetMs": 5000,
+        "seeked": true,
+        "actualMs": 5000
+      },
+      {
+        "targetMs": 9000,
+        "seeked": true,
+        "actualMs": 9000
+      },
+      {
+        "targetMs": 14500,
+        "seeked": true,
+        "actualMs": 14500
+      }
+    ],
+    "playback": {
+      "beforeMs": 14500,
+      "afterMs": 14500,
+      "deltaMs": 0,
+      "playResolved": true
+    },
+    "played": false,
+    "errorCode": null
+  },
+  "crossPortRedirect": {
+    "baseUrl": "http://127.0.0.1:50340",
+    "secondaryUrl": "http://127.0.0.1:50339",
+    "secondaryRequests": 0,
+    "cli": {
+      "exit": 1,
+      "stderr": ""
+    },
+    "errors": [
+      {
+        "code": "EXTERNAL_REDIRECT",
+        "file": "assets.json",
+        "jsonPointer": "/data/assets/0/uri",
+        "message": "Asset redirects to a different origin (http://127.0.0.1:50339); same-origin scheme/host/port is required."
+      }
+    ],
+    "media": [
+      {
+        "id": "scn-scent-layering.asset.poster",
+        "kind": "poster",
+        "uri": "/scenario-media/scent-layering/1.0.0/redirect.png",
+        "status": "fail"
+      }
+    ]
+  },
+  "ffprobeMissingDurationIssues": [
+    {
+      "code": "FFPROBE_DURATION_INVALID",
+      "message": "ffprobe must report a finite positive format duration; found undefined."
+    }
+  ],
+  "vttParsed": {
+    "cues": [
+      {
+        "startMs": 0,
+        "endMs": 1000,
+        "text": "Completely unrelated text"
+      }
+    ],
+    "issues": []
+  }
+}

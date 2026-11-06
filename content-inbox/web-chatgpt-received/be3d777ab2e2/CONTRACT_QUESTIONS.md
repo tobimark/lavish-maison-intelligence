@@ -1,0 +1,8 @@
+# Contract observations / handoff questions
+
+No machine Schema modification was made.
+
+1. `docs/SCENARIO_DATA_CONTRACT.md` delivery file summary mentions `delivery.records[].virtualTimeMs`, while frozen `contracts/poc/scenario.schema.json` (`$defs.deliveryRecord`, both variants) and `docs/POC_EVENT_PROTOCOL.md` explicitly require `records[].atMs`. **This content uses `atMs`**, per the frozen Schema and the START_HERE priority. Astra may correct the outdated prose summary; the frozen contract is unchanged.
+2. `contracts/poc/scenario.schema.json` `$defs.asset`: `bytes` integer >=1, `sha256` 64-char hex string, `rightsStatus='approved_for_demo'` are mandatory. The authoring task's MP4-missing rule specifically requires `null/null/'pending'`. **The only six deliberate draft exceptions per scenario** are these three fields on `video-en` and `poster-en`. Do not change the schema or fabricate values. `content-inbox` cannot be promoted until real media arrives.
+3. `contracts/poc/scenario.schema.json` `$defs.videoEntry.frameRate` is required numeric, yet actual MP4 frame rate is not yet known. **The value `30` is documented as a target only** in video disclosures, VIDEO_DELIVERY_BRIEF and VALIDATION_NOTES; Astra must replace/verify it after receiving media. This is not a measured claim.
+4. `expected.json` checkpoints are authored independently as explicit expected stage outcomes; static authoring checker verifies the projection in a separate Python implementation, **not** the project's canonical TypeScript reducer. Identical project reducer verification is **NOT_RUN** until Astra can execute it.

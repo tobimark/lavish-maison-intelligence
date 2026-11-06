@@ -1,0 +1,2543 @@
+{
+  "scope": "interactive_mock_product_matrix_dom",
+  "checkedAt": "2026-11-06T03:33:22.585Z",
+  "matrix": "docs/INTERACTION_AUDIT_MATRIX.csv",
+  "matrixRowCount": 155,
+  "auditedRows": 119,
+  "flowRows": [
+    "OV-explore-journey",
+    "OV-journey-open",
+    "OV-journey-insight",
+    "OV-journey-strategy",
+    "OV-journey-creative",
+    "OV-journey-social",
+    "FLOW-stage-insight",
+    "FLOW-stage-strategy",
+    "FLOW-stage-creative",
+    "FLOW-stage-social",
+    "FLOW-view-evidence",
+    "FLOW-next-strategy",
+    "FLOW-open-brief",
+    "FLOW-next-creative",
+    "FLOW-video",
+    "FLOW-script-en",
+    "FLOW-script-ar",
+    "FLOW-next-social",
+    "FLOW-social-stage",
+    "FLOW-social-language-en",
+    "FLOW-social-language-ar",
+    "FLOW-social-caption",
+    "FLOW-social-cta",
+    "FLOW-social-hashtags",
+    "FLOW-social-edit",
+    "FLOW-social-save",
+    "FLOW-social-review",
+    "FLOW-social-simulate",
+    "FLOW-social-discard",
+    "FLOW-social-confirm-creative",
+    "FLOW-social-review-cancel",
+    "FLOW-social-review-confirm",
+    "FLOW-social-publish-cancel",
+    "FLOW-social-publish-confirm",
+    "FLOW-social-view-post",
+    "FLOW-social-detail-back"
+  ],
+  "flowRowsNote": "36 added FLOW/social controls are real DOM controls verified in product-connected-flow.spec.ts and product-social-publish.spec.ts; the AS-006 DOM audit above intentionally keeps its original 119-row scope so the accepted AS evidence stays comparable.",
+  "pendingAssetRows": [],
+  "baseUrl": "http://127.0.0.1:3160",
+  "states": [
+    "deliverables-default",
+    "deliverables-after-download-details",
+    "mail-drawer-gate",
+    "mail-drawer-confirmed",
+    "mail-draft-saved",
+    "mail-confirmation",
+    "mail-attempt-recorded",
+    "mail-failure-and-retry",
+    "overview",
+    "radar-default",
+    "radar-drawer-RAD-signal-scn-scent-layering.signal.s1",
+    "radar-drawer-RAD-signal-scn-scent-layering.signal.s2",
+    "radar-drawer-RAD-signal-scn-scent-layering.signal.s3",
+    "radar-drawer-RAD-signal-scn-scent-layering.signal.s4",
+    "radar-drawer-RAD-signal-scn-scent-layering.signal.s5",
+    "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s1",
+    "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s2",
+    "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s3",
+    "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s4",
+    "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s5",
+    "radar-drawer-RAD-signal-scn-oud-storytelling.signal.s1",
+    "radar-drawer-RAD-signal-scn-oud-storytelling.signal.s2",
+    "radar-drawer-RAD-signal-scn-oud-storytelling.signal.s3",
+    "radar-drawer-RAD-signal-scn-oud-storytelling.signal.s4",
+    "radar-drawer-RAD-signal-scn-oud-storytelling.signal.s5",
+    "radar-empty-state",
+    "activity-drawer-preset",
+    "activity-drawer-your-actions",
+    "campaign-brief",
+    "opportunities-list",
+    "opportunity-detail-scn-scent-layering.analysis.main",
+    "opportunity-assumptions-scn-scent-layering.analysis.main",
+    "opportunity-detail-scn-luxury-gifting.analysis.main",
+    "opportunity-assumptions-scn-luxury-gifting.analysis.main",
+    "opportunity-detail-scn-oud-storytelling.analysis.main",
+    "opportunity-assumptions-scn-oud-storytelling.analysis.main",
+    "atelier-scn-scent-layering.brief.main",
+    "atelier-scn-luxury-gifting.brief.main",
+    "atelier-scn-oud-storytelling.brief.main",
+    "atelier-editor-fields",
+    "atelier-editor-advanced",
+    "dirty-guard-dialog",
+    "library-default",
+    "library-preview-drawer",
+    "library-empty-state",
+    "journey-creative",
+    "library-provided-assets"
+  ],
+  "summary": {
+    "controls": 119,
+    "found": 108,
+    "guarded": 1,
+    "notRun": 10,
+    "notFound": 0,
+    "unexpectedControls": 0,
+    "observedControlIds": 246
+  },
+  "controls": [
+    {
+      "controlId": "NAV-overview",
+      "page": "Global",
+      "testId": "IP-NAV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "NAV-overview"
+      ],
+      "stateEvidence": [
+        "NAV-overview",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "NAV-radar",
+      "page": "Global",
+      "testId": "IP-NAV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "NAV-radar"
+      ],
+      "stateEvidence": [
+        "NAV-radar",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "NAV-opportunities",
+      "page": "Global",
+      "testId": "IP-NAV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "NAV-opportunities"
+      ],
+      "stateEvidence": [
+        "NAV-opportunities",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "NAV-atelier",
+      "page": "Global",
+      "testId": "IP-NAV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "NAV-atelier"
+      ],
+      "stateEvidence": [
+        "NAV-atelier",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "NAV-library",
+      "page": "Global",
+      "testId": "IP-NAV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "NAV-library"
+      ],
+      "stateEvidence": [
+        "NAV-library",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "NAV-deliverables",
+      "page": "Global",
+      "testId": "IP-NAV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "NAV-deliverables"
+      ],
+      "stateEvidence": [
+        "NAV-deliverables",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "SHELL-collapse",
+      "page": "Global",
+      "testId": "IP-NAV-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "SHELL-collapse"
+      ],
+      "stateEvidence": [
+        "SHELL-collapse",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "SHELL-mobile-open",
+      "page": "Global",
+      "testId": "IP-NAV-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "SHELL-mobile-open"
+      ],
+      "stateEvidence": [
+        "SHELL-mobile-open",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "SHELL-mobile-close",
+      "page": "Global",
+      "testId": "IP-NAV-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "SHELL-mobile-close"
+      ],
+      "stateEvidence": [
+        "SHELL-mobile-close",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "SHELL-breadcrumb",
+      "page": "Global",
+      "testId": "IP-NAV-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "SHELL-breadcrumb"
+      ],
+      "stateEvidence": [
+        "SHELL-breadcrumb",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "OV-explore",
+      "page": "Overview",
+      "testId": "IP-OV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "The FLOW batch replaced the original Overview “Explore opportunities” CTA with the connected-case Journey CTA (OV-explore-journey). The old CTA no longer exists; the new journey CTA is exercised in product-provided-assets.spec.ts.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "OV-creative",
+      "page": "Overview",
+      "testId": "IP-OV-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "The FLOW batch replaced the original Overview “Browse creative work” CTA with the six-workspace navigation/Journey links. The old CTA no longer exists and is not claimed as present.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "OV-opportunity-card-{analysisId}",
+      "page": "Overview",
+      "testId": "IP-OV-01",
+      "expected": "template",
+      "minimum": 3,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 3,
+      "observedIds": [
+        "OV-opportunity-card-scn-scent-layering.analysis.main",
+        "OV-opportunity-card-scn-luxury-gifting.analysis.main",
+        "OV-opportunity-card-scn-oud-storytelling.analysis.main"
+      ],
+      "stateEvidence": [
+        "OV-opportunity-card-{analysisId}",
+        "overview"
+      ]
+    },
+    {
+      "controlId": "OV-campaign-card-{briefId}",
+      "page": "Overview",
+      "testId": "IP-OV-01",
+      "expected": "template",
+      "minimum": 3,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 3,
+      "observedIds": [
+        "OV-campaign-card-scn-scent-layering.brief.main",
+        "OV-campaign-card-scn-luxury-gifting.brief.main",
+        "OV-campaign-card-scn-oud-storytelling.brief.main"
+      ],
+      "stateEvidence": [
+        "OV-campaign-card-{briefId}",
+        "overview"
+      ]
+    },
+    {
+      "controlId": "OV-recent-export-{exportId}",
+      "page": "Overview",
+      "testId": "IP-OV-01",
+      "expected": "template",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "OV-recent-export-prd-export.47917bc0"
+      ],
+      "stateEvidence": [
+        "OV-recent-export-{exportId}",
+        "overview"
+      ]
+    },
+    {
+      "controlId": "RAD-source-all",
+      "page": "Radar",
+      "testId": "IP-RAD-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-source-all"
+      ],
+      "stateEvidence": [
+        "RAD-source-all",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-source-instagram",
+      "page": "Radar",
+      "testId": "IP-RAD-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-source-instagram"
+      ],
+      "stateEvidence": [
+        "RAD-source-instagram",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-source-tiktok",
+      "page": "Radar",
+      "testId": "IP-RAD-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-source-tiktok"
+      ],
+      "stateEvidence": [
+        "RAD-source-tiktok",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-source-pinterest",
+      "page": "Radar",
+      "testId": "IP-RAD-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-source-pinterest"
+      ],
+      "stateEvidence": [
+        "RAD-source-pinterest",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-source-youtube",
+      "page": "Radar",
+      "testId": "IP-RAD-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-source-youtube"
+      ],
+      "stateEvidence": [
+        "RAD-source-youtube",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-topic",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-topic"
+      ],
+      "stateEvidence": [
+        "RAD-topic",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-campaign",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-campaign"
+      ],
+      "stateEvidence": [
+        "RAD-campaign",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-clear",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-clear"
+      ],
+      "stateEvidence": [
+        "RAD-clear",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-signal-{signalId}",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "template",
+      "minimum": 15,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 15,
+      "observedIds": [
+        "RAD-signal-scn-scent-layering.signal.s1",
+        "RAD-signal-scn-scent-layering.signal.s2",
+        "RAD-signal-scn-scent-layering.signal.s3",
+        "RAD-signal-scn-scent-layering.signal.s4",
+        "RAD-signal-scn-scent-layering.signal.s5",
+        "RAD-signal-scn-luxury-gifting.signal.s1",
+        "RAD-signal-scn-luxury-gifting.signal.s2",
+        "RAD-signal-scn-luxury-gifting.signal.s3"
+      ],
+      "stateEvidence": [
+        "RAD-signal-{signalId}",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "RAD-evidence-{evidenceId}",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "template",
+      "minimum": 15,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 15,
+      "observedIds": [
+        "RAD-evidence-scn-scent-layering.evidence.e1",
+        "RAD-evidence-scn-scent-layering.evidence.e2",
+        "RAD-evidence-scn-scent-layering.evidence.e3",
+        "RAD-evidence-scn-scent-layering.evidence.e4",
+        "RAD-evidence-scn-scent-layering.evidence.e5",
+        "RAD-evidence-scn-luxury-gifting.evidence.e1",
+        "RAD-evidence-scn-luxury-gifting.evidence.e2",
+        "RAD-evidence-scn-luxury-gifting.evidence.e3"
+      ],
+      "stateEvidence": [
+        "RAD-evidence-{evidenceId}",
+        "radar-drawer-RAD-signal-scn-scent-layering.signal.s1",
+        "radar-drawer-RAD-signal-scn-scent-layering.signal.s2",
+        "radar-drawer-RAD-signal-scn-scent-layering.signal.s3",
+        "radar-drawer-RAD-signal-scn-scent-layering.signal.s4",
+        "radar-drawer-RAD-signal-scn-scent-layering.signal.s5",
+        "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s1",
+        "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s2"
+      ]
+    },
+    {
+      "controlId": "RAD-opportunity-{analysisId}",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "template",
+      "minimum": 3,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 3,
+      "observedIds": [
+        "RAD-opportunity-scn-scent-layering.analysis.main",
+        "RAD-opportunity-scn-luxury-gifting.analysis.main",
+        "RAD-opportunity-scn-oud-storytelling.analysis.main"
+      ],
+      "stateEvidence": [
+        "RAD-opportunity-{analysisId}",
+        "radar-default",
+        "radar-drawer-RAD-signal-scn-luxury-gifting.signal.s1",
+        "radar-drawer-RAD-signal-scn-oud-storytelling.signal.s1"
+      ]
+    },
+    {
+      "controlId": "RAD-drawer-close",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-drawer-close"
+      ],
+      "stateEvidence": [
+        "RAD-drawer-close",
+        "radar-drawer-RAD-signal-scn-scent-layering.signal.s1"
+      ]
+    },
+    {
+      "controlId": "ACT-open",
+      "page": "Radar activity",
+      "testId": "IP-ACT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-open"
+      ],
+      "stateEvidence": [
+        "ACT-open",
+        "radar-default"
+      ]
+    },
+    {
+      "controlId": "ACT-close",
+      "page": "Radar activity",
+      "testId": "IP-ACT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-close"
+      ],
+      "stateEvidence": [
+        "ACT-close",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-campaign",
+      "page": "Radar activity",
+      "testId": "IP-ACT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-campaign"
+      ],
+      "stateEvidence": [
+        "ACT-campaign",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-view",
+      "page": "Radar activity",
+      "testId": "IP-ACT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-view"
+      ],
+      "stateEvidence": [
+        "ACT-view",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-play",
+      "page": "Radar activity",
+      "testId": "IP-ACT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-play"
+      ],
+      "stateEvidence": [
+        "ACT-play",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-step",
+      "page": "Radar activity",
+      "testId": "IP-ACT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-step"
+      ],
+      "stateEvidence": [
+        "ACT-step",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-speed1",
+      "page": "Radar activity",
+      "testId": "IP-ACT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-speed1"
+      ],
+      "stateEvidence": [
+        "ACT-speed1",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-speed2",
+      "page": "Radar activity",
+      "testId": "IP-ACT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-speed2"
+      ],
+      "stateEvidence": [
+        "ACT-speed2",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-speed4",
+      "page": "Radar activity",
+      "testId": "IP-ACT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-speed4"
+      ],
+      "stateEvidence": [
+        "ACT-speed4",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-seek",
+      "page": "Radar activity",
+      "testId": "IP-ACT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-seek"
+      ],
+      "stateEvidence": [
+        "ACT-seek",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-restart",
+      "page": "Radar activity",
+      "testId": "IP-ACT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-restart"
+      ],
+      "stateEvidence": [
+        "ACT-restart",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "OPP-card-{analysisId}",
+      "page": "Opportunities/detail",
+      "testId": "IP-OPP-01",
+      "expected": "template",
+      "minimum": 3,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 3,
+      "observedIds": [
+        "OPP-card-scn-scent-layering.analysis.main",
+        "OPP-card-scn-luxury-gifting.analysis.main",
+        "OPP-card-scn-oud-storytelling.analysis.main"
+      ],
+      "stateEvidence": [
+        "OPP-card-{analysisId}",
+        "opportunities-list"
+      ]
+    },
+    {
+      "controlId": "OPP-evidence-{evidenceId}",
+      "page": "Opportunities/detail",
+      "testId": "IP-OPP-01",
+      "expected": "template",
+      "minimum": 15,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 15,
+      "observedIds": [
+        "OPP-evidence-scn-scent-layering.evidence.e1",
+        "OPP-evidence-scn-scent-layering.evidence.e2",
+        "OPP-evidence-scn-scent-layering.evidence.e3",
+        "OPP-evidence-scn-scent-layering.evidence.e4",
+        "OPP-evidence-scn-scent-layering.evidence.e5",
+        "OPP-evidence-scn-luxury-gifting.evidence.e1",
+        "OPP-evidence-scn-luxury-gifting.evidence.e2",
+        "OPP-evidence-scn-luxury-gifting.evidence.e3"
+      ],
+      "stateEvidence": [
+        "OPP-evidence-{evidenceId}",
+        "opportunity-detail-scn-scent-layering.analysis.main",
+        "opportunity-detail-scn-luxury-gifting.analysis.main",
+        "opportunity-detail-scn-oud-storytelling.analysis.main"
+      ]
+    },
+    {
+      "controlId": "OPP-assumptions",
+      "page": "Opportunities/detail",
+      "testId": "IP-OPP-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "OPP-assumptions"
+      ],
+      "stateEvidence": [
+        "OPP-assumptions",
+        "opportunity-detail-scn-scent-layering.analysis.main"
+      ]
+    },
+    {
+      "controlId": "OPP-campaign",
+      "page": "Opportunities/detail",
+      "testId": "IP-OPP-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "OPP-campaign"
+      ],
+      "stateEvidence": [
+        "OPP-campaign",
+        "opportunity-detail-scn-scent-layering.analysis.main"
+      ]
+    },
+    {
+      "controlId": "OPP-back",
+      "page": "Opportunities/detail",
+      "testId": "IP-OPP-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "OPP-back"
+      ],
+      "stateEvidence": [
+        "OPP-back",
+        "opportunity-detail-scn-scent-layering.analysis.main"
+      ]
+    },
+    {
+      "controlId": "AT-campaign",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-campaign"
+      ],
+      "stateEvidence": [
+        "AT-campaign",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-language-en",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-language-en"
+      ],
+      "stateEvidence": [
+        "AT-language-en",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-language-ar",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-language-ar"
+      ],
+      "stateEvidence": [
+        "AT-language-ar",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-tab-brief",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-tab-brief"
+      ],
+      "stateEvidence": [
+        "AT-tab-brief",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-tab-copy",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-tab-copy"
+      ],
+      "stateEvidence": [
+        "AT-tab-copy",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-tab-storyboard",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-tab-storyboard"
+      ],
+      "stateEvidence": [
+        "AT-tab-storyboard",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-version-{versionId}",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "template",
+      "minimum": 6,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 12,
+      "observedIds": [
+        "AT-version-scn-scent-layering.script.en-v2-preset",
+        "AT-version-scn-scent-layering.script.en-v2",
+        "AT-version-scn-scent-layering.script.ar-v2-preset",
+        "AT-version-scn-scent-layering.script.ar-v2",
+        "AT-version-scn-luxury-gifting.script.en-v1-preset",
+        "AT-version-scn-luxury-gifting.script.en-v1",
+        "AT-version-scn-luxury-gifting.script.ar-v1-preset",
+        "AT-version-scn-luxury-gifting.script.ar-v1"
+      ],
+      "stateEvidence": [
+        "AT-version-{versionId}",
+        "atelier-scn-scent-layering.brief.main",
+        "atelier-scn-luxury-gifting.brief.main",
+        "atelier-scn-oud-storytelling.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-edit",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-edit"
+      ],
+      "stateEvidence": [
+        "AT-edit",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-field-{field}",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "template",
+      "minimum": 6,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 6,
+      "observedIds": [
+        "AT-field-title",
+        "AT-field-hook",
+        "AT-field-cta",
+        "AT-field-message",
+        "AT-field-caption",
+        "AT-field-hashtags"
+      ],
+      "stateEvidence": [
+        "AT-field-{field}",
+        "atelier-editor-fields"
+      ]
+    },
+    {
+      "controlId": "AT-advanced",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-advanced"
+      ],
+      "stateEvidence": [
+        "AT-advanced",
+        "atelier-editor-fields"
+      ]
+    },
+    {
+      "controlId": "AT-save",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-save"
+      ],
+      "stateEvidence": [
+        "AT-save",
+        "atelier-editor-fields"
+      ]
+    },
+    {
+      "controlId": "AT-discard",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-discard"
+      ],
+      "stateEvidence": [
+        "AT-discard",
+        "atelier-editor-fields"
+      ]
+    },
+    {
+      "controlId": "AT-confirm",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-confirm"
+      ],
+      "stateEvidence": [
+        "AT-confirm",
+        "atelier-editor-fields"
+      ]
+    },
+    {
+      "controlId": "AT-deliverables",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-deliverables"
+      ],
+      "stateEvidence": [
+        "AT-deliverables",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "GUARD-save",
+      "page": "All dirty editor navigation",
+      "testId": "IP-STATE-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "GUARD-save"
+      ],
+      "stateEvidence": [
+        "GUARD-save",
+        "dirty-guard-dialog"
+      ]
+    },
+    {
+      "controlId": "GUARD-discard",
+      "page": "All dirty editor navigation",
+      "testId": "IP-STATE-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "GUARD-discard"
+      ],
+      "stateEvidence": [
+        "GUARD-discard",
+        "dirty-guard-dialog"
+      ]
+    },
+    {
+      "controlId": "GUARD-cancel",
+      "page": "All dirty editor navigation",
+      "testId": "IP-STATE-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "GUARD-cancel"
+      ],
+      "stateEvidence": [
+        "GUARD-cancel",
+        "dirty-guard-dialog"
+      ]
+    },
+    {
+      "controlId": "LIB-campaign",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-campaign"
+      ],
+      "stateEvidence": [
+        "LIB-campaign",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "LIB-language",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-language"
+      ],
+      "stateEvidence": [
+        "LIB-language",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "LIB-kind",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-kind"
+      ],
+      "stateEvidence": [
+        "LIB-kind",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "LIB-origin",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-origin"
+      ],
+      "stateEvidence": [
+        "LIB-origin",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "LIB-clear",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-clear"
+      ],
+      "stateEvidence": [
+        "LIB-clear",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "LIB-preview-{versionId}-{kind}",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "template",
+      "minimum": 12,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 12,
+      "observedIds": [
+        "LIB-preview-scn-scent-layering.script.en-v2-script",
+        "LIB-preview-scn-scent-layering.script.en-v2-storyboard",
+        "LIB-preview-scn-scent-layering.script.ar-v2-script",
+        "LIB-preview-scn-scent-layering.script.ar-v2-storyboard",
+        "LIB-preview-scn-luxury-gifting.script.en-v1-script",
+        "LIB-preview-scn-luxury-gifting.script.en-v1-storyboard",
+        "LIB-preview-scn-luxury-gifting.script.ar-v1-script",
+        "LIB-preview-scn-luxury-gifting.script.ar-v1-storyboard"
+      ],
+      "stateEvidence": [
+        "LIB-preview-{versionId}-{kind}",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "LIB-close",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-close"
+      ],
+      "stateEvidence": [
+        "LIB-close",
+        "library-preview-drawer"
+      ]
+    },
+    {
+      "controlId": "LIB-atelier",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-atelier"
+      ],
+      "stateEvidence": [
+        "LIB-atelier",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "LIB-export",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-export"
+      ],
+      "stateEvidence": [
+        "LIB-export",
+        "library-default"
+      ]
+    },
+    {
+      "controlId": "DEL-campaign",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "DEL-campaign"
+      ],
+      "stateEvidence": [
+        "DEL-campaign",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "DEL-language",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "DEL-language"
+      ],
+      "stateEvidence": [
+        "DEL-language",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "DEL-version",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "DEL-version"
+      ],
+      "stateEvidence": [
+        "DEL-version",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "DEL-download",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "DEL-download"
+      ],
+      "stateEvidence": [
+        "DEL-download",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "DEL-details-{exportId}",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "template",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "DEL-details-prd-export.47917bc0"
+      ],
+      "stateEvidence": [
+        "DEL-details-{exportId}",
+        "deliverables-after-download-details"
+      ]
+    },
+    {
+      "controlId": "DEL-redownload-{exportId}",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "template",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "DEL-redownload-prd-export.47917bc0"
+      ],
+      "stateEvidence": [
+        "DEL-redownload-{exportId}",
+        "deliverables-after-download-details"
+      ]
+    },
+    {
+      "controlId": "DEL-retry",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "conditional",
+      "found": false,
+      "guarded": true,
+      "notRun": false,
+      "guardReason": "DEL-retry is only rendered after a real export preparation/storage error; no fake failure can be induced in the browser. Recovery: retry the same Download content pack action, which does not show a false success.",
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "MAIL-open",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-open"
+      ],
+      "stateEvidence": [
+        "MAIL-open",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "MAIL-close",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-close"
+      ],
+      "stateEvidence": [
+        "MAIL-close",
+        "mail-drawer-gate"
+      ]
+    },
+    {
+      "controlId": "MAIL-confirm-script",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-confirm-script"
+      ],
+      "stateEvidence": [
+        "MAIL-confirm-script",
+        "mail-drawer-gate"
+      ]
+    },
+    {
+      "controlId": "MAIL-field-{field}",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "template",
+      "minimum": 2,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 2,
+      "observedIds": [
+        "MAIL-field-subject",
+        "MAIL-field-body"
+      ],
+      "stateEvidence": [
+        "MAIL-field-{field}",
+        "mail-drawer-confirmed"
+      ]
+    },
+    {
+      "controlId": "MAIL-save",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-save"
+      ],
+      "stateEvidence": [
+        "MAIL-save",
+        "mail-drawer-gate"
+      ]
+    },
+    {
+      "controlId": "MAIL-discard",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-discard"
+      ],
+      "stateEvidence": [
+        "MAIL-discard",
+        "mail-drawer-gate"
+      ]
+    },
+    {
+      "controlId": "MAIL-simulate",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-simulate"
+      ],
+      "stateEvidence": [
+        "MAIL-simulate",
+        "mail-drawer-gate"
+      ]
+    },
+    {
+      "controlId": "MAIL-cancel",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-cancel"
+      ],
+      "stateEvidence": [
+        "MAIL-cancel",
+        "mail-confirmation"
+      ]
+    },
+    {
+      "controlId": "MAIL-record",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-record"
+      ],
+      "stateEvidence": [
+        "MAIL-record",
+        "mail-confirmation"
+      ]
+    },
+    {
+      "controlId": "MAIL-failure",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-failure"
+      ],
+      "stateEvidence": [
+        "MAIL-failure",
+        "mail-drawer-confirmed"
+      ]
+    },
+    {
+      "controlId": "MAIL-retry",
+      "page": "Deliverables secondary drawer",
+      "testId": "IP-MAIL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "MAIL-retry"
+      ],
+      "stateEvidence": [
+        "MAIL-retry",
+        "mail-failure-and-retry"
+      ]
+    },
+    {
+      "controlId": "MAIL-export-attempt-{attemptId}",
+      "page": "Deliverables secondary drawer",
+      "testId": "Draft/attempt snapshots in existing session",
+      "expected": "template",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 2,
+      "observedIds": [
+        "MAIL-export-attempt-usr.campaign-edit:scn-scent-layering.brief.main:709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d.content.attempt.1",
+        "MAIL-export-attempt-usr.campaign-edit:scn-scent-layering.brief.main:709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d.content.attempt.2"
+      ],
+      "stateEvidence": [
+        "MAIL-export-attempt-{attemptId}",
+        "mail-attempt-recorded",
+        "mail-failure-and-retry"
+      ]
+    },
+    {
+      "controlId": "RAD-clear-empty",
+      "page": "Radar",
+      "testId": "IP-RAD-02",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "RAD-clear-empty"
+      ],
+      "stateEvidence": [
+        "RAD-clear-empty",
+        "radar-empty-state"
+      ]
+    },
+    {
+      "controlId": "ACT-view-preset",
+      "page": "Radar activity",
+      "testId": "IP-ACT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-view-preset"
+      ],
+      "stateEvidence": [
+        "ACT-view-preset",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "ACT-view-mine",
+      "page": "Radar activity",
+      "testId": "IP-ACT-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "ACT-view-mine"
+      ],
+      "stateEvidence": [
+        "ACT-view-mine",
+        "activity-drawer-preset"
+      ]
+    },
+    {
+      "controlId": "OPP-signal-{signalId}",
+      "page": "Opportunities/detail",
+      "testId": "IP-OPP-01",
+      "expected": "template",
+      "minimum": 15,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 15,
+      "observedIds": [
+        "OPP-signal-scn-scent-layering.signal.s1",
+        "OPP-signal-scn-scent-layering.signal.s2",
+        "OPP-signal-scn-scent-layering.signal.s3",
+        "OPP-signal-scn-scent-layering.signal.s4",
+        "OPP-signal-scn-scent-layering.signal.s5",
+        "OPP-signal-scn-luxury-gifting.signal.s1",
+        "OPP-signal-scn-luxury-gifting.signal.s2",
+        "OPP-signal-scn-luxury-gifting.signal.s3"
+      ],
+      "stateEvidence": [
+        "OPP-signal-{signalId}",
+        "opportunity-detail-scn-scent-layering.analysis.main",
+        "opportunity-detail-scn-luxury-gifting.analysis.main",
+        "opportunity-detail-scn-oud-storytelling.analysis.main"
+      ]
+    },
+    {
+      "controlId": "AT-campaign-{campaignId}",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "template",
+      "minimum": 3,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 3,
+      "observedIds": [
+        "AT-campaign-scn-scent-layering.brief.main",
+        "AT-campaign-scn-luxury-gifting.brief.main",
+        "AT-campaign-scn-oud-storytelling.brief.main"
+      ],
+      "stateEvidence": [
+        "AT-campaign-{campaignId}",
+        "atelier-scn-scent-layering.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-version-{versionId}-{sessionId|preset}",
+      "page": "Atelier",
+      "testId": "IP-AT-01",
+      "expected": "template",
+      "minimum": 6,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 12,
+      "observedIds": [
+        "AT-version-scn-scent-layering.script.en-v2-preset",
+        "AT-version-scn-scent-layering.script.en-v2",
+        "AT-version-scn-scent-layering.script.ar-v2-preset",
+        "AT-version-scn-scent-layering.script.ar-v2",
+        "AT-version-scn-luxury-gifting.script.en-v1-preset",
+        "AT-version-scn-luxury-gifting.script.en-v1",
+        "AT-version-scn-luxury-gifting.script.ar-v1-preset",
+        "AT-version-scn-luxury-gifting.script.ar-v1"
+      ],
+      "stateEvidence": [
+        "AT-version-{versionId}-{sessionId|preset}",
+        "atelier-scn-scent-layering.brief.main",
+        "atelier-scn-luxury-gifting.brief.main",
+        "atelier-scn-oud-storytelling.brief.main"
+      ]
+    },
+    {
+      "controlId": "AT-advanced-field-{field}",
+      "page": "Atelier editor",
+      "testId": "IP-AT-02",
+      "expected": "template",
+      "minimum": 24,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 24,
+      "observedIds": [
+        "AT-advanced-field-shot-text-1",
+        "AT-advanced-field-shot-start-1",
+        "AT-advanced-field-shot-duration-1",
+        "AT-advanced-field-shot-text-2",
+        "AT-advanced-field-shot-start-2",
+        "AT-advanced-field-shot-duration-2",
+        "AT-advanced-field-shot-text-3",
+        "AT-advanced-field-shot-start-3"
+      ],
+      "stateEvidence": [
+        "AT-advanced-field-{field}",
+        "atelier-editor-advanced"
+      ]
+    },
+    {
+      "controlId": "AT-editor-close",
+      "page": "Atelier editor",
+      "testId": "IP-STATE-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AT-editor-close"
+      ],
+      "stateEvidence": [
+        "AT-editor-close",
+        "atelier-editor-fields"
+      ]
+    },
+    {
+      "controlId": "LIB-clear-empty",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-clear-empty"
+      ],
+      "stateEvidence": [
+        "LIB-clear-empty",
+        "library-empty-state"
+      ]
+    },
+    {
+      "controlId": "LIB-atelier-drawer",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-atelier-drawer"
+      ],
+      "stateEvidence": [
+        "LIB-atelier-drawer",
+        "library-preview-drawer"
+      ]
+    },
+    {
+      "controlId": "LIB-export-drawer",
+      "page": "Creative Library",
+      "testId": "IP-LIB-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "LIB-export-drawer"
+      ],
+      "stateEvidence": [
+        "LIB-export-drawer",
+        "library-preview-drawer"
+      ]
+    },
+    {
+      "controlId": "DEL-version-{versionId}-{sessionId|preset}",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "template",
+      "minimum": 6,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 6,
+      "observedIds": [
+        "DEL-version-scn-scent-layering.script.en-v2-preset",
+        "DEL-version-scn-scent-layering.script.ar-v2-preset",
+        "DEL-version-scn-luxury-gifting.script.en-v1-preset",
+        "DEL-version-scn-luxury-gifting.script.ar-v1-preset",
+        "DEL-version-scn-oud-storytelling.script.en-v1-preset",
+        "DEL-version-scn-oud-storytelling.script.ar-v1-preset"
+      ],
+      "stateEvidence": [
+        "DEL-version-{versionId}-{sessionId|preset}",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "DEL-preview",
+      "page": "Deliverables",
+      "testId": "IP-DEL-01",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "DEL-preview"
+      ],
+      "stateEvidence": [
+        "DEL-preview",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-HERO-EXPLORE",
+      "page": "Overview",
+      "testId": "AS-E2E-CASE",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-HERO-EXPLORE"
+      ],
+      "stateEvidence": [
+        "AS-HERO-EXPLORE",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-BRIEF-OPEN",
+      "page": "Opportunity",
+      "testId": "AS-E2E-BRIEF",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-BRIEF-OPEN"
+      ],
+      "stateEvidence": [
+        "AS-BRIEF-OPEN",
+        "opportunity-detail-scn-scent-layering.analysis.main"
+      ]
+    },
+    {
+      "controlId": "AS-BRIEF-ATELIER",
+      "page": "Campaign Brief",
+      "testId": "AS-E2E-BRIEF",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-BRIEF-ATELIER"
+      ],
+      "stateEvidence": [
+        "AS-BRIEF-ATELIER",
+        "campaign-brief"
+      ]
+    },
+    {
+      "controlId": "AS-IDENTITY-OPEN",
+      "page": "Overview/Library",
+      "testId": "AS-E2E-IDENTITY",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-IDENTITY-OPEN"
+      ],
+      "stateEvidence": [
+        "AS-IDENTITY-OPEN",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-HERO-PREVIEW",
+      "page": "Overview/Library",
+      "testId": "AS-E2E-IDENTITY",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-HERO-PREVIEW"
+      ],
+      "stateEvidence": [
+        "AS-HERO-PREVIEW",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-SHOT-{shotId}",
+      "page": "Atelier",
+      "testId": "AS-E2E-STORYBOARD",
+      "expected": "template",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "The four-shot storyboard is static read-only HTML with no per-shot interactive control; no AS-SHOT-* data-control-id exists. Shots are verified in product-atelier.spec.ts.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "AS-VIDEO-TAB",
+      "page": "Overview (preview dialog)/Atelier",
+      "testId": "AS-E2E-VIDEO",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-VIDEO-TAB"
+      ],
+      "stateEvidence": [
+        "AS-VIDEO-TAB",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-VIDEO-PLAY",
+      "page": "Overview (preview dialog)/Atelier/Library",
+      "testId": "None",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "Native video controls do not carry data-control-id; play/pause is exercised in product-provided-assets.spec.ts and product-asset-downloads.spec.ts.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "AS-VIDEO-SEEK",
+      "page": "Overview (preview dialog)/Atelier/Library",
+      "testId": "AS-E2E-VIDEO",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "Native video controls do not carry data-control-id; seek 7.56s is exercised in product-provided-assets.spec.ts.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "AS-VIDEO-REPLAY",
+      "page": "Overview (preview dialog)/Atelier/Library",
+      "testId": "AS-E2E-VIDEO",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "Native video controls do not carry data-control-id; replay is exercised in product-provided-assets.spec.ts.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "AS-VIDEO-AUDIO",
+      "page": "Overview (preview dialog)/Atelier/Library",
+      "testId": "AS-E2E-VIDEO",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "Native video controls do not carry data-control-id; muted playback is exercised in product-provided-assets.spec.ts.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "AS-VIDEO-ERROR",
+      "page": "Overview (preview dialog)/Atelier/Library",
+      "testId": "AS-E2E-VIDEO",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "No fake stream error is induced in normal acceptance; native error/retry handling exists in the provided-asset component and is not exposed as a data-control-id.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "AS-LIB-TYPE-{type}",
+      "page": "Library",
+      "testId": "AS-E2E-LIBRARY",
+      "expected": "template",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "Library exposes one LIB-kind select with six options rather than per-type AS-LIB-TYPE-* controls; filtering is exercised in product-library.spec.ts.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    },
+    {
+      "controlId": "AS-PACK-VERSIONS",
+      "page": "Deliverables",
+      "testId": "AS-E2E-EXPORT",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-PACK-VERSIONS"
+      ],
+      "stateEvidence": [
+        "AS-PACK-VERSIONS",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-PACK-DOWNLOAD",
+      "page": "Deliverables",
+      "testId": "AS-E2E-EXPORT",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-PACK-DOWNLOAD"
+      ],
+      "stateEvidence": [
+        "AS-PACK-DOWNLOAD",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-VIDEO-DOWNLOAD",
+      "page": "Deliverables",
+      "testId": "AS-E2E-EXPORT",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-VIDEO-DOWNLOAD"
+      ],
+      "stateEvidence": [
+        "AS-VIDEO-DOWNLOAD",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-IMAGE-DOWNLOAD",
+      "page": "Deliverables/Library",
+      "testId": "Browser download",
+      "expected": "static",
+      "minimum": 1,
+      "found": true,
+      "guarded": false,
+      "notRun": false,
+      "notRunReason": null,
+      "guardReason": null,
+      "observedCount": 1,
+      "observedIds": [
+        "AS-IMAGE-DOWNLOAD"
+      ],
+      "stateEvidence": [
+        "AS-IMAGE-DOWNLOAD",
+        "deliverables-default"
+      ]
+    },
+    {
+      "controlId": "AS-HANDOFF-EXPAND",
+      "page": "Deliverables",
+      "testId": "AS-E2E-EXPORT",
+      "expected": "static",
+      "minimum": 1,
+      "found": false,
+      "guarded": false,
+      "notRun": true,
+      "notRunReason": "The simulated handoff log is reached through the existing Deliverables secondary MAIL drawer controls; no separate AS-HANDOFF-EXPAND data-control-id exists.",
+      "guardReason": null,
+      "observedCount": 0,
+      "observedIds": [],
+      "stateEvidence": []
+    }
+  ],
+  "unexpectedControls": [],
+  "outOfScopeFlowControls": [
+    "OV-explore-journey",
+    "OV-journey-open",
+    "OV-journey-insight",
+    "OV-journey-strategy",
+    "OV-journey-creative",
+    "OV-journey-social",
+    "FLOW-stage-insight",
+    "FLOW-stage-strategy",
+    "FLOW-stage-creative",
+    "FLOW-stage-social",
+    "FLOW-video",
+    "FLOW-script-en",
+    "FLOW-script-ar",
+    "FLOW-next-social"
+  ],
+  "outOfScopeNote": "FLOW batch controls (journey/connected flow) are present in the workspace but are outside FAST_06 AS acceptance; they are listed here for traceability and were not modified."
+}

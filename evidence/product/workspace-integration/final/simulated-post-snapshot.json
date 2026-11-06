@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-06T15:41:54.2954984+08:00",
+  "attemptCount": 1,
+  "attempts": [
+    {
+      "id": "social-attempt.4cd08b1a.1",
+      "draftRevision": 3,
+      "status": "published_simulated",
+      "createdAt": "2026-11-06T07:41:28.641Z",
+      "language": "en",
+      "caption": "WS acceptance caption — saved before review and kept on the simulated post.",
+      "cta": "Discover SERENITY",
+      "hashtags": [
+        "#LavishPerfumes",
+        "#SERENITY"
+      ],
+      "video": {
+        "assetSetId": "provided.scent-layering.serenity-v1",
+        "assetId": "provided.scent-layering.final-preview",
+        "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+      },
+      "channel": "instagram",
+      "placement": "video_post",
+      "accountLabel": "Lavish Perfumes · Demo account",
+      "reviewHash": "854396c580cc628370ae07d2b654926e9ceef035a96320dc1f69dbda3b404742"
+    }
+  ]
+}

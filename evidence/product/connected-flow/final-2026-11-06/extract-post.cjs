@@ -1,0 +1,5 @@
+const fs=require('fs'); const d=JSON.parse(fs.readFileSync('evidence/product/connected-flow/final-2026-11-06/acceptance-observations.json','utf8'));
+const workflows=d.socialWorkflows||[]; const attempts=workflows.flatMap(w=>w.attempts||[]);
+const snapshot={checkedAt:new Date().toISOString(),attemptCount:attempts.length,attempts:attempts.map(a=>({id:a.id,draftRevision:a.draftRevision,status:a.status,createdAt:a.createdAt,language:a.snapshot.language,caption:a.snapshot.caption,cta:a.snapshot.cta,hashtags:a.snapshot.hashtags,video:a.snapshot.video,channel:a.snapshot.channel,placement:a.snapshot.placement,accountLabel:a.snapshot.accountLabel,reviewHash:a.reviewHash}))};
+fs.writeFileSync('evidence/product/connected-flow/final-2026-11-06/simulated-post-snapshot.json',JSON.stringify(snapshot,null,2)+'\n');
+console.log(JSON.stringify({attemptCount:attempts.length,attempt:snapshot.attempts[0],reviewDialogHasNoSend:d.reviewText.includes('no content'),publishDialogHasNoSend:d.publishText.includes('No content is sent to Instagram'),detailCaption:d.detailCaption,afterReload:d.detailCaptionAfterReload,href:d.href},null,2));

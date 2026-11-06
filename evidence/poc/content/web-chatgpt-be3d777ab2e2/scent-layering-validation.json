@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-11-05T05:36:01.732Z",
+  "scope": "scenario",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468",
+  "layers": [
+    {
+      "name": "L1",
+      "status": "fail"
+    },
+    {
+      "name": "L2",
+      "status": "pass"
+    },
+    {
+      "name": "L3",
+      "status": "pass"
+    },
+    {
+      "name": "L4",
+      "status": "fail"
+    },
+    {
+      "name": "L5",
+      "status": "not_run"
+    }
+  ],
+  "errors": [
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/0/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/lavish-logo.png does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/1/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/lavish-oud.jpg does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/2/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/perla-50ml-unisex.png does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/3/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/scent-layering-en.vtt does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/4/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/scent-layering-ar-review.vtt does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/bytes",
+      "message": "/data/assets/5/bytes must be integer"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/rightsStatus",
+      "message": "/data/assets/5/rightsStatus must be equal to constant"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/sha256",
+      "message": "/data/assets/5/sha256 must be string"
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/scent-layering-en-15s.mp4 does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/bytes",
+      "message": "/data/assets/6/bytes must be integer"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/rightsStatus",
+      "message": "/data/assets/6/rightsStatus must be equal to constant"
+    },
+    {
+      "code": "SCHEMA_INVALID",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/sha256",
+      "message": "/data/assets/6/sha256 must be string"
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/scent-layering-en-poster.jpg does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "UNEXPECTED_FILE",
+      "file": "VALIDATION_REPORT.json",
+      "jsonPointer": "",
+      "message": "Unexpected JSON file VALIDATION_REPORT.json; only the ten manifest-listed files are allowed."
+    }
+  ],
+  "warnings": [
+    "L3 checkpoint projection comparison passed via the POC-005 reducer for 5 expected checkpoint(s).",
+    "L5 media verification is NOT_RUN: no --media-report was supplied (POC-002 owns real HTTP/media checks).",
+    "Content reviewStatus is not reviewed; content acceptance is a main-control gate and cannot be inferred from schema validation."
+  ],
+  "runnable": false,
+  "checkpointProjection": {
+    "status": "pass",
+    "checked": 5,
+    "reason": null
+  }
+}

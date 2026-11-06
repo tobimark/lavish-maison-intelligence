@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "data": {
+    "checkpoints": [
+      {
+        "cursorSequence": 0,
+        "workflow": {
+          "discovery": "ready",
+          "analysis": "locked",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 9,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "ready",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.signal.s1",
+          "scn-scent-layering.signal.s2",
+          "scn-scent-layering.signal.s3",
+          "scn-scent-layering.signal.s4",
+          "scn-scent-layering.signal.s5",
+          "scn-scent-layering.trend.control",
+          "scn-scent-layering.trend.main"
+        ],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 16,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "ready",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.analysis.main",
+          "scn-scent-layering.brief.main",
+          "scn-scent-layering.script.ar-v2",
+          "scn-scent-layering.script.en-v2",
+          "scn-scent-layering.shot.ar-v2-1",
+          "scn-scent-layering.shot.ar-v2-2",
+          "scn-scent-layering.shot.ar-v2-3",
+          "scn-scent-layering.shot.ar-v2-4",
+          "scn-scent-layering.shot.en-v2-1",
+          "scn-scent-layering.shot.en-v2-2",
+          "scn-scent-layering.shot.en-v2-3",
+          "scn-scent-layering.shot.en-v2-4",
+          "scn-scent-layering.signal.s1",
+          "scn-scent-layering.signal.s2",
+          "scn-scent-layering.signal.s3",
+          "scn-scent-layering.signal.s4",
+          "scn-scent-layering.signal.s5",
+          "scn-scent-layering.subtitle.ar-v2-1",
+          "scn-scent-layering.subtitle.ar-v2-2",
+          "scn-scent-layering.subtitle.ar-v2-3",
+          "scn-scent-layering.subtitle.ar-v2-4",
+          "scn-scent-layering.subtitle.en-v2-1",
+          "scn-scent-layering.subtitle.en-v2-2",
+          "scn-scent-layering.subtitle.en-v2-3",
+          "scn-scent-layering.subtitle.en-v2-4",
+          "scn-scent-layering.trend.control",
+          "scn-scent-layering.trend.main"
+        ],
+        "activeScriptVersionId": "scn-scent-layering.script.en-v2",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 24,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "ready"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.analysis.main",
+          "scn-scent-layering.brief.main",
+          "scn-scent-layering.script.ar-v2",
+          "scn-scent-layering.script.en-v2",
+          "scn-scent-layering.shot.ar-v2-1",
+          "scn-scent-layering.shot.ar-v2-2",
+          "scn-scent-layering.shot.ar-v2-3",
+          "scn-scent-layering.shot.ar-v2-4",
+          "scn-scent-layering.shot.en-v2-1",
+          "scn-scent-layering.shot.en-v2-2",
+          "scn-scent-layering.shot.en-v2-3",
+          "scn-scent-layering.shot.en-v2-4",
+          "scn-scent-layering.signal.s1",
+          "scn-scent-layering.signal.s2",
+          "scn-scent-layering.signal.s3",
+          "scn-scent-layering.signal.s4",
+          "scn-scent-layering.signal.s5",
+          "scn-scent-layering.subtitle.ar-v2-1",
+          "scn-scent-layering.subtitle.ar-v2-2",
+          "scn-scent-layering.subtitle.ar-v2-3",
+          "scn-scent-layering.subtitle.ar-v2-4",
+          "scn-scent-layering.subtitle.en-v2-1",
+          "scn-scent-layering.subtitle.en-v2-2",
+          "scn-scent-layering.subtitle.en-v2-3",
+          "scn-scent-layering.subtitle.en-v2-4",
+          "scn-scent-layering.trend.control",
+          "scn-scent-layering.trend.main",
+          "scn-scent-layering.video.en-v2"
+        ],
+        "activeScriptVersionId": "scn-scent-layering.script.en-v2",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 28,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "completed"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.analysis.main",
+          "scn-scent-layering.brief.main",
+          "scn-scent-layering.plan.en-v2",
+          "scn-scent-layering.record.delivered-v2-2",
+          "scn-scent-layering.script.ar-v2",
+          "scn-scent-layering.script.en-v2",
+          "scn-scent-layering.shot.ar-v2-1",
+          "scn-scent-layering.shot.ar-v2-2",
+          "scn-scent-layering.shot.ar-v2-3",
+          "scn-scent-layering.shot.ar-v2-4",
+          "scn-scent-layering.shot.en-v2-1",
+          "scn-scent-layering.shot.en-v2-2",
+          "scn-scent-layering.shot.en-v2-3",
+          "scn-scent-layering.shot.en-v2-4",
+          "scn-scent-layering.signal.s1",
+          "scn-scent-layering.signal.s2",
+          "scn-scent-layering.signal.s3",
+          "scn-scent-layering.signal.s4",
+          "scn-scent-layering.signal.s5",
+          "scn-scent-layering.subtitle.ar-v2-1",
+          "scn-scent-layering.subtitle.ar-v2-2",
+          "scn-scent-layering.subtitle.ar-v2-3",
+          "scn-scent-layering.subtitle.ar-v2-4",
+          "scn-scent-layering.subtitle.en-v2-1",
+          "scn-scent-layering.subtitle.en-v2-2",
+          "scn-scent-layering.subtitle.en-v2-3",
+          "scn-scent-layering.subtitle.en-v2-4",
+          "scn-scent-layering.trend.control",
+          "scn-scent-layering.trend.main",
+          "scn-scent-layering.video.en-v2"
+        ],
+        "activeScriptVersionId": "scn-scent-layering.script.en-v2",
+        "activeVideoId": "scn-scent-layering.video.en-v2",
+        "deliveryRecordIds": [
+          "scn-scent-layering.record.delivered-v2-2"
+        ]
+      }
+    ]
+  }
+}

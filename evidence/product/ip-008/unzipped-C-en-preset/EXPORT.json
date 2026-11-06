@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "exportId": "prd-export.14e01126",
+  "createdAt": "2026-11-05T10:03:51.556Z",
+  "mode": "mock",
+  "campaign": {
+    "campaignId": "scn-oud-storytelling.brief.main",
+    "opportunityId": "scn-oud-storytelling.analysis.main",
+    "scenarioId": "scn-oud-storytelling",
+    "scenarioVersion": "1.0.0",
+    "packageHash": "6349f26e104b26df43dcbc634ed14068806cf9dd83933335121a0e056fdcb183"
+  },
+  "version": {
+    "campaignId": "scn-oud-storytelling.brief.main",
+    "versionId": "scn-oud-storytelling.script.en-v1",
+    "sessionId": null
+  },
+  "language": "en",
+  "origin": "preset",
+  "confirmationAtExport": "unconfirmed",
+  "noVideo": true,
+  "noRealEmail": true,
+  "attachments": [
+    {
+      "filename": "brief.json",
+      "mimeType": "application/json",
+      "bytes": 3232,
+      "sha256": "2b9af82fd597c2a99b0b08ae7ae7845f5d583b1c863ca2f32491d79bc570283e"
+    },
+    {
+      "filename": "script.json",
+      "mimeType": "application/json",
+      "bytes": 4047,
+      "sha256": "6cd81a67f088b9624fbdcee2c0fa3b4c34d4cfc0ec84372f5c6f3881cb044f0b"
+    },
+    {
+      "filename": "subtitles-en.vtt",
+      "mimeType": "text/vtt",
+      "bytes": 253,
+      "sha256": "149345eb727ed8968b8c5509103452bfb9b05c57cde4063bf03c2d7ed60260d3"
+    },
+    {
+      "filename": "storyboard.html",
+      "mimeType": "text/html",
+      "bytes": 3904,
+      "sha256": "cf6cfaa557de767f99c4fc9823407b9bd60143f33df53122079210fdaba51260"
+    },
+    {
+      "filename": "media/oud.jpg",
+      "mimeType": "image/jpeg",
+      "bytes": 123608,
+      "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3"
+    },
+    {
+      "filename": "media/logo.png",
+      "mimeType": "image/png",
+      "bytes": 114691,
+      "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966"
+    },
+    {
+      "filename": "README.txt",
+      "mimeType": "text/plain",
+      "bytes": 845,
+      "sha256": "6354d0a6ef86081eecc637f352139437c47ad0b323afe6ea734e494538b3bc62"
+    }
+  ]
+}

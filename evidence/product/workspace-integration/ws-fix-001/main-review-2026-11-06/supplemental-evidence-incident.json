@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-06",
+  "incident": "DSH regression rewrote earlier WS screenshot evidence",
+  "disclosedBy": "user follow-up; confirmed current modification timestamps",
+  "affectedCount": 12,
+  "files": [
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-001\\01-overview-six-menus-1440.png",
+      "currentSha256": "ff931135def3c6dedb2a5360abe97c299d27471e8c8ea042c57a953e598ac67f",
+      "currentBytes": 231575,
+      "modifiedShanghai": "2026-11-06T17:05:38.521789+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-001\\02-legacy-social-to-deliverables-1440.png",
+      "currentSha256": "71ec000251a68128c762c207b496217355d658574cd6f4a90fff90d3eac90178",
+      "currentBytes": 201471,
+      "modifiedShanghai": "2026-11-06T17:05:40.748691+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-001\\03-invalid-legacy-context-1440.png",
+      "currentSha256": "cb4611f2880d366b71bbe2388eeceb23eeb4ece8add487717e97520f7caa8817",
+      "currentBytes": 64433,
+      "modifiedShanghai": "2026-11-06T17:05:42.009995+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-001\\04-social-detail-deliverables-active-1440.png",
+      "currentSha256": "53a0e23fb9842fc88a275d492d7612b55573e9f07c2ba0dd5db417280ecf7962",
+      "currentBytes": 66107,
+      "modifiedShanghai": "2026-11-06T17:05:42.958091+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\atelier-1366.png",
+      "currentSha256": "7a71c8fc46d4298fe873a9c4620e5abb2bab2462ce434c51ae7d783dab0e3994",
+      "currentBytes": 270465,
+      "modifiedShanghai": "2026-11-06T17:05:49.105302+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\atelier-1440.png",
+      "currentSha256": "133c3062102ba868ff7818cf8069e17b618957e37d1b05f156efc82869d467fa",
+      "currentBytes": 299891,
+      "modifiedShanghai": "2026-11-06T17:05:46.748532+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\home-1366.png",
+      "currentSha256": "3f158aa905a07187dc8cf20950b47d58433a444364904fb334bc281ad76ef0b5",
+      "currentBytes": 123878,
+      "modifiedShanghai": "2026-11-06T17:05:47.339733+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\home-1440.png",
+      "currentSha256": "ff931135def3c6dedb2a5360abe97c299d27471e8c8ea042c57a953e598ac67f",
+      "currentBytes": 231575,
+      "modifiedShanghai": "2026-11-06T17:05:44.977915+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\opportunities-1366.png",
+      "currentSha256": "cd677bacbbb910d07bf7b9c23bffbeaa371b97464804c52c253f35ce6eb77ccf",
+      "currentBytes": 169496,
+      "modifiedShanghai": "2026-11-06T17:05:48.500835+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\opportunities-1440.png",
+      "currentSha256": "241f98baba017023cb754ecb8c1b3a127b8fb49a2c80415c09e99b4da4d54753",
+      "currentBytes": 189876,
+      "modifiedShanghai": "2026-11-06T17:05:46.149253+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\radar-1366.png",
+      "currentSha256": "4cdcea801fb479ac2c95038e4411897ee88a59c1991faba6f29f8823379660d0",
+      "currentBytes": 188042,
+      "modifiedShanghai": "2026-11-06T17:05:47.925138+08:00"
+    },
+    {
+      "path": "evidence\\product\\workspace-integration\\ws-002\\radar-1440.png",
+      "currentSha256": "6402c7a87d8fafa16e90e6139aaaddd165bad94977dfb081824cd592f13c3ce7",
+      "currentBytes": 203008,
+      "modifiedShanghai": "2026-11-06T17:05:45.573815+08:00"
+    }
+  ],
+  "priorBytesRestored": false,
+  "originalByteIdentityVerified": false,
+  "mainReview20FileProofScope": "Only protected source/media and submitted run-2026-11-06T1711 evidence during the independent main rerun; does not cover earlier DSH regression or these 12 historical screenshots",
+  "sourceStillMatchesReviewed": true
+}

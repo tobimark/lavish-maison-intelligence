@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "brand": {
+      "id": "scn-luxury-gifting.brand.lavish",
+      "name": "Lavish Perfumes",
+      "logoAssetId": "scn-luxury-gifting.asset.logo",
+      "tone": [
+        "quiet luxury editorial",
+        "measured, contemporary",
+        "product-led and respectful of factual limits"
+      ],
+      "rules": [
+        "Preserve approved opaque 294×294 Lavish logo unchanged and at correct aspect ratio.",
+        "Preserve real SKU product photography and legible labels; do not redraw bottle.",
+        "Make unverified campaign claims explicitly conceptual and simulated.",
+        "English and Arabic versions require local native/brand review before external publication."
+      ],
+      "prohibitedClaims": [
+        "Verified scent layering results or combination performance",
+        "Specific oud provenance, heritage, production process, or certification",
+        "Longevity, medical effect, endorsements, sales volume or measured consumer sentiment",
+        "Discounts, bundles, packaging and gifting services not verified in product documents"
+      ]
+    },
+    "products": [
+      {
+        "id": "scn-luxury-gifting.product.oud",
+        "officialName": "LAVISH OUD",
+        "sku": "6290360532790 / 101653",
+        "factsSourceUrl": "https://lavishperfumes.com/product/lavish-oud/",
+        "verifiedFacts": [
+          "Official product title: LAVISH OUD.",
+          "Identifiers shown in source: 6290360532790 and 101653.",
+          "Official product description refers to oud, spices and floral facets.",
+          "Bottle size is not verified; no size claim is made."
+        ],
+        "imageAssetIds": [
+          "scn-luxury-gifting.asset.oud"
+        ]
+      },
+      {
+        "id": "scn-luxury-gifting.product.perla",
+        "officialName": "PERLA 50ML UNISEX",
+        "sku": "6290360532820 / 101691",
+        "factsSourceUrl": "https://lavishperfumes.com/product/perla-50ml-unisex/",
+        "verifiedFacts": [
+          "Official product title: PERLA 50ML UNISEX.",
+          "Identifiers shown in source: 6290360532820 and 101691.",
+          "50 ml; unisex.",
+          "Official product description refers to floral, fruity and musk facets."
+        ],
+        "imageAssetIds": [
+          "scn-luxury-gifting.asset.perla"
+        ]
+      }
+    ]
+  }
+}

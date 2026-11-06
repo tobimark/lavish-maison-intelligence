@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "recipients": [
+      {
+        "id": "scn-luxury-gifting.recipient.brand-review",
+        "displayName": "Lavish Demo Brand Review (simulated)",
+        "role": "Brand reviewer — hypothetical",
+        "email": "brand-review@lavish-demo.invalid",
+        "isSimulated": true
+      },
+      {
+        "id": "scn-luxury-gifting.recipient.creative-ops",
+        "displayName": "Lavish Demo Creative Operations (simulated)",
+        "role": "Creative operations — hypothetical",
+        "email": "creative-ops@lavish-demo.invalid",
+        "isSimulated": true
+      }
+    ],
+    "plans": [
+      {
+        "id": "scn-luxury-gifting.plan.en-v1",
+        "scriptVersionId": "scn-luxury-gifting.script.en-v1",
+        "videoId": "scn-luxury-gifting.video.en-v1",
+        "recipientIds": [
+          "scn-luxury-gifting.recipient.brand-review",
+          "scn-luxury-gifting.recipient.creative-ops"
+        ],
+        "attachmentAssetIds": [
+          "scn-luxury-gifting.asset.video-en",
+          "scn-luxury-gifting.asset.vtt-en"
+        ],
+        "subject": "[SIMULATED / NOT SENT] Lavish creative concept: A Gesture, Considered",
+        "body": "SIMULATED DELIVERY — NO EMAIL WAS SENT.\n\nDear Lavish Demo Review Team,\n\nPlease find the conceptual creative pack for \"A Gesture, Considered\".\n\nCreative rationale: A gifting concept anchored in the verified PERLA 50ML UNISEX product. No gift box, bundle, wrapping service, discount or occasion-based demand is asserted.\n\nScript: English, 15 seconds, four shots; editable in the mock workflow.\nArabic: a separate complete text/subtitle draft exists and requires native/brand review.\n\nPre-produced video: PLANNED (luxury-gifting-en-15s.mp4). This draft currently has no MP4 or poster; do not use a broken link as a delivered asset. The future POC replay will show a simulated attachment after actual media handoff and validation.\n\nRequested review: brand tone; exact product identity and claims; Arabic copy; video-to-script alignment; media rights.\n\nThis email is a scenario fixture only. Recipient addresses use .invalid. No platform, rendering API or email service was contacted.\n\nLavish AI Marketing POC / Mock-only concept.",
+        "channel": "email",
+        "scheduledVirtualMs": 104000,
+        "disclosure": "Pre-authored simulated delivery plan only. No actual email, link, attachment transfer or external delivery receipt."
+      }
+    ],
+    "records": [
+      {
+        "id": "scn-luxury-gifting.record.failed-1",
+        "planId": "scn-luxury-gifting.plan.en-v1",
+        "outcome": "failed",
+        "attempt": 1,
+        "atMs": 106000,
+        "failureCode": "delivery_failed",
+        "mode": "mock"
+      },
+      {
+        "id": "scn-luxury-gifting.record.delivered-2",
+        "planId": "scn-luxury-gifting.plan.en-v1",
+        "outcome": "simulated_delivered",
+        "attempt": 2,
+        "atMs": 112000,
+        "failureCode": null,
+        "mode": "mock"
+      }
+    ]
+  }
+}

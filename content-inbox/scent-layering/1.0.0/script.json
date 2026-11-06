@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "versions": [
+      {
+        "id": "scn-scent-layering.script.en-v1",
+        "briefId": "scn-scent-layering.brief.signature",
+        "version": 1,
+        "language": "en",
+        "title": "Your signature. In layers.",
+        "hook": "One signature. More than one note.",
+        "message": "An invitation to explore LAVISH OUD and PERLA as a personal pairing concept.",
+        "cta": "Discover Lavish Perfumes",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-scent-layering.shot.en-1",
+            "startMs": 0,
+            "durationMs": 3000,
+            "visual": "Opening product study: LAVISH OUD and PERLA official full photographs, each contained in a generous white field. Preserve both complete bottles and the PERLA package; no cutout, redrawn label or fabricated liquid. Introduce the hook in separate negative space.",
+            "voiceover": "",
+            "onScreenText": "One signature. More than one note.",
+            "transition": "Gentle cut or 180 ms crossfade inside this shot interval; preserve the exact shot boundary.",
+            "assetIds": [
+              "scn-scent-layering.asset.oud",
+              "scn-scent-layering.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.en-2",
+            "startMs": 3000,
+            "durationMs": 4000,
+            "visual": "LAVISH OUD official photograph alone, complete bottle and label visible. A slow camera move may translate the full photograph by at most 3%, without cropping bottle or label; text stays outside the product.",
+            "voiceover": "",
+            "onScreenText": "Begin with LAVISH OUD.",
+            "transition": "Gentle cut or 180 ms crossfade inside this shot interval; preserve the exact shot boundary.",
+            "assetIds": [
+              "scn-scent-layering.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.en-3",
+            "startMs": 7000,
+            "durationMs": 4000,
+            "visual": "PERLA official photograph with bottle and package, followed by a balanced two-product composition. Preserve each image aspect ratio; do not imply actual bottle size from unverified physical dimensions. Present exploration, not a spray tutorial.",
+            "voiceover": "",
+            "onScreenText": "Explore a pairing with PERLA 50ML UNISEX.",
+            "transition": "Gentle cut or 180 ms crossfade inside this shot interval; preserve the exact shot boundary.",
+            "assetIds": [
+              "scn-scent-layering.asset.perla",
+              "scn-scent-layering.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.en-4",
+            "startMs": 11000,
+            "durationMs": 4000,
+            "visual": "End card on warm white: the exact supplied opaque gold-square Lavish Logo, centered, with generous clear space. Keep its original shape and colors; no redraw, filter or crop. CTA below it; no price, offer, or unsupported claim.",
+            "voiceover": "",
+            "onScreenText": "Make it yours. Discover Lavish Perfumes.",
+            "transition": "Hold through 15000 ms; no fade that obscures the CTA.",
+            "assetIds": [
+              "scn-scent-layering.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-scent-layering.subtitle.en-1",
+            "startMs": 0,
+            "endMs": 3000,
+            "text": "One signature. More than one note."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.en-2",
+            "startMs": 3000,
+            "endMs": 7000,
+            "text": "Begin with LAVISH OUD."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.en-3",
+            "startMs": 7000,
+            "endMs": 11000,
+            "text": "Explore a pairing with PERLA 50ML UNISEX."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.en-4",
+            "startMs": 11000,
+            "endMs": 15000,
+            "text": "Make it yours. Discover Lavish Perfumes."
+          }
+        ],
+        "caption": "Your signature. In layers. Explore LAVISH OUD and PERLA 50ML UNISEX with Lavish Perfumes. A pairing concept to discover at your own pace. Internal concept demo; product combination has not been sensory-tested.",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#ScentLayering",
+          "#FragranceDiscovery"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.script.ar-v1",
+        "briefId": "scn-scent-layering.brief.signature",
+        "version": 1,
+        "language": "ar",
+        "title": "بصمتك العطرية، بطريقتك.",
+        "hook": "بصمتك العطرية، بطريقتك.",
+        "message": "دعوة لاكتشاف LAVISH OUD وPERLA ضمن فكرة تنسيق عطري شخصي.",
+        "cta": "اكتشف Lavish Perfumes",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-scent-layering.shot.ar-1",
+            "startMs": 0,
+            "durationMs": 3000,
+            "visual": "Opening product study: LAVISH OUD and PERLA official full photographs, each contained in a generous white field. Preserve both complete bottles and the PERLA package; no cutout, redrawn label or fabricated liquid. Introduce the hook in separate negative space.",
+            "voiceover": "",
+            "onScreenText": "بصمتك العطرية، بطريقتك.",
+            "transition": "Gentle cut or 180 ms crossfade inside this shot interval; preserve the exact shot boundary.",
+            "assetIds": [
+              "scn-scent-layering.asset.oud",
+              "scn-scent-layering.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.ar-2",
+            "startMs": 3000,
+            "durationMs": 4000,
+            "visual": "LAVISH OUD official photograph alone, complete bottle and label visible. A slow camera move may translate the full photograph by at most 3%, without cropping bottle or label; text stays outside the product.",
+            "voiceover": "",
+            "onScreenText": "ابدأ مع LAVISH OUD.",
+            "transition": "Gentle cut or 180 ms crossfade inside this shot interval; preserve the exact shot boundary.",
+            "assetIds": [
+              "scn-scent-layering.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.ar-3",
+            "startMs": 7000,
+            "durationMs": 4000,
+            "visual": "PERLA official photograph with bottle and package, followed by a balanced two-product composition. Preserve each image aspect ratio; do not imply actual bottle size from unverified physical dimensions. Present exploration, not a spray tutorial.",
+            "voiceover": "",
+            "onScreenText": "اكتشف تنسيقاً مع PERLA 50ML UNISEX.",
+            "transition": "Gentle cut or 180 ms crossfade inside this shot interval; preserve the exact shot boundary.",
+            "assetIds": [
+              "scn-scent-layering.asset.perla",
+              "scn-scent-layering.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.ar-4",
+            "startMs": 11000,
+            "durationMs": 4000,
+            "visual": "End card on warm white: the exact supplied opaque gold-square Lavish Logo, centered, with generous clear space. Keep its original shape and colors; no redraw, filter or crop. CTA below it; no price, offer, or unsupported claim.",
+            "voiceover": "",
+            "onScreenText": "اختر بصمتك. اكتشف Lavish Perfumes.",
+            "transition": "Hold through 15000 ms; no fade that obscures the CTA.",
+            "assetIds": [
+              "scn-scent-layering.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-scent-layering.subtitle.ar-1",
+            "startMs": 0,
+            "endMs": 3000,
+            "text": "بصمتك العطرية، بطريقتك."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.ar-2",
+            "startMs": 3000,
+            "endMs": 7000,
+            "text": "ابدأ مع LAVISH OUD."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.ar-3",
+            "startMs": 7000,
+            "endMs": 11000,
+            "text": "اكتشف تنسيقاً مع PERLA 50ML UNISEX."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.ar-4",
+            "startMs": 11000,
+            "endMs": 15000,
+            "text": "اختر بصمتك. اكتشف Lavish Perfumes."
+          }
+        ],
+        "caption": "بصمتك العطرية، بطريقتك. اكتشف LAVISH OUD وPERLA 50ML UNISEX مع Lavish Perfumes، واستكشف فكرة التنسيق العطري على طريقتك. نموذج إبداعي داخلي؛ لم يُختبر المزج بين المنتجين حسياً.",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#ScentLayering",
+          "#FragranceDiscovery"
+        ]
+      }
+    ]
+  }
+}

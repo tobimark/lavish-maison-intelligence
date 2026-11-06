@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "checkpoints": [
+      {
+        "cursorSequence": 0,
+        "workflow": {
+          "discovery": "ready",
+          "analysis": "locked",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 7,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "ready",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.signal.gifting-control",
+          "scn-scent-layering.signal.layering-guide",
+          "scn-scent-layering.signal.personal-signature",
+          "scn-scent-layering.trend.gifting-context",
+          "scn-scent-layering.trend.layering-interest"
+        ],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 14,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "ready",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.analysis.layering-opportunity",
+          "scn-scent-layering.brief.signature",
+          "scn-scent-layering.script.ar-v1",
+          "scn-scent-layering.script.en-v1",
+          "scn-scent-layering.shot.ar-1",
+          "scn-scent-layering.shot.ar-2",
+          "scn-scent-layering.shot.ar-3",
+          "scn-scent-layering.shot.ar-4",
+          "scn-scent-layering.shot.en-1",
+          "scn-scent-layering.shot.en-2",
+          "scn-scent-layering.shot.en-3",
+          "scn-scent-layering.shot.en-4",
+          "scn-scent-layering.signal.gifting-control",
+          "scn-scent-layering.signal.layering-guide",
+          "scn-scent-layering.signal.personal-signature",
+          "scn-scent-layering.subtitle.ar-1",
+          "scn-scent-layering.subtitle.ar-2",
+          "scn-scent-layering.subtitle.ar-3",
+          "scn-scent-layering.subtitle.ar-4",
+          "scn-scent-layering.subtitle.en-1",
+          "scn-scent-layering.subtitle.en-2",
+          "scn-scent-layering.subtitle.en-3",
+          "scn-scent-layering.subtitle.en-4",
+          "scn-scent-layering.trend.gifting-context",
+          "scn-scent-layering.trend.layering-interest"
+        ],
+        "activeScriptVersionId": "scn-scent-layering.script.en-v1",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 21,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "ready"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.analysis.layering-opportunity",
+          "scn-scent-layering.brief.signature",
+          "scn-scent-layering.script.ar-v1",
+          "scn-scent-layering.script.en-v1",
+          "scn-scent-layering.shot.ar-1",
+          "scn-scent-layering.shot.ar-2",
+          "scn-scent-layering.shot.ar-3",
+          "scn-scent-layering.shot.ar-4",
+          "scn-scent-layering.shot.en-1",
+          "scn-scent-layering.shot.en-2",
+          "scn-scent-layering.shot.en-3",
+          "scn-scent-layering.shot.en-4",
+          "scn-scent-layering.signal.gifting-control",
+          "scn-scent-layering.signal.layering-guide",
+          "scn-scent-layering.signal.personal-signature",
+          "scn-scent-layering.subtitle.ar-1",
+          "scn-scent-layering.subtitle.ar-2",
+          "scn-scent-layering.subtitle.ar-3",
+          "scn-scent-layering.subtitle.ar-4",
+          "scn-scent-layering.subtitle.en-1",
+          "scn-scent-layering.subtitle.en-2",
+          "scn-scent-layering.subtitle.en-3",
+          "scn-scent-layering.subtitle.en-4",
+          "scn-scent-layering.trend.gifting-context",
+          "scn-scent-layering.trend.layering-interest",
+          "scn-scent-layering.video.en-v1"
+        ],
+        "activeScriptVersionId": "scn-scent-layering.script.en-v1",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 25,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "completed"
+        },
+        "visibleEntityIds": [
+          "scn-scent-layering.analysis.layering-opportunity",
+          "scn-scent-layering.brief.signature",
+          "scn-scent-layering.delivery.review-pack",
+          "scn-scent-layering.record.simulated-success",
+          "scn-scent-layering.script.ar-v1",
+          "scn-scent-layering.script.en-v1",
+          "scn-scent-layering.shot.ar-1",
+          "scn-scent-layering.shot.ar-2",
+          "scn-scent-layering.shot.ar-3",
+          "scn-scent-layering.shot.ar-4",
+          "scn-scent-layering.shot.en-1",
+          "scn-scent-layering.shot.en-2",
+          "scn-scent-layering.shot.en-3",
+          "scn-scent-layering.shot.en-4",
+          "scn-scent-layering.signal.gifting-control",
+          "scn-scent-layering.signal.layering-guide",
+          "scn-scent-layering.signal.personal-signature",
+          "scn-scent-layering.subtitle.ar-1",
+          "scn-scent-layering.subtitle.ar-2",
+          "scn-scent-layering.subtitle.ar-3",
+          "scn-scent-layering.subtitle.ar-4",
+          "scn-scent-layering.subtitle.en-1",
+          "scn-scent-layering.subtitle.en-2",
+          "scn-scent-layering.subtitle.en-3",
+          "scn-scent-layering.subtitle.en-4",
+          "scn-scent-layering.trend.gifting-context",
+          "scn-scent-layering.trend.layering-interest",
+          "scn-scent-layering.video.en-v1"
+        ],
+        "activeScriptVersionId": "scn-scent-layering.script.en-v1",
+        "activeVideoId": "scn-scent-layering.video.en-v1",
+        "deliveryRecordIds": [
+          "scn-scent-layering.record.simulated-success"
+        ]
+      }
+    ]
+  }
+}

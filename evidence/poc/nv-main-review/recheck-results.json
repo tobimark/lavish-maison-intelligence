@@ -1,0 +1,13 @@
+{
+  "discard": {
+    "original": "Your Scent, Your Expression",
+    "visibleAfterDiscard": "Your Scent, Your Expression",
+    "savedAfterDiscard": "MAIN DISCARDED TITLE MUST NOT RETURN"
+  },
+  "delivery": {
+    "displaySubject": "[SIMULATED] MAIN UNSAVED DISPLAY SUBJECT",
+    "buttonEnabled": true,
+    "dialogRecipients": "Confirm simulated content delivery?\n\nThis writes a local mock attempt only. No email is sent and no video is attached.\n\n×\n\nRecipients: changed-recipient@lavish-demo.invalid, creative-ops@lavish-demo.invalid\n\nscent-layering-en-1-script.json\n4208 B\nscent-layering-en-subtitles.vtt\n257 B\nscent-layering-en-email.txt\n588 B\nREADME.txt\n652 B\nSIMULATED-DELIVERY.json\nwritten on export\n\nNo MP4 or poster is included. This is not a real email delivery.\n\nCancel\nRecord simulated delivery",
+    "recordedRow": "Attempt\tResult\tScript\tSnapshot\t\n1\tSimulated delivered\tusr.usr.session-1793862096013-k03ug8.script.1\t4 files · [SIMULATED] MAIN SAVED SUBJECT\t\nExport ZIP"
+  }
+}

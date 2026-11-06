@@ -1,0 +1,9 @@
+{
+  "generator": "scripts/poc/generate-content-types.mjs",
+  "source": "contracts/poc/content-only.schema.json",
+  "schemaSha256": "61c5daa0c02467bb7ee7e7da5bf3ef42af3594bc942e48b8d1c745b09d6bfd9c",
+  "schemaBytes": 111987,
+  "typesFile": "content-only.types.ts",
+  "typesSha256": "4f1f75c01346fd8dea49fd5779bba06732644711b5c6dc57b4d462c469e49885",
+  "typesBytes": 24823
+}

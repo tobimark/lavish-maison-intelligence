@@ -1,0 +1,1 @@
+module.exports={testDir:__dirname,testMatch:'*.spec.ts',workers:1,fullyParallel:false,retries:0,timeout:120000,expect:{timeout:10000},reporter:[['list']],outputDir:__dirname+'/test-results',use:{baseURL:'http://127.0.0.1:3166',viewport:{width:1440,height:900},deviceScaleFactor:1,locale:'en-GB',colorScheme:'light',navigationTimeout:30000,actionTimeout:10000}};

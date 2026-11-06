@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-11-04T16:33:11.684Z",
+  "scope": "Planning integrity and reference evidence only; not product tests or M1 visual acceptance",
+  "passed": 884,
+  "failures": [],
+  "contrasts": [
+    {
+      "name": "body",
+      "ratio": 15.260473463674826
+    },
+    {
+      "name": "secondary",
+      "ratio": 7.344288636949973
+    },
+    {
+      "name": "meta",
+      "ratio": 5.0444354375486675
+    },
+    {
+      "name": "gold text",
+      "ratio": 4.869484358315814
+    },
+    {
+      "name": "danger text",
+      "ratio": 5.01183115036567
+    },
+    {
+      "name": "info text",
+      "ratio": 6.598611998189613
+    },
+    {
+      "name": "success text",
+      "ratio": 4.792347807336872
+    }
+  ],
+  "tasks": 51,
+  "openapiPaths": 46
+}

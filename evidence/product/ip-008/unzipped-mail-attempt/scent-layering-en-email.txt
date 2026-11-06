@@ -1,0 +1,12 @@
+To: Lavish Demo Brand Review (simulated) <brand-review@lavish-demo.invalid>, Lavish Demo Creative Operations (simulated) <creative-ops@lavish-demo.invalid>
+Subject: [SIMULATED · NOT SENT] Dirty subject
+
+SIMULATED DELIVERY — NO EMAIL WAS SENT.
+
+Please review the prepared EN script for "Your Scent, Your Expression".
+Version: Your Scent, Your Expression (Preset).
+
+Attached content includes the script JSON, subtitle VTT and a README. No video, poster or rendered advertisement is attached.
+Recipient addresses use the reserved .invalid domain. No platform, renderer or email service is contacted.
+
+SIMULATED CONTENT PACK — no email was sent and no video is attached.

@@ -1,0 +1,20 @@
+{
+  "scope": "Independent contract/semantic/error-handling probes only; no customer content/media acceptance",
+  "correctedSchemaAcceptsFiniteFixture": true,
+  "foreignEntity": {
+    "l2Errors": [
+      {
+        "code": "CROSS_SCENARIO_ENTITY",
+        "file": "discovery.json",
+        "jsonPointer": "/data/evidence/1/id",
+        "message": "Entity ID scn-oud-storytelling.evidence.foreign belongs to scn-oud-storytelling, but this package is scn-scent-layering. Every entity ID (including unreferenced metadata, nested shots/subtitles and events) must use the package namespace."
+      }
+    ]
+  },
+  "malformedCheckpoint": {
+    "exitCode": 1,
+    "reportExists": true,
+    "stderr": ""
+  },
+  "schemaDefinitions": 36
+}

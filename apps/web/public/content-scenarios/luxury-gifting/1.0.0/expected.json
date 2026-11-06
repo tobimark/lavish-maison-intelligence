@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "checkpoints": [
+      {
+        "cursorSequence": 0,
+        "workflow": {
+          "discovery": "ready",
+          "analysis": "locked",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 9,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "ready",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-luxury-gifting.signal.s1",
+          "scn-luxury-gifting.signal.s2",
+          "scn-luxury-gifting.signal.s3",
+          "scn-luxury-gifting.signal.s4",
+          "scn-luxury-gifting.signal.s5",
+          "scn-luxury-gifting.trend.control",
+          "scn-luxury-gifting.trend.main"
+        ],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 16,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "ready",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-luxury-gifting.analysis.main",
+          "scn-luxury-gifting.brief.main",
+          "scn-luxury-gifting.script.ar-v1",
+          "scn-luxury-gifting.script.en-v1",
+          "scn-luxury-gifting.shot.ar-1",
+          "scn-luxury-gifting.shot.ar-2",
+          "scn-luxury-gifting.shot.ar-3",
+          "scn-luxury-gifting.shot.ar-4",
+          "scn-luxury-gifting.shot.en-1",
+          "scn-luxury-gifting.shot.en-2",
+          "scn-luxury-gifting.shot.en-3",
+          "scn-luxury-gifting.shot.en-4",
+          "scn-luxury-gifting.signal.s1",
+          "scn-luxury-gifting.signal.s2",
+          "scn-luxury-gifting.signal.s3",
+          "scn-luxury-gifting.signal.s4",
+          "scn-luxury-gifting.signal.s5",
+          "scn-luxury-gifting.subtitle.ar-1",
+          "scn-luxury-gifting.subtitle.ar-2",
+          "scn-luxury-gifting.subtitle.ar-3",
+          "scn-luxury-gifting.subtitle.ar-4",
+          "scn-luxury-gifting.subtitle.en-1",
+          "scn-luxury-gifting.subtitle.en-2",
+          "scn-luxury-gifting.subtitle.en-3",
+          "scn-luxury-gifting.subtitle.en-4",
+          "scn-luxury-gifting.trend.control",
+          "scn-luxury-gifting.trend.main"
+        ],
+        "activeScriptVersionId": "scn-luxury-gifting.script.en-v1",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 24,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "ready"
+        },
+        "visibleEntityIds": [
+          "scn-luxury-gifting.analysis.main",
+          "scn-luxury-gifting.brief.main",
+          "scn-luxury-gifting.script.ar-v1",
+          "scn-luxury-gifting.script.en-v1",
+          "scn-luxury-gifting.shot.ar-1",
+          "scn-luxury-gifting.shot.ar-2",
+          "scn-luxury-gifting.shot.ar-3",
+          "scn-luxury-gifting.shot.ar-4",
+          "scn-luxury-gifting.shot.en-1",
+          "scn-luxury-gifting.shot.en-2",
+          "scn-luxury-gifting.shot.en-3",
+          "scn-luxury-gifting.shot.en-4",
+          "scn-luxury-gifting.signal.s1",
+          "scn-luxury-gifting.signal.s2",
+          "scn-luxury-gifting.signal.s3",
+          "scn-luxury-gifting.signal.s4",
+          "scn-luxury-gifting.signal.s5",
+          "scn-luxury-gifting.subtitle.ar-1",
+          "scn-luxury-gifting.subtitle.ar-2",
+          "scn-luxury-gifting.subtitle.ar-3",
+          "scn-luxury-gifting.subtitle.ar-4",
+          "scn-luxury-gifting.subtitle.en-1",
+          "scn-luxury-gifting.subtitle.en-2",
+          "scn-luxury-gifting.subtitle.en-3",
+          "scn-luxury-gifting.subtitle.en-4",
+          "scn-luxury-gifting.trend.control",
+          "scn-luxury-gifting.trend.main",
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "activeScriptVersionId": "scn-luxury-gifting.script.en-v1",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 28,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "completed"
+        },
+        "visibleEntityIds": [
+          "scn-luxury-gifting.analysis.main",
+          "scn-luxury-gifting.brief.main",
+          "scn-luxury-gifting.plan.en-v1",
+          "scn-luxury-gifting.record.delivered-2",
+          "scn-luxury-gifting.script.ar-v1",
+          "scn-luxury-gifting.script.en-v1",
+          "scn-luxury-gifting.shot.ar-1",
+          "scn-luxury-gifting.shot.ar-2",
+          "scn-luxury-gifting.shot.ar-3",
+          "scn-luxury-gifting.shot.ar-4",
+          "scn-luxury-gifting.shot.en-1",
+          "scn-luxury-gifting.shot.en-2",
+          "scn-luxury-gifting.shot.en-3",
+          "scn-luxury-gifting.shot.en-4",
+          "scn-luxury-gifting.signal.s1",
+          "scn-luxury-gifting.signal.s2",
+          "scn-luxury-gifting.signal.s3",
+          "scn-luxury-gifting.signal.s4",
+          "scn-luxury-gifting.signal.s5",
+          "scn-luxury-gifting.subtitle.ar-1",
+          "scn-luxury-gifting.subtitle.ar-2",
+          "scn-luxury-gifting.subtitle.ar-3",
+          "scn-luxury-gifting.subtitle.ar-4",
+          "scn-luxury-gifting.subtitle.en-1",
+          "scn-luxury-gifting.subtitle.en-2",
+          "scn-luxury-gifting.subtitle.en-3",
+          "scn-luxury-gifting.subtitle.en-4",
+          "scn-luxury-gifting.trend.control",
+          "scn-luxury-gifting.trend.main",
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "activeScriptVersionId": "scn-luxury-gifting.script.en-v1",
+        "activeVideoId": "scn-luxury-gifting.video.en-v1",
+        "deliveryRecordIds": [
+          "scn-luxury-gifting.record.delivered-2"
+        ]
+      }
+    ]
+  }
+}

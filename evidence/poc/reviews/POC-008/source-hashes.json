@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-04T16:33:11.480Z",
+  "reviewDate": "2026-11-05 Asia/Shanghai",
+  "files": [
+    {
+      "path": "apps/web/app/page.tsx",
+      "bytes": 595,
+      "sha256": "a3fe7bdecbcd60659b79a7354e2958e95039c906080f8cfa4ec3075ade64fdfe"
+    },
+    {
+      "path": "apps/web/components/poc/HomeDashboard.tsx",
+      "bytes": 12286,
+      "sha256": "c1a39b61dff147b3c25b5ac9ff8076605c866dc600b07bedfff2848e9e5d271c"
+    },
+    {
+      "path": "apps/web/components/poc/WorkflowFrame.tsx",
+      "bytes": 37322,
+      "sha256": "7d50296570aa57e9d2419b5e3c84fa6a34b635747aa6c5ff4bc8f47fce847924"
+    },
+    {
+      "path": "apps/web/components/poc/browser-api.ts",
+      "bytes": 1117,
+      "sha256": "224e84a634e8fc53d8a28fe308d05a7da8a6e4a97d4e11d2b96fd088d3448524"
+    },
+    {
+      "path": "apps/web/demo/poc/api/scenario-source.ts",
+      "bytes": 2640,
+      "sha256": "73aaa54633b486c71a519742c4a994e1dd0384c14cba451b7921f3c30c1a8acb"
+    },
+    {
+      "path": "apps/web/tests/poc-prototype.spec.ts",
+      "bytes": 8559,
+      "sha256": "1e6f333541ac584511493ab374eb3547f3d79a800f85df6169d8fe9536fa52d7"
+    },
+    {
+      "path": "contracts/poc/scenario.schema.json",
+      "bytes": 108148,
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a"
+    },
+    {
+      "path": "design/tokens.css",
+      "bytes": 2609,
+      "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+    }
+  ]
+}

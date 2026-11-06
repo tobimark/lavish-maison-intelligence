@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-11-04T15:38:49.037Z",
+  "scope": "scenario",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "f76d23a93f829c83773bdd38fb15c76969dbcc03b571c27a183b385379f2380f",
+  "layers": [
+    {
+      "name": "L1",
+      "status": "pass"
+    },
+    {
+      "name": "L2",
+      "status": "pass"
+    },
+    {
+      "name": "L3",
+      "status": "pass"
+    },
+    {
+      "name": "L4",
+      "status": "fail"
+    },
+    {
+      "name": "L5",
+      "status": "not_run"
+    }
+  ],
+  "errors": [
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/0/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/logo.png does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/1/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/product.png does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/2/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/video.mp4 does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/3/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/poster.png does not exist under apps\\web\\public\\scenario-media."
+    },
+    {
+      "code": "MEDIA_MISSING",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/4/uri",
+      "message": "Media file /scenario-media/scent-layering/1.0.0/subtitles-en.vtt does not exist under apps\\web\\public\\scenario-media."
+    }
+  ],
+  "warnings": [
+    "L3 checkpoint projection comparison passed via the POC-005 reducer for 5 expected checkpoint(s).",
+    "L5 media verification is NOT_RUN: no --media-report was supplied (POC-002 owns real HTTP/media checks).",
+    "Content reviewStatus is not reviewed; content acceptance is a main-control gate and cannot be inferred from schema validation."
+  ],
+  "runnable": false,
+  "checkpointProjection": {
+    "status": "pass",
+    "checked": 5,
+    "reason": null
+  }
+}

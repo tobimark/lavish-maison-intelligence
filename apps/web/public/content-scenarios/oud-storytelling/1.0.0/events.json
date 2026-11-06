@@ -1,0 +1,560 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "events": [
+      {
+        "id": "scn-oud-storytelling.event.0001",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 1,
+        "atMs": 0,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "discovery"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0002",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 2,
+        "atMs": 4500,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-oud-storytelling.evidence.e1"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.signal.s1"
+        ],
+        "payload": {
+          "signalId": "scn-oud-storytelling.signal.s1"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0003",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 3,
+        "atMs": 8500,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-oud-storytelling.evidence.e2"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.signal.s2"
+        ],
+        "payload": {
+          "signalId": "scn-oud-storytelling.signal.s2"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0004",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 4,
+        "atMs": 12000,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-oud-storytelling.evidence.e3"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.signal.s3"
+        ],
+        "payload": {
+          "signalId": "scn-oud-storytelling.signal.s3"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0005",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 5,
+        "atMs": 15000,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-oud-storytelling.evidence.e4"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.signal.s4"
+        ],
+        "payload": {
+          "signalId": "scn-oud-storytelling.signal.s4"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0006",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 6,
+        "atMs": 18500,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-oud-storytelling.evidence.e5"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.signal.s5"
+        ],
+        "payload": {
+          "signalId": "scn-oud-storytelling.signal.s5"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0007",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 7,
+        "atMs": 25000,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "trend.summarized",
+        "inputRefs": [
+          "scn-oud-storytelling.signal.s1",
+          "scn-oud-storytelling.signal.s2",
+          "scn-oud-storytelling.signal.s3",
+          "scn-oud-storytelling.signal.s4"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.trend.main"
+        ],
+        "payload": {
+          "trendId": "scn-oud-storytelling.trend.main"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0008",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 8,
+        "atMs": 28500,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "trend.summarized",
+        "inputRefs": [
+          "scn-oud-storytelling.signal.s5"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.trend.control"
+        ],
+        "payload": {
+          "trendId": "scn-oud-storytelling.trend.control"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0009",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 9,
+        "atMs": 31500,
+        "stage": "discovery",
+        "runKey": "oud-storytelling-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "discovery"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0010",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 10,
+        "atMs": 35500,
+        "stage": "analysis",
+        "runKey": "oud-storytelling-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "analysis"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0011",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 11,
+        "atMs": 44000,
+        "stage": "analysis",
+        "runKey": "oud-storytelling-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "analysis.presented",
+        "inputRefs": [
+          "scn-oud-storytelling.trend.main",
+          "scn-oud-storytelling.trend.control",
+          "scn-oud-storytelling.evidence.e1",
+          "scn-oud-storytelling.evidence.e2",
+          "scn-oud-storytelling.evidence.e3",
+          "scn-oud-storytelling.evidence.e4",
+          "scn-oud-storytelling.evidence.e5"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.analysis.main"
+        ],
+        "payload": {
+          "analysisId": "scn-oud-storytelling.analysis.main"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0012",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 12,
+        "atMs": 51500,
+        "stage": "analysis",
+        "runKey": "oud-storytelling-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "brief.presented",
+        "inputRefs": [
+          "scn-oud-storytelling.analysis.main",
+          "scn-oud-storytelling.product.oud"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.brief.main"
+        ],
+        "payload": {
+          "briefId": "scn-oud-storytelling.brief.main"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0013",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 13,
+        "atMs": 58000,
+        "stage": "analysis",
+        "runKey": "oud-storytelling-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "script.presented",
+        "inputRefs": [
+          "scn-oud-storytelling.brief.main"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.script.en-v1"
+        ],
+        "payload": {
+          "scriptVersionId": "scn-oud-storytelling.script.en-v1"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0014",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 14,
+        "atMs": 62000,
+        "stage": "analysis",
+        "runKey": "oud-storytelling-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "script.presented",
+        "inputRefs": [
+          "scn-oud-storytelling.brief.main"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.script.ar-v1"
+        ],
+        "payload": {
+          "scriptVersionId": "scn-oud-storytelling.script.ar-v1"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0015",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 15,
+        "atMs": 65500,
+        "stage": "analysis",
+        "runKey": "oud-storytelling-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "script.confirmed",
+        "inputRefs": [
+          "scn-oud-storytelling.script.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "scriptVersionId": "scn-oud-storytelling.script.en-v1"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0016",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 16,
+        "atMs": 67000,
+        "stage": "analysis",
+        "runKey": "oud-storytelling-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "analysis"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0017",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 17,
+        "atMs": 70500,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "video"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0018",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 18,
+        "atMs": 73000,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.queued",
+        "inputRefs": [
+          "scn-oud-storytelling.script.en-v1",
+          "scn-oud-storytelling.shot.en-1",
+          "scn-oud-storytelling.shot.en-2",
+          "scn-oud-storytelling.shot.en-3",
+          "scn-oud-storytelling.shot.en-4",
+          "scn-oud-storytelling.asset.video-en",
+          "scn-oud-storytelling.asset.poster-en",
+          "scn-oud-storytelling.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "payload": {
+          "videoId": "scn-oud-storytelling.video.en-v1"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0019",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 19,
+        "atMs": 77000,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-oud-storytelling.video.en-v1",
+          "progress": 12
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0020",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 20,
+        "atMs": 80500,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-oud-storytelling.video.en-v1",
+          "progress": 41
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0021",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 21,
+        "atMs": 85500,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-oud-storytelling.video.en-v1",
+          "progress": 78
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0022",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 22,
+        "atMs": 89500,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-oud-storytelling.video.en-v1",
+          "progress": 100
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0023",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 23,
+        "atMs": 93500,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.available",
+        "inputRefs": [
+          "scn-oud-storytelling.script.en-v1",
+          "scn-oud-storytelling.shot.en-1",
+          "scn-oud-storytelling.shot.en-2",
+          "scn-oud-storytelling.shot.en-3",
+          "scn-oud-storytelling.shot.en-4",
+          "scn-oud-storytelling.asset.video-en",
+          "scn-oud-storytelling.asset.poster-en",
+          "scn-oud-storytelling.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "payload": {
+          "videoId": "scn-oud-storytelling.video.en-v1"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0024",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 24,
+        "atMs": 97000,
+        "stage": "video",
+        "runKey": "oud-storytelling-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "video"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0025",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 25,
+        "atMs": 102000,
+        "stage": "delivery",
+        "runKey": "oud-storytelling-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "delivery"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0026",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 26,
+        "atMs": 104500,
+        "stage": "delivery",
+        "runKey": "oud-storytelling-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "delivery.queued",
+        "inputRefs": [
+          "scn-oud-storytelling.script.en-v1",
+          "scn-oud-storytelling.video.en-v1",
+          "scn-oud-storytelling.recipient.brand-review",
+          "scn-oud-storytelling.recipient.creative-ops",
+          "scn-oud-storytelling.asset.video-en",
+          "scn-oud-storytelling.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.plan.en-v1"
+        ],
+        "payload": {
+          "planId": "scn-oud-storytelling.plan.en-v1"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0027",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 27,
+        "atMs": 112000,
+        "stage": "delivery",
+        "runKey": "oud-storytelling-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "delivery.simulated",
+        "inputRefs": [
+          "scn-oud-storytelling.plan.en-v1"
+        ],
+        "outputRefs": [
+          "scn-oud-storytelling.record.delivered-2"
+        ],
+        "payload": {
+          "recordId": "scn-oud-storytelling.record.delivered-2"
+        }
+      },
+      {
+        "id": "scn-oud-storytelling.event.0028",
+        "scenarioId": "scn-oud-storytelling",
+        "scenarioVersion": "1.0.0",
+        "sequence": 28,
+        "atMs": 116000,
+        "stage": "delivery",
+        "runKey": "oud-storytelling-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "delivery"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-05T15:41:27.183Z",
+  "base": "http://127.0.0.1:3140",
+  "overview": {
+    "h1": "From market insight to campaign-ready creative",
+    "pending": 0,
+    "assets": "SERENITY · Creative concept\n\nProduct image → Campaign visual → Video preview\n\nProvided demo assets · Creative progression shown for illustration.\n\nExplore this concept\n01\nProduct image\nThe supplied white-background SERENITY bottle, kept true to the original.\nPreview product image\n02\nCampaign visual\nThe supplied campaign image that sets the atmosphere around the product.\nPreview campaign visual\n03\nVideo preview\n▶\nThe supplied 10-second preview, opened on demand.\nPlay video preview"
+  },
+  "brief": {
+    "title": "SERENITY — A Story in Layers",
+    "identity": 1,
+    "hero": 1,
+    "body": "CAMPAIGN BRIEF SERENITY — A Story in Layers Invite Lavish audiences to explore SERENITY through a refined creative story of light, floral feeling and soft musk language, without a performance claim. Demo / Mock data SERENITY PROVIDED RESULT ASSETS Provided demo assets · Not generated live in this POC. Product identity Supplied white-background SERENITY original. Campaign visual Supplied atmosphere"
+  },
+  "atelier": {
+    "video": 1,
+    "identity": 1,
+    "body": "CREATIVE ATELIER SERENITY — A Story in Layers Campaign workspace · read the prepared brief, bilingual copy and static storyboard. Edit only when you choose to. Demo · Mock data SERENITY — A Story in Layers Option A · SERENITY A Gesture, Considered Option B · PERLA 50ML UNISEX Let the Scent Lead Option C · LAVISH OUD SERENITY PROVIDED RESULT ASSETS Provided demo assets · Not generated live in this POC. Product identity Supplied white-background SERENITY original. Provided video preview Provided d"
+  },
+  "media": {
+    "controls": true,
+    "width": 720,
+    "height": 960,
+    "duration": 10.08,
+    "paused": true
+  },
+  "errors": []
+}

@@ -1,0 +1,15 @@
+const fs=require('fs');
+let p='apps/web/components/product/shared/ProvidedAssets.tsx';
+let s=fs.readFileSync(p,'utf8');
+const meta=`\n              <p className={styles.homePreviewMeta}>\n                Provided demo asset · Not generated live in this POC. The 10.08s / 3:4 preview is independent of the 15-second campaign script.\n              </p>`;
+if (!s.includes(meta)) console.log('MISS meta'); else s=s.replace(meta,'');
+fs.writeFileSync(p,s);
+p='apps/web/components/product/shared/provided.module.css';
+s=fs.readFileSync(p,'utf8');
+s=s.replace('.homeConcept {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n  padding: 20px;','.homeConcept {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  padding: 18px;');
+fs.writeFileSync(p,s);
+p='apps/web/components/product/workspace.module.css';
+s=fs.readFileSync(p,'utf8');
+s=s.replace('.overviewPage {\n  gap: var(--space-4);\n}','.overviewPage {\n  gap: var(--space-3);\n}');
+fs.writeFileSync(p,s);
+console.log('done');

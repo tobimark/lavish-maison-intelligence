@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "data": {
+    "brand": {
+      "id": "scn-scent-layering.brand.lavish",
+      "name": "Lavish Perfumes",
+      "logoAssetId": "scn-scent-layering.asset.logo",
+      "tone": [
+        "Luxury fragrance editorial, calm and precise",
+        "Warm light, clean product silhouettes and thoughtful restraint",
+        "Product first; storytelling must remain faithful to official product facts"
+      ],
+      "rules": [
+        "Use the supplied Lavish logo unmodified, keeping its original aspect ratio and opaque background.",
+        "SERENITY is the sole featured product for this scenario; never silently replace it with OUD or PERLA.",
+        "Preserve actual SERENITY label, bottle geometry and product original; background branches, stones and decorative flower are only props.",
+        "Citrus, floral and musk appear in the official description; their exact note pyramid, performance and production details are not verified.",
+        "Always mark synthetic source signals and charts as DEMO / MOCK; the provided preview video was not generated inside this POC.",
+        "Arabic subtitles and advertising language require native-speaker and brand approval before public use."
+      ],
+      "prohibitedClaims": [
+        "Verified physical perfume layering or pairing results",
+        "That SERENITY contains oud, spices or ingredients identified from photography props",
+        "Specific formula, top/heart/base order, ingredient sourcing, provenance or production process",
+        "Longevity, health effects, awards, reviews, sales, measured trend growth or customer sentiment",
+        "Verified promotions, gifting services or packaging not present in official material",
+        "That the supplied 10.08-second preview is an automatically generated 15-second video"
+      ]
+    },
+    "products": [
+      {
+        "id": "scn-scent-layering.product.serenity",
+        "officialName": "SERENITY",
+        "sku": "6290360533636 / 100014",
+        "factsSourceUrl": "https://lavishperfumes.com/product/serenity/",
+        "verifiedFacts": [
+          "Official Lavish product title: SERENITY.",
+          "Source identifiers provided: 6290360533636 and 100014.",
+          "Official description refers to citrus, floral and musk facets; no order of notes is established in this POC.",
+          "Bottle size/capacity is not verified; do not specify a volume.",
+          "The supplied identity image shows a bottle labelled Serenity and Lavish Perfumes."
+        ],
+        "imageAssetIds": [
+          "scn-scent-layering.asset.serenity-original",
+          "scn-scent-layering.asset.serenity-hero"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "M1": {
+    "status": "in_progress",
+    "reviewer": "主控工程 Agent",
+    "reviewedAt": "2026-11-05",
+    "artifactHash": null,
+    "screenshots": [
+      "evidence/poc/fix-nv-batch-01-main/browser-rerun/delivery-unsaved-1440.png",
+      "evidence/poc/fix-nv-batch-01-main/browser-rerun/delivery-confirm-saved-1440.png",
+      "evidence/poc/fix-nv-batch-01-main/browser-rerun/delivery-1366.png"
+    ],
+    "interactionResults": [
+      "Focused 9 unit / 7 browser tests pass",
+      "R1 delivery snapshot closed",
+      "R2 discard resurrection closed",
+      "Real ZIP checks pass"
+    ],
+    "issuesResolved": [
+      "FIX-TASK-006-01",
+      "FIX-NV-BATCH-01"
+    ],
+    "productOwnerDecision": "User requires free exploration and no dead controls; previous fixed Scenario UI is insufficient",
+    "lastTaskReview": "docs/reviews/FIX-NV-BATCH-01-ACCEPTANCE.md",
+    "openFix": null,
+    "nextTask": "IP submitted review + AS-001/002 publication/API; SERENITY web content update in parallel",
+    "target": "Six freely accessible workspaces with real interactions and understandable business results",
+    "lastComponentReview": "docs/reviews/POC-005-007-ACCEPTANCE.md",
+    "lastScaffoldReview": "docs/reviews/POC-008-ACCEPTANCE.md",
+    "acceptanceScope": "New Interactive Mock Product: not yet implemented or accepted",
+    "productExperienceReview": "new_product_gate_not_run",
+    "productReviewBrief": "docs/handoffs/PRODUCT_REVIEW_SUMMARY.md",
+    "previousAcceptedScope": {
+      "scope": "content_only_core_prototype",
+      "report": "docs/reviews/FIX-NV-BATCH-01-ACCEPTANCE.md",
+      "status": "accepted",
+      "note": "Historical technical/limited visual acceptance preserved; does not accept new free-exploration product"
+    }
+  },
+  "laterBusinessImplementation": "IP batch authorized; no unrelated new functions",
+  "scope": "interactive_mock_product",
+  "M0": {
+    "status": "accepted",
+    "reviewedAt": "2026-11-03",
+    "reviewer": "主控工程 Agent",
+    "report": "docs/reviews/M0.md",
+    "acceptanceScope": "Requirements, reference, visual direction and Web foundation; backend/DB excluded by user clarification"
+  },
+  "POC": {
+    "contractStatus": "defined",
+    "implementationGate": "FAST_05/IP implementation authorized; IP-001 ready; no video dependency",
+    "scenarioA": "content_only_runtime_accepted_video_deferred",
+    "scenarioB": "content_only_runtime_accepted_video_deferred",
+    "scenarioC": "content_only_runtime_accepted_video_deferred",
+    "businessUiGate": "New workspaces require actual screenshot/click/consistency acceptance; previous NV accepted scope retained",
+    "externalServices": "prohibited",
+    "mainBrowserReviewThisTurn": true,
+    "contractErratum": "analysisEntry/videoEntry collision repaired by main",
+    "lastTaskReview": "docs/reviews/FIX-NV-BATCH-01-ACCEPTANCE.md",
+    "openFix": null,
+    "closedFixes": [
+      "FIX-POC-001-01",
+      "FIX-POC-002-01",
+      "FIX-POC-002-02",
+      "FIX-POC-003-01",
+      "FIX-POC-004-01",
+      "FIX-NV-BATCH-01"
+    ],
+    "knownTestDiscoveryIssue": "Full Vitest discovery includes Playwright specs and historical diagnostic probes; targeted tests pass, runner scope fix separately required"
+  },
+  "deliveryPolicy": "docs/DEMO_DELIVERY_POLICY.md",
+  "activeScopeContract": "docs/PRODUCT_RESCUE_ASSET_INTEGRATION.md",
+  "InteractiveProduct": {
+    "status": "DSH_submission_and_asset_plan_pending_main_review",
+    "implementation": "IP-BATCH-DSH report and routes present; not main-reviewed this turn",
+    "visualReview": "not_run",
+    "interactionAudit": "not_run",
+    "matrix": "docs/INTERACTION_AUDIT_MATRIX.csv",
+    "handoff": "tasks/DSH_HANDOFF_DEMO_FAST_06.md",
+    "providedAssets": "3 received; independent playback probe passed",
+    "serenityContent": "awaiting_web_1.1.0",
+    "assetIntegration": "spec_ready_not_implemented"
+  }
+}

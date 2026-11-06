@@ -1,0 +1,62 @@
+[
+  {
+    "file": "01-library-A.png",
+    "bytes": 267916,
+    "sha256": "71F2AD160B17F9DC9B9A57783DD74DA509737F4F56F13DFDB41A8472182DEACA"
+  },
+  {
+    "file": "02-library-B-after-same-path-switch.png",
+    "bytes": 111168,
+    "sha256": "D694F345A800040AABBCE43C11A929823DF4E17767C03DDCFF0AF986FD46716D"
+  },
+  {
+    "file": "03-atelier-after-sidebar-click.png",
+    "bytes": 299857,
+    "sha256": "91A4EE4809F73C681EFD5169D120754978BCD8A72431220CC885F7526CD3E878"
+  },
+  {
+    "file": "04-atelier-after-refresh.png",
+    "bytes": 299648,
+    "sha256": "370BB4FBE1556AC126CDAD585408E57AB03F78A158B72E2F05F3D86AD75D9472"
+  },
+  {
+    "file": "05-library-after-back.png",
+    "bytes": 111372,
+    "sha256": "E7184AF74F8AEC906120842C6F0844438EC48D96C913A33A5525E8D40690781D"
+  },
+  {
+    "file": "06-B-with-stale-A-version.png",
+    "bytes": 84919,
+    "sha256": "D365B955B672F771D3DB775F62438D77F8F0D1B3EDCB650166429DDDB7ECB649"
+  },
+  {
+    "file": "HANDOFF_WS_FIX_001.md",
+    "bytes": 5225,
+    "sha256": "FAC3ACA77DD09F5C51C452434453CE5A3FBD2A2F71AAA326CC973F1FBB817B8A"
+  },
+  {
+    "file": "probe.cjs",
+    "bytes": 3804,
+    "sha256": "ABDAE1DB9AB60924E6E280699068D7CC04C0B39EE2468BC260BE89BB42183658"
+  },
+  {
+    "file": "results.json",
+    "bytes": 18067,
+    "sha256": "5D083883604B8C825C6C85FC11D23D21BF29294C52577F897696699CA0B82DD4"
+  },
+  {
+    "file": "REVIEW.md",
+    "bytes": 3303,
+    "sha256": "128FA6CA38638E34297068E178124A871C7C3C8CC70112AB1A993F58180F9712"
+  },
+  {
+    "file": "server.log",
+    "bytes": 160,
+    "sha256": "24EB9F11106F05A570A7980D44DEC0CB644B68C221C6C5D9A649C06644AC9D90"
+  },
+  {
+    "file": "WEB_REVIEW_ORIGINAL.txt",
+    "bytes": 12152,
+    "sha256": "D86927419557B9E587D4A282C99B0E3B87C6AE62607BB9913A4969E2D937EDE1"
+  }
+]

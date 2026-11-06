@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-05T11:10:12.145Z",
+  "mappingPath": "design/presentation-assets/scent-layering.json",
+  "root": "D:\\workspace\\maison-intelligence\\apps\\web\\public",
+  "receiptPath": "evidence/brand/provided-serenity-assets-receipt.json",
+  "contentStatus": "awaiting_serenity_content",
+  "scenarioVersion": "1.1.0",
+  "product": {
+    "id": "scn-scent-layering.product.serenity",
+    "officialName": "SERENITY",
+    "sku": "6290360533636 / 100014",
+    "factsSourceUrl": "https://lavishperfumes.com/product/serenity/",
+    "verifiedFacts": [
+      "Official product title: SERENITY.",
+      "Official description refers to citrus, floral and musk notes.",
+      "Capacity has not been verified."
+    ],
+    "identityAssetId": "provided.scent-layering.product-serenity",
+    "campaignRole": "featured_product"
+  },
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "contentStatus remains awaiting_serenity_content: SERENITY 1.1.0 content is not yet received; the sidecar must not be bound early."
+  ],
+  "assets": [
+    {
+      "id": "provided.scent-layering.hero-serenity",
+      "type": "hero_image",
+      "uri": "/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "resolvedPath": "D:\\workspace\\maison-intelligence\\apps\\web\\public\\provided-assets\\scent-layering\\1.0.0\\hero-serenity.png",
+      "valid": true,
+      "width": 2560,
+      "height": 1440,
+      "bitDepth": 8,
+      "colorType": 2,
+      "bytes": 2513070,
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "size": 2513070
+    },
+    {
+      "id": "provided.scent-layering.product-serenity",
+      "type": "product_original_image",
+      "uri": "/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "resolvedPath": "D:\\workspace\\maison-intelligence\\apps\\web\\public\\provided-assets\\scent-layering\\1.0.0\\product-serenity.png",
+      "valid": true,
+      "width": 2000,
+      "height": 2000,
+      "bitDepth": 8,
+      "colorType": 2,
+      "bytes": 538290,
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "size": 538290
+    },
+    {
+      "id": "provided.scent-layering.final-preview",
+      "type": "final_preview_video",
+      "uri": "/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "resolvedPath": "D:\\workspace\\maison-intelligence\\apps\\web\\public\\provided-assets\\scent-layering\\1.0.0\\final-preview.mp4",
+      "valid": true,
+      "bytes": 1315394,
+      "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+      "durationMs": 10127,
+      "timescale": 1000,
+      "video": {
+        "width": 720,
+        "height": 960,
+        "fps": 24,
+        "codec": "h264",
+        "fourcc": "avc1"
+      },
+      "audio": {
+        "codec": "aac",
+        "fourcc": "mp4a"
+      },
+      "pixelFormat": "yuv420p",
+      "size": 1315394
+    }
+  ],
+  "http": [
+    {
+      "id": "provided.scent-layering.hero-serenity",
+      "uri": "/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "url": "http://127.0.0.1:52160/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "status": 200,
+      "mimeType": "image/png",
+      "bytes": 2513070,
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "matchesFile": true,
+      "rangeStatus": 206,
+      "rangeBytes": 16,
+      "supportsRange": true
+    },
+    {
+      "id": "provided.scent-layering.product-serenity",
+      "uri": "/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "url": "http://127.0.0.1:52160/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "status": 200,
+      "mimeType": "image/png",
+      "bytes": 538290,
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "matchesFile": true,
+      "rangeStatus": 206,
+      "rangeBytes": 16,
+      "supportsRange": true
+    },
+    {
+      "id": "provided.scent-layering.final-preview",
+      "uri": "/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "url": "http://127.0.0.1:52160/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "status": 200,
+      "mimeType": "video/mp4",
+      "bytes": 1315394,
+      "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+      "matchesFile": true,
+      "rangeStatus": 206,
+      "rangeBytes": 16,
+      "supportsRange": true
+    }
+  ]
+}

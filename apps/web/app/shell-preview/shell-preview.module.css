@@ -1,0 +1,136 @@
+/*
+ * /shell-preview content styles (TASK-007). Page content only; the shell owns
+ * its own module and the global tokens stay authoritative.
+ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 980px;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--brand-gold-deep);
+  font-size: var(--text-label);
+  font-weight: var(--weight-strong);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--brand-gold);
+  flex-shrink: 0;
+}
+
+.title {
+  margin: var(--space-2) 0 0;
+}
+
+.lede {
+  max-width: 70ch;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: var(--text-section);
+  font-weight: var(--weight-strong);
+  line-height: 1.35;
+  letter-spacing: -0.012em;
+}
+
+.body {
+  max-width: 72ch;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin: 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: var(--text-meta);
+  line-height: 1.55;
+}
+
+.metaRow span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metaRow span::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--brand-gold);
+  flex-shrink: 0;
+}
+
+.checkList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: 0;
+  padding-inline-start: 1.25em;
+  color: var(--ink-soft);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.note {
+  margin: 0;
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-inline-start: 3px solid var(--brand-gold);
+  border-radius: var(--radius-control);
+  background: var(--brand-gold-wash);
+  color: var(--ink);
+  font-size: var(--text-meta);
+  line-height: 1.55;
+}
+
+@media (max-width: 540px) {
+  .page {
+    gap: var(--space-grid);
+  }
+
+  .section {
+    padding: var(--space-5) var(--space-4);
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "exportId": "prd-export.06f7db6f",
+  "createdAt": "2026-11-05T10:03:47.486Z",
+  "mode": "mock",
+  "campaign": {
+    "campaignId": "scn-luxury-gifting.brief.main",
+    "opportunityId": "scn-luxury-gifting.analysis.main",
+    "scenarioId": "scn-luxury-gifting",
+    "scenarioVersion": "1.0.0",
+    "packageHash": "e1896c38cda535ab0cb8233eaadc9c41f1fefcb4be2679be4ad74ea42aae77bb"
+  },
+  "version": {
+    "campaignId": "scn-luxury-gifting.brief.main",
+    "versionId": "scn-luxury-gifting.script.ar-v1",
+    "sessionId": null
+  },
+  "language": "ar",
+  "origin": "preset",
+  "confirmationAtExport": "unconfirmed",
+  "noVideo": true,
+  "noRealEmail": true,
+  "attachments": [
+    {
+      "filename": "brief.json",
+      "mimeType": "application/json",
+      "bytes": 3162,
+      "sha256": "a9097bb439920a855615eda9adf7f1a50358f838bbd332e72689223fad531ec5"
+    },
+    {
+      "filename": "script.json",
+      "mimeType": "application/json",
+      "bytes": 4359,
+      "sha256": "6c3d4c2a198d5f80124f789c1afd3ff3c693b41c0a3e69d34e8d6a342b360842"
+    },
+    {
+      "filename": "subtitles-ar.vtt",
+      "mimeType": "text/vtt",
+      "bytes": 276,
+      "sha256": "fbe1de81245e75a77ed4875b38b7a0c3a9c7489d74c722c1ab56259fc6fa3e65"
+    },
+    {
+      "filename": "storyboard.html",
+      "mimeType": "text/html",
+      "bytes": 4181,
+      "sha256": "08282ebaadfa7647d9cdf5e10dc856a03cf01bf9330f851dc09e33e1f91947b9"
+    },
+    {
+      "filename": "media/perla.png",
+      "mimeType": "image/png",
+      "bytes": 1554254,
+      "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724"
+    },
+    {
+      "filename": "media/logo.png",
+      "mimeType": "image/png",
+      "bytes": 114691,
+      "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966"
+    },
+    {
+      "filename": "README.txt",
+      "mimeType": "text/plain",
+      "bytes": 844,
+      "sha256": "3d025396dee01d0edaa9cee20125e1030bc0b5f1cef8effe0082728d68ff4fb9"
+    }
+  ]
+}

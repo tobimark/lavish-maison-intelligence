@@ -1,0 +1,339 @@
+{
+  "checkedAt": "2026-11-05T10:19:50.773Z",
+  "observations": [
+    {
+      "at": "2026-11-05T10:17:45.068Z",
+      "step": "screenshot",
+      "detail": "01-overview-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:17:45.793Z",
+      "step": "screenshot",
+      "detail": "02-opportunities-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:17:46.482Z",
+      "step": "screenshot",
+      "detail": "03-opportunity-detail-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:17:46.886Z",
+      "step": "screenshot",
+      "detail": "04-opportunity-assumptions-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:17:47.709Z",
+      "step": "screenshot",
+      "detail": "05-radar-signal-drawer-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:17:48.678Z",
+      "step": "radar filter",
+      "detail": "http://127.0.0.1:3100/radar?source=instagram"
+    },
+    {
+      "at": "2026-11-05T10:17:49.255Z",
+      "step": "screenshot",
+      "detail": "06-radar-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:17:54.723Z",
+      "step": "activity controls",
+      "detail": {
+        "url": "http://127.0.0.1:3100/radar?activity=1",
+        "drawer": true
+      }
+    },
+    {
+      "at": "2026-11-05T10:17:54.776Z",
+      "step": "screenshot",
+      "detail": "07-radar-activity-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:26.556Z",
+      "step": "screenshot",
+      "detail": "08-radar-activity-your-actions-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:28.177Z",
+      "step": "screenshot",
+      "detail": "09-atelier-ar-storyboard-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:29.206Z",
+      "step": "screenshot",
+      "detail": "10-atelier-copy-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:31.125Z",
+      "step": "screenshot",
+      "detail": "11-atelier-editor-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:31.739Z",
+      "step": "screenshot",
+      "detail": "12-guard-dialog-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:33.012Z",
+      "step": "atelier deliverables link",
+      "detail": "http://127.0.0.1:3100/deliverables?campaignId=scn-luxury-gifting.brief.main&language=en&versionId=scn-luxury-gifting.script.en-v1"
+    },
+    {
+      "at": "2026-11-05T10:18:34.503Z",
+      "step": "screenshot",
+      "detail": "13-deliverables-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:36.158Z",
+      "step": "screenshot",
+      "detail": "14-deliverables-export-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:18:36.160Z",
+      "step": "preset export download",
+      "detail": {
+        "file": "luxury-gifting-ar-preset-content-pack.zip",
+        "sha256": "e80b83517a0aafce06e8a8696fee143fd7819f156f287dd243d18ad419df3f5b"
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:11.105Z",
+      "step": "screenshot",
+      "detail": "15-deliverables-mail-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:12.741Z",
+      "step": "screenshot",
+      "detail": "16-deliverables-mail-attempt-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:14.735Z",
+      "step": "screenshot",
+      "detail": "17-overview-with-download-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:14.748Z",
+      "step": "overview recent export present",
+      "detail": 1
+    },
+    {
+      "at": "2026-11-05T10:19:15.656Z",
+      "step": "screenshot",
+      "detail": "18-deliverables-export-detail-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:17.100Z",
+      "step": "screenshot",
+      "detail": "19-library-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:17.813Z",
+      "step": "screenshot",
+      "detail": "20-library-preview-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:25.204Z",
+      "step": "screenshot",
+      "detail": "21-atelier-confirmed-ar-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:25.848Z",
+      "step": "saved version refs",
+      "detail": {
+        "versionId": "usr.usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.script.1",
+        "sessionId": "usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468"
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:27.269Z",
+      "step": "screenshot",
+      "detail": "22-library-saved-ar-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:27.282Z",
+      "step": "library saved rows",
+      "detail": 2
+    },
+    {
+      "at": "2026-11-05T10:19:28.787Z",
+      "step": "screenshot",
+      "detail": "23-deliverables-saved-confirmed-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:30.019Z",
+      "step": "saved export",
+      "detail": {
+        "file": "scent-layering-ar-saved-content-pack.zip",
+        "versionId": "usr.usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.script.1"
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:33.391Z",
+      "step": "back/forward stable url",
+      "detail": "http://127.0.0.1:3100/deliverables?campaignId=scn-scent-layering.brief.main&language=ar&versionId=usr.usr.campaign-edit%3Ascn-scent-layering.brief.main%3Ae60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.script.1&sessionId=usr.campaign-edit%3Ascn-scent-layering.brief.main%3Ae60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468&exportId=prd-export.326b6355"
+    },
+    {
+      "at": "2026-11-05T10:19:33.432Z",
+      "step": "screenshot",
+      "detail": "24-deliverables-after-back-forward-1440.png"
+    },
+    {
+      "at": "2026-11-05T10:19:35.030Z",
+      "step": "1366 overflow",
+      "detail": {
+        "path": "/",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:35.102Z",
+      "step": "screenshot",
+      "detail": "25-overview-1366.png"
+    },
+    {
+      "at": "2026-11-05T10:19:36.509Z",
+      "step": "1366 overflow",
+      "detail": {
+        "path": "/radar",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:36.544Z",
+      "step": "screenshot",
+      "detail": "26-radar-1366.png"
+    },
+    {
+      "at": "2026-11-05T10:19:37.916Z",
+      "step": "1366 overflow",
+      "detail": {
+        "path": "/opportunities",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:37.954Z",
+      "step": "screenshot",
+      "detail": "27-opportunities-1366.png"
+    },
+    {
+      "at": "2026-11-05T10:19:39.342Z",
+      "step": "1366 overflow",
+      "detail": {
+        "path": "/opportunities/scn-luxury-gifting.analysis.main",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:39.379Z",
+      "step": "screenshot",
+      "detail": "28-opportunity-detail-1366.png"
+    },
+    {
+      "at": "2026-11-05T10:19:40.761Z",
+      "step": "1366 overflow",
+      "detail": {
+        "path": "/atelier?campaignId=scn-luxury-gifting.brief.main&language=en",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:40.800Z",
+      "step": "screenshot",
+      "detail": "29-atelier-1366.png"
+    },
+    {
+      "at": "2026-11-05T10:19:42.204Z",
+      "step": "1366 overflow",
+      "detail": {
+        "path": "/library",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:42.242Z",
+      "step": "screenshot",
+      "detail": "30-library-1366.png"
+    },
+    {
+      "at": "2026-11-05T10:19:43.601Z",
+      "step": "1366 overflow",
+      "detail": {
+        "path": "/deliverables",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:43.643Z",
+      "step": "screenshot",
+      "detail": "31-deliverables-1366.png"
+    },
+    {
+      "at": "2026-11-05T10:19:45.234Z",
+      "step": "390 overflow",
+      "detail": {
+        "path": "/",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:45.259Z",
+      "step": "screenshot",
+      "detail": "32-overview-390.png"
+    },
+    {
+      "at": "2026-11-05T10:19:46.609Z",
+      "step": "390 overflow",
+      "detail": {
+        "path": "/radar",
+        "overflow": 34
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:46.625Z",
+      "step": "screenshot",
+      "detail": "33-radar-390.png"
+    },
+    {
+      "at": "2026-11-05T10:19:48.000Z",
+      "step": "390 overflow",
+      "detail": {
+        "path": "/atelier?campaignId=scn-luxury-gifting.brief.main&language=ar&tab=copy",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:48.024Z",
+      "step": "screenshot",
+      "detail": "34-atelier-ar-390.png"
+    },
+    {
+      "at": "2026-11-05T10:19:49.393Z",
+      "step": "390 overflow",
+      "detail": {
+        "path": "/library",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:49.411Z",
+      "step": "screenshot",
+      "detail": "35-library-390.png"
+    },
+    {
+      "at": "2026-11-05T10:19:50.755Z",
+      "step": "390 overflow",
+      "detail": {
+        "path": "/deliverables",
+        "overflow": 0
+      }
+    },
+    {
+      "at": "2026-11-05T10:19:50.773Z",
+      "step": "screenshot",
+      "detail": "36-deliverables-390.png"
+    }
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-03T16:32:51.899Z",
+  "devServer": "http://127.0.0.1:3300/design-lab",
+  "tokenFile": "design/tokens.css",
+  "sha256Before": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814",
+  "sha256Restored": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814",
+  "restoredIdentical": true,
+  "baseline": {
+    "token": "#f6f5f2",
+    "bodyBg": "rgb(246, 245, 242)"
+  },
+  "changeObservedWithoutPageReload": false,
+  "changeWaitMs": 8000,
+  "valueAfterChangeWithoutReload": {
+    "token": "#f6f5f2",
+    "bodyBg": "rgb(246, 245, 242)"
+  },
+  "valueAfterChangeAndReload": {
+    "token": "#f3f2ee",
+    "bodyBg": "rgb(243, 242, 238)"
+  },
+  "restoreObservedWithoutPageReload": false,
+  "valueAfterRestoreWithoutReload": {
+    "token": "#f3f2ee",
+    "bodyBg": "rgb(243, 242, 238)"
+  },
+  "valueAfterRestoreAndReload": {
+    "token": "#f6f5f2",
+    "bodyBg": "rgb(246, 245, 242)"
+  },
+  "requiresPageReloadForDev": true,
+  "requiresDevServerRestart": false,
+  "note": "Temporary token value was reverted byte-identically (sha256 verified); no token change is part of the deliverable. In production the route is statically prerendered, so a rebuild is required."
+}

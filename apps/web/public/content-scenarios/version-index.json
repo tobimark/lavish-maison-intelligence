@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "defaultVersion": "1.1.0",
+  "versions": [
+    {
+      "scenarioVersion": "1.1.0",
+      "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+      "packagePath": "/content-scenarios/scent-layering/1.1.0",
+      "status": "current",
+      "explicitOnly": false,
+      "reviewRef": "docs/reviews/SERENITY-A-1.1.0-CONTENT-INTAKE.md"
+    },
+    {
+      "scenarioVersion": "1.0.0",
+      "packageHash": "e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468",
+      "packagePath": "/content-scenarios/scent-layering/1.0.0",
+      "status": "historical",
+      "explicitOnly": true,
+      "note": "OUD/PERLA history retained; old sessions/exports are not relabelled."
+    }
+  ]
+}

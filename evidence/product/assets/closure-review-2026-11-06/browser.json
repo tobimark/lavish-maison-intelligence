@@ -1,0 +1,25 @@
+{
+  "scope": "AS only; FLOW excluded",
+  "buildId": "otW8-a5y66W0hdP0409Ee",
+  "pages": [
+    "brief",
+    "atelier-en",
+    "atelier-ar",
+    "library",
+    "deliverables"
+  ],
+  "errors": [],
+  "media": {
+    "w": 720,
+    "h": 960,
+    "duration": 10.08,
+    "advanced": 0.277089,
+    "seek": 7.56,
+    "controls": true,
+    "tracks": 0,
+    "fit": "contain",
+    "error": null
+  },
+  "download": "scent-layering-en-ar-campaign-pack.zip",
+  "pass": true
+}

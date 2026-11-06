@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-04T12:39:31.648Z",
+  "files": [
+    {
+      "path": "apps/web/demo/poc/domain/types.ts",
+      "bytes": 6192,
+      "sha256": "f9b81ac5b045602a9384ef2daacc3ee58534b9f2c1059237ec2934fb21bcc5a7"
+    },
+    {
+      "path": "apps/web/demo/poc/domain/core.ts",
+      "bytes": 8659,
+      "sha256": "90675384a5bbc9da51080b83b506d1aaf7542b6ad5390be56f11e89101020a07"
+    },
+    {
+      "path": "apps/web/demo/poc/domain/workflow.ts",
+      "bytes": 38664,
+      "sha256": "a2390829488e577874bc376a038562afd8cc5cfb64979847d6e106788352d459"
+    },
+    {
+      "path": "apps/web/demo/poc/domain/replay.ts",
+      "bytes": 13360,
+      "sha256": "c33834fd65fdfe79470e103e9d4465602223807e01c8f9c947116e2c6510f7bd"
+    },
+    {
+      "path": "tests/poc/state-machine.test.ts",
+      "bytes": 29209,
+      "sha256": "6d5e0a4d89a784a6ee19622985cc1fece593274a247168fc47d87d3ece394eab"
+    },
+    {
+      "path": "contracts/poc/scenario.schema.json",
+      "bytes": 108148,
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a"
+    },
+    {
+      "path": "design/tokens.css",
+      "bytes": 2609,
+      "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+    }
+  ]
+}

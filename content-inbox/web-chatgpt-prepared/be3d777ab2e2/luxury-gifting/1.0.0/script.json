@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "versions": [
+      {
+        "id": "scn-luxury-gifting.script.en-v1",
+        "briefId": "scn-luxury-gifting.brief.main",
+        "version": 1,
+        "language": "en",
+        "title": "A Gesture, Considered",
+        "hook": "A gift begins with a thought.",
+        "message": "Meaningful gifting begins with attention, not a claim about a perfect product.",
+        "cta": "Explore fragrances",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-luxury-gifting.shot.en-1",
+            "startMs": 0,
+            "durationMs": 3200,
+            "visual": "Close opening on a blank matte-ivory typographic card with plenty of negative space. Use no physical gift box; typography alone implies consideration. Place approved PERLA product image as a small partial reveal in a secondary frame, intact. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "A gift begins with a thought.",
+            "transition": "Cut from black; fade in text over 180ms.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-luxury-gifting.shot.en-2",
+            "startMs": 3200,
+            "durationMs": 3800,
+            "visual": "Scale up the approved PERLA 50ML UNISEX original product image from a wide ivory background with subtle 2D movement. Keep bottle and label undistorted; no invented packaging or bow. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "Choose with care.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-luxury-gifting.shot.en-3",
+            "startMs": 7000,
+            "durationMs": 4200,
+            "visual": "Position the same PERLA original centrally with a separate unbranded paper-shaped graphic in the background. The graphic is editorial only, not an included card or service. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "Make the moment personal.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-luxury-gifting.shot.en-4",
+            "startMs": 11200,
+            "durationMs": 3800,
+            "visual": "End on the original PERLA image and approved Lavish square logo as distinct, separate tiles with the CTA text below, not over the bottle label. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "Lavish Perfumes · Explore fragrances.",
+            "transition": "Hold final composition and fade to matte at exactly 15000ms.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla",
+              "scn-luxury-gifting.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-luxury-gifting.subtitle.en-1",
+            "startMs": 180,
+            "endMs": 3060,
+            "text": "A gift begins with a thought."
+          },
+          {
+            "id": "scn-luxury-gifting.subtitle.en-2",
+            "startMs": 3380,
+            "endMs": 6860,
+            "text": "Choose with care."
+          },
+          {
+            "id": "scn-luxury-gifting.subtitle.en-3",
+            "startMs": 7180,
+            "endMs": 11060,
+            "text": "Make the moment personal."
+          },
+          {
+            "id": "scn-luxury-gifting.subtitle.en-4",
+            "startMs": 11380,
+            "endMs": 14860,
+            "text": "Lavish Perfumes · Explore fragrances."
+          }
+        ],
+        "caption": "A gifting concept anchored in the verified PERLA 50ML UNISEX product. No gift box, bundle, wrapping service, discount or occasion-based demand is asserted. Concept POC / Mock. Explore Lavish Perfumes. No product-performance claim.",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#ThoughtfulGifting"
+        ]
+      },
+      {
+        "id": "scn-luxury-gifting.script.ar-v1",
+        "briefId": "scn-luxury-gifting.brief.main",
+        "version": 1,
+        "language": "ar",
+        "title": "الهدية تبدأ بفكرة.",
+        "hook": "الهدية تبدأ بفكرة.",
+        "message": "هذا تصور إبداعي تجريبي يستلهم المعلومات المعتمدة عن منتجات Lavish Perfumes، ولا يثبت اتجاهات سوقية أو نتائج استخدام.",
+        "cta": "اكتشف العطور.",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-luxury-gifting.shot.ar-1",
+            "startMs": 0,
+            "durationMs": 3200,
+            "visual": "Close opening on a blank matte-ivory typographic card with plenty of negative space. Use no physical gift box; typography alone implies consideration. Place approved PERLA product image as a small partial reveal in a secondary frame, intact. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "الهدية تبدأ بفكرة.",
+            "transition": "Cut from black; fade in text over 180ms.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-luxury-gifting.shot.ar-2",
+            "startMs": 3200,
+            "durationMs": 3800,
+            "visual": "Scale up the approved PERLA 50ML UNISEX original product image from a wide ivory background with subtle 2D movement. Keep bottle and label undistorted; no invented packaging or bow. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "اختر بعناية.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-luxury-gifting.shot.ar-3",
+            "startMs": 7000,
+            "durationMs": 4200,
+            "visual": "Position the same PERLA original centrally with a separate unbranded paper-shaped graphic in the background. The graphic is editorial only, not an included card or service. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "واجعل اللحظة شخصية.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla"
+            ]
+          },
+          {
+            "id": "scn-luxury-gifting.shot.ar-4",
+            "startMs": 11200,
+            "durationMs": 3800,
+            "visual": "End on the original PERLA image and approved Lavish square logo as distinct, separate tiles with the CTA text below, not over the bottle label. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "Lavish Perfumes · اكتشف العطور.",
+            "transition": "Hold final composition and fade to matte at exactly 15000ms.",
+            "assetIds": [
+              "scn-luxury-gifting.asset.perla",
+              "scn-luxury-gifting.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-luxury-gifting.subtitle.ar-1",
+            "startMs": 180,
+            "endMs": 3060,
+            "text": "الهدية تبدأ بفكرة."
+          },
+          {
+            "id": "scn-luxury-gifting.subtitle.ar-2",
+            "startMs": 3380,
+            "endMs": 6860,
+            "text": "اختر بعناية."
+          },
+          {
+            "id": "scn-luxury-gifting.subtitle.ar-3",
+            "startMs": 7180,
+            "endMs": 11060,
+            "text": "واجعل اللحظة شخصية."
+          },
+          {
+            "id": "scn-luxury-gifting.subtitle.ar-4",
+            "startMs": 11380,
+            "endMs": 14860,
+            "text": "Lavish Perfumes · اكتشف العطور."
+          }
+        ],
+        "caption": "تصور إبداعي توضيحي لعلامة Lavish Perfumes، وليس دليلاً على اتجاه سوقي فعلي أو نتيجة استخدام مؤكدة.",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#هدايا"
+        ]
+      }
+    ]
+  }
+}

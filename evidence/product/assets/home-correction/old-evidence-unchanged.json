@@ -1,0 +1,236 @@
+{
+  "checkedAt": "2026-11-05T14:27:30.798Z",
+  "note": "Historical evidence immutability check after HOME-FIX-02. Hash+size+mtime compared to FIX-01 baselines.",
+  "m1Shell": {
+    "dir": "evidence/m1/shell",
+    "checked": 8,
+    "unchanged": true,
+    "changed": [],
+    "entries": [
+      {
+        "name": "browser-report.json",
+        "bytes": 2850,
+        "sha256": "a9583f9c7bcf7e447f33e739c4d7e329a8c4dfe065b508abf3412102402faf67",
+        "mtime": "2026-11-05T10:26:05.844Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "shell-1366x768-default.png",
+        "bytes": 128816,
+        "sha256": "147964a1c2eb06fc2ee21fafdbf99cd27339bb3d70ed1cff3019b538702377b7",
+        "mtime": "2026-11-05T10:26:02.141Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "shell-1440x900-collapsed.png",
+        "bytes": 130658,
+        "sha256": "72f8bc282bb6d5aff944f41aecdce70cf103df9569107236d8e089a97ffabc10",
+        "mtime": "2026-11-05T10:26:04.565Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "shell-1440x900-default.png",
+        "bytes": 153310,
+        "sha256": "9afdbd75079fa8a771f22782047034b0fc26cebdb0f7d910bd13003a346d91be",
+        "mtime": "2026-11-05T10:26:01.277Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "shell-1440x900-focus.png",
+        "bytes": 154241,
+        "sha256": "1f1c20c73514c90f9d3e3eace42660ea52991baa301d9db3e79000eb6cfde496",
+        "mtime": "2026-11-05T10:26:04.117Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "shell-1920x1080-default.png",
+        "bytes": 168617,
+        "sha256": "727c39117734f5a65b9b7c7930e4c5a2a51a5360fb7dfbf09f9317f8483aebec",
+        "mtime": "2026-11-05T10:26:00.397Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "shell-390x844-default.png",
+        "bytes": 72203,
+        "sha256": "f5d7872f96205630c6ccfb975b97864d18c7e3bf277a131309f40571eeb5b316",
+        "mtime": "2026-11-05T10:26:02.996Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "shell-390x844-menu-open.png",
+        "bytes": 41348,
+        "sha256": "56d2fa3b167dd20d81c6a8f7894f8ec1b15b1d3e8f7404d38e8e0c2a7e50835a",
+        "mtime": "2026-11-05T10:26:05.825Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      }
+    ]
+  },
+  "pocPrototype": {
+    "dir": "evidence/poc/prototype",
+    "checked": 16,
+    "unchanged": true,
+    "changed": [],
+    "entries": [
+      {
+        "name": "home-1366-en.png",
+        "bytes": 179068,
+        "sha256": "ed8372df0fc45f34965aad1aae22c57197e72d5b4f8a487cfbfac640f8724220",
+        "mtime": "2026-11-04T16:12:30.910Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "home-1440-en.png",
+        "bytes": 181021,
+        "sha256": "8d9ecfb836a2b9a8684d6f5db5751edc281bee12bd89e26d0725ec80905c3967",
+        "mtime": "2026-11-04T16:12:25.838Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "home-1920-en.png",
+        "bytes": 184081,
+        "sha256": "5e8b61c107b73d5d362e4b9318ae976e47d49a261debe1886380b260422a3c2a",
+        "mtime": "2026-11-04T16:12:31.614Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "home-390-en.png",
+        "bytes": 149669,
+        "sha256": "b346da059f65649eb3448e21061c1c62e2487c0257defa567899b9173d5b0e41",
+        "mtime": "2026-11-04T16:12:32.271Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-1366-en.png",
+        "bytes": 176061,
+        "sha256": "314fa5d3011da4e70799b2aa24fae0aa51c3167c3c2830a441f99c78c1dafd63",
+        "mtime": "2026-11-04T16:12:27.554Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-1440-en.png",
+        "bytes": 179807,
+        "sha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+        "mtime": "2026-11-04T16:12:26.853Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-1920-en.png",
+        "bytes": 177259,
+        "sha256": "2cbfb57a618cc6840dec4bac11bd09cfb5699453675737021b6ea770ea8b587d",
+        "mtime": "2026-11-04T16:12:28.243Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-390-en.png",
+        "bytes": 140941,
+        "sha256": "a02c2f3fdc8690df3314ed2a8f0c4bbbad9464c28fe852d0195462fae1296aa3",
+        "mtime": "2026-11-04T16:12:28.901Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-analysis-1440-en.png",
+        "bytes": 179807,
+        "sha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+        "mtime": "2026-11-04T16:12:29.838Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-delivery-1440-en.png",
+        "bytes": 189329,
+        "sha256": "58ea41493f860fdd1a12f2e194caedea0f8aa4999b19a8ccfaf66bf3dbcbf2c1",
+        "mtime": "2026-11-04T16:12:34.454Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-delivery-390-en.png",
+        "bytes": 152307,
+        "sha256": "4d16c9b4e56f2f30aa5fd872a69681a56457345b5e211bfe6f343059be82a112",
+        "mtime": "2026-11-04T16:12:37.221Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-discovery-1440-en.png",
+        "bytes": 167527,
+        "sha256": "d88f353cced7bbfad44a0c8751af0996bb6acce47532f8fddc2f00dcacf140ed",
+        "mtime": "2026-11-04T16:12:33.319Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-evidence-drawer-1440.png",
+        "bytes": 120919,
+        "sha256": "ddc39bcadb03576b3cfb829137351e629bb322ac336d3539ba35a989a62c5041",
+        "mtime": "2026-11-04T16:12:35.363Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "preview-video-1440-en.png",
+        "bytes": 177472,
+        "sha256": "f257c0ba51c2840cf6e5cc74fdd5d5b17aefe1bf3bcc3790e84e74c057a5ea17",
+        "mtime": "2026-11-04T16:12:29.980Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "README.md",
+        "bytes": 1529,
+        "sha256": "172409e31c80268470db6a4ef902b173556cbdad46019c0824146297cbecf857",
+        "mtime": "2026-11-04T16:13:52.285Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      },
+      {
+        "name": "restore-manifest.json",
+        "bytes": 7251,
+        "sha256": "8fa2bf14d79d94d9cf8382a89ce35d70de96a3820012529303a234e60e5face3",
+        "mtime": "2026-11-05T10:33:19.805Z",
+        "hashMatches": true,
+        "sizeMatches": true,
+        "mtimeMatches": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-05",
+  "kind": "planning_and_handoff_check_only",
+  "flowTasks": 4,
+  "activeHandoff": "tasks/DSH_HANDOFF_CONNECTED_FLOW.md",
+  "kit": "deliverables\\LAVISH_SERENITY_CONNECTED_FLOW_CONTENT_KIT.zip",
+  "kitEntries": 61,
+  "kitSha256": "d4c20e7335259e8885f676b37d35f0902d2ec4dc03c47fd512cab9672ea936d8",
+  "zipCrcPass": true,
+  "unchangedOriginalReferenceEntries": 56,
+  "frozenSchemaChanged": false,
+  "productImplementation": false,
+  "browserVisualAcceptance": "NOT_RUN",
+  "dispatched": false
+}

@@ -1,0 +1,10 @@
+const fs=require('fs');
+let p='apps/web/components/product/shared/ProvidedAssets.tsx';
+let s=fs.readFileSync(p,'utf8');
+s=s.replace("<div className={`${styles.campaignAssetGrid} ${showVideo ? styles.campaignAssetGridWithVideo : ''}`}>","<div className={`${styles.campaignAssetGrid} ${showVideo ? styles.campaignAssetGridWithVideo : ''} ${variant === 'brief' ? styles.campaignAssetGridBrief : ''}`}>");
+fs.writeFileSync(p,s);
+p='apps/web/components/product/shared/provided.module.css';
+s=fs.readFileSync(p,'utf8');
+s=s.replace(".campaignAssetGridWithVideo {\n  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr) minmax(220px, 0.8fr);\n}",".campaignAssetGridWithVideo {\n  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr) minmax(220px, 0.8fr);\n}\n\n.campaignAssetGridBrief {\n  grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1.45fr);\n}\n\n.campaignAssetGridBrief .campaignHeroImage {\n  height: auto;\n  aspect-ratio: 16 / 9;\n  object-fit: contain;\n}\n\n.campaignAssetGridBrief .campaignIdentityImage {\n  height: 230px;\n}");
+fs.writeFileSync(p,s);
+console.log('done');

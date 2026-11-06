@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-04T11:32:50.538Z",
+  "files": [
+    {
+      "path": "scripts/poc/verify-media.mjs",
+      "bytes": 36910,
+      "sha256": "d875840f9e968c23d5790517c0fe267621e52c103f2d3892d8c120cd91b13869"
+    },
+    {
+      "path": "tests/poc/media-validation.test.ts",
+      "bytes": 28180,
+      "sha256": "3d59fd86cbdabb593d995a5128eee83d30ab08e28964338cd66a99bc36393bd7"
+    },
+    {
+      "path": "contracts/poc/scenario.schema.json",
+      "bytes": 108148,
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a"
+    },
+    {
+      "path": "design/tokens.css",
+      "bytes": 2609,
+      "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+    },
+    {
+      "path": "evidence/poc/media/technical-sample-report.json",
+      "bytes": 3062,
+      "sha256": "8bd1b2d6656847a53004d4890b0b56fc17cfb3a57a888e17645b1f1445e746c7"
+    },
+    {
+      "path": "evidence/poc/media/fix-01/technical-sample-report.json",
+      "bytes": 3779,
+      "sha256": "e0be74d1c782fa3021e29729f81d4d3da74a40f97119e9bc21dfd847a199eb44"
+    }
+  ]
+}

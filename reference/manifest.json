@@ -1,0 +1,12 @@
+{
+  "capturedDate": "2026-11-03",
+  "sourceDirectory": "D:/workspace/SILLAGE/extended",
+  "files": [
+    {"path":"reference/LAVISH_LiveVision_RealVideo_Demo.html","bytes":51205,"sha256":"040b47018d67e5a73cab999cc8d3dd3996fc2650909c7de433b9291a9c34cb83"},
+    {"path":"reference/LAVISH_Face_Track_Preview.mp4","bytes":6701161,"sha256":"6b59330f3fc721ce500f10e84aab92d2a86fd34d53b83bf8ed754e1163a92b57"}
+  ],
+  "externalDependencies": [{"type":"image","url":"https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/57/16/9757168c-3eda-cde0-91f8-e22acac3b7c7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.jpg","observedStatus":200,"naturalSize":[1200,630],"usage":"reference-only; not an approved production logo"}],
+  "inlineDependencies": ["CSS","JavaScript","SVG symbols","SVG chart"],
+  "externalFonts": [],
+  "productAssetUse": "forbidden: video is sample mall footage, not Lavish brand footage"
+}

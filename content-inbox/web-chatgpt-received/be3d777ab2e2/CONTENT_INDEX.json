@@ -1,0 +1,58 @@
+{
+  "bundleType": "draft_only_content_inbox",
+  "authoredAt": "2026-11-05T05:31:20Z",
+  "scenarios": [
+    {
+      "slug": "scent-layering",
+      "path": "/mnt/data/lavish_content_deliverables/content-inbox/scent-layering/1.0.0",
+      "ids": {
+        "entryBriefId": "scn-scent-layering.brief.main",
+        "entryScriptVersionId": "scn-scent-layering.script.en-v1",
+        "entryVideoId": "scn-scent-layering.video.en-v1",
+        "entryDeliveryId": "scn-scent-layering.plan.en-v1"
+      },
+      "events": 28,
+      "files": 10,
+      "assets": 7,
+      "missing": [
+        "scn-scent-layering.asset.video-en",
+        "scn-scent-layering.asset.poster-en"
+      ]
+    },
+    {
+      "slug": "luxury-gifting",
+      "path": "/mnt/data/lavish_content_deliverables/content-inbox/luxury-gifting/1.0.0",
+      "ids": {
+        "entryBriefId": "scn-luxury-gifting.brief.main",
+        "entryScriptVersionId": "scn-luxury-gifting.script.en-v1",
+        "entryVideoId": "scn-luxury-gifting.video.en-v1",
+        "entryDeliveryId": "scn-luxury-gifting.plan.en-v1"
+      },
+      "events": 28,
+      "files": 10,
+      "assets": 7,
+      "missing": [
+        "scn-luxury-gifting.asset.video-en",
+        "scn-luxury-gifting.asset.poster-en"
+      ]
+    },
+    {
+      "slug": "oud-storytelling",
+      "path": "/mnt/data/lavish_content_deliverables/content-inbox/oud-storytelling/1.0.0",
+      "ids": {
+        "entryBriefId": "scn-oud-storytelling.brief.main",
+        "entryScriptVersionId": "scn-oud-storytelling.script.en-v1",
+        "entryVideoId": "scn-oud-storytelling.video.en-v1",
+        "entryDeliveryId": "scn-oud-storytelling.plan.en-v1"
+      },
+      "events": 28,
+      "files": 10,
+      "assets": 7,
+      "missing": [
+        "scn-oud-storytelling.asset.video-en",
+        "scn-oud-storytelling.asset.poster-en"
+      ]
+    }
+  ],
+  "disclaimer": "Fully Mock business content; media missing; no real capturing, video rendering or external delivery. Customer/Astra review pending."
+}

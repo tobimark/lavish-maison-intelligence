@@ -1,0 +1,14 @@
+{
+  "preparedOn": "2026-11-05",
+  "receivedFiles": 3,
+  "originalBytesAndHashes": "verified",
+  "standaloneVideoPlaybackAndSeek": "pass",
+  "typecheck": "pass; original IP interface compatibility retained",
+  "frozenSchemasAndTokens": "unchanged",
+  "serenityContent": "awaiting_web_1.1.0",
+  "assetTaskSpecs": 6,
+  "interactionSpecRows": 119,
+  "newProductBrowserReview": "not_run",
+  "handoff": "FAST_06",
+  "automaticDispatch": false
+}

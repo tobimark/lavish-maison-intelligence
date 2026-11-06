@@ -1,0 +1,133 @@
+{
+  "checkedAt": "2026-11-05T15:38:21.188Z",
+  "source": "content-inbox/web-chatgpt-prepared/a8d1ef5f54da/scent-layering/1.1.0",
+  "publishedDir": "apps/web/public/content-scenarios/scent-layering/1.1.0",
+  "mediaDir": "apps/web/public/scenario-media/scent-layering/1.1.0",
+  "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+  "catalogPackageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+  "catalogMatch": true,
+  "files": [
+    {
+      "path": "brand.json",
+      "bytes": 2744,
+      "sha256": "7efd356edb8030af98a16b3159d471879608b8566643d304b0227a65aa72043a",
+      "ok": true
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 7618,
+      "sha256": "2e476f76968b83cc4c990a32cdf61bc573dbc017eab928111055255168425356",
+      "ok": true
+    },
+    {
+      "path": "analysis.json",
+      "bytes": 4609,
+      "sha256": "1f1a4d4e864c59b07ff88c3c8cad435615c17dd9f4050af693009af592f4f197",
+      "ok": true
+    },
+    {
+      "path": "script.json",
+      "bytes": 9951,
+      "sha256": "ea8e1e035bcafcca9b1df85702301151bbb1825c051d97f99ca54eeda8a750ca",
+      "ok": true
+    },
+    {
+      "path": "video.json",
+      "bytes": 1228,
+      "sha256": "3cbf2cd4144b9b2cad652d6aba76a2bf9bc15da5642602a3af5138706ae29e1a",
+      "ok": true
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 3443,
+      "sha256": "bf1e29635a03029414c178f275d18d6cf02c53e0a86b871806a27fff4d49a141",
+      "ok": true
+    },
+    {
+      "path": "events.json",
+      "bytes": 16399,
+      "sha256": "58f0dc85313fd4a656227d19218a28f6c2e20f043a3bce68d5e0dce702d07d0f",
+      "ok": true
+    },
+    {
+      "path": "assets.json",
+      "bytes": 5381,
+      "sha256": "a944f435207abeacaf47620eac91a62085c165893af11d70cec2791947f99874",
+      "ok": true
+    },
+    {
+      "path": "expected.json",
+      "bytes": 6244,
+      "sha256": "896ee2f7dbb34dba687692fd94b0a45d1228eb08aa54cf525a3334822f198917",
+      "ok": true
+    }
+  ],
+  "media": [
+    {
+      "id": "scn-scent-layering.asset.logo",
+      "kind": "logo",
+      "bytes": 114691,
+      "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+      "ok": true
+    },
+    {
+      "id": "scn-scent-layering.asset.serenity-original",
+      "kind": "product_image",
+      "bytes": 538290,
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "ok": true
+    },
+    {
+      "id": "scn-scent-layering.asset.serenity-hero",
+      "kind": "image",
+      "bytes": 2513070,
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "ok": true
+    },
+    {
+      "id": "scn-scent-layering.asset.vtt-en-v2",
+      "kind": "subtitle",
+      "bytes": 237,
+      "sha256": "226ae0c3281be1d29beb1e4390f95e34de4f31b3aeb2f8bf183c30f5c718d03f",
+      "ok": true
+    },
+    {
+      "id": "scn-scent-layering.asset.vtt-ar-v2",
+      "kind": "subtitle",
+      "bytes": 264,
+      "sha256": "ad3836b08e0d0abfa5062f114d262a868c3675192c311cd8d57e58abd6b239f8",
+      "ok": true
+    },
+    {
+      "id": "scn-scent-layering.asset.concept-video-en-v2",
+      "kind": "video",
+      "pending": true
+    },
+    {
+      "id": "scn-scent-layering.asset.concept-poster-en-v2",
+      "kind": "poster",
+      "pending": true
+    }
+  ],
+  "errors": [],
+  "presentation": {
+    "path": "apps/web/public/campaign-presentation/scent-layering/1.1.0.json",
+    "bytes": 4279,
+    "sha256": "d816938ea8ad27deef8c54a329fd5cc7e865bcfb2ed76643fbd1cd8f1a6d164a",
+    "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+    "packageHashMatch": true,
+    "posts": [
+      {
+        "id": "scn-scent-layering.social.instagram.en-v1",
+        "language": "en",
+        "accountLabel": "Lavish Perfumes · Demo account"
+      },
+      {
+        "id": "scn-scent-layering.social.instagram.ar-v1",
+        "language": "ar",
+        "accountLabel": "Lavish Perfumes · Demo account"
+      }
+    ]
+  },
+  "ok": true
+}

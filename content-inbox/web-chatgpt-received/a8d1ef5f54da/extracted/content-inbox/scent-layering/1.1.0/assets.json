@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "data": {
+    "assets": [
+      {
+        "id": "scn-scent-layering.asset.logo",
+        "kind": "logo",
+        "mimeType": "image/png",
+        "uri": "/scenario-media/scent-layering/1.1.0/lavish-logo.png",
+        "bytes": 114691,
+        "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+        "width": 294,
+        "height": 294,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "Original Lavish logo carried forward byte-for-byte from prior approved-for-internal-demo 1.0.0 package.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "User-provided for internal concept demonstration; public use requires approval.",
+        "productIds": []
+      },
+      {
+        "id": "scn-scent-layering.asset.serenity-original",
+        "kind": "product_image",
+        "mimeType": "image/png",
+        "uri": "/scenario-media/scent-layering/1.1.0/serenity-product-original.png",
+        "bytes": 538290,
+        "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+        "width": 2000,
+        "height": 2000,
+        "durationMs": null,
+        "sourceUrl": "https://lavishperfumes.com/product/serenity/",
+        "sourceNote": "User-provided, original white-background SERENITY identity image, copied without editing.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "User-provided for internal demo only; commercial distribution and advertising rights have not been independently verified.",
+        "productIds": [
+          "scn-scent-layering.product.serenity"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.asset.serenity-hero",
+        "kind": "image",
+        "mimeType": "image/png",
+        "uri": "/scenario-media/scent-layering/1.1.0/serenity-hero.png",
+        "bytes": 2513070,
+        "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+        "width": 2560,
+        "height": 1440,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "User-provided SERENITY warm amber lifestyle hero, bytes unchanged; photographic props are not product ingredient evidence.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "User-provided for internal demo only; not a claim of official paid-campaign licensing.",
+        "productIds": [
+          "scn-scent-layering.product.serenity"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.asset.vtt-en-v2",
+        "kind": "subtitle",
+        "mimeType": "text/vtt",
+        "uri": "/scenario-media/scent-layering/1.1.0/serenity-concept-en-v2-15s.vtt",
+        "bytes": 237,
+        "sha256": "226ae0c3281be1d29beb1e4390f95e34de4f31b3aeb2f8bf183c30f5c718d03f",
+        "width": null,
+        "height": null,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "New original English concept subtitles matching 15-second script.en-v2, not the provided 10.08-second clip.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Original authored concept text for internal review.",
+        "productIds": []
+      },
+      {
+        "id": "scn-scent-layering.asset.vtt-ar-v2",
+        "kind": "subtitle",
+        "mimeType": "text/vtt",
+        "uri": "/scenario-media/scent-layering/1.1.0/serenity-concept-ar-v2-15s.vtt",
+        "bytes": 264,
+        "sha256": "ad3836b08e0d0abfa5062f114d262a868c3675192c311cd8d57e58abd6b239f8",
+        "width": null,
+        "height": null,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "New Arabic draft concept subtitles matching 15-second script.ar-v2, not the provided 10.08-second clip.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Original internal draft; needs Arabic native and Lavish brand approval.",
+        "productIds": []
+      },
+      {
+        "id": "scn-scent-layering.asset.concept-video-en-v2",
+        "kind": "video",
+        "mimeType": "video/mp4",
+        "uri": "/scenario-media/scent-layering/1.1.0/serenity-concept-en-v2-15s.mp4",
+        "bytes": null,
+        "sha256": null,
+        "width": 1080,
+        "height": 1920,
+        "durationMs": 15000,
+        "sourceUrl": null,
+        "sourceNote": "PLANNED matching 15s film, NOT PRESENT. Dimensions/fps are target, not measured. User-provided 10.08s video is registered in sidecar only.",
+        "rightsStatus": "pending",
+        "rightsNote": "No actual 15s concept film was received or approved.",
+        "productIds": [
+          "scn-scent-layering.product.serenity"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.asset.concept-poster-en-v2",
+        "kind": "poster",
+        "mimeType": "image/jpeg",
+        "uri": "/scenario-media/scent-layering/1.1.0/serenity-concept-en-v2-poster.jpg",
+        "bytes": null,
+        "sha256": null,
+        "width": 1080,
+        "height": 1920,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "PLANNED matching 15s poster, NOT PRESENT. The provided 16:9 hero is a separate image, not this poster.",
+        "rightsStatus": "pending",
+        "rightsNote": "No 15s concept poster has been received or approved.",
+        "productIds": [
+          "scn-scent-layering.product.serenity"
+        ]
+      }
+    ]
+  }
+}

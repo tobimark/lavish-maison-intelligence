@@ -1,0 +1,47 @@
+{
+  "scope": "TEST_ONLY real Chromium IndexedDB storage smoke; no product UI or customer content",
+  "url": "http://127.0.0.1:5179/evidence/poc/storage/fix-01/qa.html",
+  "browser": {
+    "name": "chromium",
+    "version": "156.0.8078.4"
+  },
+  "checks": {
+    "refresh": {
+      "created": "created",
+      "restoredRevision": 1,
+      "passed": true
+    },
+    "twoTabCas": {
+      "tabA": {
+        "ok": true,
+        "code": null,
+        "kind": "ok",
+        "response": {
+          "key": "tab-a",
+          "revision": 1
+        }
+      },
+      "tabB": {
+        "ok": false,
+        "code": "REVISION_CONFLICT",
+        "kind": "revision",
+        "response": null
+      },
+      "successCount": 1,
+      "conflictCodes": [
+        "REVISION_CONFLICT"
+      ],
+      "storedRevision": 1,
+      "passed": true
+    },
+    "corruptRawExport": {
+      "status": "corrupt",
+      "errorCode": "CORRUPT_SESSION",
+      "invalidWorkflow": "INVALID_STATE",
+      "receiptCount": 1,
+      "readError": "Error: page.evaluate: StorageRuntimeError: CORRUPT_SESSION: workflow must contain exactly the four stages with valid statuses.\n    at IndexedDbStorage.rawSession (http://127.0.0.1:5179/apps/web/demo/poc/storage/indexeddb.ts:116:10)\n    at async IndexedDbStorage.readTransaction (http://127.0.0.1:5179/apps/web/demo/poc/storage/indexeddb.ts:84:18)\n    at async Object.get (http://127.0.0.1:5179/evidence/poc/storage/fix-01/qa.ts:110:17)\n    at async <anonymous>:396:30",
+      "passed": true
+    }
+  },
+  "passed": true
+}

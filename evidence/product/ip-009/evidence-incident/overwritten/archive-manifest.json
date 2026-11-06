@@ -1,0 +1,140 @@
+[
+  {
+    "archive": "m1-shell/browser-report.json",
+    "bytes": 2850,
+    "sha256": "a9583f9c7bcf7e447f33e739c4d7e329a8c4dfe065b508abf3412102402faf67",
+    "mtime": "2026-11-05T18:26:05.8444739+08:00"
+  },
+  {
+    "archive": "m1-shell/shell-1366x768-default.png",
+    "bytes": 128816,
+    "sha256": "147964a1c2eb06fc2ee21fafdbf99cd27339bb3d70ed1cff3019b538702377b7",
+    "mtime": "2026-11-05T18:26:02.1407951+08:00"
+  },
+  {
+    "archive": "m1-shell/shell-1440x900-collapsed.png",
+    "bytes": 130658,
+    "sha256": "72f8bc282bb6d5aff944f41aecdce70cf103df9569107236d8e089a97ffabc10",
+    "mtime": "2026-11-05T18:26:04.5651521+08:00"
+  },
+  {
+    "archive": "m1-shell/shell-1440x900-default.png",
+    "bytes": 153310,
+    "sha256": "9afdbd75079fa8a771f22782047034b0fc26cebdb0f7d910bd13003a346d91be",
+    "mtime": "2026-11-05T18:26:01.2765643+08:00"
+  },
+  {
+    "archive": "m1-shell/shell-1440x900-focus.png",
+    "bytes": 154241,
+    "sha256": "1f1c20c73514c90f9d3e3eace42660ea52991baa301d9db3e79000eb6cfde496",
+    "mtime": "2026-11-05T18:26:04.1171383+08:00"
+  },
+  {
+    "archive": "m1-shell/shell-1920x1080-default.png",
+    "bytes": 168617,
+    "sha256": "727c39117734f5a65b9b7c7930e4c5a2a51a5360fb7dfbf09f9317f8483aebec",
+    "mtime": "2026-11-05T18:26:00.3967772+08:00"
+  },
+  {
+    "archive": "m1-shell/shell-390x844-default.png",
+    "bytes": 72203,
+    "sha256": "f5d7872f96205630c6ccfb975b97864d18c7e3bf277a131309f40571eeb5b316",
+    "mtime": "2026-11-05T18:26:02.9957530+08:00"
+  },
+  {
+    "archive": "m1-shell/shell-390x844-menu-open.png",
+    "bytes": 41348,
+    "sha256": "56d2fa3b167dd20d81c6a8f7894f8ec1b15b1d3e8f7404d38e8e0c2a7e50835a",
+    "mtime": "2026-11-05T18:26:05.8254258+08:00"
+  },
+  {
+    "archive": "poc-prototype/home-1366-en.png",
+    "bytes": 329815,
+    "sha256": "b44f01619c1b4ebf823a667e01db0fe36fdb3df8bb8bb54a44fadfa6db86f368",
+    "mtime": "2026-11-05T18:25:26.2503151+08:00"
+  },
+  {
+    "archive": "poc-prototype/home-1440-en.png",
+    "bytes": 310230,
+    "sha256": "c731fe15e66c5fbd9f58f749c6047ce979d82a15a0bff19ca74b3236132f5d86",
+    "mtime": "2026-11-05T18:25:21.1884248+08:00"
+  },
+  {
+    "archive": "poc-prototype/home-1920-en.png",
+    "bytes": 334570,
+    "sha256": "b51c4e4f11b85c864bf26ae0dfd333c962d88fda44f224fdc70ba3495d5c3256",
+    "mtime": "2026-11-05T18:25:27.1103364+08:00"
+  },
+  {
+    "archive": "poc-prototype/home-390-en.png",
+    "bytes": 348396,
+    "sha256": "ee5e87adfca0bd1e3df50c136af99b654277b11ce0086be89c807c5e8e4c1754",
+    "mtime": "2026-11-05T18:25:27.9805882+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-1366-en.png",
+    "bytes": 184826,
+    "sha256": "9a180139a68d8a34bd47972ecab725fbed75dfcbc2677ad12736c624f50ff2a4",
+    "mtime": "2026-11-05T18:25:22.7584431+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-1440-en.png",
+    "bytes": 188378,
+    "sha256": "fec3f6474cbd2ebbf8ad16d583cd68358fb6052c37ebb7fa98d68536ed8d564e",
+    "mtime": "2026-11-05T18:25:22.0939396+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-1920-en.png",
+    "bytes": 185738,
+    "sha256": "0c61d277dfdad089f8f48c0eaf2884731865e5afc31573da248582ca55853768",
+    "mtime": "2026-11-05T18:25:23.4408350+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-390-en.png",
+    "bytes": 141517,
+    "sha256": "3e38c562fc149dc21d8dd2dabda545dd01b044003b2849108d0c5d11e3a4afc8",
+    "mtime": "2026-11-05T18:25:24.0767969+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-analysis-1440-en.png",
+    "bytes": 188378,
+    "sha256": "fec3f6474cbd2ebbf8ad16d583cd68358fb6052c37ebb7fa98d68536ed8d564e",
+    "mtime": "2026-11-05T18:25:25.0378830+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-delivery-1440-en.png",
+    "bytes": 197584,
+    "sha256": "a6a9bc8cc124f4bce7d2c327807201084a191135f61c5de5555afc08ece8fdc7",
+    "mtime": "2026-11-05T18:25:30.0667657+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-delivery-390-en.png",
+    "bytes": 152890,
+    "sha256": "65e426e0bd3bf2c81e7cc72b8ca58a0d7ecada2e896140c7b9be3904f5bd34bd",
+    "mtime": "2026-11-05T18:25:32.8989018+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-discovery-1440-en.png",
+    "bytes": 176304,
+    "sha256": "096de0631b45e25c42e1ec43a3874b28b1cfa39cc0ef460f660fda6f98f05c44",
+    "mtime": "2026-11-05T18:25:28.9143990+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-evidence-drawer-1440.png",
+    "bytes": 127213,
+    "sha256": "069cf46832ff66677329195a0d21c41efcb4a4c6f66c47140b985e8330bc77ad",
+    "mtime": "2026-11-05T18:25:31.0856890+08:00"
+  },
+  {
+    "archive": "poc-prototype/preview-video-1440-en.png",
+    "bytes": 186438,
+    "sha256": "c728a6dd978cd68dd6e22518712cd0ac32269ec08198fa128add43077c93d109",
+    "mtime": "2026-11-05T18:25:25.2017972+08:00"
+  },
+  {
+    "archive": "poc-prototype/README.md",
+    "bytes": 1529,
+    "sha256": "172409e31c80268470db6a4ef902b173556cbdad46019c0824146297cbecf857",
+    "mtime": "2026-11-05T00:13:52.2847096+08:00"
+  }
+]

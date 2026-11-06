@@ -1,0 +1,4 @@
+const fs=require('fs'); const p='apps/web/components/product/deliverables/DeliverablesPage.tsx'; let s=fs.readFileSync(p,'utf8');
+s=s.replace("import { SERENITY_PROVIDED_TARGET } from '../shared/ProvidedAssets';","import { ProvidedAssetShowcase, SERENITY_PROVIDED_TARGET } from '../shared/ProvidedAssets';");
+s=s.replace("<p className={styles.muted}>Secondary actions: prepare a real content pack or download the provided original MP4. Simulated email is a separate, lower-priority demo flow.</p>","<p className={styles.muted}>Secondary actions: prepare a real content pack or download the provided original MP4. Simulated email is a separate, lower-priority demo flow.</p>\n        <ProvidedAssetShowcase surface=\"deliverables\" compact />");
+fs.writeFileSync(p,s); console.log('restored showcase in downloads');

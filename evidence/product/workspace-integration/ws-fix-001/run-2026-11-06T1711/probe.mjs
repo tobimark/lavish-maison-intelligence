@@ -1,0 +1,20 @@
+import { chromium } from 'playwright';
+import { writeFileSync } from 'node:fs';
+const base='http://127.0.0.1:3184'; const A='scn-scent-layering.brief.main',B='scn-luxury-gifting.brief.main',C='scn-oud-storytelling.brief.main';
+const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1440,height:900}}); const errors=[]; p.on('pageerror',e=>errors.push(e.message));
+const states=[]; async function snap(label){const d=await p.evaluate(()=>({url:location.href, campaign:new URLSearchParams(location.search).get('campaignId'), version:new URLSearchParams(location.search).get('scenarioVersion'), language:new URLSearchParams(location.search).get('language'), nav:Object.fromEntries([...document.querySelectorAll('[data-testid^="shell-nav-"]')].map(e=>[e.dataset.testid,{href:e.getAttribute('href'),active:e.getAttribute('aria-current')}]))})); states.push({label,...d}); return d;}
+await p.goto(base+`/library?campaignId=${A}&scenarioVersion=1.1.0&language=en`,{waitUntil:'load'}); await p.waitForTimeout(500); await snap('A-start');
+await p.getByTestId('LIB-campaign').selectOption(B); await p.waitForURL(u=>u.searchParams.get('campaignId')===B); await p.waitForTimeout(600); await snap('B-after-select');
+await p.getByTestId('shell-nav-atelier').click(); await p.waitForTimeout(600); await snap('B-atelier');
+await p.reload({waitUntil:'load'}); await p.waitForTimeout(500); await snap('B-atelier-refresh');
+await p.goBack({waitUntil:'load'}); await p.waitForTimeout(500); await snap('B-library-back');
+await p.getByTestId('shell-nav-deliverables').click(); await p.waitForTimeout(700); await snap('B-deliverables');
+await p.getByTestId('shell-nav-library').click(); await p.waitForTimeout(500); await p.getByTestId('LIB-campaign').selectOption(C); await p.waitForURL(u=>u.searchParams.get('campaignId')===C); await p.waitForTimeout(500); await snap('C-after-select');
+await p.getByTestId('LIB-campaign').selectOption(A); await p.waitForURL(u=>u.searchParams.get('campaignId')===A); await p.waitForTimeout(500); await snap('A-return');
+await p.getByTestId('LIB-language').selectOption('ar'); await p.waitForTimeout(400); await snap('A-AR');
+await p.getByTestId('LIB-campaign').selectOption(''); await p.waitForTimeout(500); await snap('All-campaigns');
+await p.goto(base+`/library?campaignId=${A}&scenarioVersion=1.1.0&language=en&kind=script&origin=preset`,{waitUntil:'load'}); await p.waitForTimeout(500); await p.getByTestId('LIB-clear').click(); await p.waitForTimeout(500); await snap('Clear-filters');
+await p.goto(base+`/library?campaignId=${A}&scenarioVersion=1.1.0&language=en&versionId=scn-scent-layering.script.en-v2`,{waitUntil:'load'}); await p.waitForTimeout(500); await p.getByTestId('LIB-campaign').selectOption(B); await p.waitForURL(u=>u.searchParams.get('campaignId')===B); await p.waitForTimeout(500); await snap('A-exact-to-B');
+await p.goto(base+`/library?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0`,{waitUntil:'load'}); await p.waitForTimeout(500); await snap('unknown');
+await p.goto(base+`/library?campaignId=${A}&scenarioVersion=9.9.9`,{waitUntil:'load'}); await p.waitForTimeout(500); await snap('invalid-version');
+const out={checkedAt:new Date().toISOString(),base,buildId:'EyeTyB_09phuk7IAEkABn',states,errors}; writeFileSync('evidence/product/workspace-integration/ws-fix-001/run-2026-11-06T1711/browser-record.json',JSON.stringify(out,null,2)+'\n'); console.log(JSON.stringify(states.map(s=>({label:s.label,url:s.url,atelier:s.nav['shell-nav-atelier']?.href,deliverables:s.nav['shell-nav-deliverables']?.href})),null,2)); await b.close();

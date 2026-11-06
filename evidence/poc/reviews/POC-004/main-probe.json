@@ -1,0 +1,157 @@
+{
+  "scope": "TEST_ONLY diagnostic observations, not acceptance",
+  "creationReceipt": {
+    "originalRevision": 0,
+    "duplicateRevision": 1
+  },
+  "responseMutationAffectedStorage": true,
+  "pagination": {
+    "expected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "collected": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      13,
+      14,
+      16,
+      17,
+      19,
+      20
+    ]
+  },
+  "replayUserVersionAccessible": {
+    "ok": true
+  },
+  "replayIrrelevantFieldAccepted": {
+    "ok": true
+  },
+  "duplicateCommandAfterPackageChange": {
+    "ok": false,
+    "error": {
+      "code": "PACKAGE_CHANGED",
+      "message": "The scenario package changed since this session was created; open a new session or export the old record.",
+      "fieldErrors": [],
+      "retryable": false
+    },
+    "meta": {
+      "mode": "mock",
+      "schemaVersion": "1.0.0",
+      "requestId": "req-17",
+      "sessionId": null,
+      "revision": null
+    }
+  },
+  "oldPackageRunExport": {
+    "ok": false,
+    "error": {
+      "code": "PACKAGE_CHANGED",
+      "message": "The scenario package changed since this session was created; open a new session or export the old record.",
+      "fieldErrors": [],
+      "retryable": false
+    },
+    "meta": {
+      "mode": "mock",
+      "schemaVersion": "1.0.0",
+      "requestId": "req-18",
+      "sessionId": null,
+      "revision": null
+    }
+  },
+  "invalidWorkflowAcceptedByValidator": true,
+  "corruptStateRead": {
+    "ok": true,
+    "data": {
+      "id": "usr.idb-review",
+      "scenarioId": "scn-scent-layering",
+      "scenarioVersion": "1.0.0",
+      "packageHash": "TEST_ONLY_HASH",
+      "revision": 0,
+      "createdAt": "2026-11-04T14:08:25.295Z",
+      "updatedAt": "2026-11-04T14:08:25.295Z",
+      "mode": "mock",
+      "storageMode": "indexeddb",
+      "workflow": {
+        "discovery": "ready",
+        "analysis": "locked",
+        "video": "INVALID_STATE",
+        "delivery": "locked"
+      },
+      "workflowPlayback": {
+        "stage": null,
+        "cursorSequence": 0,
+        "virtualMs": 0,
+        "transport": "idle"
+      },
+      "activeBriefId": null,
+      "activeScriptVersionId": null,
+      "activeVideoId": null,
+      "userVersions": [],
+      "deliveryDrafts": [],
+      "deliveryAttempts": [],
+      "stageAttempts": [],
+      "replay": {
+        "cursorSequence": 0,
+        "transport": "paused",
+        "projection": {
+          "workflow": {
+            "discovery": "ready",
+            "analysis": "locked",
+            "video": "locked",
+            "delivery": "locked"
+          },
+          "visibleEntityIds": [],
+          "activeScriptVersionId": null,
+          "activeVideoId": null,
+          "deliveryRecordIds": [],
+          "confirmedScriptVersionId": null,
+          "videoAvailability": {},
+          "videoProgress": {}
+        },
+        "lastAtMs": 0,
+        "lastEventId": null,
+        "lastEventJson": null,
+        "speed": 1,
+        "virtualMs": 0
+      },
+      "history": []
+    },
+    "meta": {
+      "mode": "mock",
+      "schemaVersion": "1.0.0",
+      "requestId": "req-2",
+      "sessionId": "usr.idb-review",
+      "revision": 0
+    }
+  },
+  "corruptExport": {
+    "ok": false,
+    "error": "StorageRuntimeError: CORRUPT_SESSION: Session usr.idb-review is corrupt and was isolated; export it before creating a new session."
+  }
+}

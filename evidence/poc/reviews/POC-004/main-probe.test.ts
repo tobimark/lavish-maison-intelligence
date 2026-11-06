@@ -1,0 +1,47 @@
+import {test} from 'vitest';
+import {writeFileSync} from 'node:fs';
+import {IDBFactory} from 'fake-indexeddb';
+import {createFixture} from '../../../../tests/fixtures/poc/build-fixture';
+import {createMockApi} from '../../../../apps/web/demo/poc/api';
+import {MemoryStorage,IndexedDbStorage,validatePersistedSession} from '../../../../apps/web/demo/poc/storage';
+test('independent POC-004 diagnostic observations',async()=>{
+ const fixture=createFixture(),pkg=Object.fromEntries(Object.entries(fixture.files).map(([n,v])=>[n.replace('.json',''),v])) as any;
+ const loaded:any={scenarioId:pkg.manifest.scenarioId,scenarioVersion:'1.0.0',packageHash:'TEST_ONLY_HASH',package:pkg,media:{}};
+ const source={list:async()=>[{scenarioId:loaded.scenarioId,scenarioVersion:'1.0.0',title:'TEST_ONLY',readiness:'ready' as const,issues:[]}],get:async()=>loaded};
+ const memory=new MemoryStorage();const api=createMockApi({scenarioSource:source,storage:memory,now:()=> '2026-11-04T00:00:00Z'});
+ const v=(r:any)=>{if(!r.ok)throw Error(JSON.stringify(r));return r.data};
+ const ctx=(s:any,k:string)=>({sessionId:s.id,expectedRevision:s.revision,idempotencyKey:k});
+ const createInput={scenarioId:loaded.scenarioId,scenarioVersion:'1.0.0',creationKey:'main-review'};
+ const originalCreate=await api.createSession(createInput);let s=v(originalCreate);
+ const executeCtx=ctx(s,'discover');const originalExecute=await api.executeStage(executeCtx,{stage:'discovery'});s=v(originalExecute);
+ const duplicateCreate=await api.createSession(createInput);
+ const exposed=v(duplicateCreate);exposed.workflow.video='completed';
+ const responseMutationAffectedStorage=(await memory.getSession(s.id))!.state.workflow.video==='completed';
+ exposed.workflow.video='locked';
+ const all=v(await api.getEvents({sessionId:s.id,afterSequence:0,limit:100})).items;
+ let after=0,collected:number[]=[];
+ for(let i=0;i<30;i++){const page=v(await api.getEvents({sessionId:s.id,afterSequence:after,limit:2}));collected.push(...page.items.map((e:any)=>e.sequence));if(page.nextSequence===null)break;after=page.nextSequence}
+ s=v(await api.executeStage(ctx(s,'analysis'),{stage:'analysis'}));
+ const script=pkg.script.data.versions.find((x:any)=>x.id===pkg.manifest.entryScriptVersionId);
+ const content={title:script.title+' edit',hook:script.hook,message:script.message,cta:script.cta,shots:script.shots,subtitles:script.subtitles,caption:script.caption,hashtags:script.hashtags};
+ const saved=v(await api.saveScriptDraft(ctx(s,'save'),{baseVersionId:script.id,content}));s=saved.session;
+ const replayLocal=await api.getEntity({sessionId:s.id,entityId:saved.version.id,view:'replay'});
+ const irrelevantReplayField=await api.replayCommand(ctx(s,'bad-extra'),{action:'pause',speed:2});
+ loaded.packageHash='TEST_ONLY_CHANGED';
+ const replayAfterPackageChange=await api.executeStage(executeCtx,{stage:'discovery'});
+ const exportOld=await api.getDownload({sessionId:s.id,kind:'run_record',entityId:s.id});
+ loaded.packageHash='TEST_ONLY_HASH';
+ const factory=new IDBFactory(),dbName='TEST_ONLY_POC004_MAIN';
+ const idb=new IndexedDbStorage({factory,dbName});const idbApi=createMockApi({scenarioSource:source,storage:idb});
+ const idbSession=v(await idbApi.createSession({...createInput,creationKey:'idb-review'}));
+ const record:any=await idb.getSession(idbSession.id);record.state.workflow.video='INVALID_STATE';
+ const invalidWorkflowAcceptedByValidator=validatePersistedSession(record);
+ const db=await new Promise<IDBDatabase>((resolve,reject)=>{const req=factory.open(dbName,1);req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});
+ const put=(r:any)=>new Promise<void>((resolve,reject)=>{const tx=db.transaction('sessions','readwrite');tx.objectStore('sessions').put(r);tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error)});
+ await put(record);const corruptStateRead=await idbApi.getSession({sessionId:idbSession.id});
+ delete record.state.history;await put(record);
+ let corruptExport:any;try{corruptExport={ok:true,value:await idb.exportSession(idbSession.id)}}catch(e){corruptExport={ok:false,error:String(e)}}
+ db.close();await idb.close();
+ const result={scope:'TEST_ONLY diagnostic observations, not acceptance',creationReceipt:{originalRevision:v(originalCreate).revision,duplicateRevision:v(duplicateCreate).revision},responseMutationAffectedStorage,pagination:{expected:all.map((e:any)=>e.sequence),collected},replayUserVersionAccessible:{ok:replayLocal.ok},replayIrrelevantFieldAccepted:{ok:irrelevantReplayField.ok},duplicateCommandAfterPackageChange:replayAfterPackageChange,oldPackageRunExport:exportOld,invalidWorkflowAcceptedByValidator,corruptStateRead,corruptExport};
+ writeFileSync('evidence/poc/reviews/POC-004/main-probe.json',JSON.stringify(result,null,2)+'\n');
+});

@@ -1,0 +1,42 @@
+{
+  "recordedOn": "2026-11-05",
+  "userDecision": "以 SERENITY 统一案例，另补相符脚本（推荐）",
+  "purpose": "User-requested internal Lavish Interactive Mock POC",
+  "rights": "User supplied these files for this POC; public advertising rights/upstream production not independently verified.",
+  "assets": [
+    {
+      "id": "provided.scent-layering.hero-serenity",
+      "sourceFile": "D:/xwechat_files/everyfuck_f4fa/temp/RWTemp/2026-11/0834b6cd3616ddca37c20ba66977d509/60701d9537fce14f10ade33fd8609ee2.png",
+      "storedFile": "assets\\provided\\scent-layering\\1.0.0\\hero-serenity.png",
+      "bytes": 2513070,
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "unchanged": true
+    },
+    {
+      "id": "provided.scent-layering.product-serenity",
+      "sourceFile": "C:/Users/51159/AppData/Local/Temp/codex-clipboard-1786e8b6-52bb-44ac-a3b9-3cd8810f906a.png",
+      "storedFile": "assets\\provided\\scent-layering\\1.0.0\\product-serenity.png",
+      "bytes": 538290,
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "unchanged": true
+    },
+    {
+      "id": "provided.scent-layering.final-preview",
+      "sourceFile": "D:/xwechat_files/everyfuck_f4fa/msg/video/2026-11/e062f8a13f01f6e84d83c034c9d40ed3_raw.mp4",
+      "storedFile": "assets\\provided\\scent-layering\\1.0.0\\final-preview.mp4",
+      "bytes": 1315394,
+      "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+      "unchanged": true
+    }
+  ],
+  "observations": [
+    "Both supplied stills visibly identify SERENITY, not OUD/PERLA.",
+    "MP4 visually features SERENITY with moving product closeups; sampled frames inspected, not verified as four original-script shots.",
+    "MP4 is 720x960, duration 10.08s in browser, H.264/yuv420p, 24fps, AAC.",
+    "Container has AIGC metadata; upstream production/tool not independently established. Do not label as camera-original footage or live POC generation.",
+    "Browser asset probe passed muted playback/time advance and seek to 7.56s with byte-range support; actual product integration and controls not yet reviewed.",
+    "Old frozen 15s script/VTT is not an exact timing match.",
+    "SERENITY-only updated scenario content is still awaited from web ChatGPT; original package remains unchanged."
+  ],
+  "browserEvidence": "evidence/poc/provided-assets/browser-probe.json"
+}

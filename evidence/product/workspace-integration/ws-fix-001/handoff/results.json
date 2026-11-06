@@ -1,0 +1,246 @@
+{
+  "checkedAt": "2026-11-06T08:52:53.180Z",
+  "scope": "Targeted browser reproduction only; no production edits, no old specs run",
+  "buildId": "Qn1edGDBs90rcVr7YkDrq",
+  "states": [
+    {
+      "label": "01-library-A",
+      "url": "http://127.0.0.1:3181/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "selected": "scn-scent-layering.brief.main",
+      "nav": [
+        {
+          "id": "shell-nav-overview",
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-radar",
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-opportunities",
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-atelier",
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        {
+          "id": "shell-nav-library",
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        },
+        {
+          "id": "shell-nav-deliverables",
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        }
+      ],
+      "text": "CREATIVE LIBRARY\n\nCreative Library\n\nEvery prepared and saved EN/AR script and static storyboard, with exact versions ready to preview or export.\n\nDemo · Mock data\nCAMPAIGN\nAll campaigns\nSERENITY — A Story in Layers\nA Gesture, Considered\nLet the Scent Lead\nLANGUAGE\nAll languages\nEnglish\nArabic\nTYPE\nScripts & storyboards\nScripts\nStatic storyboards\nHero images\nProduct originals\nProvided videos\nORIGIN\nPreset & saved\nPreset only\nSaved versions\nClear filters\nProvided SERENITY assets\n\nReal supplied product image, campaign visual and 10-second video preview. Provided demo assets · Not generated live in this POC.\n\nProvided\nHero image\nSERENITY — lifestyle hero\n\nSupplied original bytes, shown exactly as provided.\n\nPreview\nOpen in Atelier\nProvided\nProduct original\nSERENITY — product original\n\nSupplied original bytes, shown exactly as provided.\n\nPreview\nOpen in Atelier\nProvided\nProvided video\nSERENITY — Final Video Preview\n\nSupplied 10.08s / 720×960 / 3:4 preview; independent of the 15-second concept script.\n\nPreview\nOpen in Atelier\nOpen in Deliverables\nSERENITY — A Story in Layers\n\nA moment of light.\n\nSERENITY\nScript\nEN\nPreset\nUnconfirmed\nPreview\nOpen in Atelier\nExport content pack\nSERENITY — A Story in Layers\n\n4 static shots · A moment of light.\n\nSERENITY\nStatic storyboard\nEN\nPreset\nUnconfirmed\nPreview\nOpen in Atelier\nExport content pack"
+    },
+    {
+      "label": "02-library-B-after-same-path-switch",
+      "url": "http://127.0.0.1:3181/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+      "selected": "scn-luxury-gifting.brief.main",
+      "nav": [
+        {
+          "id": "shell-nav-overview",
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-radar",
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-opportunities",
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-atelier",
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        {
+          "id": "shell-nav-library",
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        },
+        {
+          "id": "shell-nav-deliverables",
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        }
+      ],
+      "text": "CREATIVE LIBRARY\n\nCreative Library\n\nEvery prepared and saved EN/AR script and static storyboard, with exact versions ready to preview or export.\n\nDemo · Mock data\nCAMPAIGN\nAll campaigns\nSERENITY — A Story in Layers\nA Gesture, Considered\nLet the Scent Lead\nLANGUAGE\nAll languages\nEnglish\nArabic\nTYPE\nScripts & storyboards\nScripts\nStatic storyboards\nHero images\nProduct originals\nProvided videos\nORIGIN\nPreset & saved\nPreset only\nSaved versions\nClear filters\nA Gesture, Considered\n\nA gift begins with a thought.\n\nPERLA 50ML UNISEX\nScript\nEN\nPreset\nUnconfirmed\nPreview\nOpen in Atelier\nExport content pack\nA Gesture, Considered\n\n4 static shots · A gift begins with a thought.\n\nPERLA 50ML UNISEX\nStatic storyboard\nEN\nPreset\nUnconfirmed\nPreview\nOpen in Atelier\nExport content pack"
+    },
+    {
+      "label": "03-atelier-after-sidebar-click",
+      "url": "http://127.0.0.1:3181/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "nav": [
+        {
+          "id": "shell-nav-overview",
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-radar",
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-opportunities",
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-atelier",
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        },
+        {
+          "id": "shell-nav-library",
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        {
+          "id": "shell-nav-deliverables",
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        }
+      ],
+      "text": "CREATIVE ATELIER\n\nSERENITY — A Story in Layers\n\nCampaign workspace · read the prepared brief, bilingual copy and static storyboard. Edit only when you choose to.\n\nDemo · Mock data\nSERENITY — A Story in Layers\nOption A · SERENITY\nA Gesture, Considered\nOption B · PERLA 50ML UNISEX\nLet the Scent Lead\nOption C · LAVISH OUD\n\nCREATIVE ATELIER · CURRENT CREATIVE\n\nHow the supplied assets become the campaign creative\n\nA demo creative workflow: the supplied product original sets the identity, the campaign hero sets the atmosphere, and the supplied video preview is the moving result. No image or video is generated live in this POC.\n\nDemo creative workflow\nProvided demo assets\n01\nProduct original\n\nThe clean SERENITY original places the exact bottle and Lavish mark on a quiet ivory field at true aspect ratio, before any atmosphere is added. It is the fixed identity reference that every later frame must keep legible.\n\nThe supplied white-background SERENITY bottle, kept true to the original. · Provided demo asset · Not generated live in this POC\n\n02\nCampaign hero\n\nThe lifestyle hero adds warm amber light and soft floral-inspired shadow as mood. The bottle mark stays fully visible, and the branch, stone and flower props are art direction rather than ingredient evidence.\n\nThe supplied lifestyle visual that sets the atmosphere. · Provided demo asset · Not generated live in this POC\n\n03\nFinal video\n\nThe provided 10.08-second, 720×960 clip shows warm still-life, bottle-label close-ups and a return to the single-bottle setting. It is an independent provided preview, not a render of the 15-second four-shot concept script.\n\nThe provided 10.08-second, 720×960 independent preview. · Provided demo asset · Not generated live in this POC\n\nProvided 10.08-second independent preview. The MP4 above is the supplied 10.08s, 720×960 file, played with native controls at 3:4 contain. It has no subtitle track attached.\n\n15-second four-shot concept script (not produced). The four shots below are an authored 15-second concept for review. They were not rendered into an MP4, and the video above is not a per-shot render of this script.\n\n15-second four-shot concept script (not produced)\n\nReal authored EN / AR script versions for this campaign. Switching language changes the reading object only.\n\nEN\nAR\nSERENITY — A Story in Layers\nA moment of light.\n\nSHOT 1 · 0.00S – 3.20S\n\nA moment of light.\n\nSet SERENITY product-original image at true aspect ratio on a quiet ivory field. A restrained glow enters th"
+    },
+    {
+      "label": "04-atelier-after-refresh",
+      "url": "http://127.0.0.1:3181/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "nav": [
+        {
+          "id": "shell-nav-overview",
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-radar",
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-opportunities",
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-atelier",
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        },
+        {
+          "id": "shell-nav-library",
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        {
+          "id": "shell-nav-deliverables",
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        }
+      ],
+      "text": "CREATIVE ATELIER\n\nSERENITY — A Story in Layers\n\nCampaign workspace · read the prepared brief, bilingual copy and static storyboard. Edit only when you choose to.\n\nDemo · Mock data\nSERENITY — A Story in Layers\nOption A · SERENITY\nA Gesture, Considered\nOption B · PERLA 50ML UNISEX\nLet the Scent Lead\nOption C · LAVISH OUD\n\nCREATIVE ATELIER · CURRENT CREATIVE\n\nHow the supplied assets become the campaign creative\n\nA demo creative workflow: the supplied product original sets the identity, the campaign hero sets the atmosphere, and the supplied video preview is the moving result. No image or video is generated live in this POC.\n\nDemo creative workflow\nProvided demo assets\n01\nProduct original\n\nThe clean SERENITY original places the exact bottle and Lavish mark on a quiet ivory field at true aspect ratio, before any atmosphere is added. It is the fixed identity reference that every later frame must keep legible.\n\nThe supplied white-background SERENITY bottle, kept true to the original. · Provided demo asset · Not generated live in this POC\n\n02\nCampaign hero\n\nThe lifestyle hero adds warm amber light and soft floral-inspired shadow as mood. The bottle mark stays fully visible, and the branch, stone and flower props are art direction rather than ingredient evidence.\n\nThe supplied lifestyle visual that sets the atmosphere. · Provided demo asset · Not generated live in this POC\n\n03\nFinal video\n\nThe provided 10.08-second, 720×960 clip shows warm still-life, bottle-label close-ups and a return to the single-bottle setting. It is an independent provided preview, not a render of the 15-second four-shot concept script.\n\nThe provided 10.08-second, 720×960 independent preview. · Provided demo asset · Not generated live in this POC\n\nProvided 10.08-second independent preview. The MP4 above is the supplied 10.08s, 720×960 file, played with native controls at 3:4 contain. It has no subtitle track attached.\n\n15-second four-shot concept script (not produced). The four shots below are an authored 15-second concept for review. They were not rendered into an MP4, and the video above is not a per-shot render of this script.\n\n15-second four-shot concept script (not produced)\n\nReal authored EN / AR script versions for this campaign. Switching language changes the reading object only.\n\nEN\nAR\nSERENITY — A Story in Layers\nA moment of light.\n\nSHOT 1 · 0.00S – 3.20S\n\nA moment of light.\n\nSet SERENITY product-original image at true aspect ratio on a quiet ivory field. A restrained glow enters th"
+    },
+    {
+      "label": "05-library-after-back",
+      "url": "http://127.0.0.1:3181/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+      "selected": "scn-luxury-gifting.brief.main",
+      "nav": [
+        {
+          "id": "shell-nav-overview",
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-radar",
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-opportunities",
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-atelier",
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        {
+          "id": "shell-nav-library",
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        },
+        {
+          "id": "shell-nav-deliverables",
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        }
+      ],
+      "text": "CREATIVE LIBRARY\n\nCreative Library\n\nEvery prepared and saved EN/AR script and static storyboard, with exact versions ready to preview or export.\n\nDemo · Mock data\nCAMPAIGN\nAll campaigns\nSERENITY — A Story in Layers\nA Gesture, Considered\nLet the Scent Lead\nLANGUAGE\nAll languages\nEnglish\nArabic\nTYPE\nScripts & storyboards\nScripts\nStatic storyboards\nHero images\nProduct originals\nProvided videos\nORIGIN\nPreset & saved\nPreset only\nSaved versions\nClear filters\nA Gesture, Considered\n\nA gift begins with a thought.\n\nPERLA 50ML UNISEX\nScript\nEN\nPreset\nUnconfirmed\nPreview\nOpen in Atelier\nExport content pack\nA Gesture, Considered\n\n4 static shots · A gift begins with a thought.\n\nPERLA 50ML UNISEX\nStatic storyboard\nEN\nPreset\nUnconfirmed\nPreview\nOpen in Atelier\nExport content pack"
+    },
+    {
+      "label": "06-B-with-stale-A-version",
+      "url": "http://127.0.0.1:3181/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+      "nav": [
+        {
+          "id": "shell-nav-overview",
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-radar",
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-opportunities",
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        {
+          "id": "shell-nav-atelier",
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        {
+          "id": "shell-nav-library",
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        {
+          "id": "shell-nav-deliverables",
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        }
+      ],
+      "text": "DELIVERABLES\n\nDeliverables\n\nReview your video and copy, then simulate a social post. Download content packs and the original MP4 as secondary actions.\n\nDemo · Mock data\nThe social post for this campaign version is not available.\n\nNo social post is prepared for this campaign version. Existing exports and downloads remain available.\n\nNo SERENITY video or caption was borrowed. Existing exports and downloads remain available below.\n\nDownloads and content packs"
+    }
+  ],
+  "errors": [],
+  "hashesBefore": {
+    "apps/web/components/shell/AppShell.tsx": "dbc6a09ea2334ab760027b8743cef80d381ce46a7f6d41b6c1bf1b3121444ab7",
+    "apps/web/components/product/library/LibraryPage.tsx": "f23bf0bd225a645de124ba6d62602bd9e896908f8d6a62acba15adc2959f88a2",
+    "apps/web/components/product/shared/workspace-routes.ts": "4db80a5af5cfd88973cec7e59837c7c5e2d9a37cbe62c28950fdf470c004d94c",
+    "apps/web/.next/BUILD_ID": "e201283f436f0ecf09cb695db69b4b54fa0246a0d14e50a3826f942f7d0c8e2e"
+  },
+  "hashesAfter": {
+    "apps/web/components/shell/AppShell.tsx": "dbc6a09ea2334ab760027b8743cef80d381ce46a7f6d41b6c1bf1b3121444ab7",
+    "apps/web/components/product/library/LibraryPage.tsx": "f23bf0bd225a645de124ba6d62602bd9e896908f8d6a62acba15adc2959f88a2",
+    "apps/web/components/product/shared/workspace-routes.ts": "4db80a5af5cfd88973cec7e59837c7c5e2d9a37cbe62c28950fdf470c004d94c",
+    "apps/web/.next/BUILD_ID": "e201283f436f0ecf09cb695db69b4b54fa0246a0d14e50a3826f942f7d0c8e2e"
+  },
+  "samePathSidebarStale": true
+}

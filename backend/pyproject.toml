@@ -1,0 +1,47 @@
+# MAISON INTELLIGENCE API — TASK-001 foundation (Lavish Perfumes).
+# Python 3.12 (tested with CPython 3.12.1 on Windows 11). Exact pins below are
+# the declared dependency lock; TASK-001 verified them in a fresh venv.
+#
+# Setup (from the repository root):
+#   python -m venv backend/.venv
+#   backend/.venv/Scripts/python -m pip install -e "backend[dev]"   # Windows
+#   backend/.venv/bin/python     -m pip install -e "backend[dev]"   # POSIX
+# Run:
+#   backend/.venv/Scripts/python -m uvicorn app.main:app --app-dir backend --port 8000
+#   GET http://127.0.0.1:8000/api/v1/health  ->  {"status":"ok"}
+# Check:
+#   backend/.venv/Scripts/python -m pytest backend -q
+#   (TASK-001 authorises no test files yet, so pytest reports "no tests ran"
+#    and exits 5; that is expected and must not be reported as a pass.)
+# Configuration: see ../.env.example (MAISON_ENV, MAISON_CORS_ORIGINS).
+# Note: the root `npm run backend:*` scripts invoke the `python` on PATH; activate
+# backend/.venv first (or use the explicit venv commands above) so the pinned
+# versions are the ones actually running.
+
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "maison-intelligence-api"
+version = "0.1.0"
+description = "MAISON INTELLIGENCE API foundation (Lavish Perfumes) — TASK-001 ops health endpoint only."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi==0.162.0",
+  "pydantic==2.14.2",
+  "uvicorn[standard]==0.54.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "httpx==0.28.1",
+  "pytest==9.2.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

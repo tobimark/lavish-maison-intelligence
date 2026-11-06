@@ -1,0 +1,67 @@
+{
+  "scope": "TEST_ONLY independent code probes; no customer video acceptance",
+  "playbackDisabledButReportedPlayed": true,
+  "playbackMetadata": {
+    "event": "loadedmetadata",
+    "durationMs": 15000,
+    "width": 1080,
+    "height": 1920,
+    "seekableRanges": 1,
+    "seeks": [
+      {
+        "targetMs": 3750,
+        "seeked": true,
+        "actualMs": 3750
+      },
+      {
+        "targetMs": 7500,
+        "seeked": true,
+        "actualMs": 7500
+      },
+      {
+        "targetMs": 13500,
+        "seeked": true,
+        "actualMs": 13500
+      }
+    ],
+    "played": true,
+    "errorCode": null
+  },
+  "crossPortRedirect": {
+    "baseUrl": "http://127.0.0.1:53814",
+    "secondaryUrl": "http://127.0.0.1:53813",
+    "secondaryRequests": 2,
+    "cli": {
+      "exit": 0,
+      "stderr": ""
+    },
+    "errors": [],
+    "media": [
+      {
+        "id": "scn-scent-layering.asset.poster",
+        "kind": "poster",
+        "uri": "/scenario-media/scent-layering/1.0.0/redirect.png",
+        "status": "pass",
+        "httpStatus": 200,
+        "finalUrl": "http://127.0.0.1:53813/poster.png",
+        "contentType": "image/png",
+        "bytes": 12248,
+        "sha256": "5af047be9134cdf3c4ea404952e4c8d92d972cfaa7577604c8651d2feeb2f863",
+        "image": {
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    ]
+  },
+  "ffprobeMissingDurationIssues": [],
+  "vttParsed": {
+    "cues": [
+      {
+        "startMs": 0,
+        "endMs": 1000
+      }
+    ],
+    "issues": []
+  }
+}

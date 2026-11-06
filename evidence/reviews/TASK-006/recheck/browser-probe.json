@@ -1,0 +1,174 @@
+{
+  "checkedAt": "2026-11-03T16:50:49.327Z",
+  "errors": [],
+  "requestsFailed": [],
+  "styles": {
+    "en": {
+      "title": {
+        "text": "Design foundation",
+        "fontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "29px",
+        "letterSpacing": "-1.16px",
+        "lineHeight": "35.38px",
+        "dir": "ltr"
+      },
+      "section": {
+        "text": "Type scale",
+        "fontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "18px",
+        "letterSpacing": "-0.216px",
+        "lineHeight": "24.3px",
+        "dir": "ltr"
+      },
+      "body": {
+        "text": "Internal visual baseline for the marketing intelligence workspace. Typography, colour, spacing and interaction rules come from the approved reference and DESIGN_SYSTEM; this page is not a business screen and shows no live data.",
+        "fontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "25.6px",
+        "dir": "ltr"
+      },
+      "content": {
+        "text": "Illustrative scenario: pairing LAVISH OUD with PERLA to test a layering concept. Demo content only — not a claim about current demand, sales or verified market movement.",
+        "fontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "25.6px",
+        "dir": "ltr"
+      },
+      "sampleTitle": {
+        "text": "Marketing intelligence, made actionable",
+        "fontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "29px",
+        "letterSpacing": "-1.16px",
+        "lineHeight": "35.38px",
+        "dir": "ltr"
+      },
+      "sampleBody": {
+        "text": "A clearer view of every signal, opportunity and creative decision — reviewable from the first evidence item to the scheduled post.",
+        "fontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "25.6px",
+        "dir": "ltr"
+      },
+      "sampleLabel": {
+        "text": "Intelligence radar",
+        "fontFamily": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+        "fontSize": "12px",
+        "letterSpacing": "1.92px",
+        "lineHeight": "19.2px",
+        "dir": "ltr"
+      },
+      "dedicatedAr": {
+        "text": "AR · Noto Sans Arabicذكاء تسويقي قابل للتنفيذعرض أوضح لكل إشارة وفرصة وقرار إبداعي، قابل للمراجعة من أول دليل حتى المنشور المجدول.آخر تحديث قبل دقيقتين · بذرة العرض 01LAVISH OUDSKU 6290360532790·PERLA50 MLArabic copy is a layout sample pending localization review; product names and SKUs keep their official Latin form.",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "28.8px",
+        "dir": "rtl"
+      }
+    },
+    "ar": {
+      "title": {
+        "text": "أساس التصميم",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "29px",
+        "letterSpacing": "normal",
+        "lineHeight": "35.38px",
+        "dir": "rtl"
+      },
+      "section": {
+        "text": "سلم الطباعة",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "18px",
+        "letterSpacing": "normal",
+        "lineHeight": "24.3px",
+        "dir": "rtl"
+      },
+      "body": {
+        "text": "صفحة داخلية لمراجعة الطباعة والألوان والمسافات والتفاعل قبل بناء صفحات المنتج. ليست صفحة أعمال ولا تعرض بيانات حية.",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "28.8px",
+        "dir": "rtl"
+      },
+      "content": {
+        "text": "سيناريو توضيحي: دمج LAVISH OUD مع PERLA لاختبار فكرة تركيب طبقات العطر. محتوى تجريبي فقط، وليس ادعاءً عن الطلب الحالي أو المبيعات أو حركة سوق موثقة.",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "28.8px",
+        "dir": "rtl"
+      },
+      "sampleTitle": {
+        "text": "ذكاء تسويقي قابل للتنفيذ",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "29px",
+        "letterSpacing": "normal",
+        "lineHeight": "35.38px",
+        "dir": "rtl"
+      },
+      "sampleBody": {
+        "text": "عرض أوضح لكل إشارة وفرصة وقرار إبداعي، قابل للمراجعة من أول دليل حتى المنشور المجدول.",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "28.8px",
+        "dir": "rtl"
+      },
+      "sampleLabel": {
+        "text": "رادار الذكاء",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "12px",
+        "letterSpacing": "normal",
+        "lineHeight": "21.6px",
+        "dir": "rtl"
+      },
+      "dedicatedAr": {
+        "text": "AR · Noto Sans Arabicذكاء تسويقي قابل للتنفيذعرض أوضح لكل إشارة وفرصة وقرار إبداعي، قابل للمراجعة من أول دليل حتى المنشور المجدول.آخر تحديث قبل دقيقتين · بذرة العرض 01LAVISH OUDSKU 6290360532790·PERLA50 MLالنص العربي هنا نموذج تخطيطي بانتظار مراجعة التعريب؛ تبقى أسماء المنتجات وأرقام SKU بصيغتها اللاتينية الرسمية.",
+        "fontFamily": "\"Noto Sans Arabic\", Tahoma, Arial, sans-serif",
+        "fontSize": "16px",
+        "letterSpacing": "normal",
+        "lineHeight": "28.8px",
+        "dir": "rtl"
+      }
+    }
+  },
+  "screenshots": [
+    "evidence/reviews/TASK-006/recheck/review-1440-en.png",
+    "evidence/reviews/TASK-006/recheck/review-1440-ar.png",
+    "evidence/reviews/TASK-006/recheck/review-390-ar.png"
+  ],
+  "browser": "156.0.8078.4",
+  "arTitleActualFonts": {
+    "fonts": [
+      {
+        "familyName": "Noto Sans Arabic",
+        "postScriptName": "Noto-Sans-Arabic-SemiBold",
+        "isCustomFont": true,
+        "glyphCount": 15
+      }
+    ]
+  },
+  "noteOpens": true,
+  "noteCloses": true,
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "titleLetterSpacing": "normal"
+  },
+  "inlineTokenStyleAbsent": true,
+  "tokenCanvas": "#f6f5f2",
+  "standardImportPresent": true,
+  "arViolations": [],
+  "sourceHashes": {
+    "apps/web/app/layout.tsx": "e670300278e13d391d14691db6865577246adeda3bc22cca8e05783603c82336",
+    "apps/web/styles/globals.css": "6b12a922aa7e917a7c716bcf1d465bf09c465dff1fb3dd5c7bce36b0a16bfdf7",
+    "apps/web/styles/design-lab.module.css": "204ea09c0294b02a6d2d017116ce5254d84dd178175d604d86c3264154dda1e0",
+    "apps/web/app/design-lab/design-lab-page.tsx": "f38cb98ea2c0a9bc9432e1300a7908b5854322c4fbda791d7fac39d2a2489d5e",
+    "apps/web/tests/theme.spec.ts": "485a1c618db91ac1a55917e0688170def928cef1995880655e47dae351bb802d",
+    "design/tokens.css": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+  }
+}

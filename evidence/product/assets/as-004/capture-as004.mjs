@@ -1,0 +1,28 @@
+import { chromium } from 'playwright';
+import { mkdirSync, writeFileSync } from 'node:fs';
+const base='http://127.0.0.1:3150'; const dir='evidence/product/assets/as-004'; mkdirSync(dir,{recursive:true});
+const browser=await chromium.launch();
+const page=await browser.newPage({viewport:{width:1440,height:900}});
+const errors=[]; page.on('pageerror',e=>errors.push(e.message));
+const shots=[];
+async function shot(name,url,wait=900){ await page.goto(base+url,{waitUntil:'load'}); await page.waitForTimeout(wait); await page.screenshot({path:`${dir}/${name}.png`}); shots.push(name); }
+await shot('as004-overview-1440','/');
+await shot('as004-brief-1440','/campaigns/scn-scent-layering.brief.main/brief');
+await shot('as004-atelier-en-1440','/atelier?campaignId=scn-scent-layering.brief.main&language=en');
+await shot('as004-atelier-ar-1440','/atelier?campaignId=scn-scent-layering.brief.main&language=ar');
+await shot('as004-library-1440','/library');
+await page.setViewportSize({width:1366,height:768});
+await shot('as004-overview-1366','/');
+await shot('as004-brief-1366','/campaigns/scn-scent-layering.brief.main/brief');
+await shot('as004-atelier-en-1366','/atelier?campaignId=scn-scent-layering.brief.main&language=en');
+await page.setViewportSize({width:390,height:844});
+await shot('as004-overview-390','/');
+await shot('as004-brief-390','/campaigns/scn-scent-layering.brief.main/brief',1200);
+await shot('as004-atelier-ar-390','/atelier?campaignId=scn-scent-layering.brief.main&language=ar',1200);
+await shot('as004-library-390','/library',1200);
+await page.setViewportSize({width:1440,height:900});
+await page.goto(base+'/atelier?campaignId=scn-scent-layering.brief.main&language=en',{waitUntil:'load'}); await page.waitForTimeout(1200);
+const videoFacts=await page.getByTestId('provided-video').evaluate(async v=>{ if(v.readyState<1) await new Promise(r=>v.addEventListener('loadedmetadata',r,{once:true})); return {controls:v.controls,width:v.videoWidth,height:v.videoHeight,duration:v.duration,paused:v.paused}; });
+await browser.close();
+writeFileSync(dir+'/as004-evidence.json',JSON.stringify({checkedAt:new Date().toISOString(),base,shots,videoFacts,errors},null,2)+'\n');
+console.log(JSON.stringify({shots,videoFacts,errors},null,2));

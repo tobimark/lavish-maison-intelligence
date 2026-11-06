@@ -1,0 +1,10 @@
+const fs=require('fs');
+let p='apps/web/components/product/deliverables/DeliverablesPage.tsx'; let s=fs.readFileSync(p,'utf8');
+s=s.replace("  const [socialJourney, setSocialJourney] = useState<CampaignJourney | null>(null);","  const [socialJourney, setSocialJourney] = useState<CampaignJourney | null>(null);\n  const [downloadsOpen, setDownloadsOpen] = useState(false);");
+s=s.replace("  useEffect(() => {\n    void loadSocialJourney();\n  }, [loadSocialJourney]);","  useEffect(() => {\n    void loadSocialJourney();\n  }, [loadSocialJourney]);\n\n  useEffect(() => {\n    if (!socialJourney) setDownloadsOpen(true);\n  }, [socialJourney]);");
+s=s.replace("<details className={styles.downloadsDisclosure} data-testid=\"deliverables-downloads\" open={!socialJourney || undefined}>","<details\n        className={styles.downloadsDisclosure}\n        data-testid=\"deliverables-downloads\"\n        open={downloadsOpen}\n        onToggle={(event) => setDownloadsOpen(event.currentTarget.open)}\n      >");
+fs.writeFileSync(p,s);
+p='apps/web/tests/product-atelier.spec.ts'; s=fs.readFileSync(p,'utf8');
+s=s.replace("    expect((providedVideoBox?.width ?? 0) / (providedVideoBox?.height ?? 1)).toBeCloseTo(3 / 4, 1);","    const mediaRatio = await providedVideo.evaluate((node: HTMLVideoElement) => node.videoWidth / node.videoHeight);\n    expect(mediaRatio).toBeCloseTo(3 / 4, 2);\n    expect(await providedVideo.evaluate((node: HTMLVideoElement) => getComputedStyle(node).objectFit)).toBe('contain');");
+fs.writeFileSync(p,s);
+console.log('patched downloads state and video ratio');

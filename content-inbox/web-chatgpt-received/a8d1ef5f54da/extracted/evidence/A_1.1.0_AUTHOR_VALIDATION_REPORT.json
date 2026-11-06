@@ -1,0 +1,242 @@
+{
+  "reportType": "AUTHOR_STATIC_DRAFT",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "schemaVersion": "1.0.0",
+  "packageHash": "e5c8c67df98e162050f7a4c164a100c64e851df18eda4fa7e0118288c4216297",
+  "schemaViolations": {
+    "manifest": [],
+    "brand": [],
+    "discovery": [],
+    "analysis": [],
+    "script": [],
+    "video": [],
+    "delivery": [],
+    "events": [],
+    "assets": [
+      {
+        "path": "/data/assets/5/bytes",
+        "error": "None is not of type 'integer'"
+      },
+      {
+        "path": "/data/assets/5/rightsStatus",
+        "error": "'approved_for_demo' was expected"
+      },
+      {
+        "path": "/data/assets/5/sha256",
+        "error": "None is not of type 'string'"
+      },
+      {
+        "path": "/data/assets/6/bytes",
+        "error": "None is not of type 'integer'"
+      },
+      {
+        "path": "/data/assets/6/rightsStatus",
+        "error": "'approved_for_demo' was expected"
+      },
+      {
+        "path": "/data/assets/6/sha256",
+        "error": "None is not of type 'string'"
+      }
+    ],
+    "expected": []
+  },
+  "knownSchemaExceptions": [
+    "planned en-v2 concept video absent: bytes/sha256/rightsStatus",
+    "planned concept poster absent: bytes/sha256/rightsStatus"
+  ],
+  "checks": {
+    "schema.manifest": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.brand": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.discovery": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.analysis": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.script": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.video": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.delivery": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.events": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "schema.assets.expect_only_absent_planned_media": {
+      "pass": true,
+      "detail": "6 expected violations; no others"
+    },
+    "schema.expected": {
+      "pass": true,
+      "detail": "0 violations"
+    },
+    "manifest.file_count": {
+      "pass": true,
+      "detail": "nine referenced JSON"
+    },
+    "manifest.brand.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.discovery.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.analysis.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.script.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.video.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.delivery.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.events.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.assets.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "manifest.expected.json": {
+      "pass": true,
+      "detail": "real file bytes/hash"
+    },
+    "root.ten_json": {
+      "pass": true,
+      "detail": "exactly ten top-level JSON in content directory"
+    },
+    "version": {
+      "pass": true,
+      "detail": "all version tuple"
+    },
+    "pending_authoring": {
+      "pass": true,
+      "detail": "draft status"
+    },
+    "unique_entity_ids": {
+      "pass": true,
+      "detail": "47 IDs"
+    },
+    "brand.one_serenity": {
+      "pass": true,
+      "detail": "single new product"
+    },
+    "typed_cross_references": {
+      "pass": true,
+      "detail": "cross-file refs close"
+    },
+    "script_timing": {
+      "pass": true,
+      "detail": "both versions 4 shots and 15s exact"
+    },
+    "asset.lavish-logo.png": {
+      "pass": true,
+      "detail": "physical asset matches record"
+    },
+    "asset.serenity-product-original.png": {
+      "pass": true,
+      "detail": "physical asset matches record"
+    },
+    "asset.serenity-hero.png": {
+      "pass": true,
+      "detail": "physical asset matches record"
+    },
+    "asset.serenity-concept-en-v2-15s.vtt": {
+      "pass": true,
+      "detail": "physical asset matches record"
+    },
+    "asset.serenity-concept-ar-v2-15s.vtt": {
+      "pass": true,
+      "detail": "physical asset matches record"
+    },
+    "provided_immutable.hero-serenity.png": {
+      "pass": true,
+      "detail": "byte-for-byte copy"
+    },
+    "provided_immutable.product-serenity.png": {
+      "pass": true,
+      "detail": "byte-for-byte copy"
+    },
+    "provided_immutable.final-preview.mp4": {
+      "pass": true,
+      "detail": "byte-for-byte copy"
+    },
+    "sidecar_unchanged": {
+      "pass": true,
+      "detail": "original supplied sidecar"
+    },
+    "event_consistency": {
+      "pass": true,
+      "detail": "28 events in fixed 4-stage order"
+    },
+    "checkpoints_positions": {
+      "pass": true,
+      "detail": "expected checkpoints"
+    },
+    "expected_visible_projection": {
+      "pass": true,
+      "detail": "expanded visible IDs sorted consistent"
+    },
+    "vtt.en": {
+      "pass": true,
+      "detail": "matches subtitle text and cue count"
+    },
+    "vtt.ar": {
+      "pass": true,
+      "detail": "matches subtitle text and cue count"
+    },
+    "image_pixels.serenity-hero.png": {
+      "pass": true,
+      "detail": "(2560, 1440)"
+    },
+    "image_pixels.serenity-product-original.png": {
+      "pass": true,
+      "detail": "(2000, 2000)"
+    },
+    "image_pixels.lavish-logo.png": {
+      "pass": true,
+      "detail": "(294, 294)"
+    },
+    "provided_video_metadata": {
+      "pass": true,
+      "detail": "10.08s 720x960 H.264"
+    }
+  },
+  "unexpectedErrors": [],
+  "NOT_RUN": [
+    "POC-003/005 domain reducer state/guard tests",
+    "L5 browser HTTP, decode, play/seek/download integrated into the actual application",
+    "Core 15-second video and poster unavailable",
+    "DSH asset/UI binding and FAST_06 central acceptance",
+    "Arabic native-speaker and Lavish brand approval",
+    "Independent rights review for external marketing"
+  ],
+  "reviewStatus": "pending",
+  "runnable": false,
+  "accepted": false
+}

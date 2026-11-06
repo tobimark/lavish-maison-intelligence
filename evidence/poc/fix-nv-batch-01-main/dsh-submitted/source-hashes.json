@@ -1,0 +1,30 @@
+[
+  {
+    "path": "apps/web/components/poc/ContentOnlyFrame.tsx",
+    "sha256": "e4b282ec9aeb271f9e4bc76d862ab93244c7ec719a2247f30d57c1a8c9b3d04a"
+  },
+  {
+    "path": "apps/web/demo/poc/domain/content-only.ts",
+    "sha256": "bee092a5082662b908ab330528e3c0068169c8e08128b506d1785497e8348e3d"
+  },
+  {
+    "path": "apps/web/demo/poc/api/scenario-source.ts",
+    "sha256": "8f1edd4a5763d6428ed786c9d68b0b93d6ca7bd00e8bcd28495eaf50c8f58e6a"
+  },
+  {
+    "path": "apps/web/tests/poc-content-only.spec.ts",
+    "sha256": "affcc50b7490d0fc8d58061b34ae8a78e1f0ac66ab0fb91619e5ea32a5bc08b6"
+  },
+  {
+    "path": "apps/web/tests/poc-content-delivery.spec.ts",
+    "sha256": "b008fac9cfeb5b0c0c59fab09cd21d855c10867f7f2e2c8cee9a0375b94c8f3b"
+  },
+  {
+    "path": "tests/poc/content-only.test.ts",
+    "sha256": "d50fb3e53a10678319430a741574a72ee3ceea06c631408bcb6ed7b480f51be7"
+  },
+  {
+    "path": "docs/reviews/FIX-NV-BATCH-01-DSH.md",
+    "sha256": "2c2ac72562c3787f1fce580d9478e64db30526937aecbac5850f838638a6f3a9"
+  }
+]

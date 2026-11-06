@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+  "campaignId": "scn-scent-layering.brief.main",
+  "productIds": ["scn-scent-layering.product.serenity"],
+  "mode": "mock",
+  "insight": {
+    "title": "One fragrance, told as a sequence of impressions",
+    "takeaway": "The simulated signal set points to a possible creative format: reveal one SERENITY fragrance through light, floral feeling and a warm, soft close. It is a mood-led story, not a verified note progression or a physical layering claim.",
+    "signalIds": [
+      "scn-scent-layering.signal.s1",
+      "scn-scent-layering.signal.s2",
+      "scn-scent-layering.signal.s3",
+      "scn-scent-layering.signal.s4"
+    ],
+    "trendIds": ["scn-scent-layering.trend.main", "scn-scent-layering.trend.control"],
+    "evidenceIds": [
+      "scn-scent-layering.evidence.e1",
+      "scn-scent-layering.evidence.e2",
+      "scn-scent-layering.evidence.e3",
+      "scn-scent-layering.evidence.e4",
+      "scn-scent-layering.evidence.e5"
+    ]
+  },
+  "strategy": {
+    "analysisId": "scn-scent-layering.analysis.main",
+    "briefId": "scn-scent-layering.brief.main",
+    "whyThisProduct": "SERENITY is a verified Lavish product whose official description references citrus, floral and musk. A single-product, restrained editorial concept keeps the bottle identity legible and uses only those verified descriptors, without inventing note order, layering, ingredient or performance claims."
+  },
+  "creative": {
+    "title": "SERENITY — A Story in Layers",
+    "scriptVersionIds": ["scn-scent-layering.script.en-v2", "scn-scent-layering.script.ar-v2"],
+    "steps": [
+      {
+        "role": "product_identity",
+        "assetId": "provided.scent-layering.product-serenity",
+        "explanation": "The clean SERENITY original places the exact bottle and Lavish mark on a quiet ivory field at true aspect ratio, before any atmosphere is added. It is the fixed identity reference that every later frame must keep legible."
+      },
+      {
+        "role": "hero",
+        "assetId": "provided.scent-layering.hero-serenity",
+        "explanation": "The lifestyle hero adds warm amber light and soft floral-inspired shadow as mood. The bottle mark stays fully visible, and the branch, stone and flower props are art direction rather than ingredient evidence."
+      },
+      {
+        "role": "final_preview",
+        "assetId": "provided.scent-layering.final-preview",
+        "explanation": "The provided 10.08-second, 720×960 clip shows warm still-life, bottle-label close-ups and a return to the single-bottle setting. It is an independent provided preview, not a render of the 15-second four-shot concept script."
+      }
+    ],
+    "relationship": "illustrative_workflow_with_provided_assets"
+  },
+  "socialPosts": [
+    {
+      "id": "scn-scent-layering.social.instagram.en-v1",
+      "channel": "instagram",
+      "placement": "video_post",
+      "accountLabel": "Lavish Perfumes · Demo account",
+      "language": "en",
+      "sourceScriptVersionId": "scn-scent-layering.script.en-v2",
+      "videoAssetId": "provided.scent-layering.final-preview",
+      "caption": "SERENITY, by Lavish Perfumes. A quieter way to explore fragrance through light, floral feeling and a soft musk-inspired mood. Editorial concept for review; no verified application or performance claim.",
+      "cta": "Discover SERENITY",
+      "hashtags": ["#LavishPerfumes", "#SERENITY"]
+    },
+    {
+      "id": "scn-scent-layering.social.instagram.ar-v1",
+      "channel": "instagram",
+      "placement": "video_post",
+      "accountLabel": "Lavish Perfumes · Demo account",
+      "language": "ar",
+      "sourceScriptVersionId": "scn-scent-layering.script.ar-v2",
+      "videoAssetId": "provided.scent-layering.final-preview",
+      "caption": "SERENITY من Lavish Perfumes. تصوّر بصري هادئ يستلهم الضوء والإحساس الزهري ولمسة المسك في وصف العطر. مادة إبداعية للمراجعة، وليست وعداً بأداء أو نتيجة استخدام.",
+      "cta": "اكتشف SERENITY",
+      "hashtags": ["#LavishPerfumes", "#SERENITY"]
+    }
+  ]
+}

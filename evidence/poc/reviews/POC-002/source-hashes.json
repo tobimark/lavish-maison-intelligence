@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-04T10:46:54.379Z",
+  "files": [
+    {
+      "path": "scripts/poc/verify-media.mjs",
+      "bytes": 27787,
+      "sha256": "2da02bbc0091461465243858cf1fbe679e81fb6a7a71f6afb4c47994ce7aa7c2"
+    },
+    {
+      "path": "tests/poc/media-validation.test.ts",
+      "bytes": 18562,
+      "sha256": "0c9764e39439d7419b3d7200bd5f8cac0951151d8549674a81f36b0e7e06fa1b"
+    },
+    {
+      "path": "contracts/poc/scenario.schema.json",
+      "bytes": 108148,
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a"
+    },
+    {
+      "path": "design/tokens.css",
+      "bytes": 2609,
+      "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+    }
+  ]
+}

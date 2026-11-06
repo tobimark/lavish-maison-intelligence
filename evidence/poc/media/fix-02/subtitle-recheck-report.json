@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-11-04T11:27:08.238Z",
+  "scope": "scenario",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "063fb0e3158f0571a5c93a90194d2191827f23d11fa62cd58a07fde0089d329b",
+  "layers": [
+    {
+      "name": "L1",
+      "status": "not_run"
+    },
+    {
+      "name": "L2",
+      "status": "not_run"
+    },
+    {
+      "name": "L3",
+      "status": "not_run"
+    },
+    {
+      "name": "L4",
+      "status": "not_run"
+    },
+    {
+      "name": "L5",
+      "status": "fail"
+    }
+  ],
+  "errors": [
+    {
+      "code": "SUBTITLE_CUE_COUNT_MISMATCH",
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/0/uri",
+      "message": "Subtitle has 2 cue(s); bound script scn-scent-layering.script.en has 1."
+    }
+  ],
+  "warnings": [
+    "ffprobe is NOT_RUN: no local ffprobe executable was found. Browser metadata/playback/seek checks still run, but L5 cannot be reported as PASS without codec/pixel-format/duration probing."
+  ],
+  "runnable": false,
+  "media": [
+    {
+      "id": "scn-scent-layering.asset.sub",
+      "kind": "subtitle",
+      "uri": "/scenario-media/scent-layering/1.0.0/review.vtt",
+      "status": "fail",
+      "httpStatus": 200,
+      "finalUrl": "http://127.0.0.1:64468/scenario-media/scent-layering/1.0.0/review.vtt",
+      "contentType": "text/vtt",
+      "bytes": 93,
+      "sha256": "867efef3010b34dc71f176f9df993ff85a0486dc350b5a27fa6e08a89bc01905",
+      "subtitle": {
+        "cues": 2,
+        "scriptVersionId": "scn-scent-layering.script.en",
+        "textMatched": false,
+        "parseErrors": []
+      }
+    }
+  ],
+  "baseUrl": "http://127.0.0.1:64468",
+  "ffprobe": "not_run",
+  "probeAttempted": false
+}

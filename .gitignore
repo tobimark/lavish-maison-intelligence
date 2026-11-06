@@ -1,0 +1,41 @@
+# MAISON INTELLIGENCE — repository ignores (TASK-001)
+# Never ignore: evidence/, design/, docs/, contracts/, reference/, tasks/.
+# Those carry the reviewed design baseline, reference fingerprints and evidence.
+
+# --- Node / Next.js ---
+node_modules/
+.npm-cache/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+
+# --- Local environment (templates stay tracked) ---
+.env
+.env.*
+!.env.example
+
+# --- Python / FastAPI ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Temporary render / capture output (not evidence) ---
+tmp/
+.render-tmp/
+render-output/
+.capture-tmp/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

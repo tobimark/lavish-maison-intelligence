@@ -1,0 +1,23 @@
+{
+  "zipCrc": true,
+  "entries": 21,
+  "bytes": 10736354,
+  "attachmentHashesPass": 20,
+  "versions": [
+    {
+      "campaignId": "scn-scent-layering.brief.main",
+      "versionId": "scn-scent-layering.script.en-v2",
+      "sessionId": null,
+      "scenarioVersion": "1.1.0"
+    },
+    {
+      "campaignId": "scn-scent-layering.brief.main",
+      "versionId": "scn-scent-layering.script.ar-v2",
+      "sessionId": null,
+      "scenarioVersion": "1.1.0"
+    }
+  ],
+  "noVideo": false,
+  "noRealEmail": true,
+  "publishedJsonMatch": 10
+}

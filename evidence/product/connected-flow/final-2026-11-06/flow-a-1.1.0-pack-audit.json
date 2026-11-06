@@ -1,0 +1,174 @@
+{
+  "checkedAt": "2026-11-06T11:29:54.3117707+08:00",
+  "archive": "evidence/product/connected-flow/final-2026-11-06/flow-a-1.1.0-en-ar-pack.zip",
+  "archiveBytes": 10736352,
+  "entries": [
+    "EXPORT.json",
+    "README.txt",
+    "ar/brief.json",
+    "ar/README.txt",
+    "ar/script.json",
+    "ar/storyboard.html",
+    "ar/subtitles-ar.vtt",
+    "ar/media/logo.png",
+    "ar/media/serenity-hero.png",
+    "ar/media/serenity-original.png",
+    "en/brief.json",
+    "en/README.txt",
+    "en/script.json",
+    "en/storyboard.html",
+    "en/subtitles-en.vtt",
+    "en/media/logo.png",
+    "en/media/serenity-hero.png",
+    "en/media/serenity-original.png",
+    "provided/final-preview.mp4",
+    "provided/hero-serenity.png",
+    "provided/product-serenity.png"
+  ],
+  "export": {
+    "includedVersions": [
+      {
+        "campaignId": "scn-scent-layering.brief.main",
+        "versionId": "scn-scent-layering.script.en-v2",
+        "sessionId": null,
+        "scenarioVersion": "1.1.0"
+      },
+      {
+        "campaignId": "scn-scent-layering.brief.main",
+        "versionId": "scn-scent-layering.script.ar-v2",
+        "sessionId": null,
+        "scenarioVersion": "1.1.0"
+      }
+    ],
+    "providedAssetSetId": "provided.scent-layering.serenity-v1",
+    "attachments": [
+      {
+        "filename": "en/brief.json",
+        "mimeType": "application/json",
+        "bytes": 4538,
+        "sha256": "4239a8f66aa64d2f495f2ffcd04e41dbe5239fd3c0f0c9e7fd6d5fe0585a229d"
+      },
+      {
+        "filename": "en/script.json",
+        "mimeType": "application/json",
+        "bytes": 4421,
+        "sha256": "411d18db9b7bbe5e290221666d477aebc012c927c45e02636e1cd05320c23d24"
+      },
+      {
+        "filename": "en/subtitles-en.vtt",
+        "mimeType": "text/vtt",
+        "bytes": 237,
+        "sha256": "226ae0c3281be1d29beb1e4390f95e34de4f31b3aeb2f8bf183c30f5c718d03f"
+      },
+      {
+        "filename": "en/storyboard.html",
+        "mimeType": "text/html",
+        "bytes": 4310,
+        "sha256": "40422687c94c25a6ecdc90ab1e0d5b33e1fb9bfa3cd114134a5520b4a0ffafee"
+      },
+      {
+        "filename": "en/media/serenity-original.png",
+        "mimeType": "image/png",
+        "bytes": 538290,
+        "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62"
+      },
+      {
+        "filename": "en/media/serenity-hero.png",
+        "mimeType": "image/png",
+        "bytes": 2513070,
+        "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499"
+      },
+      {
+        "filename": "en/media/logo.png",
+        "mimeType": "image/png",
+        "bytes": 114691,
+        "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966"
+      },
+      {
+        "filename": "en/README.txt",
+        "mimeType": "text/plain",
+        "bytes": 849,
+        "sha256": "ca617bf6e2b01537c4b414eac48acdb758fd5b55e12f78c0c5bd843e8c05631b"
+      },
+      {
+        "filename": "ar/brief.json",
+        "mimeType": "application/json",
+        "bytes": 4538,
+        "sha256": "4239a8f66aa64d2f495f2ffcd04e41dbe5239fd3c0f0c9e7fd6d5fe0585a229d"
+      },
+      {
+        "filename": "ar/script.json",
+        "mimeType": "application/json",
+        "bytes": 4791,
+        "sha256": "91df4823f7421254a59950f12b117885d1c36f7a6dd29d342fa5d9b0781d3b32"
+      },
+      {
+        "filename": "ar/subtitles-ar.vtt",
+        "mimeType": "text/vtt",
+        "bytes": 264,
+        "sha256": "ad3836b08e0d0abfa5062f114d262a868c3675192c311cd8d57e58abd6b239f8"
+      },
+      {
+        "filename": "ar/storyboard.html",
+        "mimeType": "text/html",
+        "bytes": 4556,
+        "sha256": "ddefc47b3d85c80137901bb0390fe147b712785fa91d7d6f3aafe6330685f020"
+      },
+      {
+        "filename": "ar/media/serenity-original.png",
+        "mimeType": "image/png",
+        "bytes": 538290,
+        "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62"
+      },
+      {
+        "filename": "ar/media/serenity-hero.png",
+        "mimeType": "image/png",
+        "bytes": 2513070,
+        "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499"
+      },
+      {
+        "filename": "ar/media/logo.png",
+        "mimeType": "image/png",
+        "bytes": 114691,
+        "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966"
+      },
+      {
+        "filename": "ar/README.txt",
+        "mimeType": "text/plain",
+        "bytes": 853,
+        "sha256": "aba1883af500cb69400b2b0363745d04b527b1f717ce07f5f4a4ef3e28344980"
+      },
+      {
+        "filename": "provided/hero-serenity.png",
+        "mimeType": "image/png",
+        "bytes": 2513070,
+        "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499"
+      },
+      {
+        "filename": "provided/product-serenity.png",
+        "mimeType": "image/png",
+        "bytes": 538290,
+        "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62"
+      },
+      {
+        "filename": "provided/final-preview.mp4",
+        "mimeType": "video/mp4",
+        "bytes": 1315394,
+        "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+      },
+      {
+        "filename": "README.txt",
+        "mimeType": "text/plain",
+        "bytes": 737,
+        "sha256": "0b3197194cb134e41eaf914559b1a6df152e958e66e1c17dcc83f27db27a4228"
+      }
+    ],
+    "noVideo": false,
+    "noRealEmail": true
+  },
+  "hashes": {
+    "hero": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+    "identity": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+    "video": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e"
+  }
+}

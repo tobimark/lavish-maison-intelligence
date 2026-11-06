@@ -1,0 +1,54 @@
+{
+  "capturedAt": "2026-11-05T18:34:15.1061744+08:00",
+  "directory": "evidence/m1/shell",
+  "files": [
+    {
+      "name": "browser-report.json",
+      "bytes": 2850,
+      "sha256": "a9583f9c7bcf7e447f33e739c4d7e329a8c4dfe065b508abf3412102402faf67",
+      "mtime": "2026-11-05T18:26:05.8444739+08:00"
+    },
+    {
+      "name": "shell-1366x768-default.png",
+      "bytes": 128816,
+      "sha256": "147964a1c2eb06fc2ee21fafdbf99cd27339bb3d70ed1cff3019b538702377b7",
+      "mtime": "2026-11-05T18:26:02.1407951+08:00"
+    },
+    {
+      "name": "shell-1440x900-collapsed.png",
+      "bytes": 130658,
+      "sha256": "72f8bc282bb6d5aff944f41aecdce70cf103df9569107236d8e089a97ffabc10",
+      "mtime": "2026-11-05T18:26:04.5651521+08:00"
+    },
+    {
+      "name": "shell-1440x900-default.png",
+      "bytes": 153310,
+      "sha256": "9afdbd75079fa8a771f22782047034b0fc26cebdb0f7d910bd13003a346d91be",
+      "mtime": "2026-11-05T18:26:01.2765643+08:00"
+    },
+    {
+      "name": "shell-1440x900-focus.png",
+      "bytes": 154241,
+      "sha256": "1f1c20c73514c90f9d3e3eace42660ea52991baa301d9db3e79000eb6cfde496",
+      "mtime": "2026-11-05T18:26:04.1171383+08:00"
+    },
+    {
+      "name": "shell-1920x1080-default.png",
+      "bytes": 168617,
+      "sha256": "727c39117734f5a65b9b7c7930e4c5a2a51a5360fb7dfbf09f9317f8483aebec",
+      "mtime": "2026-11-05T18:26:00.3967772+08:00"
+    },
+    {
+      "name": "shell-390x844-default.png",
+      "bytes": 72203,
+      "sha256": "f5d7872f96205630c6ccfb975b97864d18c7e3bf277a131309f40571eeb5b316",
+      "mtime": "2026-11-05T18:26:02.9957530+08:00"
+    },
+    {
+      "name": "shell-390x844-menu-open.png",
+      "bytes": 41348,
+      "sha256": "56d2fa3b167dd20d81c6a8f7894f8ec1b15b1d3e8f7404d38e8e0c2a7e50835a",
+      "mtime": "2026-11-05T18:26:05.8254258+08:00"
+    }
+  ]
+}

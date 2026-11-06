@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "data": {
+    "videos": [
+      {
+        "id": "scn-scent-layering.video.en-v2",
+        "scriptVersionId": "scn-scent-layering.script.en-v2",
+        "storyboardShotIds": [
+          "scn-scent-layering.shot.en-v2-1",
+          "scn-scent-layering.shot.en-v2-2",
+          "scn-scent-layering.shot.en-v2-3",
+          "scn-scent-layering.shot.en-v2-4"
+        ],
+        "mp4AssetId": "scn-scent-layering.asset.concept-video-en-v2",
+        "posterAssetId": "scn-scent-layering.asset.concept-poster-en-v2",
+        "subtitleAssetIds": [
+          "scn-scent-layering.asset.vtt-en-v2"
+        ],
+        "durationMs": 15000,
+        "width": 1080,
+        "height": 1920,
+        "frameRate": 30,
+        "productionMode": "preproduced",
+        "disclosure": "Planned pre-produced concept film; NOT PRODUCED OR SUPPLIED. PLANNED 15-second, 1080x1920 four-shot English concept film; no matching MP4/poster exists. Resolution/fps are targets, not measurements. The separate user-provided 10.08-second 720x960 clip is independent and must not be treated as this video or paired with its 15-second subtitles."
+      }
+    ]
+  }
+}

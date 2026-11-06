@@ -1,0 +1,40 @@
+{
+  "scope": "TEST_ONLY independent domain diagnostics; no customer content acceptance",
+  "confirmEditedBeforeFirstConfirmation": {
+    "ok": false,
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "Package confirmation event does not reference the selected entry script."
+    }
+  },
+  "restartVideoAfterReselect": {
+    "cursor": 17,
+    "result": {
+      "ok": false,
+      "error": {
+        "code": "CORRUPT_EVENT",
+        "message": "Workflow event sequence 12 is at/behind cursor 17 or its content changed."
+      }
+    }
+  },
+  "deliveryRetry": {
+    "state": "running",
+    "result": {
+      "ok": false,
+      "error": {
+        "code": "INVALID_TRANSITION",
+        "message": "Cannot change inputs while stage(s) are running: delivery."
+      }
+    }
+  },
+  "replayCompletesAfterQueuedWithoutAvailable": {
+    "ok": true
+  },
+  "editedAnchorAndProductAsAssetAccepted": {
+    "ok": true
+  },
+  "deliveryBeforeScheduleAccepted": {
+    "scheduledVirtualMs": 60000,
+    "ok": true
+  }
+}

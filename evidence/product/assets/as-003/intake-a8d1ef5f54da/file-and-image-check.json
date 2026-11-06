@@ -1,0 +1,139 @@
+{
+  "contractsIdentical": [
+    {
+      "path": "contracts\\poc\\content-only.schema.json",
+      "sha256": "61c5daa0c02467bb7ee7e7da5bf3ef42af3594bc942e48b8d1c745b09d6bfd9c",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\scenario.schema.json",
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\analysis.schema.json",
+      "sha256": "ed7b90f23cfd6abb7ea0df07e3384e293b65d3a30c334f9a06dfa396f49610f8",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\assets.schema.json",
+      "sha256": "f8994baa7b2ea84ae602e0223a03a377040e10a22a98e67ee2bb2f97685cd9d5",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\brand.schema.json",
+      "sha256": "e2798170ce4e611eec4278ef9db6fa48a02d3eeb85c3b083828a4bbc89a02cc5",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\delivery.schema.json",
+      "sha256": "414f15f18c6ce02e60bc9bbf85934e4dd3c5e6386dc5d90e35a1cd6a9d77bd69",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\discovery.schema.json",
+      "sha256": "673a5ec9792ed5a53529e2d0469056733fae157b1ff5232b974a99f7389900cb",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\events.schema.json",
+      "sha256": "20156b95b086dacf1f0639dcb3c3efea0ff7db8cc6cdbc1e7f3f59ecae2a035d",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\expected.schema.json",
+      "sha256": "7bc73e96f5b64e30afce525d76bd5ddd29f09bd1046a9ec51cea640a4b152b10",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\manifest.schema.json",
+      "sha256": "b75755e522740a09fed7b6a69038679844d57a5cb5260ae35f988211876bf42e",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\script.schema.json",
+      "sha256": "babc9bf940cdf3d6c62493de215485f5558ae287bfbdbc3d4dcc2e82fd4aa608",
+      "matchesWorkspace": true
+    },
+    {
+      "path": "contracts\\poc\\files\\video.schema.json",
+      "sha256": "97f74cbb08baf0ea2b42b23a80ca2d2228f211ad35c6ae8d7873add783a76263",
+      "matchesWorkspace": true
+    }
+  ],
+  "localMedia": [
+    {
+      "id": "scn-scent-layering.asset.logo",
+      "bytes": 114691,
+      "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+      "decodedSize": [
+        294,
+        294
+      ]
+    },
+    {
+      "id": "scn-scent-layering.asset.serenity-original",
+      "bytes": 538290,
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "decodedSize": [
+        2000,
+        2000
+      ]
+    },
+    {
+      "id": "scn-scent-layering.asset.serenity-hero",
+      "bytes": 2513070,
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "decodedSize": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "scn-scent-layering.asset.vtt-en-v2",
+      "bytes": 237,
+      "sha256": "226ae0c3281be1d29beb1e4390f95e34de4f31b3aeb2f8bf183c30f5c718d03f"
+    },
+    {
+      "id": "scn-scent-layering.asset.vtt-ar-v2",
+      "bytes": 264,
+      "sha256": "ad3836b08e0d0abfa5062f114d262a868c3675192c311cd8d57e58abd6b239f8"
+    }
+  ],
+  "providedMedia": [
+    {
+      "file": "final-preview.mp4",
+      "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+      "sameAsPreviouslyInspectedSource": true
+    },
+    {
+      "file": "hero-serenity.png",
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "sameAsPreviouslyInspectedSource": true
+    },
+    {
+      "file": "product-serenity.png",
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "sameAsPreviouslyInspectedSource": true
+    }
+  ],
+  "sidecarUnchanged": true,
+  "unchangedAuthorJson": [
+    "analysis.json",
+    "assets.json",
+    "brand.json",
+    "discovery.json",
+    "events.json",
+    "expected.json",
+    "script.json"
+  ],
+  "technicalNormalizationOnly": [
+    "video.disclosure",
+    "delivery.disclosure",
+    "manifest file bindings"
+  ],
+  "originalArchiveSha256": "a8d1ef5f54da532cbe180bd3ce9c9726d7974ef5ef78f29ee6677708c5e71029",
+  "tokensSha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814",
+  "productUiReview": "not_run",
+  "pass": true
+}

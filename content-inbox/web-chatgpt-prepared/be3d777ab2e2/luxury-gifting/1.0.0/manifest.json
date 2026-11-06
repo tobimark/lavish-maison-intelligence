@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "title": "The Thought Behind the Gift",
+  "slug": "luxury-gifting",
+  "mode": "mock",
+  "timeZone": "Asia/Dubai",
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "stages": [
+    "discovery",
+    "analysis",
+    "video",
+    "delivery"
+  ],
+  "entryBriefId": "scn-luxury-gifting.brief.main",
+  "entryScriptVersionId": "scn-luxury-gifting.script.en-v1",
+  "entryVideoId": "scn-luxury-gifting.video.en-v1",
+  "entryDeliveryId": "scn-luxury-gifting.plan.en-v1",
+  "authoring": {
+    "producer": "ChatGPT",
+    "authoredAt": "2026-11-05T05:31:20Z",
+    "reasoningSummary": "Offline concept simulation: Considered fragrance gifting without implied bundles. Five invented source signals and two illustrative indices support a carefully limited product-grounded four-shot EN/AR script and a planned pre-produced media/never-sent delivery path.",
+    "assumptions": [
+      "An understated gifting narrative could resonate with a hypothetical UAE luxury-fragrance audience.",
+      "Paper-card graphics are merely a layout device and do not imply a physical product insert.",
+      "The visual identity can stay consistent with the Lavish HTML reference without lifestyle stock imagery."
+    ],
+    "limitations": [
+      "These are invented sample signals and not observed seasonal or retail demand.",
+      "No gifting service, gift wrapping, store offer or gift-set SKU is verified.",
+      "Arabic copy needs native review and brand review.",
+      "MP4 and poster are not supplied.",
+      "All platform inputs, plotted indices, execution events and delivery records are fabricated for a labelled Mock POC, not collected, rendered or sent.",
+      "Final video and poster are not present; asset bytes/hash/rights are null/pending so the immutable runnable Schema intentionally fails until customer media handoff.",
+      "30 fps video metadata is a target specification, not a measured file property.",
+      "Simulated delivery records depict counterfactual demo outcomes only; no real email was sent."
+    ],
+    "reviewStatus": "pending"
+  },
+  "files": [
+    {
+      "path": "brand.json",
+      "bytes": 2406,
+      "sha256": "829892f5797575cd613b84776291beeabe22757dd4ee1191b3150edc5115154d"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 7554,
+      "sha256": "acf6f6a01789e38751707d493d9548f650aa85686f0e91d9f055eebd14bdb079"
+    },
+    {
+      "path": "analysis.json",
+      "bytes": 3229,
+      "sha256": "1fd703f0a0f944cf5c2fd3381b9a1435e479c241c6a97d85c528674b379cb652"
+    },
+    {
+      "path": "script.json",
+      "bytes": 9110,
+      "sha256": "7dc2a313059de0f538eee6b1e44181f4733cf86879319b44dab7650916838d9a"
+    },
+    {
+      "path": "video.json",
+      "bytes": 1071,
+      "sha256": "9bbe5baa747454a656036d598b0915650b3ac385049a3e42122463504806d16c"
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 3085,
+      "sha256": "56c8bd918c7b48c62e932b5298c653742f3900956dbe7bc3dce75dea5ead49a7"
+    },
+    {
+      "path": "events.json",
+      "bytes": 16358,
+      "sha256": "b53d94fd53c73523fca0d94fe88d4533e4d1dfb7886bd9bfbdf71543abf67822"
+    },
+    {
+      "path": "assets.json",
+      "bytes": 5542,
+      "sha256": "dd4c491aabbc408bf67a01a41ff8f56a041eeda32b6e1cbcfa7a9857b7b9663a"
+    },
+    {
+      "path": "expected.json",
+      "bytes": 6094,
+      "sha256": "87e5486d47f8212a8d3385d9df11d15e6da9a35c419d76533ea3749143f01a88"
+    }
+  ]
+}

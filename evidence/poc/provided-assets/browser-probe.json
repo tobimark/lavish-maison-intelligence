@@ -1,0 +1,18 @@
+{
+  "scope": "provided_asset_only",
+  "originalUnchanged": true,
+  "fixture": "local HTTP byte-range support",
+  "metadata": {
+    "durationSeconds": 10.08,
+    "width": 720,
+    "height": 960,
+    "readyState": 4
+  },
+  "mutedPlayback": {
+    "currentTime": 1.566811,
+    "error": null
+  },
+  "seekSeconds": 7.56,
+  "result": "pass",
+  "note": "No product page integrated; not original 15-second scenario L5 acceptance. Audio present in container; no audio listening/rights claim."
+}

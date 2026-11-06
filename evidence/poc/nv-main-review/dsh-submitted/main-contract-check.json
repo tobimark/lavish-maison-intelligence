@@ -1,0 +1,47 @@
+{
+  "profile": "content_only",
+  "checks": [
+    {
+      "slug": "scent-layering",
+      "schema": "pass",
+      "missingLogoRejected": true
+    },
+    {
+      "slug": "luxury-gifting",
+      "schema": "pass",
+      "missingLogoRejected": true
+    },
+    {
+      "slug": "oud-storytelling",
+      "schema": "pass",
+      "missingLogoRejected": true
+    }
+  ],
+  "frozenSchemaUnchanged": true,
+  "runtimeImplementation": "content_only_runtime_implemented",
+  "browserVisualReview": "pass_1440_1366_390",
+  "evidence": {
+    "validators": [
+      "evidence/poc/content-only/scent-layering.json",
+      "evidence/poc/content-only/luxury-gifting.json",
+      "evidence/poc/content-only/oud-storytelling.json"
+    ],
+    "screenshots": [
+      "evidence/poc/content-only/home-1440.png",
+      "evidence/poc/content-only/discovery-1440.png",
+      "evidence/poc/content-only/evidence-drawer-1440.png",
+      "evidence/poc/content-only/analysis-ar-1440.png",
+      "evidence/poc/content-only/storyboard-1440.png",
+      "evidence/poc/content-only/delivery-1440.png",
+      "evidence/poc/content-only/delivery-confirm-1440.png",
+      "evidence/poc/content-only/delivery-1366.png",
+      "evidence/poc/content-only/replay-1440.png",
+      "evidence/poc/content-only/analysis-ar-390.png"
+    ],
+    "downloads": [
+      "evidence/poc/content-only/e2e-content-delivery-pack.zip",
+      "evidence/poc/content-only/e2e-content-pack.zip",
+      "evidence/poc/content-only/e2e-home-run-record.json"
+    ]
+  }
+}

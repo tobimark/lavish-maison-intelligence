@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.lavish-poc.invalid/v1/files/analysis.schema.json",
+  "$ref": "https://contracts.lavish-poc.invalid/v1/scenario.schema.json#/$defs/analysis"
+}

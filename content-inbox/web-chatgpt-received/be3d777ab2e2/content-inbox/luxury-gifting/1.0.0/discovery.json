@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "evidence": [
+      {
+        "id": "scn-luxury-gifting.evidence.e1",
+        "sourceType": "MOCK",
+        "platform": "Pinterest — simulated signal",
+        "title": "Minimal fragrance gift-edit layouts",
+        "summary": "Hypothetical saved boards use calm typography, a single product and a handwritten-style message.",
+        "simulatedAt": "2026-10-13T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-luxury-gifting.evidence.e2",
+        "sourceType": "MOCK",
+        "platform": "YouTube — simulated signal",
+        "title": "How to choose a thoughtful fragrance gift",
+        "summary": "A mock explanatory format focuses on understanding the recipient rather than claiming a universal best gift.",
+        "simulatedAt": "2026-10-16T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-luxury-gifting.evidence.e3",
+        "sourceType": "MOCK",
+        "platform": "Instagram — simulated signal",
+        "title": "A quiet gifting moment",
+        "summary": "A staged creative signal frames one fragrance bottle alongside an unbranded paper card.",
+        "simulatedAt": "2026-10-19T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-luxury-gifting.evidence.e4",
+        "sourceType": "MOCK",
+        "platform": "TikTok — simulated signal",
+        "title": "A note before a present",
+        "summary": "A hypothetical gesture-first video centers intention, not discounts or unavailable gift packaging.",
+        "simulatedAt": "2026-10-22T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-luxury-gifting.evidence.e5",
+        "sourceType": "MOCK",
+        "platform": "Instagram — simulated signal",
+        "title": "Price-led fragrance graphic",
+        "summary": "Control signal: an overt promotion layout remains stable in the synthetic index.",
+        "simulatedAt": "2026-10-25T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      }
+    ],
+    "signals": [
+      {
+        "id": "scn-luxury-gifting.signal.s1",
+        "title": "Minimal fragrance gift-edit layouts",
+        "topic": "Editorial gift selection",
+        "region": "Dubai",
+        "evidenceIds": [
+          "scn-luxury-gifting.evidence.e1"
+        ],
+        "summary": "MOCK Pinterest / Hypothetical saved boards use calm typography, a single product and a handwritten-style message."
+      },
+      {
+        "id": "scn-luxury-gifting.signal.s2",
+        "title": "How to choose a thoughtful fragrance gift",
+        "topic": "Audience education",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-luxury-gifting.evidence.e2"
+        ],
+        "summary": "MOCK YouTube / A mock explanatory format focuses on understanding the recipient rather than claiming a universal best gift."
+      },
+      {
+        "id": "scn-luxury-gifting.signal.s3",
+        "title": "A quiet gifting moment",
+        "topic": "Moment-based storytelling",
+        "region": "Abu Dhabi",
+        "evidenceIds": [
+          "scn-luxury-gifting.evidence.e3"
+        ],
+        "summary": "MOCK Instagram / A staged creative signal frames one fragrance bottle alongside an unbranded paper card."
+      },
+      {
+        "id": "scn-luxury-gifting.signal.s4",
+        "title": "A note before a present",
+        "topic": "Short-form narrative hook",
+        "region": "GCC",
+        "evidenceIds": [
+          "scn-luxury-gifting.evidence.e4"
+        ],
+        "summary": "MOCK TikTok / A hypothetical gesture-first video centers intention, not discounts or unavailable gift packaging."
+      },
+      {
+        "id": "scn-luxury-gifting.signal.s5",
+        "title": "Price-led fragrance graphic",
+        "topic": "Stable control; not chosen",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-luxury-gifting.evidence.e5"
+        ],
+        "summary": "MOCK Instagram / Control signal: an overt promotion layout remains stable in the synthetic index."
+      }
+    ],
+    "trends": [
+      {
+        "id": "scn-luxury-gifting.trend.main",
+        "title": "Thoughtful gift-selection storytelling (illustrative)",
+        "signalIds": [
+          "scn-luxury-gifting.signal.s1",
+          "scn-luxury-gifting.signal.s2",
+          "scn-luxury-gifting.signal.s3",
+          "scn-luxury-gifting.signal.s4"
+        ],
+        "direction": "rising",
+        "unit": "synthetic illustrative index (0–100; not platform counts, engagement or growth %)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 30
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 33
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 37
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 41
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 46
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 51
+          }
+        ],
+        "interpretation": "Editorial modelled increase as a deliberately synthetic visual sequence; only a concept to test dashboard logic.",
+        "disclosure": "Entire time series is synthetic, illustrative, authored offline. No real growth, sampling, market demand or statistical confidence inferred."
+      },
+      {
+        "id": "scn-luxury-gifting.trend.control",
+        "title": "Price-led fragrance promotion format (illustrative)",
+        "signalIds": [
+          "scn-luxury-gifting.signal.s5"
+        ],
+        "direction": "stable",
+        "unit": "synthetic illustrative index (0–100; not platform counts, engagement or growth %)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 49
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 48
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 48
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 47
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 49
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 48
+          }
+        ],
+        "interpretation": "Control series is roughly flat or non-directional; not every invented signal is rising.",
+        "disclosure": "Entire time series is synthetic, illustrative, authored offline. No real growth, sampling, market demand or statistical confidence inferred."
+      }
+    ]
+  }
+}

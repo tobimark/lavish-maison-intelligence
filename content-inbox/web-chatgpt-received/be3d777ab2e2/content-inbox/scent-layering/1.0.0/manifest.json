@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "title": "The Art of Scent Layering",
+  "slug": "scent-layering",
+  "mode": "mock",
+  "timeZone": "Asia/Dubai",
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "stages": [
+    "discovery",
+    "analysis",
+    "video",
+    "delivery"
+  ],
+  "entryBriefId": "scn-scent-layering.brief.main",
+  "entryScriptVersionId": "scn-scent-layering.script.en-v1",
+  "entryVideoId": "scn-scent-layering.video.en-v1",
+  "entryDeliveryId": "scn-scent-layering.plan.en-v1",
+  "authoring": {
+    "producer": "ChatGPT",
+    "authoredAt": "2026-11-05T05:31:20Z",
+    "reasoningSummary": "Offline concept simulation: Personal fragrance pairing as a creative ritual. Five invented source signals and two illustrative indices support a carefully limited product-grounded four-shot EN/AR script and a planned pre-produced media/never-sent delivery path.",
+    "assumptions": [
+      "The hypothetical UAE audience may respond to individual fragrance expression.",
+      "Two existing Lavish product images can support an editorial juxtaposition, subject to image-use limits.",
+      "Mock evidence is designed only to demonstrate how analysts would explain a recommendation."
+    ],
+    "limitations": [
+      "No platform trend measurements have been collected.",
+      "No compatibility, application method or after-layering scent result has been verified.",
+      "Arabic copy requires native language and Lavish review.",
+      "Video and poster are not yet supplied.",
+      "All platform inputs, plotted indices, execution events and delivery records are fabricated for a labelled Mock POC, not collected, rendered or sent.",
+      "Final video and poster are not present; asset bytes/hash/rights are null/pending so the immutable runnable Schema intentionally fails until customer media handoff.",
+      "30 fps video metadata is a target specification, not a measured file property.",
+      "Simulated delivery records depict counterfactual demo outcomes only; no real email was sent."
+    ],
+    "reviewStatus": "pending"
+  },
+  "files": [
+    {
+      "path": "brand.json",
+      "bytes": 2406,
+      "sha256": "e7bef269a4df62241784a2ce0d88065c5d83e27d61764d6cbfcf28c420b8a99e"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 7737,
+      "sha256": "2e354368797a17b945b483ffbc364e4eb3ee80d1bf05b4d5b876dbb07fe68755"
+    },
+    {
+      "path": "analysis.json",
+      "bytes": 3353,
+      "sha256": "3d864568e1f7c1d94e801bd064f7f8c07106c1597d675d8d768db5f63613cdb6"
+    },
+    {
+      "path": "script.json",
+      "bytes": 9400,
+      "sha256": "d479ae52be72ce5d3c428c6fdd97942960b20bd8f64328429b028ed0250f5c3c"
+    },
+    {
+      "path": "video.json",
+      "bytes": 1071,
+      "sha256": "88b797d4794cdeb3347bab18e8d18dc2606de9c27b5b280824149efdf8d2decf"
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 3078,
+      "sha256": "5735655514b75615b03da38b864b4e650df653e2fcd00d994980879c99132495"
+    },
+    {
+      "path": "events.json",
+      "bytes": 16402,
+      "sha256": "de0504f6067b26d90846b39d7f1efe44fe74b99bda3606b7fb0cdd0166760aca"
+    },
+    {
+      "path": "assets.json",
+      "bytes": 5630,
+      "sha256": "bd21c64ca7351adc95272eb0dd7b114dc29b5ae6fd3b552a4764188319796b11"
+    },
+    {
+      "path": "expected.json",
+      "bytes": 6094,
+      "sha256": "e7afbc5452c907bfd16d16f3150a367ea398560a7b3863c33d1a71771953bb0e"
+    }
+  ]
+}

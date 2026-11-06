@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "versions": [
+      {
+        "id": "scn-oud-storytelling.script.en-v1",
+        "briefId": "scn-oud-storytelling.brief.main",
+        "version": 1,
+        "language": "en",
+        "title": "Let the Scent Lead",
+        "hook": "Some stories begin with oud.",
+        "message": "A sensory introduction to LAVISH OUD based on the limited official description.",
+        "cta": "Explore LAVISH OUD",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-oud-storytelling.shot.en-1",
+            "startMs": 0,
+            "durationMs": 3200,
+            "visual": "Use a dark warm-brown-to-ivory purely graphical gradient, with approved LAVISH OUD original image in an intact central inset. No timber-origin photo, heritage architecture or cultural-symbol props. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "Some stories begin with oud.",
+            "transition": "Cut from black; fade in text over 180ms.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-oud-storytelling.shot.en-2",
+            "startMs": 3200,
+            "durationMs": 3800,
+            "visual": "Two halves of a typeset field transition softly between warm spice-toned graphic texture and restrained floral-toned color. The approved LAVISH OUD bottle remains in its unmodified original photo inset. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "Spice. A floral impression.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-oud-storytelling.shot.en-3",
+            "startMs": 7000,
+            "durationMs": 4200,
+            "visual": "Set LAVISH OUD original image as full product hero against an ivory matte. Use a slow 2D scale on the containing frame, not bottle warping; keep label legible. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "Let the scent lead.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-oud-storytelling.shot.en-4",
+            "startMs": 11200,
+            "durationMs": 3800,
+            "visual": "Show LAVISH OUD original bottle image and the intact gold-square Lavish Logo in separate balanced positions. Hold the CTA with generous size; no new product claim or origin badge. English creative version with restrained editorial typography.",
+            "voiceover": "",
+            "onScreenText": "LAVISH OUD · Explore the fragrance.",
+            "transition": "Hold final composition and fade to matte at exactly 15000ms.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud",
+              "scn-oud-storytelling.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-oud-storytelling.subtitle.en-1",
+            "startMs": 180,
+            "endMs": 3060,
+            "text": "Some stories begin with oud."
+          },
+          {
+            "id": "scn-oud-storytelling.subtitle.en-2",
+            "startMs": 3380,
+            "endMs": 6860,
+            "text": "Spice. A floral impression."
+          },
+          {
+            "id": "scn-oud-storytelling.subtitle.en-3",
+            "startMs": 7180,
+            "endMs": 11060,
+            "text": "Let the scent lead."
+          },
+          {
+            "id": "scn-oud-storytelling.subtitle.en-4",
+            "startMs": 11380,
+            "endMs": 14860,
+            "text": "LAVISH OUD · Explore the fragrance."
+          }
+        ],
+        "caption": "A calm sensory concept for the verified LAVISH OUD product, referring only to the product description. No place of origin, heritage or longevity is claimed. Concept POC / Mock. Explore Lavish Perfumes. No product-performance claim.",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#OudStory"
+        ]
+      },
+      {
+        "id": "scn-oud-storytelling.script.ar-v1",
+        "briefId": "scn-oud-storytelling.brief.main",
+        "version": 1,
+        "language": "ar",
+        "title": "بعض الحكايات تبدأ بالعود.",
+        "hook": "بعض الحكايات تبدأ بالعود.",
+        "message": "هذا تصور إبداعي تجريبي يستلهم المعلومات المعتمدة عن منتجات Lavish Perfumes، ولا يثبت اتجاهات سوقية أو نتائج استخدام.",
+        "cta": "اكتشف العطر.",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-oud-storytelling.shot.ar-1",
+            "startMs": 0,
+            "durationMs": 3200,
+            "visual": "Use a dark warm-brown-to-ivory purely graphical gradient, with approved LAVISH OUD original image in an intact central inset. No timber-origin photo, heritage architecture or cultural-symbol props. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "بعض الحكايات تبدأ بالعود.",
+            "transition": "Cut from black; fade in text over 180ms.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-oud-storytelling.shot.ar-2",
+            "startMs": 3200,
+            "durationMs": 3800,
+            "visual": "Two halves of a typeset field transition softly between warm spice-toned graphic texture and restrained floral-toned color. The approved LAVISH OUD bottle remains in its unmodified original photo inset. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "توابل. ولمسة زهرية.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-oud-storytelling.shot.ar-3",
+            "startMs": 7000,
+            "durationMs": 4200,
+            "visual": "Set LAVISH OUD original image as full product hero against an ivory matte. Use a slow 2D scale on the containing frame, not bottle warping; keep label legible. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "دع الرائحة تقود الحكاية.",
+            "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud"
+            ]
+          },
+          {
+            "id": "scn-oud-storytelling.shot.ar-4",
+            "startMs": 11200,
+            "durationMs": 3800,
+            "visual": "Show LAVISH OUD original bottle image and the intact gold-square Lavish Logo in separate balanced positions. Hold the CTA with generous size; no new product claim or origin badge. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+            "voiceover": "",
+            "onScreenText": "LAVISH OUD · اكتشف العطر.",
+            "transition": "Hold final composition and fade to matte at exactly 15000ms.",
+            "assetIds": [
+              "scn-oud-storytelling.asset.oud",
+              "scn-oud-storytelling.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-oud-storytelling.subtitle.ar-1",
+            "startMs": 180,
+            "endMs": 3060,
+            "text": "بعض الحكايات تبدأ بالعود."
+          },
+          {
+            "id": "scn-oud-storytelling.subtitle.ar-2",
+            "startMs": 3380,
+            "endMs": 6860,
+            "text": "توابل. ولمسة زهرية."
+          },
+          {
+            "id": "scn-oud-storytelling.subtitle.ar-3",
+            "startMs": 7180,
+            "endMs": 11060,
+            "text": "دع الرائحة تقود الحكاية."
+          },
+          {
+            "id": "scn-oud-storytelling.subtitle.ar-4",
+            "startMs": 11380,
+            "endMs": 14860,
+            "text": "LAVISH OUD · اكتشف العطر."
+          }
+        ],
+        "caption": "تصور إبداعي توضيحي لعلامة Lavish Perfumes، وليس دليلاً على اتجاه سوقي فعلي أو نتيجة استخدام مؤكدة.",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#العود"
+        ]
+      }
+    ]
+  }
+}

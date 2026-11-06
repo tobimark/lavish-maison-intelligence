@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "profile": "content_only",
+  "mode": "mock",
+  "deliveryKind": "script_pack",
+  "attempt": {
+    "id": "usr.session-1793863328882-omc7iq.content.attempt.2",
+    "attempt": 2,
+    "draftId": "usr.session-1793863328882-omc7iq.content.draft.2",
+    "draftRevision": 2,
+    "scriptVersionId": "scn-scent-layering.script.en-v1",
+    "recipientSnapshot": [
+      {
+        "id": "scn-scent-layering.recipient.brand-review",
+        "displayName": "Lavish Demo Brand Review (simulated)",
+        "email": "changed-recipient@lavish-demo.invalid"
+      },
+      {
+        "id": "scn-scent-layering.recipient.creative-ops",
+        "displayName": "Lavish Demo Creative Operations (simulated)",
+        "email": "creative-ops@lavish-demo.invalid"
+      }
+    ],
+    "subject": "[SIMULATED · CONTENT ONLY] Browser delivery saved v2",
+    "body": "SIMULATED CONTENT-ONLY EMAIL — NO EMAIL WAS SENT.\nAttachments are local script-pack files only.",
+    "attachmentManifest": [
+      {
+        "filename": "scent-layering-en-v1-script.json",
+        "mimeType": "application/json",
+        "bytes": 4186,
+        "sha256": "f6e1034f978b7cfedfa95ce46c73e37646cc08b425eb9cf6945029d884eb4bd0"
+      },
+      {
+        "filename": "scent-layering-en-subtitles.vtt",
+        "mimeType": "text/vtt",
+        "bytes": 257,
+        "sha256": "ecaf195e95db412d68fd5e5ac5c9f83a30728f808963730f7070be415aaeee2a"
+      },
+      {
+        "filename": "scent-layering-en-email.txt",
+        "mimeType": "text/plain",
+        "bytes": 394,
+        "sha256": "a9751fa720d75d058caa191bb88602e2629e2f881bade7d4915b915a6891100e"
+      },
+      {
+        "filename": "README.txt",
+        "mimeType": "text/plain",
+        "bytes": 639,
+        "sha256": "cec9d9a7b7b3dba1b9e36546bb2c9f4649972b39633c1ed6e23c6ed40d72a686"
+      }
+    ],
+    "outcome": "simulated_delivered",
+    "failureCode": null,
+    "mode": "mock",
+    "deliveryKind": "script_pack",
+    "createdAt": "2026-11-05T07:22:13.783Z"
+  },
+  "note": "SIMULATED content delivery record; no email was sent and no video is attached.",
+  "noVideo": true,
+  "noRealEmail": true
+}

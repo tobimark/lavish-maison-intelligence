@@ -1,0 +1,165 @@
+{
+  "receivedOn": "2026-11-05",
+  "sourceZipSha256": "be3d777ab2e27db5b44671267ef3f6056a42ac27b2f11d1e779f96469352556a",
+  "status": "draft_local_media_pass",
+  "normalization": "Only auxiliary VALIDATION_REPORT.json relocated; ten JSON and media are byte-identical. Received scripts not executed.",
+  "scenarios": [
+    {
+      "slug": "scent-layering",
+      "preparedPath": "content-inbox/web-chatgpt-prepared/be3d777ab2e2/scent-layering/1.0.0",
+      "customerContentBytesChanged": false,
+      "manifestSha256": "e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468",
+      "localMedia": [
+        {
+          "assetId": "scn-scent-layering.asset.logo",
+          "status": "pass",
+          "bytes": 114691,
+          "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-scent-layering.asset.oud",
+          "status": "pass",
+          "bytes": 123608,
+          "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-scent-layering.asset.perla",
+          "status": "pass",
+          "bytes": 1554254,
+          "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-scent-layering.asset.vtt-en",
+          "status": "pass",
+          "bytes": 343,
+          "sha256": "de813c11277d3c022f019af3a730813e3d944da1834b77e288d0481f1ba66d3f",
+          "vtt": "Four cue texts/timings match exact language script; valid NOTE block excluded from cues"
+        },
+        {
+          "assetId": "scn-scent-layering.asset.vtt-ar",
+          "status": "pass",
+          "bytes": 386,
+          "sha256": "c53926f7bb644d3e58d91e6d5f72f510a917c648844176e48ed62e294832b259",
+          "vtt": "Four cue texts/timings match exact language script; valid NOTE block excluded from cues"
+        },
+        {
+          "assetId": "scn-scent-layering.asset.video-en",
+          "status": "missing_as_declared"
+        },
+        {
+          "assetId": "scn-scent-layering.asset.poster-en",
+          "status": "missing_as_declared"
+        }
+      ]
+    },
+    {
+      "slug": "luxury-gifting",
+      "preparedPath": "content-inbox/web-chatgpt-prepared/be3d777ab2e2/luxury-gifting/1.0.0",
+      "customerContentBytesChanged": false,
+      "manifestSha256": "e1896c38cda535ab0cb8233eaadc9c41f1fefcb4be2679be4ad74ea42aae77bb",
+      "localMedia": [
+        {
+          "assetId": "scn-luxury-gifting.asset.logo",
+          "status": "pass",
+          "bytes": 114691,
+          "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-luxury-gifting.asset.oud",
+          "status": "pass",
+          "bytes": 123608,
+          "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-luxury-gifting.asset.perla",
+          "status": "pass",
+          "bytes": 1554254,
+          "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-luxury-gifting.asset.vtt-en",
+          "status": "pass",
+          "bytes": 338,
+          "sha256": "caab6b79ca579d9e99abd6efe20e25dad634e1bfca384dfd5ed310c90b6bc54a",
+          "vtt": "Four cue texts/timings match exact language script; valid NOTE block excluded from cues"
+        },
+        {
+          "assetId": "scn-luxury-gifting.asset.vtt-ar",
+          "status": "pass",
+          "bytes": 362,
+          "sha256": "64484738fa3c8429fabde1ca3eac7c97d110f2518725427171718dfc1edfe9bb",
+          "vtt": "Four cue texts/timings match exact language script; valid NOTE block excluded from cues"
+        },
+        {
+          "assetId": "scn-luxury-gifting.asset.video-en",
+          "status": "missing_as_declared"
+        },
+        {
+          "assetId": "scn-luxury-gifting.asset.poster-en",
+          "status": "missing_as_declared"
+        }
+      ]
+    },
+    {
+      "slug": "oud-storytelling",
+      "preparedPath": "content-inbox/web-chatgpt-prepared/be3d777ab2e2/oud-storytelling/1.0.0",
+      "customerContentBytesChanged": false,
+      "manifestSha256": "6349f26e104b26df43dcbc634ed14068806cf9dd83933335121a0e056fdcb183",
+      "localMedia": [
+        {
+          "assetId": "scn-oud-storytelling.asset.logo",
+          "status": "pass",
+          "bytes": 114691,
+          "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-oud-storytelling.asset.oud",
+          "status": "pass",
+          "bytes": 123608,
+          "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-oud-storytelling.asset.perla",
+          "status": "pass",
+          "bytes": 1554254,
+          "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+          "originalIdentity": "byte-identical to verified project original"
+        },
+        {
+          "assetId": "scn-oud-storytelling.asset.vtt-en",
+          "status": "pass",
+          "bytes": 339,
+          "sha256": "f11eb120ccf4ca8a102ee130cb447090989f52e84a6a74e9d04a774badf4458b",
+          "vtt": "Four cue texts/timings match exact language script; valid NOTE block excluded from cues"
+        },
+        {
+          "assetId": "scn-oud-storytelling.asset.vtt-ar",
+          "status": "pass",
+          "bytes": 389,
+          "sha256": "3acfb5ce6abaed77f392c8b581d43a5ab9b1dff8044515fc6ce469c68acf026e",
+          "vtt": "Four cue texts/timings match exact language script; valid NOTE block excluded from cues"
+        },
+        {
+          "assetId": "scn-oud-storytelling.asset.video-en",
+          "status": "missing_as_declared"
+        },
+        {
+          "assetId": "scn-oud-storytelling.asset.poster-en",
+          "status": "missing_as_declared"
+        }
+      ]
+    }
+  ],
+  "actualFilesChecked": 15,
+  "missingMP4AndPoster": 6,
+  "l5": "not_run",
+  "runnable": false
+}

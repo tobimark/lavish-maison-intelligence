@@ -1,0 +1,28 @@
+import {createFixture, serialize, SLUG, SCENARIO_VERSION} from '../../../../tests/fixtures/poc/build-fixture.ts';
+import {validateSemantics} from '../../../../apps/web/demo/poc/validation/semantic-rules.mjs';
+import Ajv2020 from 'ajv/dist/2020.js';
+import addFormats from 'ajv-formats';
+import {readFileSync,writeFileSync,mkdtempSync,mkdirSync,existsSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+const root=process.cwd(), fixture=createFixture();
+const bundle=Object.fromEntries(Object.entries(fixture.files).map(([n,v])=>[n.replace('.json',''),v]));
+const schema=JSON.parse(readFileSync('contracts/poc/scenario.schema.json','utf8'));
+const ajv=new Ajv2020({strict:false,allErrors:true});addFormats(ajv);
+const valid=ajv.compile(schema)(bundle);
+const foreign=structuredClone(bundle);
+foreign.discovery.data.evidence.push({...foreign.discovery.data.evidence[0],id:'scn-oud-storytelling.evidence.foreign'});
+const cross=validateSemantics(foreign);
+const temp=mkdtempSync(path.join(tmpdir(),'poc001-main-review-'));
+const dir=path.join(temp,'scenarios',SLUG,SCENARIO_VERSION);mkdirSync(dir,{recursive:true});
+for(const [name,doc]of Object.entries(fixture.files)) writeFileSync(path.join(dir,name),serialize(doc));
+// Deliberately malformed input must yield a structured validation report, not crash.
+const expected=structuredClone(fixture.files['expected.json']);expected.data.checkpoints[1]=null;
+writeFileSync(path.join(dir,'expected.json'),JSON.stringify(expected));
+const out=path.join(temp,'malformed-report.json');
+const cmd=spawnSync(process.execPath,[path.join(root,'scripts/poc/validate-scenario.mjs'),'--dir',dir,'--report',out],{cwd:temp,encoding:'utf8',windowsHide:true});
+const result={scope:'Independent contract/semantic/error-handling probes only; no customer content/media acceptance',correctedSchemaAcceptsFiniteFixture:valid,foreignEntity:{l2Errors:cross.l2Errors},malformedCheckpoint:{exitCode:cmd.status,reportExists:existsSync(out),stderr:cmd.stderr},schemaDefinitions:Object.keys(schema.$defs).length};
+writeFileSync('evidence/poc/reviews/POC-001/main-probe.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));
+if(!path.resolve(temp).startsWith(path.resolve(tmpdir())+path.sep)||!path.basename(temp).startsWith('poc001-main-review-'))throw Error('Unsafe cleanup target');
+rmSync(temp,{recursive:true,force:true});

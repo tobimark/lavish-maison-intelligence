@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-11-03T14:16:59.186419+00:00",
+  "services": {
+    "api": {
+      "url": "http://127.0.0.1:58383/api/v1/health",
+      "status": 200,
+      "processStarted": true,
+      "payload": {
+        "status": "ok"
+      },
+      "routes": [
+        "/api/v1/health"
+      ]
+    },
+    "web": {
+      "url": "http://127.0.0.1:58395/",
+      "status": 200,
+      "processStarted": true,
+      "containsFoundationReady": true
+    }
+  },
+  "configuration": {
+    "dotenvOnly": {
+      "exitCode": 0,
+      "stdout": "{\"environment\": \"development\", \"cors\": [\"http://127.0.0.1:3000\", \"http://localhost:3000\"]}",
+      "stderr": "",
+      "envFile": "MAISON_ENV=review_invalid_value; MAISON_CORS_ORIGINS=http://review.invalid",
+      "expectation": "If .env is loaded, invalid MAISON_ENV must fail; silently starting with defaults reproduces the review finding."
+    },
+    "exportedEnvironment": {
+      "exitCode": 1,
+      "reportsInvalidEnvironment": true
+    }
+  },
+  "logo": {
+    "path": "assets\\brand\\lavish-logo-primary-294x294-rgb.png",
+    "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966"
+  },
+  "reviewedSourceHashes": {
+    "package.json": "cc39f895c0fa4c8e9067c80694965e2735041cc4efaee9e228e0dcaab827a1ae",
+    "package-lock.json": "634b47dbfdf3e5b00f1fb89d8305cfd1fc49d78cb1de7708307c30beb785106e",
+    "apps/web/package.json": "9c8b881b2b08628d152d704e56f8fe515cd8a1faf929eeb2dce8d60a2ae632dd",
+    "apps/web/tsconfig.json": "6d5d2c00de2d7f7548eeb79aaf0714fabecb6d8bf80df8791bd9d806640a9d5c",
+    "apps/web/next.config.mjs": "4cdc765cae6a822b6b6bd8cff88cefad6cfaab5c0c9d8e4e0a980823c6f22c58",
+    "apps/web/app/layout.tsx": "9433ed16d09d3798473de54b1a623684ee53ea24d8dc7f4dc237a46f8f3d8709",
+    "apps/web/app/page.tsx": "7b07c3962c42b548e4ca4fd99d2e1aa5ea3d4be99c5e828567760962d5e1970d",
+    "backend/pyproject.toml": "73b1b9837e5e56cbdcb3c53729b4517cb6c621229c4544e191976b7c933958a9",
+    "backend/app/main.py": "1405a76bc0ac52f6c6b6452be0468c899ec3648076584fcd4990e135bc1e9b35",
+    ".env.example": "cd86190c607e382512dd497423a449a9ec24ad13b07e0915b528445f2f427366",
+    "scripts/check-contract.mjs": "4b4129e9113581de5a8bd68ce9f97345a7349159da836b84060edc11c6ace0e7",
+    "contracts/openapi.json": "1403faa9c0162db4586bf3c85eeb5b1d1ebc7b0ef94bff2323e482b4ab639731"
+  }
+}

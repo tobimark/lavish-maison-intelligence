@@ -1,0 +1,10 @@
+const fs=require('fs');
+let p='apps/web/tests/product-atelier.spec.ts';
+let s=fs.readFileSync(p,'utf8');
+s=s.replace("    await expect(page.getByTestId('storyboard-preview')).toContainText('Video deferred');\n    await expect(page.locator('video')).toHaveCount(0);","    await expect(page.getByTestId('storyboard-preview')).toContainText('Video deferred');\n    // The provided SERENITY preview is a real, separate asset (not a rendered 15s film).\n    const providedVideo = page.getByTestId('provided-video');\n    await expect(providedVideo).toHaveCount(1);\n    await expect(providedVideo).toHaveJSProperty('controls', true);\n    await expect(page.getByText('Provided demo asset · Not generated live in this POC').first()).toBeVisible();\n    const providedVideoBox = await providedVideo.boundingBox();\n    expect(providedVideoBox?.width ?? 0).toBeGreaterThan(0);\n    expect(providedVideoBox?.height ?? 0).toBeGreaterThan(0);\n    expect((providedVideoBox?.width ?? 0) / (providedVideoBox?.height ?? 1)).toBeCloseTo(3 / 4, 1);");
+fs.writeFileSync(p,s);
+p='apps/web/tests/product-navigation.spec.ts';
+s=fs.readFileSync(p,'utf8');
+s=s.split("/Your Scent, Your Expression|Creative Atelier/").join("/SERENITY — A Story in Layers|A Gesture, Considered|Let the Scent Lead/");
+fs.writeFileSync(p,s);
+console.log('patched');

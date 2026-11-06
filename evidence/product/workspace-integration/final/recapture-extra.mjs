@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1440,height:900}}); const base='http://127.0.0.1:3170'; const A='scn-scent-layering.brief.main';
+await p.goto(`${base}/atelier?campaignId=${A}&scenarioVersion=1.1.0&language=en`,{waitUntil:'load'}); await p.waitForTimeout(800);
+await p.getByTestId('journey-script-ar').click(); await p.waitForTimeout(400);
+await p.screenshot({path:'evidence/product/workspace-integration/final/accept-07-creative-ar-script-1440.png',fullPage:true});
+await p.goto(`${base}/deliverables?campaignId=${A}&scenarioVersion=1.1.0`,{waitUntil:'load'}); await p.waitForTimeout(900);
+await p.getByTestId('deliverables-downloads').locator('summary').first().click(); await p.waitForTimeout(500);
+await p.getByTestId('deliverables-downloads').scrollIntoViewIfNeeded();
+await p.screenshot({path:'evidence/product/workspace-integration/final/accept-14b-downloads-open-1440.png'});
+await b.close();

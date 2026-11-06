@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-11-06T07:39:41.752Z",
+  "archive": "b-1.0.0-pack.zip",
+  "archiveBytes": 3369118,
+  "entries": [
+    "EXPORT.json",
+    "README.txt",
+    "ar/README.txt",
+    "ar/brief.json",
+    "ar/media/logo.png",
+    "ar/media/perla.png",
+    "ar/script.json",
+    "ar/storyboard.html",
+    "ar/subtitles-ar.vtt",
+    "en/README.txt",
+    "en/brief.json",
+    "en/media/logo.png",
+    "en/media/perla.png",
+    "en/script.json",
+    "en/storyboard.html",
+    "en/subtitles-en.vtt"
+  ],
+  "noVideo": true,
+  "includedVersions": [
+    {
+      "campaignId": "scn-luxury-gifting.brief.main",
+      "versionId": "scn-luxury-gifting.script.en-v1",
+      "sessionId": null,
+      "scenarioVersion": "1.0.0"
+    },
+    {
+      "campaignId": "scn-luxury-gifting.brief.main",
+      "versionId": "scn-luxury-gifting.script.ar-v1",
+      "sessionId": null,
+      "scenarioVersion": "1.0.0"
+    }
+  ]
+}

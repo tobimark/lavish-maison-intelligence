@@ -1,0 +1,22 @@
+import { chromium } from 'playwright';
+import { writeFileSync } from 'node:fs';
+const base='http://127.0.0.1:3000';
+const browser=await chromium.launch();
+const page=await browser.newPage();
+await page.goto(base+'/', {waitUntil:'domcontentloaded'});
+const result=await page.evaluate(async ({base}) => {
+  const loadImage=(src)=>new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve({naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight});img.onerror=()=>reject(new Error('image error'));img.src=src;});
+  const video=document.createElement('video');
+  video.muted=true; video.preload='metadata'; video.playsInline=true;
+  video.src=base+'/provided-assets/scent-layering/1.0.0/final-preview.mp4';
+  document.body.appendChild(video);
+  await new Promise((resolve,reject)=>{video.addEventListener('loadedmetadata',resolve,{once:true});video.addEventListener('error',()=>reject(new Error('video error')),{once:true});});
+  const metadata={duration:video.duration,videoWidth:video.videoWidth,videoHeight:video.videoHeight,readyState:video.readyState,mime:video.currentSrc};
+  const seek=await new Promise((resolve)=>{const target=7.56;const done=()=>resolve({currentTime:video.currentTime,seeked:true});video.addEventListener('seeked',done,{once:true});video.currentTime=target;setTimeout(()=>resolve({currentTime:video.currentTime,seeked:false}),4000);});
+  const hero=await loadImage(base+'/provided-assets/scent-layering/1.0.0/hero-serenity.png');
+  const identity=await loadImage(base+'/provided-assets/scent-layering/1.0.0/product-serenity.png');
+  return {metadata,seek,hero,identity,error:video.error?{code:video.error.code,message:video.error.message}:null};
+}, {base});
+await browser.close();
+writeFileSync('evidence/product/assets/as-001/browser-media-probe.json', JSON.stringify({checkedAt:new Date().toISOString(),base,...result},null,2)+'\n');
+console.log(JSON.stringify(result,null,2));

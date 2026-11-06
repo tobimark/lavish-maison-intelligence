@@ -1,0 +1,98 @@
+/* v0.1 — HTML-derived primitives; explicit readable/product adaptations below. */
+:root {
+  --brand-black: #191917;
+  --brand-black-soft: #282724;
+  --brand-gold: #B89A61;
+  --brand-gold-deep: #816333;
+  --brand-gold-wash: #F5EFE3;
+  --canvas: #F6F5F2;
+  --surface: #FFFEFC;
+  --surface-muted: #F9F8F5;
+  --line: #E8E5DF;
+  --ink: #252521;
+  --ink-soft: #56564E;
+  --reference-muted: #85837C;
+  --reference-danger: #BE5F54;
+  --reference-blue: #457B9D;
+  --good: #207C69;
+  --good-text: #1F7765;
+  --good-wash: #E8F4EF;
+  --danger-wash: #FBEFEA;
+  --media-surface: #262725;
+  --nav-active: #302C24;
+  --nav-active-text: #EBD6AE;
+  --nav-text: #B4B2AC;
+  --nav-accent: #C5A368;
+  --button-primary: #25231F;
+  --button-primary-hover: #39342C;
+  --on-dark: #F8F6F0;
+  /* Adaptations: small text must remain readable on warm paper. */
+  --muted: #6B6961;
+  --danger: #A84A40;
+  --info: #35617D;
+  --warning: #816333;
+  --control-line: #85837C;
+  --focus: #816333;
+  --focus-on-dark: #EBD6AE;
+  --font-ui: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-ar: 'Noto Sans Arabic', Tahoma, Arial, sans-serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+  --text-body: 16px;
+  --text-control: 15px;
+  --text-meta: 14px;
+  --text-label: 12px;
+  --text-section: 18px;
+  --text-title: 29px;
+  --text-title-mobile: 25px;
+  --text-metric: 31px;
+  --leading-body: 1.6;
+  --leading-ar: 1.8;
+  --leading-title: 1.22;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-strong: 600;
+  --weight-title: 630;
+  --tracking-title: -.04em;
+  --tracking-eyebrow: .16em;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-grid: 18px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-title: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --sidebar-wide: 246px;
+  --sidebar-compact: 222px;
+  --sidebar-collapsed: 78px;
+  --topbar-height: 77px;
+  --topbar-mobile: 66px;
+  --page-max: 1700px;
+  --page-inset: 38px;
+  --page-inset-laptop: 27px;
+  --page-inset-mobile: 16px;
+  --radius-card: 12px;
+  --radius-control: 7px;
+  --radius-small: 5px;
+  --radius-pill: 999px;
+  --height-control: 40px;
+  --height-primary: 44px;
+  --height-touch: 44px;
+  --shadow-card: 0 9px 35px rgba(42,37,27,.025);
+  --shadow-overlay: 0 25px 75px rgba(0,0,0,.3);
+  --overlay: #11130FD9;
+  --duration-fast: 180ms;
+  --duration-base: 220ms;
+  --ease-standard: cubic-bezier(.2,0,0,1);
+  --z-header: 10;
+  --z-nav: 20;
+  --z-drawer: 40;
+  --z-dialog: 60;
+  --z-toast: 70;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --duration-fast: 0ms; --duration-base: 0ms; }
+  html { scroll-behavior: auto; }
+}

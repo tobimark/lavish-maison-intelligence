@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "mode": "mock",
+  "campaignId": "scn-scent-layering.brief.main",
+  "opportunityId": "scn-scent-layering.analysis.main",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "packageHash": "e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468",
+  "brief": {
+    "id": "scn-scent-layering.brief.main",
+    "analysisId": "scn-scent-layering.analysis.main",
+    "name": "Your Scent, Your Expression",
+    "objective": "Invite discovery of personal fragrance expression without asserting tested layering results.",
+    "markets": [
+      "UAE",
+      "GCC"
+    ],
+    "audience": "UAE fragrance enthusiasts curious about personal scent expression; illustrative audience segment, not measured.",
+    "productIds": [
+      "scn-scent-layering.product.oud",
+      "scn-scent-layering.product.perla"
+    ],
+    "concept": "An editorial dialogue between the distinct official Lavish fragrance descriptions and their existing verified bottle images.",
+    "tone": "Poetic, restrained, respectful of product facts; no instructions to mix or guaranteed results.",
+    "channels": [
+      "Instagram Reels (concept)",
+      "TikTok (concept)"
+    ],
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "keyMessage": "Two distinct fragrances can inspire personal exploration; no promised blended result.",
+    "cta": "Explore the collection"
+  },
+  "analysis": {
+    "id": "scn-scent-layering.analysis.main",
+    "insights": [
+      "In this synthetic scenario, personal expression grows as a creative theme across the invented sample window; it is not a measured platform trend.",
+      "Pairing can be framed as discovery rather than a guaranteed effect of physically combining products.",
+      "The brand has verified imagery for LAVISH OUD and PERLA 50ML UNISEX; the proposition can be told through two products without inventing a third."
+    ],
+    "rationale": "Conceptual fit: LAVISH OUD is described using oud/spice/floral language; PERLA 50ML UNISEX is described with floral/fruity/musk language. The POC uses an editorial contrast of their documented descriptions, not a claimed tested layering outcome.",
+    "recommendation": "Prototype a text-led 15-second vertical pairing-themed editorial. Invite product exploration, not a guaranteed performance claim.",
+    "assumptions": [
+      "The hypothetical UAE audience may respond to individual fragrance expression.",
+      "Two existing Lavish product images can support an editorial juxtaposition, subject to image-use limits.",
+      "Mock evidence is designed only to demonstrate how analysts would explain a recommendation."
+    ],
+    "uncertainties": [
+      "No platform trend measurements have been collected.",
+      "No compatibility, application method or after-layering scent result has been verified.",
+      "Arabic copy requires native language and Lavish review.",
+      "Video and poster are not yet supplied."
+    ],
+    "evidenceIds": [
+      "scn-scent-layering.evidence.e1",
+      "scn-scent-layering.evidence.e2",
+      "scn-scent-layering.evidence.e3",
+      "scn-scent-layering.evidence.e4",
+      "scn-scent-layering.evidence.e5"
+    ],
+    "trendIds": [
+      "scn-scent-layering.trend.main",
+      "scn-scent-layering.trend.control"
+    ]
+  }
+}

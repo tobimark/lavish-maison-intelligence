@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "evidence": [
+      {
+        "id": "scn-oud-storytelling.evidence.e1",
+        "sourceType": "MOCK",
+        "platform": "YouTube — simulated signal",
+        "title": "Oud ingredient-led visual narration",
+        "summary": "A hypothetical editorial explainer describes the mood of oud without assigning a verified geographical origin.",
+        "simulatedAt": "2026-10-13T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-oud-storytelling.evidence.e2",
+        "sourceType": "MOCK",
+        "platform": "Instagram — simulated signal",
+        "title": "Oud and texture in minimal fragrance content",
+        "summary": "A simulated creative signal suggests warm neutral fields, a product hero and restrained typography.",
+        "simulatedAt": "2026-10-16T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-oud-storytelling.evidence.e3",
+        "sourceType": "MOCK",
+        "platform": "Pinterest — simulated signal",
+        "title": "Amber and wood-toned moodboard language",
+        "summary": "Illustrative moodboard reference used only as visual tone; not evidence of the product ingredients or provenance.",
+        "simulatedAt": "2026-10-19T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-oud-storytelling.evidence.e4",
+        "sourceType": "MOCK",
+        "platform": "TikTok — simulated signal",
+        "title": "Short-form ingredient-led introduction",
+        "summary": "Mock signal about accessible four-beat ingredient storytelling rather than claims of ancient craft.",
+        "simulatedAt": "2026-10-22T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-oud-storytelling.evidence.e5",
+        "sourceType": "MOCK",
+        "platform": "YouTube — simulated signal",
+        "title": "Unverified origin-story narratives",
+        "summary": "Control signal presents uncertain, conflicting illustrative values; not a reliable basis for a brand historical claim.",
+        "simulatedAt": "2026-10-25T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      }
+    ],
+    "signals": [
+      {
+        "id": "scn-oud-storytelling.signal.s1",
+        "title": "Oud ingredient-led visual narration",
+        "topic": "Scent vocabulary education",
+        "region": "GCC",
+        "evidenceIds": [
+          "scn-oud-storytelling.evidence.e1"
+        ],
+        "summary": "MOCK YouTube / A hypothetical editorial explainer describes the mood of oud without assigning a verified geographical origin."
+      },
+      {
+        "id": "scn-oud-storytelling.signal.s2",
+        "title": "Oud and texture in minimal fragrance content",
+        "topic": "Visual interpretation of documented note",
+        "region": "Dubai",
+        "evidenceIds": [
+          "scn-oud-storytelling.evidence.e2"
+        ],
+        "summary": "MOCK Instagram / A simulated creative signal suggests warm neutral fields, a product hero and restrained typography."
+      },
+      {
+        "id": "scn-oud-storytelling.signal.s3",
+        "title": "Amber and wood-toned moodboard language",
+        "topic": "Conceptual art direction",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-oud-storytelling.evidence.e3"
+        ],
+        "summary": "MOCK Pinterest / Illustrative moodboard reference used only as visual tone; not evidence of the product ingredients or provenance."
+      },
+      {
+        "id": "scn-oud-storytelling.signal.s4",
+        "title": "Short-form ingredient-led introduction",
+        "topic": "15-second storytelling format",
+        "region": "Abu Dhabi",
+        "evidenceIds": [
+          "scn-oud-storytelling.evidence.e4"
+        ],
+        "summary": "MOCK TikTok / Mock signal about accessible four-beat ingredient storytelling rather than claims of ancient craft."
+      },
+      {
+        "id": "scn-oud-storytelling.signal.s5",
+        "title": "Unverified origin-story narratives",
+        "topic": "Uncertain control",
+        "region": "GCC",
+        "evidenceIds": [
+          "scn-oud-storytelling.evidence.e5"
+        ],
+        "summary": "MOCK YouTube / Control signal presents uncertain, conflicting illustrative values; not a reliable basis for a brand historical claim."
+      }
+    ],
+    "trends": [
+      {
+        "id": "scn-oud-storytelling.trend.main",
+        "title": "Oud sensory storytelling formats (illustrative)",
+        "signalIds": [
+          "scn-oud-storytelling.signal.s1",
+          "scn-oud-storytelling.signal.s2",
+          "scn-oud-storytelling.signal.s3",
+          "scn-oud-storytelling.signal.s4"
+        ],
+        "direction": "rising",
+        "unit": "synthetic illustrative index (0–100; not platform counts, engagement or growth %)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 41
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 43
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 46
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 50
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 54
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 58
+          }
+        ],
+        "interpretation": "Editorial modelled increase as a deliberately synthetic visual sequence; only a concept to test dashboard logic.",
+        "disclosure": "Entire time series is synthetic, illustrative, authored offline. No real growth, sampling, market demand or statistical confidence inferred."
+      },
+      {
+        "id": "scn-oud-storytelling.trend.control",
+        "title": "Historical-origin claims as an ad angle (uncertain sample)",
+        "signalIds": [
+          "scn-oud-storytelling.signal.s5"
+        ],
+        "direction": "uncertain",
+        "unit": "synthetic illustrative index (0–100; not platform counts, engagement or growth %)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 49
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 45
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 51
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 46
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 50
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 47
+          }
+        ],
+        "interpretation": "Control series is roughly flat or non-directional; not every invented signal is rising.",
+        "disclosure": "Entire time series is synthetic, illustrative, authored offline. No real growth, sampling, market demand or statistical confidence inferred."
+      }
+    ]
+  }
+}

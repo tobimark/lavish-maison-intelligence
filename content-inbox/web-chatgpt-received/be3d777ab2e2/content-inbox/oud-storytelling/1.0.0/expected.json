@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "checkpoints": [
+      {
+        "cursorSequence": 0,
+        "workflow": {
+          "discovery": "ready",
+          "analysis": "locked",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 9,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "ready",
+          "video": "locked",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-oud-storytelling.signal.s1",
+          "scn-oud-storytelling.signal.s2",
+          "scn-oud-storytelling.signal.s3",
+          "scn-oud-storytelling.signal.s4",
+          "scn-oud-storytelling.signal.s5",
+          "scn-oud-storytelling.trend.control",
+          "scn-oud-storytelling.trend.main"
+        ],
+        "activeScriptVersionId": null,
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 16,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "ready",
+          "delivery": "locked"
+        },
+        "visibleEntityIds": [
+          "scn-oud-storytelling.analysis.main",
+          "scn-oud-storytelling.brief.main",
+          "scn-oud-storytelling.script.ar-v1",
+          "scn-oud-storytelling.script.en-v1",
+          "scn-oud-storytelling.shot.ar-1",
+          "scn-oud-storytelling.shot.ar-2",
+          "scn-oud-storytelling.shot.ar-3",
+          "scn-oud-storytelling.shot.ar-4",
+          "scn-oud-storytelling.shot.en-1",
+          "scn-oud-storytelling.shot.en-2",
+          "scn-oud-storytelling.shot.en-3",
+          "scn-oud-storytelling.shot.en-4",
+          "scn-oud-storytelling.signal.s1",
+          "scn-oud-storytelling.signal.s2",
+          "scn-oud-storytelling.signal.s3",
+          "scn-oud-storytelling.signal.s4",
+          "scn-oud-storytelling.signal.s5",
+          "scn-oud-storytelling.subtitle.ar-1",
+          "scn-oud-storytelling.subtitle.ar-2",
+          "scn-oud-storytelling.subtitle.ar-3",
+          "scn-oud-storytelling.subtitle.ar-4",
+          "scn-oud-storytelling.subtitle.en-1",
+          "scn-oud-storytelling.subtitle.en-2",
+          "scn-oud-storytelling.subtitle.en-3",
+          "scn-oud-storytelling.subtitle.en-4",
+          "scn-oud-storytelling.trend.control",
+          "scn-oud-storytelling.trend.main"
+        ],
+        "activeScriptVersionId": "scn-oud-storytelling.script.en-v1",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 24,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "ready"
+        },
+        "visibleEntityIds": [
+          "scn-oud-storytelling.analysis.main",
+          "scn-oud-storytelling.brief.main",
+          "scn-oud-storytelling.script.ar-v1",
+          "scn-oud-storytelling.script.en-v1",
+          "scn-oud-storytelling.shot.ar-1",
+          "scn-oud-storytelling.shot.ar-2",
+          "scn-oud-storytelling.shot.ar-3",
+          "scn-oud-storytelling.shot.ar-4",
+          "scn-oud-storytelling.shot.en-1",
+          "scn-oud-storytelling.shot.en-2",
+          "scn-oud-storytelling.shot.en-3",
+          "scn-oud-storytelling.shot.en-4",
+          "scn-oud-storytelling.signal.s1",
+          "scn-oud-storytelling.signal.s2",
+          "scn-oud-storytelling.signal.s3",
+          "scn-oud-storytelling.signal.s4",
+          "scn-oud-storytelling.signal.s5",
+          "scn-oud-storytelling.subtitle.ar-1",
+          "scn-oud-storytelling.subtitle.ar-2",
+          "scn-oud-storytelling.subtitle.ar-3",
+          "scn-oud-storytelling.subtitle.ar-4",
+          "scn-oud-storytelling.subtitle.en-1",
+          "scn-oud-storytelling.subtitle.en-2",
+          "scn-oud-storytelling.subtitle.en-3",
+          "scn-oud-storytelling.subtitle.en-4",
+          "scn-oud-storytelling.trend.control",
+          "scn-oud-storytelling.trend.main",
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "activeScriptVersionId": "scn-oud-storytelling.script.en-v1",
+        "activeVideoId": null,
+        "deliveryRecordIds": []
+      },
+      {
+        "cursorSequence": 28,
+        "workflow": {
+          "discovery": "completed",
+          "analysis": "completed",
+          "video": "completed",
+          "delivery": "completed"
+        },
+        "visibleEntityIds": [
+          "scn-oud-storytelling.analysis.main",
+          "scn-oud-storytelling.brief.main",
+          "scn-oud-storytelling.plan.en-v1",
+          "scn-oud-storytelling.record.delivered-2",
+          "scn-oud-storytelling.script.ar-v1",
+          "scn-oud-storytelling.script.en-v1",
+          "scn-oud-storytelling.shot.ar-1",
+          "scn-oud-storytelling.shot.ar-2",
+          "scn-oud-storytelling.shot.ar-3",
+          "scn-oud-storytelling.shot.ar-4",
+          "scn-oud-storytelling.shot.en-1",
+          "scn-oud-storytelling.shot.en-2",
+          "scn-oud-storytelling.shot.en-3",
+          "scn-oud-storytelling.shot.en-4",
+          "scn-oud-storytelling.signal.s1",
+          "scn-oud-storytelling.signal.s2",
+          "scn-oud-storytelling.signal.s3",
+          "scn-oud-storytelling.signal.s4",
+          "scn-oud-storytelling.signal.s5",
+          "scn-oud-storytelling.subtitle.ar-1",
+          "scn-oud-storytelling.subtitle.ar-2",
+          "scn-oud-storytelling.subtitle.ar-3",
+          "scn-oud-storytelling.subtitle.ar-4",
+          "scn-oud-storytelling.subtitle.en-1",
+          "scn-oud-storytelling.subtitle.en-2",
+          "scn-oud-storytelling.subtitle.en-3",
+          "scn-oud-storytelling.subtitle.en-4",
+          "scn-oud-storytelling.trend.control",
+          "scn-oud-storytelling.trend.main",
+          "scn-oud-storytelling.video.en-v1"
+        ],
+        "activeScriptVersionId": "scn-oud-storytelling.script.en-v1",
+        "activeVideoId": "scn-oud-storytelling.video.en-v1",
+        "deliveryRecordIds": [
+          "scn-oud-storytelling.record.delivered-2"
+        ]
+      }
+    ]
+  }
+}

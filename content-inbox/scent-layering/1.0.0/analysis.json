@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "analyses": [
+      {
+        "id": "scn-scent-layering.analysis.layering-opportunity",
+        "trendIds": [
+          "scn-scent-layering.trend.layering-interest",
+          "scn-scent-layering.trend.gifting-context"
+        ],
+        "evidenceIds": [
+          "scn-scent-layering.evidence.layering-guide",
+          "scn-scent-layering.evidence.personal-signature",
+          "scn-scent-layering.evidence.gifting-control"
+        ],
+        "insights": [
+          "Observation within the mock scenario: layering guidance and personal expression form a coherent creative theme; the comparison gifting theme is stable.",
+          "Product match: LAVISH OUD provides an oud/spice/floral description, while PERLA is described through floral/fruity/musk notes. These verified descriptions suggest a story contrast; they do not prove a blended scent result.",
+          "Creative decision: a 15-second, text-led product film can introduce both identities with one invitation to explore. It fits the available official product photographs without inventing lifestyle footage or a new bottle."
+        ],
+        "rationale": "Connect the guide signal to an approachable format, the self-expression signal to a personal-signature hook, and the official product descriptions to a two-product exploration concept. Keep gifting as a comparison instead of claiming every topic is rising. Recommend a creative hypothesis to review, with no numerical opportunity score or forecast unsupported by the inputs.",
+        "assumptions": [
+          "The demonstration addresses adult fragrance enthusiasts in the UAE; this audience is an editorial choice, not inferred customer targeting.",
+          "Product exploration is an appropriate call to action for a concept review; no conversion uplift is forecast.",
+          "A pairing concept is acceptable for internal review pending brand approval and sensory testing."
+        ],
+        "uncertainties": [
+          "There is no live social listening or measured market validation.",
+          "The product pairing has not been sensory-tested or officially endorsed.",
+          "Arabic copy needs native-language and brand review.",
+          "The matching MP4 and poster are not yet supplied."
+        ],
+        "recommendation": "Develop “Your signature. In layers.” as a restrained product-led concept for review. Invite exploration of LAVISH OUD and PERLA; do not teach a spray ratio, promise scent compatibility or describe synthetic signals as real discovery."
+      }
+    ],
+    "briefs": [
+      {
+        "id": "scn-scent-layering.brief.signature",
+        "analysisId": "scn-scent-layering.analysis.layering-opportunity",
+        "name": "Your signature. In layers.",
+        "objective": "Demonstrate how an explainable mock discovery can become a coherent Lavish creative review pack, with product exploration as the proposed audience action.",
+        "markets": [
+          "UAE"
+        ],
+        "audience": "Adult fragrance enthusiasts interested in personal expression; hypothetical creative audience, not an observed customer segment.",
+        "productIds": [
+          "scn-scent-layering.product.lavish-oud",
+          "scn-scent-layering.product.perla"
+        ],
+        "concept": "A quiet, four-shot product study: introduce personal expression, introduce LAVISH OUD, invite exploration alongside PERLA, and close on the exact Lavish Logo. Pairing is an invitation, not a tested formula.",
+        "tone": "Refined, clear, understated; warm white composition and restrained gold accents following the HTML reference.",
+        "channels": [
+          "Instagram Reels — proposed placement only",
+          "Instagram Stories — proposed placement only"
+        ],
+        "languages": [
+          "en",
+          "ar"
+        ],
+        "keyMessage": "Explore a fragrance signature that feels personal, through the distinct identities of LAVISH OUD and PERLA.",
+        "cta": "Discover Lavish Perfumes"
+      }
+    ]
+  }
+}

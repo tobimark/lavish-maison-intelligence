@@ -1,0 +1,204 @@
+{
+  "checkedAt": "2026-11-06T03:33:45.751Z",
+  "matrix": "docs/INTERACTION_AUDIT_MATRIX.csv",
+  "matrixRowCount": 155,
+  "flowRows": 36,
+  "found": 36,
+  "missing": [],
+  "rows": [
+    {
+      "controlId": "OV-explore-journey",
+      "found": true,
+      "observedState": "home"
+    },
+    {
+      "controlId": "OV-journey-open",
+      "found": true,
+      "observedState": "home"
+    },
+    {
+      "controlId": "OV-journey-insight",
+      "found": true,
+      "observedState": "home"
+    },
+    {
+      "controlId": "OV-journey-strategy",
+      "found": true,
+      "observedState": "home"
+    },
+    {
+      "controlId": "OV-journey-creative",
+      "found": true,
+      "observedState": "home"
+    },
+    {
+      "controlId": "OV-journey-social",
+      "found": true,
+      "observedState": "home"
+    },
+    {
+      "controlId": "FLOW-stage-insight",
+      "found": true,
+      "observedState": "insight"
+    },
+    {
+      "controlId": "FLOW-stage-strategy",
+      "found": true,
+      "observedState": "insight"
+    },
+    {
+      "controlId": "FLOW-stage-creative",
+      "found": true,
+      "observedState": "insight"
+    },
+    {
+      "controlId": "FLOW-stage-social",
+      "found": true,
+      "observedState": "insight"
+    },
+    {
+      "controlId": "FLOW-view-evidence",
+      "found": true,
+      "observedState": "insight"
+    },
+    {
+      "controlId": "FLOW-next-strategy",
+      "found": true,
+      "observedState": "insight"
+    },
+    {
+      "controlId": "FLOW-open-brief",
+      "found": true,
+      "observedState": "strategy"
+    },
+    {
+      "controlId": "FLOW-next-creative",
+      "found": true,
+      "observedState": "strategy"
+    },
+    {
+      "controlId": "FLOW-video",
+      "found": true,
+      "observedState": "creative"
+    },
+    {
+      "controlId": "FLOW-script-en",
+      "found": true,
+      "observedState": "creative"
+    },
+    {
+      "controlId": "FLOW-script-ar",
+      "found": true,
+      "observedState": "creative"
+    },
+    {
+      "controlId": "FLOW-next-social",
+      "found": true,
+      "observedState": "creative"
+    },
+    {
+      "controlId": "FLOW-social-stage",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-language-en",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-language-ar",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-caption",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-cta",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-hashtags",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-edit",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-save",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-review",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-simulate",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-discard",
+      "found": true,
+      "observedState": "social"
+    },
+    {
+      "controlId": "FLOW-social-confirm-creative",
+      "found": true,
+      "observedState": "social-confirm"
+    },
+    {
+      "controlId": "FLOW-social-review-cancel",
+      "found": true,
+      "observedState": "social-review-dialog"
+    },
+    {
+      "controlId": "FLOW-social-review-confirm",
+      "found": true,
+      "observedState": "social-review-dialog"
+    },
+    {
+      "controlId": "FLOW-social-publish-cancel",
+      "found": true,
+      "observedState": "social-publish-dialog"
+    },
+    {
+      "controlId": "FLOW-social-publish-confirm",
+      "found": true,
+      "observedState": "social-publish-dialog"
+    },
+    {
+      "controlId": "FLOW-social-view-post",
+      "found": true,
+      "observedState": "social-published"
+    },
+    {
+      "controlId": "FLOW-social-detail-back",
+      "found": true,
+      "observedState": "social-detail"
+    }
+  ],
+  "states": [
+    "home",
+    "insight",
+    "strategy",
+    "creative",
+    "social",
+    "social-preset",
+    "social-draft",
+    "social-confirm",
+    "social-review-dialog",
+    "social-publish-dialog",
+    "social-published",
+    "social-detail"
+  ]
+}

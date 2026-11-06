@@ -1,0 +1,18 @@
+const fs=require('fs'); const crypto=require('crypto');
+let s=fs.readFileSync('apps/web/components/product/library/LibraryPage.tsx','utf8');
+s=s.replace("  const scenarioVersionParam = (searchParams.get('scenarioVersion') ?? '').trim();\n","");
+s=s.replace("  const [versionError, setVersionError] = useState('');\n","");
+const start=s.indexOf('  // WS-FIX-001: when a campaign is explicit');
+const end=s.indexOf('  // A shared deep link can open an exact creative asset.');
+if(start<0||end<0) throw new Error('markers');
+s=s.slice(0,start)+s.slice(end);
+const retStart=s.indexOf("  if (state === 'ready' && campaignParam && campaigns.length > 0");
+const retEnd=s.indexOf('  return (\n    <div className={styles.page} data-testid="library-page">');
+if(retStart<0||retEnd<0) throw new Error('return markers');
+s=s.slice(0,retStart)+s.slice(retEnd);
+s=s.replace("onChange={(event) => selectCampaign(event.target.value)}","onChange={(event) => updateQuery({ campaignId: event.target.value })}");
+s=s.replace("<Button variant=\"ghost\" onClick={clearFilters} data-control-id=\"LIB-clear\" data-testid=\"LIB-clear\">","<Button variant=\"ghost\" onClick={() => updateQuery({ campaignId: '', language: '', kind: '', origin: '', versionId: '', sessionId: '' })} data-control-id=\"LIB-clear\" data-testid=\"LIB-clear\">");
+s=s.replace("<Button variant=\"secondary\" onClick={clearFilters} data-control-id=\"LIB-clear-empty\" data-testid=\"LIB-clear-empty\">","<Button variant=\"secondary\" onClick={() => updateQuery({ campaignId: '', language: '', kind: '', origin: '', versionId: '', sessionId: '' })} data-control-id=\"LIB-clear-empty\" data-testid=\"LIB-clear-empty\">");
+const hash=crypto.createHash('sha256').update(s).digest('hex');
+fs.writeFileSync('evidence/product/workspace-integration/ws-fix-001/before/LibraryPage.tsx',s);
+console.log('hash',hash,'expected f23bf0bd225a645de124ba6d62602bd9e896908f8d6a62acba15adc2959f88a2','match',hash==='f23bf0bd225a645de124ba6d62602bd9e896908f8d6a62acba15adc2959f88a2');

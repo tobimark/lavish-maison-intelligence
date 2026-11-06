@@ -1,0 +1,15 @@
+import { chromium } from 'playwright';
+const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1440,height:900}});
+const url='http://127.0.0.1:3160/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social';
+await p.goto(url,{waitUntil:'load'}); await p.waitForTimeout(700);
+await p.getByTestId('SOC-edit-post').click(); await p.waitForTimeout(500);
+await p.getByTestId('SOC-caption-input').fill('DOUBLE-CLICK-CAPTION'); await p.getByTestId('SOC-save').click(); await p.waitForTimeout(600);
+await p.getByTestId('SOC-review').click(); await p.waitForTimeout(400); await p.getByTestId('SOC-confirm-creative').click(); await p.waitForTimeout(1500); await p.getByTestId('SOC-review').click(); await p.waitForTimeout(500); await p.getByTestId('SOC-review-confirm').click(); await p.waitForTimeout(800);
+await p.getByTestId('SOC-simulate').click(); await p.waitForTimeout(400);
+const dlg=await p.getByTestId('SOC-publish-dialog').innerText(); console.log('dialog',dlg.slice(0,80));
+await p.evaluate(()=>{const b=document.querySelector('[data-testid="SOC-publish-confirm"]'); b.click(); b.click();});
+await p.waitForTimeout(2000);
+const data=await p.evaluate(async()=>{const db=await new Promise((res,rej)=>{const r=indexedDB.open('lavish-poc-content-v1');r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);}); const tx=db.transaction('socialWorkflows','readonly'); const all=await new Promise((res,rej)=>{const r=tx.objectStore('socialWorkflows').getAll();r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);}); db.close(); return all;});
+console.log(JSON.stringify(data.map(w=>({attempts:w.attempts.map(a=>({id:a.id,draftRev:a.draftRevision,status:a.status,createdAt:a.createdAt,caption:a.snapshot.caption,reviewHash:a.reviewHash.slice(0,12)})),receipts:w.receipts.filter(r=>r.operation==='simulateSocialPublish').map(r=>({key:r.idempotencyKey,bodyHash:r.bodyHash.slice(0,12)}))})),null,2));
+console.log('history count', await p.locator('[data-testid^="SOC-attempt-"]').count());
+await b.close();

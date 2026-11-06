@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-06T02:24:17.008Z",
+  "base": "http://127.0.0.1:3150",
+  "shots": [
+    "as004-overview-1440",
+    "as004-brief-1440",
+    "as004-atelier-en-1440",
+    "as004-atelier-ar-1440",
+    "as004-library-1440",
+    "as004-overview-1366",
+    "as004-brief-1366",
+    "as004-atelier-en-1366",
+    "as004-overview-390",
+    "as004-brief-390",
+    "as004-atelier-ar-390",
+    "as004-library-390"
+  ],
+  "videoFacts": {
+    "controls": true,
+    "width": 720,
+    "height": 960,
+    "duration": 10.08,
+    "paused": true
+  },
+  "errors": []
+}

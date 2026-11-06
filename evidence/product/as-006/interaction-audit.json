@@ -1,0 +1,82 @@
+{
+  "scope": "as_ip_batch_as006_dom_audit",
+  "checkedAt": "2026-11-06T02:44:00.518Z",
+  "matrix": "docs/INTERACTION_AUDIT_MATRIX.csv",
+  "states": {
+    "overview": [],
+    "brief": [
+      "AS-BRIEF-ATELIER"
+    ],
+    "opportunity": [
+      "AS-BRIEF-OPEN"
+    ],
+    "atelier": [
+      "AS-VIDEO-TAB"
+    ],
+    "library": [],
+    "deliverables": [
+      "AS-HERO-EXPLORE",
+      "AS-HERO-PREVIEW",
+      "AS-IMAGE-DOWNLOAD",
+      "AS-IDENTITY-OPEN",
+      "AS-IMAGE-DOWNLOAD",
+      "AS-VIDEO-TAB",
+      "AS-VIDEO-DOWNLOAD",
+      "AS-PACK-VERSIONS",
+      "AS-PACK-VERSION-en",
+      "AS-PACK-VERSION-ar",
+      "AS-PACK-DOWNLOAD"
+    ],
+    "journeyCreative": []
+  },
+  "observedAsControlIds": [
+    "AS-BRIEF-ATELIER",
+    "AS-BRIEF-OPEN",
+    "AS-HERO-EXPLORE",
+    "AS-HERO-PREVIEW",
+    "AS-IDENTITY-OPEN",
+    "AS-IMAGE-DOWNLOAD",
+    "AS-PACK-DOWNLOAD",
+    "AS-PACK-VERSION-ar",
+    "AS-PACK-VERSION-en",
+    "AS-PACK-VERSIONS",
+    "AS-VIDEO-DOWNLOAD",
+    "AS-VIDEO-TAB"
+  ],
+  "available": [
+    "AS-BRIEF-OPEN",
+    "AS-BRIEF-ATELIER",
+    "AS-IDENTITY-OPEN",
+    "AS-HERO-PREVIEW",
+    "AS-VIDEO-TAB",
+    "AS-PACK-VERSIONS",
+    "AS-PACK-DOWNLOAD",
+    "AS-VIDEO-DOWNLOAD",
+    "AS-IMAGE-DOWNLOAD"
+  ],
+  "missingFromDom": [],
+  "notRun": [
+    "AS-HERO-EXPLORE",
+    "AS-SHOT-{shotId}",
+    "AS-VIDEO-PLAY",
+    "AS-VIDEO-SEEK",
+    "AS-VIDEO-REPLAY",
+    "AS-VIDEO-AUDIO",
+    "AS-VIDEO-ERROR",
+    "AS-LIB-TYPE-{type}",
+    "AS-HANDOFF-EXPAND"
+  ],
+  "media": {
+    "controls": true,
+    "width": 720,
+    "height": 960,
+    "duration": 10.08,
+    "paused": true
+  },
+  "limitations": [
+    "SERENITY A 1.1.0 is published and bound; no awaiting-content NOT_RUN remains.",
+    "AS-HERO-EXPLORE no longer exists after the parallel FLOW batch replaced the Overview creative CTA with the connected-case Journey CTA; the Journey CTA is covered in product-provided-assets.spec.ts.",
+    "AS-SHOT/AS-VIDEO-PLAY/SEEK/REPLAY/AUDIO/ERROR/AS-LIB-TYPE/AS-HANDOFF are native controls, static storyboard, single-select filtering or secondary mail UI without per-control data-control-id; they are exercised by product-atelier/library/provided-assets or marked NOT_RUN in the matrix audit.",
+    "FLOW (journey/connected flow) controls are present in the workspace but outside FAST_06 AS acceptance and were not modified."
+  ]
+}

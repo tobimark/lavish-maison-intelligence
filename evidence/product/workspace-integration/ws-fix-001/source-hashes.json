@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-11-06T09:09:23.856Z",
+  "source": {
+    "before": {
+      "apps/web/components/shell/AppShell.tsx": "dbc6a09ea2334ab760027b8743cef80d381ce46a7f6d41b6c1bf1b3121444ab7",
+      "apps/web/components/product/library/LibraryPage.tsx": "f23bf0bd225a645de124ba6d62602bd9e896908f8d6a62acba15adc2959f88a2",
+      "apps/web/components/product/shared/workspace-routes.ts": "4db80a5af5cfd88973cec7e59837c7c5e2d9a37cbe62c28950fdf470c004d94c",
+      "apps/web/.next/BUILD_ID": "e201283f436f0ecf09cb695db69b4b54fa0246a0d14e50a3826f942f7d0c8e2e"
+    },
+    "after": {
+      "apps/web/components/shell/AppShell.tsx": "fa4c56ffd5d0deee83ba0beafe9b437c4a42c4d8d1d4f487c7df7eca7e1c53ec",
+      "apps/web/components/product/library/LibraryPage.tsx": "8611d8931a4b558dcbeea42e5d07134dfb3c0d5a834a6ca83d1bdbde2cad53de",
+      "apps/web/components/product/shared/workspace-routes.ts": "4db80a5af5cfd88973cec7e59837c7c5e2d9a37cbe62c28950fdf470c004d94c",
+      "apps/web/components/product/shared/useCampaignWorkspace.ts": "875f088251f67596ce646b2d7d9e690b25f060f8e8746438d818068de46e032e"
+    }
+  },
+  "build": {
+    "before": "Qn1edGDBs90rcVr7YkDrq",
+    "beforeBuildIdSha256": "e201283f436f0ecf09cb695db69b4b54fa0246a0d14e50a3826f942f7d0c8e2e",
+    "after": "EyeTyB_09phuk7IAEkABn",
+    "afterBuildIdSha256": "a7a014e2516a55a4b4f63addc3b90517a461ca7199a1d20e79d655c8453c7a30"
+  },
+  "protectedFiles": {
+    "manifest": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+    "tokens": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814",
+    "mp4": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+    "hero": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+    "identity": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62"
+  },
+  "protectedNote": "No protected content/schema/tokens/media file was edited by this fix; hashes are current and can be compared to accepted receipts (manifest 709abf…, MP4 15d375…, hero 1c4e…, identity f75f…)."
+}

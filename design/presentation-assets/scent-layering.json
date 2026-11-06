@@ -1,0 +1,130 @@
+{
+  "mappingVersion": "1.0.0",
+  "id": "provided.scent-layering.serenity-v1",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "campaignId": "scn-scent-layering.brief.main",
+  "contentStatus": "bound",
+  "product": {
+    "id": "scn-scent-layering.product.serenity",
+    "officialName": "SERENITY",
+    "sku": "6290360533636 / 100014",
+    "factsSourceUrl": "https://lavishperfumes.com/product/serenity/",
+    "verifiedFacts": [
+      "Official product title: SERENITY.",
+      "Official description refers to citrus, floral and musk notes.",
+      "Capacity has not been verified."
+    ],
+    "identityAssetId": "provided.scent-layering.product-serenity",
+    "campaignRole": "featured_product"
+  },
+  "assets": [
+    {
+      "id": "provided.scent-layering.hero-serenity",
+      "type": "hero_image",
+      "label": "SERENITY — lifestyle hero",
+      "roles": [
+        "hero",
+        "deliverable_asset"
+      ],
+      "uri": "/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "mimeType": "image/png",
+      "bytes": 2513070,
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "productId": "scn-scent-layering.product.serenity",
+      "visibility": [
+        "overview",
+        "opportunity",
+        "campaign_brief",
+        "atelier",
+        "library",
+        "deliverables"
+      ],
+      "source": "user_provided",
+      "rightsScope": "internal_demo",
+      "metadata": {
+        "width": 2560,
+        "height": 1440,
+        "durationMs": null,
+        "frameRate": null,
+        "videoCodec": null,
+        "pixelFormat": null,
+        "audioCodec": null,
+        "posterAssetId": null,
+        "posterRole": null,
+        "scriptBinding": "not_applicable",
+        "disclosure": "Provided demo asset / Not generated live in this POC"
+      }
+    },
+    {
+      "id": "provided.scent-layering.product-serenity",
+      "type": "product_original_image",
+      "label": "SERENITY — product original",
+      "roles": [
+        "product_identity",
+        "storyboard_source",
+        "deliverable_asset"
+      ],
+      "uri": "/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "mimeType": "image/png",
+      "bytes": 538290,
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "productId": "scn-scent-layering.product.serenity",
+      "visibility": [
+        "campaign_brief",
+        "atelier",
+        "library",
+        "deliverables"
+      ],
+      "source": "user_provided",
+      "rightsScope": "internal_demo",
+      "metadata": {
+        "width": 2000,
+        "height": 2000,
+        "durationMs": null,
+        "frameRate": null,
+        "videoCodec": null,
+        "pixelFormat": null,
+        "audioCodec": null,
+        "posterAssetId": null,
+        "posterRole": null,
+        "scriptBinding": "not_applicable",
+        "disclosure": "Provided demo asset / Not generated live in this POC"
+      }
+    },
+    {
+      "id": "provided.scent-layering.final-preview",
+      "type": "final_preview_video",
+      "label": "SERENITY — Final Video Preview",
+      "roles": [
+        "final_preview",
+        "deliverable_asset"
+      ],
+      "uri": "/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "mimeType": "video/mp4",
+      "bytes": 1315394,
+      "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+      "productId": "scn-scent-layering.product.serenity",
+      "visibility": [
+        "atelier",
+        "library",
+        "deliverables"
+      ],
+      "source": "user_provided",
+      "rightsScope": "internal_demo",
+      "metadata": {
+        "width": 720,
+        "height": 960,
+        "durationMs": 10080,
+        "frameRate": 24,
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "audioCodec": "aac",
+        "posterAssetId": "provided.scent-layering.hero-serenity",
+        "posterRole": "hero_reference",
+        "scriptBinding": "independent_provided_preview",
+        "disclosure": "Provided demo asset / Not generated live in this POC"
+      }
+    }
+  ]
+}

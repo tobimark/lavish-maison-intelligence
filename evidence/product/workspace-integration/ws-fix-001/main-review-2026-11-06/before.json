@@ -1,0 +1,82 @@
+{
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\01-library-A-1440.png": {
+    "sha256": "7a670bd9af212a82fa0824c11c915c924372e2b77572e14b91c398d5032d4291",
+    "mtimeNs": 1793956039458264000
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\02-library-B-href-before-click-1440.png": {
+    "sha256": "17455bce9c2a6430bdd5fa0df81dd63a9deaf108a08f1b59bc3794c13f29f038",
+    "mtimeNs": 1793956039647845000
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\03-atelier-B-1440.png": {
+    "sha256": "94eb0c48ce7e883a1d6baaee00d91e6842e2995ea4299f6e2d0ff662f60d7f1f",
+    "mtimeNs": 1793956040104460300
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\04-deliverables-B-1440.png": {
+    "sha256": "7ed873707ceee49d86342c8f90061e7dfde4419c0caa5cded21ed1b367b188a7",
+    "mtimeNs": 1793956041042715800
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\05-library-A-return-1440.png": {
+    "sha256": "7a670bd9af212a82fa0824c11c915c924372e2b77572e14b91c398d5032d4291",
+    "mtimeNs": 1793956041576087800
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\06-library-all-campaigns-1440.png": {
+    "sha256": "1171c8384ce00ba864ea1162d1fc801ef9db73e271d7925d3ff965208dade22e",
+    "mtimeNs": 1793956041806440800
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\browser-record.json": {
+    "sha256": "6a3512287cf97924a8e2fd31dbe01af02ca563333fd3f4fcfc1e21fb36a9164c",
+    "mtimeNs": 1793956076806197900
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\e2e.log": {
+    "sha256": "da8d53bb02662979d0964db1a3c6ebbb9ace152c6749d382937595bceffcd6d9",
+    "mtimeNs": 1793956043976465600
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\probe.mjs": {
+    "sha256": "c1f9fe20da0c16df9ce884bd91be7acce1541bc436c97304c64f288c75bd5b4e",
+    "mtimeNs": 1793956066487366400
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\regression.log": {
+    "sha256": "2ec5c17f9639397e6a5015cd3f165e2ddf1d4f8c5876c2515a8c4bea505bfd37",
+    "mtimeNs": 1793956206150611700
+  },
+  "evidence\\product\\workspace-integration\\ws-fix-001\\run-2026-11-06T1711\\test-results\\.last-run.json": {
+    "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+    "mtimeNs": 1793956043978465400
+  },
+  "apps\\web\\components\\shell\\AppShell.tsx": {
+    "sha256": "fa4c56ffd5d0deee83ba0beafe9b437c4a42c4d8d1d4f487c7df7eca7e1c53ec",
+    "mtimeNs": 1793955546614313700
+  },
+  "apps\\web\\components\\product\\library\\LibraryPage.tsx": {
+    "sha256": "8611d8931a4b558dcbeea42e5d07134dfb3c0d5a834a6ca83d1bdbde2cad53de",
+    "mtimeNs": 1793955644016899700
+  },
+  "apps\\web\\components\\product\\shared\\workspace-routes.ts": {
+    "sha256": "4db80a5af5cfd88973cec7e59837c7c5e2d9a37cbe62c28950fdf470c004d94c",
+    "mtimeNs": 1793948280508373300
+  },
+  "apps\\web\\components\\product\\shared\\useCampaignWorkspace.ts": {
+    "sha256": "875f088251f67596ce646b2d7d9e690b25f060f8e8746438d818068de46e032e",
+    "mtimeNs": 1793948288025141000
+  },
+  "scenarios\\scent-layering\\1.1.0\\manifest.json": {
+    "sha256": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+    "mtimeNs": 1793892021564811200
+  },
+  "design\\tokens.css": {
+    "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814",
+    "mtimeNs": 1793723563237993600
+  },
+  "assets\\provided\\scent-layering\\1.0.0\\final-preview.mp4": {
+    "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+    "mtimeNs": 1793874921099099300
+  },
+  "assets\\provided\\scent-layering\\1.0.0\\hero-serenity.png": {
+    "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+    "mtimeNs": 1793874921102096800
+  },
+  "assets\\provided\\scent-layering\\1.0.0\\product-serenity.png": {
+    "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+    "mtimeNs": 1793874921104296400
+  }
+}

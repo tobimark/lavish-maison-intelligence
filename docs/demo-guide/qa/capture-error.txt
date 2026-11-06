@@ -1,0 +1,7 @@
+Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+Call log:
+[2m  - attempting scroll into view action[22m
+[2m    - waiting for element to be stable[22m
+[2m    - element is not stable[22m
+[2m  - retrying scroll into view action[22m
+[2m    - waiting for element to be stable[22m

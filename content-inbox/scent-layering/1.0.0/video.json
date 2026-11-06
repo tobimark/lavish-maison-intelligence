@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "videos": [
+      {
+        "id": "scn-scent-layering.video.en-v1",
+        "scriptVersionId": "scn-scent-layering.script.en-v1",
+        "storyboardShotIds": [
+          "scn-scent-layering.shot.en-1",
+          "scn-scent-layering.shot.en-2",
+          "scn-scent-layering.shot.en-3",
+          "scn-scent-layering.shot.en-4"
+        ],
+        "mp4AssetId": "scn-scent-layering.asset.mp4-en",
+        "posterAssetId": "scn-scent-layering.asset.poster-en",
+        "subtitleAssetIds": [
+          "scn-scent-layering.asset.vtt-en"
+        ],
+        "durationMs": 15000,
+        "width": 1080,
+        "height": 1920,
+        "frameRate": 30,
+        "productionMode": "preproduced",
+        "disclosure": "Pre-produced concept video — pending customer-supplied MP4. Render events are Simulated; this draft does not contain a playable video."
+      }
+    ]
+  }
+}

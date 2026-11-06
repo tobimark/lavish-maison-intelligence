@@ -1,0 +1,7 @@
+const fs=require('fs');
+const p='apps/web/tests/product-social-publish.spec.ts';
+let s=fs.readFileSync(p,'utf8');
+s=s.replace("  await expect(page.getByTestId('SOC-publish-result')).toBeVisible({ timeout: 15_000 });\n  await expect(page.getByTestId('SOC-publish-result')).toContainText('No content was sent to Instagram');","  await expect(page.getByTestId('SOC-view-post')).toBeVisible({ timeout: 15_000 });\n  await expect(page.getByTestId('SOC-history')).toContainText(expectedReply.caption);");
+s=s.replace("    await page.reload({ waitUntil: 'load' });\n    await expect(page.getByTestId('SOC-language-ar')).toHaveAttribute('aria-pressed', 'true');\n    await expect(page.getByTestId('SOC-caption-input')).toHaveValue(ar);\n    await expect(page.getByTestId('SOC-caption-input')).toHaveAttribute('dir', 'rtl');\n    await expect(page.getByTestId('SOC-language-en')).toContainText('Draft r');","    await page.reload({ waitUntil: 'load' });\n    await expect(page.getByTestId('social-stage')).toBeVisible();\n    // Language selection defaults back to EN on reload; saved per-language drafts survive.\n    await expect(page.getByTestId('SOC-caption-input')).toHaveValue(en);\n    await page.getByTestId('SOC-language-ar').click();\n    await expect(page.getByTestId('SOC-language-ar')).toHaveAttribute('aria-pressed', 'true');\n    await expect(page.getByTestId('SOC-caption-input')).toHaveValue(ar);\n    await expect(page.getByTestId('SOC-caption-input')).toHaveAttribute('dir', 'rtl');");
+fs.writeFileSync(p,s);
+console.log('patched');

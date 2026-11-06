@@ -1,0 +1,4170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://contracts.lavish-poc.invalid/v1/content-only.schema.json",
+  "title": "Lavish content-only scenario input — pending video is not playable media",
+  "type": "object",
+  "properties": {
+    "manifest": {
+      "$ref": "#/$defs/manifest"
+    },
+    "brand": {
+      "$ref": "#/$defs/brand"
+    },
+    "discovery": {
+      "$ref": "#/$defs/discovery"
+    },
+    "analysis": {
+      "$ref": "#/$defs/analysis"
+    },
+    "script": {
+      "$ref": "#/$defs/script"
+    },
+    "video": {
+      "$ref": "#/$defs/video"
+    },
+    "delivery": {
+      "$ref": "#/$defs/delivery"
+    },
+    "events": {
+      "$ref": "#/$defs/events"
+    },
+    "assets": {
+      "$ref": "#/$defs/assets"
+    },
+    "expected": {
+      "$ref": "#/$defs/expected"
+    }
+  },
+  "required": [
+    "manifest",
+    "brand",
+    "discovery",
+    "analysis",
+    "script",
+    "video",
+    "delivery",
+    "events",
+    "assets",
+    "expected"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "officialName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sku": {
+          "type": "string",
+          "minLength": 1
+        },
+        "factsSourceUrl": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^https://"
+        },
+        "verifiedFacts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "imageAssetIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "officialName",
+        "sku",
+        "factsSourceUrl",
+        "verifiedFacts",
+        "imageAssetIds"
+      ],
+      "additionalProperties": false
+    },
+    "brandData": {
+      "type": "object",
+      "properties": {
+        "brand": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "name": {
+              "const": "Lavish Perfumes"
+            },
+            "logoAssetId": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "tone": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "prohibitedClaims": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "logoAssetId",
+            "tone",
+            "rules",
+            "prohibitedClaims"
+          ],
+          "additionalProperties": false
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/product"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "brand",
+        "products"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "sourceType": {
+          "const": "MOCK"
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "simulatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "disclosure": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "sourceType",
+        "platform",
+        "title",
+        "summary",
+        "simulatedAt",
+        "disclosure"
+      ],
+      "additionalProperties": false
+    },
+    "signal": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "region": {
+          "type": "string",
+          "enum": [
+            "UAE",
+            "Dubai",
+            "Abu Dhabi",
+            "GCC"
+          ]
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "topic",
+        "region",
+        "evidenceIds",
+        "summary"
+      ],
+      "additionalProperties": false
+    },
+    "trend": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signalIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "rising",
+            "stable",
+            "declining",
+            "uncertain"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "window": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            "end": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            }
+          },
+          "required": [
+            "start",
+            "end"
+          ],
+          "additionalProperties": false
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "at": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "Z$"
+              },
+              "value": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "at",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 2
+        },
+        "interpretation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disclosure": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "signalIds",
+        "direction",
+        "unit",
+        "window",
+        "points",
+        "interpretation",
+        "disclosure"
+      ],
+      "additionalProperties": false
+    },
+    "discoveryData": {
+      "type": "object",
+      "properties": {
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1
+        },
+        "signals": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/signal"
+          },
+          "minItems": 1
+        },
+        "trends": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/trend"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "evidence",
+        "signals",
+        "trends"
+      ],
+      "additionalProperties": false
+    },
+    "analysisEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "trendIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "insights": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "recommendation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "trendIds",
+        "evidenceIds",
+        "insights",
+        "rationale",
+        "assumptions",
+        "uncertainties",
+        "recommendation"
+      ],
+      "additionalProperties": false
+    },
+    "brief": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "analysisId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "objective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "audience": {
+          "type": "string",
+          "minLength": 1
+        },
+        "productIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "concept": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "en",
+              "ar"
+            ]
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "keyMessage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cta": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "analysisId",
+        "name",
+        "objective",
+        "markets",
+        "audience",
+        "productIds",
+        "concept",
+        "tone",
+        "channels",
+        "languages",
+        "keyMessage",
+        "cta"
+      ],
+      "additionalProperties": false
+    },
+    "analysisData": {
+      "type": "object",
+      "properties": {
+        "analyses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/analysisEntry"
+          },
+          "minItems": 1
+        },
+        "briefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/brief"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "analyses",
+        "briefs"
+      ],
+      "additionalProperties": false
+    },
+    "shot": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "startMs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "durationMs": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "visual": {
+          "type": "string",
+          "minLength": 1
+        },
+        "voiceover": {
+          "type": "string"
+        },
+        "onScreenText": {
+          "type": "string"
+        },
+        "transition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assetIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "startMs",
+        "durationMs",
+        "visual",
+        "voiceover",
+        "onScreenText",
+        "transition",
+        "assetIds"
+      ],
+      "additionalProperties": false
+    },
+    "subtitle": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "startMs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "endMs": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "startMs",
+        "endMs",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "scriptVersion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "briefId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "language": {
+          "type": "string",
+          "enum": [
+            "en",
+            "ar"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hook": {
+          "type": "string",
+          "minLength": 1
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cta": {
+          "type": "string",
+          "minLength": 1
+        },
+        "durationMs": {
+          "const": 15000
+        },
+        "shots": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shot"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "subtitles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/subtitle"
+          },
+          "minItems": 1
+        },
+        "caption": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hashtags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "briefId",
+        "version",
+        "language",
+        "title",
+        "hook",
+        "message",
+        "cta",
+        "durationMs",
+        "shots",
+        "subtitles",
+        "caption",
+        "hashtags"
+      ],
+      "additionalProperties": false
+    },
+    "scriptData": {
+      "type": "object",
+      "properties": {
+        "versions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/scriptVersion"
+          },
+          "minItems": 2
+        }
+      },
+      "required": [
+        "versions"
+      ],
+      "additionalProperties": false
+    },
+    "videoEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "scriptVersionId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "storyboardShotIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 4,
+          "uniqueItems": true,
+          "maxItems": 4
+        },
+        "mp4AssetId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "posterAssetId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "subtitleAssetIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "durationMs": {
+          "const": 15000
+        },
+        "width": {
+          "const": 1080
+        },
+        "height": {
+          "const": 1920
+        },
+        "frameRate": {
+          "type": "number",
+          "minimum": 1
+        },
+        "productionMode": {
+          "const": "preproduced"
+        },
+        "disclosure": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "scriptVersionId",
+        "storyboardShotIds",
+        "mp4AssetId",
+        "posterAssetId",
+        "subtitleAssetIds",
+        "durationMs",
+        "width",
+        "height",
+        "frameRate",
+        "productionMode",
+        "disclosure"
+      ],
+      "additionalProperties": false
+    },
+    "videoData": {
+      "type": "object",
+      "properties": {
+        "videos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/videoEntry"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "videos"
+      ],
+      "additionalProperties": false
+    },
+    "recipient": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "email": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9.!#$&*+/=?^_`{|}~-]+@[A-Za-z0-9-]+(?:\\.[A-Za-z0-9-]+)*\\.invalid$"
+        },
+        "isSimulated": {
+          "const": true
+        }
+      },
+      "required": [
+        "id",
+        "displayName",
+        "role",
+        "email",
+        "isSimulated"
+      ],
+      "additionalProperties": false
+    },
+    "deliveryPlan": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "scriptVersionId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "videoId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "recipientIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "attachmentAssetIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "channel": {
+          "const": "email"
+        },
+        "scheduledVirtualMs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "disclosure": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "scriptVersionId",
+        "videoId",
+        "recipientIds",
+        "attachmentAssetIds",
+        "subject",
+        "body",
+        "channel",
+        "scheduledVirtualMs",
+        "disclosure"
+      ],
+      "additionalProperties": false
+    },
+    "deliveryRecord": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "planId": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "outcome": {
+              "const": "simulated_delivered"
+            },
+            "attempt": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "failureCode": {
+              "type": "null"
+            },
+            "mode": {
+              "const": "mock"
+            }
+          },
+          "required": [
+            "id",
+            "planId",
+            "outcome",
+            "attempt",
+            "atMs",
+            "failureCode",
+            "mode"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "planId": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "outcome": {
+              "const": "failed"
+            },
+            "attempt": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "failureCode": {
+              "const": "delivery_failed"
+            },
+            "mode": {
+              "const": "mock"
+            }
+          },
+          "required": [
+            "id",
+            "planId",
+            "outcome",
+            "attempt",
+            "atMs",
+            "failureCode",
+            "mode"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "deliveryData": {
+      "type": "object",
+      "properties": {
+        "recipients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/recipient"
+          },
+          "minItems": 1
+        },
+        "plans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/deliveryPlan"
+          },
+          "minItems": 1
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/deliveryRecord"
+          },
+          "minItems": 2
+        }
+      },
+      "required": [
+        "recipients",
+        "plans",
+        "records"
+      ],
+      "additionalProperties": false
+    },
+    "asset": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "logo",
+                "product_image",
+                "image",
+                "video",
+                "poster",
+                "subtitle",
+                "audio"
+              ]
+            },
+            "mimeType": {
+              "type": "string",
+              "enum": [
+                "image/png",
+                "image/jpeg",
+                "image/webp",
+                "video/mp4",
+                "text/vtt",
+                "audio/mpeg",
+                "audio/mp4"
+              ]
+            },
+            "uri": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^/scenario-media/(scent-layering|luxury-gifting|oud-storytelling)/[0-9]+\\.[0-9]+\\.[0-9]+/[A-Za-z0-9_-]+\\.[A-Za-z0-9]+$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sha256": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "width": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "durationMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceUrl": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^https://"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceNote": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rightsStatus": {
+              "const": "approved_for_demo"
+            },
+            "rightsNote": {
+              "type": "string",
+              "minLength": 1
+            },
+            "productIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "mimeType",
+            "uri",
+            "bytes",
+            "sha256",
+            "width",
+            "height",
+            "durationMs",
+            "sourceUrl",
+            "sourceNote",
+            "rightsStatus",
+            "rightsNote",
+            "productIds"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "kind": {
+              "enum": [
+                "video",
+                "poster"
+              ]
+            },
+            "mimeType": {
+              "type": "string",
+              "enum": [
+                "image/png",
+                "image/jpeg",
+                "image/webp",
+                "video/mp4",
+                "text/vtt",
+                "audio/mpeg",
+                "audio/mp4"
+              ]
+            },
+            "uri": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^/scenario-media/(scent-layering|luxury-gifting|oud-storytelling)/[0-9]+\\.[0-9]+\\.[0-9]+/[A-Za-z0-9_-]+\\.[A-Za-z0-9]+$"
+            },
+            "bytes": {
+              "type": "null"
+            },
+            "sha256": {
+              "type": "null"
+            },
+            "width": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "durationMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceUrl": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^https://"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "sourceNote": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rightsStatus": {
+              "const": "pending"
+            },
+            "rightsNote": {
+              "type": "string",
+              "minLength": 1
+            },
+            "productIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "mimeType",
+            "uri",
+            "bytes",
+            "sha256",
+            "width",
+            "height",
+            "durationMs",
+            "sourceUrl",
+            "sourceNote",
+            "rightsStatus",
+            "rightsNote",
+            "productIds"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "assetsData": {
+      "type": "object",
+      "properties": {
+        "assets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/asset"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "assets"
+      ],
+      "additionalProperties": false
+    },
+    "event": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "discovery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "signal.discovered"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "signalId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "signalId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "discovery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "trend.summarized"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "trendId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "trendId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "analysis"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "analysis.presented"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "analysisId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "analysisId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "analysis"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "brief.presented"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "briefId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "briefId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "analysis"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "script.presented"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "scriptVersionId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "scriptVersionId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "analysis"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "script.confirmed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "scriptVersionId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "scriptVersionId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "video"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "video.queued"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "videoId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "videoId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "video"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "video.progressed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "videoId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                },
+                "progress": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              },
+              "required": [
+                "videoId",
+                "progress"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "video"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "video.available"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "videoId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "videoId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "delivery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "delivery.queued"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "planId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "planId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "delivery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "delivery.simulated"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "recordId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+                }
+              },
+              "required": [
+                "recordId"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "discovery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.started"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "discovery"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "discovery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.completed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "discovery"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "discovery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.failed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "discovery"
+                },
+                "code": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "retryable": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "stage",
+                "code",
+                "retryable"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "analysis"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.started"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "analysis"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "analysis"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.completed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "analysis"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "analysis"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.failed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "analysis"
+                },
+                "code": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "retryable": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "stage",
+                "code",
+                "retryable"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "video"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.started"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "video"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "video"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.completed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "video"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "video"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.failed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "video"
+                },
+                "code": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "retryable": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "stage",
+                "code",
+                "retryable"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "delivery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.started"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "delivery"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "delivery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.completed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "delivery"
+                }
+              },
+              "required": [
+                "stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            "scenarioId": {
+              "type": "string",
+              "enum": [
+                "scn-scent-layering",
+                "scn-luxury-gifting",
+                "scn-oud-storytelling"
+              ]
+            },
+            "scenarioVersion": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "sequence": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "atMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stage": {
+              "const": "delivery"
+            },
+            "runKey": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mode": {
+              "const": "mock"
+            },
+            "type": {
+              "const": "stage.failed"
+            },
+            "inputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "outputRefs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "const": "delivery"
+                },
+                "code": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "retryable": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "stage",
+                "code",
+                "retryable"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "scenarioId",
+            "scenarioVersion",
+            "sequence",
+            "atMs",
+            "stage",
+            "runKey",
+            "mode",
+            "type",
+            "inputRefs",
+            "outputRefs",
+            "payload"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "eventsData": {
+      "type": "object",
+      "properties": {
+        "events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "events"
+      ],
+      "additionalProperties": false
+    },
+    "workflow": {
+      "type": "object",
+      "properties": {
+        "discovery": {
+          "type": "string",
+          "enum": [
+            "locked",
+            "ready",
+            "running",
+            "awaiting_confirmation",
+            "completed",
+            "failed",
+            "stale"
+          ]
+        },
+        "analysis": {
+          "type": "string",
+          "enum": [
+            "locked",
+            "ready",
+            "running",
+            "awaiting_confirmation",
+            "completed",
+            "failed",
+            "stale"
+          ]
+        },
+        "video": {
+          "type": "string",
+          "enum": [
+            "locked",
+            "ready",
+            "running",
+            "awaiting_confirmation",
+            "completed",
+            "failed",
+            "stale"
+          ]
+        },
+        "delivery": {
+          "type": "string",
+          "enum": [
+            "locked",
+            "ready",
+            "running",
+            "awaiting_confirmation",
+            "completed",
+            "failed",
+            "stale"
+          ]
+        }
+      },
+      "required": [
+        "discovery",
+        "analysis",
+        "video",
+        "delivery"
+      ],
+      "additionalProperties": false
+    },
+    "checkpoint": {
+      "type": "object",
+      "properties": {
+        "cursorSequence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "workflow": {
+          "$ref": "#/$defs/workflow"
+        },
+        "visibleEntityIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "activeScriptVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "activeVideoId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deliveryRecordIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "cursorSequence",
+        "workflow",
+        "visibleEntityIds",
+        "activeScriptVersionId",
+        "activeVideoId",
+        "deliveryRecordIds"
+      ],
+      "additionalProperties": false
+    },
+    "expectedData": {
+      "type": "object",
+      "properties": {
+        "checkpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/checkpoint"
+          },
+          "minItems": 5
+        }
+      },
+      "required": [
+        "checkpoints"
+      ],
+      "additionalProperties": false
+    },
+    "manifest": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "enum": [
+            "scent-layering",
+            "luxury-gifting",
+            "oud-storytelling"
+          ]
+        },
+        "mode": {
+          "const": "mock"
+        },
+        "timeZone": {
+          "const": "Asia/Dubai"
+        },
+        "locales": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "en",
+              "ar"
+            ]
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "stages": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "discovery"
+            },
+            {
+              "const": "analysis"
+            },
+            {
+              "const": "video"
+            },
+            {
+              "const": "delivery"
+            }
+          ],
+          "minItems": 4,
+          "maxItems": 4,
+          "items": false
+        },
+        "entryBriefId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "entryScriptVersionId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "entryVideoId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "entryDeliveryId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^scn-(scent-layering|luxury-gifting|oud-storytelling)\\.[a-z][a-z0-9-]*\\.[a-zA-Z0-9-]+$"
+        },
+        "authoring": {
+          "type": "object",
+          "properties": {
+            "producer": {
+              "const": "ChatGPT"
+            },
+            "authoredAt": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            "reasoningSummary": {
+              "type": "string",
+              "minLength": 1
+            },
+            "assumptions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "limitations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "reviewStatus": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "reviewed"
+              ]
+            }
+          },
+          "required": [
+            "producer",
+            "authoredAt",
+            "reasoningSummary",
+            "assumptions",
+            "limitations",
+            "reviewStatus"
+          ],
+          "additionalProperties": false
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "enum": [
+                  "brand.json",
+                  "discovery.json",
+                  "analysis.json",
+                  "script.json",
+                  "video.json",
+                  "delivery.json",
+                  "events.json",
+                  "assets.json",
+                  "expected.json"
+                ]
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "sha256": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "path",
+              "bytes",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 9,
+          "maxItems": 9,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "title",
+        "slug",
+        "mode",
+        "timeZone",
+        "locales",
+        "stages",
+        "entryBriefId",
+        "entryScriptVersionId",
+        "entryVideoId",
+        "entryDeliveryId",
+        "authoring",
+        "files"
+      ],
+      "additionalProperties": false
+    },
+    "brand": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/brandData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "discovery": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/discoveryData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/analysisData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "script": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/scriptData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "video": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/videoData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "delivery": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/deliveryData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "events": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/eventsData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/assetsData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "scenarioId": {
+          "type": "string",
+          "enum": [
+            "scn-scent-layering",
+            "scn-luxury-gifting",
+            "scn-oud-storytelling"
+          ]
+        },
+        "scenarioVersion": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "data": {
+          "$ref": "#/$defs/expectedData"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "scenarioId",
+        "scenarioVersion",
+        "data"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

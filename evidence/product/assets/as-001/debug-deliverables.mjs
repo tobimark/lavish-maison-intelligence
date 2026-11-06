@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const browser=await chromium.launch();
+const page=await browser.newPage();
+const logs=[];
+page.on('console',m=>logs.push({type:m.type(),text:m.text()}));
+page.on('pageerror',e=>logs.push({type:'pageerror',text:e.message}));
+await page.goto('http://127.0.0.1:3000/deliverables',{waitUntil:'networkidle'});
+await page.waitForTimeout(4000);
+console.log(JSON.stringify({url:page.url(), logs, body:(await page.locator('main').innerText()).slice(0,500)},null,2));
+await browser.close();

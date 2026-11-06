@@ -1,0 +1,38 @@
+{
+  "reviewedOn": "2026-11-05",
+  "typecheck": "pass",
+  "build": "pass",
+  "unitTests": 9,
+  "browserTests": 7,
+  "browserPort": 3112,
+  "zipChecks": [
+    {
+      "archive": "e2e-content-delivery-pack.zip",
+      "crc": "pass",
+      "attachmentHashes": "pass",
+      "emailMatchesAttempt": "pass",
+      "scriptIdMatchesAttempt": true,
+      "subject": "[SIMULATED · CONTENT ONLY] Browser delivery saved v2",
+      "draftRevision": 2,
+      "firstRecipient": "changed-recipient@lavish-demo.invalid",
+      "noVideo": true,
+      "noRealEmail": true
+    },
+    {
+      "archive": "e2e-content-pack.zip",
+      "crc": "pass",
+      "attachmentHashes": "pass",
+      "emailMatchesAttempt": "pass",
+      "scriptIdMatchesAttempt": true,
+      "subject": "[SIMULATED · CONTENT ONLY] E2E content review",
+      "draftRevision": 1,
+      "firstRecipient": "brand-review@lavish-demo.invalid",
+      "noVideo": true,
+      "noRealEmail": true
+    }
+  ],
+  "schemaAndTokensUnchanged": true,
+  "thirtyAuthorJSONUnchanged": true,
+  "decision": "accepted_content_only",
+  "video": "deferred"
+}

@@ -1,0 +1,548 @@
+{
+  "ok": true,
+  "tool": "validate-campaign-presentation",
+  "inputs": {
+    "presentation": "apps/web/public/campaign-presentation/scent-layering/1.1.0.json",
+    "scenarioDir": "apps/web/public/content-scenarios/scent-layering/1.1.0",
+    "providedAssets": "apps/web/public/presentation-assets/scent-layering.json"
+  },
+  "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+  "summary": {
+    "checks": 106,
+    "passed": 106,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "presentation.schemaVersion",
+      "ok": true,
+      "message": "schemaVersion must be 1.0.0."
+    },
+    {
+      "name": "presentation.scenarioId",
+      "ok": true,
+      "message": "scenarioId must be scn-scent-layering."
+    },
+    {
+      "name": "presentation.mode",
+      "ok": true,
+      "message": "mode must be mock."
+    },
+    {
+      "name": "presentation.packageHash.format",
+      "ok": true,
+      "message": "packageHash must be a lowercase SHA-256 hex string."
+    },
+    {
+      "name": "presentation.scenarioVersion",
+      "ok": true,
+      "message": "scenarioVersion must be a non-empty string."
+    },
+    {
+      "name": "presentation.campaignId",
+      "ok": true,
+      "message": "campaignId must be a non-empty string."
+    },
+    {
+      "name": "presentation.productIds",
+      "ok": true,
+      "message": "productIds must be a non-empty array of unique non-empty strings."
+    },
+    {
+      "name": "presentation.insight",
+      "ok": true,
+      "message": "insight must be an object."
+    },
+    {
+      "name": "presentation.insight.title",
+      "ok": true,
+      "message": "insight.title must be non-empty."
+    },
+    {
+      "name": "presentation.insight.takeaway",
+      "ok": true,
+      "message": "insight.takeaway must be non-empty."
+    },
+    {
+      "name": "presentation.insight.signalIds",
+      "ok": true,
+      "message": "insight.signalIds must be a string array."
+    },
+    {
+      "name": "presentation.insight.trendIds",
+      "ok": true,
+      "message": "insight.trendIds must be a string array."
+    },
+    {
+      "name": "presentation.insight.evidenceIds",
+      "ok": true,
+      "message": "insight.evidenceIds must be a string array."
+    },
+    {
+      "name": "presentation.strategy",
+      "ok": true,
+      "message": "strategy must be an object."
+    },
+    {
+      "name": "presentation.strategy.analysisId",
+      "ok": true,
+      "message": "strategy.analysisId must be non-empty."
+    },
+    {
+      "name": "presentation.strategy.briefId",
+      "ok": true,
+      "message": "strategy.briefId must be non-empty."
+    },
+    {
+      "name": "presentation.strategy.whyThisProduct",
+      "ok": true,
+      "message": "strategy.whyThisProduct must be non-empty."
+    },
+    {
+      "name": "presentation.creative",
+      "ok": true,
+      "message": "creative must be an object."
+    },
+    {
+      "name": "presentation.creative.title",
+      "ok": true,
+      "message": "creative.title must be non-empty."
+    },
+    {
+      "name": "presentation.creative.relationship",
+      "ok": true,
+      "message": "creative.relationship must be illustrative_workflow_with_provided_assets."
+    },
+    {
+      "name": "presentation.creative.scriptVersionIds",
+      "ok": true,
+      "message": "creative.scriptVersionIds must reference exactly two unique script versions."
+    },
+    {
+      "name": "presentation.creative.steps",
+      "ok": true,
+      "message": "creative.steps must contain exactly three steps."
+    },
+    {
+      "name": "presentation.creative.steps[0]",
+      "ok": true,
+      "message": "creative.steps[0] must be a product_identity step with assetId and explanation."
+    },
+    {
+      "name": "presentation.creative.steps[1]",
+      "ok": true,
+      "message": "creative.steps[1] must be a hero step with assetId and explanation."
+    },
+    {
+      "name": "presentation.creative.steps[2]",
+      "ok": true,
+      "message": "creative.steps[2] must be a final_preview step with assetId and explanation."
+    },
+    {
+      "name": "presentation.socialPosts",
+      "ok": true,
+      "message": "socialPosts must be an array."
+    },
+    {
+      "name": "presentation.socialPosts.count",
+      "ok": true,
+      "message": "socialPosts must contain exactly one EN and one AR preset."
+    },
+    {
+      "name": "presentation.socialPosts.languages",
+      "ok": true,
+      "message": "socialPosts must contain exactly one EN and one AR preset."
+    },
+    {
+      "name": "presentation.socialPosts.ids",
+      "ok": true,
+      "message": "socialPosts ids must be present and unique."
+    },
+    {
+      "name": "presentation.socialPosts[0].channel",
+      "ok": true,
+      "message": "channel must be instagram."
+    },
+    {
+      "name": "presentation.socialPosts[0].placement",
+      "ok": true,
+      "message": "placement must be video_post."
+    },
+    {
+      "name": "presentation.socialPosts[0].accountLabel",
+      "ok": true,
+      "message": "accountLabel must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[0].language",
+      "ok": true,
+      "message": "language must be en or ar."
+    },
+    {
+      "name": "presentation.socialPosts[0].sourceScriptVersionId",
+      "ok": true,
+      "message": "sourceScriptVersionId must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[0].videoAssetId",
+      "ok": true,
+      "message": "videoAssetId must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[0].caption",
+      "ok": true,
+      "message": "caption must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[0].cta",
+      "ok": true,
+      "message": "cta must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[0].hashtags",
+      "ok": true,
+      "message": "hashtags must be a non-empty array of non-empty strings."
+    },
+    {
+      "name": "presentation.socialPosts[1].channel",
+      "ok": true,
+      "message": "channel must be instagram."
+    },
+    {
+      "name": "presentation.socialPosts[1].placement",
+      "ok": true,
+      "message": "placement must be video_post."
+    },
+    {
+      "name": "presentation.socialPosts[1].accountLabel",
+      "ok": true,
+      "message": "accountLabel must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[1].language",
+      "ok": true,
+      "message": "language must be en or ar."
+    },
+    {
+      "name": "presentation.socialPosts[1].sourceScriptVersionId",
+      "ok": true,
+      "message": "sourceScriptVersionId must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[1].videoAssetId",
+      "ok": true,
+      "message": "videoAssetId must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[1].caption",
+      "ok": true,
+      "message": "caption must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[1].cta",
+      "ok": true,
+      "message": "cta must be non-empty."
+    },
+    {
+      "name": "presentation.socialPosts[1].hashtags",
+      "ok": true,
+      "message": "hashtags must be a non-empty array of non-empty strings."
+    },
+    {
+      "name": "packageHash.manifestBytes",
+      "ok": true,
+      "message": "packageHash must equal SHA-256 of manifest.json bytes (expected 709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d)."
+    },
+    {
+      "name": "scenario.scenarioId",
+      "ok": true,
+      "message": "presentation scenarioId must equal the published manifest scenarioId."
+    },
+    {
+      "name": "scenario.scenarioVersion",
+      "ok": true,
+      "message": "presentation scenarioVersion must equal the published manifest scenarioVersion."
+    },
+    {
+      "name": "campaign.entryBriefId",
+      "ok": true,
+      "message": "presentation campaignId must equal manifest.entryBriefId."
+    },
+    {
+      "name": "campaign.briefExists",
+      "ok": true,
+      "message": "presentation campaignId must exist in analysis.json briefs."
+    },
+    {
+      "name": "campaign.briefAnalysis",
+      "ok": true,
+      "message": "the campaign brief must reference the presented analysis."
+    },
+    {
+      "name": "product.exists.scn-scent-layering.product.serenity",
+      "ok": true,
+      "message": "presentation product scn-scent-layering.product.serenity must exist in brand.json."
+    },
+    {
+      "name": "product.brief.scn-scent-layering.product.serenity",
+      "ok": true,
+      "message": "presentation product scn-scent-layering.product.serenity must belong to the campaign brief."
+    },
+    {
+      "name": "insight.signal.scn-scent-layering.signal.s1",
+      "ok": true,
+      "message": "insight signal scn-scent-layering.signal.s1 must exist in discovery.json."
+    },
+    {
+      "name": "insight.signal.scn-scent-layering.signal.s2",
+      "ok": true,
+      "message": "insight signal scn-scent-layering.signal.s2 must exist in discovery.json."
+    },
+    {
+      "name": "insight.signal.scn-scent-layering.signal.s3",
+      "ok": true,
+      "message": "insight signal scn-scent-layering.signal.s3 must exist in discovery.json."
+    },
+    {
+      "name": "insight.signal.scn-scent-layering.signal.s4",
+      "ok": true,
+      "message": "insight signal scn-scent-layering.signal.s4 must exist in discovery.json."
+    },
+    {
+      "name": "insight.trend.scn-scent-layering.trend.main",
+      "ok": true,
+      "message": "insight trend scn-scent-layering.trend.main must exist in discovery.json."
+    },
+    {
+      "name": "insight.trend.scn-scent-layering.trend.control",
+      "ok": true,
+      "message": "insight trend scn-scent-layering.trend.control must exist in discovery.json."
+    },
+    {
+      "name": "insight.evidence.scn-scent-layering.evidence.e1",
+      "ok": true,
+      "message": "insight evidence scn-scent-layering.evidence.e1 must exist in discovery.json."
+    },
+    {
+      "name": "insight.evidence.scn-scent-layering.evidence.e2",
+      "ok": true,
+      "message": "insight evidence scn-scent-layering.evidence.e2 must exist in discovery.json."
+    },
+    {
+      "name": "insight.evidence.scn-scent-layering.evidence.e3",
+      "ok": true,
+      "message": "insight evidence scn-scent-layering.evidence.e3 must exist in discovery.json."
+    },
+    {
+      "name": "insight.evidence.scn-scent-layering.evidence.e4",
+      "ok": true,
+      "message": "insight evidence scn-scent-layering.evidence.e4 must exist in discovery.json."
+    },
+    {
+      "name": "insight.evidence.scn-scent-layering.evidence.e5",
+      "ok": true,
+      "message": "insight evidence scn-scent-layering.evidence.e5 must exist in discovery.json."
+    },
+    {
+      "name": "strategy.analysisExists",
+      "ok": true,
+      "message": "strategy.analysisId must exist in analysis.json."
+    },
+    {
+      "name": "strategy.briefExists",
+      "ok": true,
+      "message": "strategy.briefId must equal the campaign brief id."
+    },
+    {
+      "name": "strategy.briefAnalysisId",
+      "ok": true,
+      "message": "strategy.analysisId must equal the campaign brief analysisId."
+    },
+    {
+      "name": "creative.script.scn-scent-layering.script.en-v2",
+      "ok": true,
+      "message": "creative script version scn-scent-layering.script.en-v2 must exist in script.json."
+    },
+    {
+      "name": "creative.script.scn-scent-layering.script.ar-v2",
+      "ok": true,
+      "message": "creative script version scn-scent-layering.script.ar-v2 must exist in script.json."
+    },
+    {
+      "name": "creative.script.languages",
+      "ok": true,
+      "message": "creative.scriptVersionIds must reference one EN and one AR version."
+    },
+    {
+      "name": "creative.script.entry",
+      "ok": true,
+      "message": "creative.scriptVersionIds must include the manifest entry script version."
+    },
+    {
+      "name": "providedAssets.mappingVersion",
+      "ok": true,
+      "message": "provided-assets mappingVersion must be 1.0.0."
+    },
+    {
+      "name": "providedAssets.scenarioId",
+      "ok": true,
+      "message": "provided-assets scenarioId must match the scenario."
+    },
+    {
+      "name": "providedAssets.scenarioVersion",
+      "ok": true,
+      "message": "provided-assets scenarioVersion must match the presentation."
+    },
+    {
+      "name": "providedAssets.campaignId",
+      "ok": true,
+      "message": "provided-assets campaignId must match the presentation."
+    },
+    {
+      "name": "providedAssets.contentStatus",
+      "ok": true,
+      "message": "provided-assets contentStatus must be bound."
+    },
+    {
+      "name": "providedAssets.product",
+      "ok": true,
+      "message": "provided-assets product must be one of the presentation productIds."
+    },
+    {
+      "name": "creative.step.product_identity.exists",
+      "ok": true,
+      "message": "creative product_identity asset provided.scent-layering.product-serenity must exist in provided-assets."
+    },
+    {
+      "name": "creative.step.product_identity.type",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.product-serenity must have type product_original_image."
+    },
+    {
+      "name": "creative.step.product_identity.role",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.product-serenity must carry the product_identity role."
+    },
+    {
+      "name": "creative.step.product_identity.product",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.product-serenity must be bound to the provided product."
+    },
+    {
+      "name": "creative.step.product_identity.bytes",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.product-serenity bytes verified."
+    },
+    {
+      "name": "creative.step.hero.exists",
+      "ok": true,
+      "message": "creative hero asset provided.scent-layering.hero-serenity must exist in provided-assets."
+    },
+    {
+      "name": "creative.step.hero.type",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.hero-serenity must have type hero_image."
+    },
+    {
+      "name": "creative.step.hero.role",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.hero-serenity must carry the hero role."
+    },
+    {
+      "name": "creative.step.hero.product",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.hero-serenity must be bound to the provided product."
+    },
+    {
+      "name": "creative.step.hero.bytes",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.hero-serenity bytes verified."
+    },
+    {
+      "name": "creative.step.final_preview.exists",
+      "ok": true,
+      "message": "creative final_preview asset provided.scent-layering.final-preview must exist in provided-assets."
+    },
+    {
+      "name": "creative.step.final_preview.type",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.final-preview must have type final_preview_video."
+    },
+    {
+      "name": "creative.step.final_preview.role",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.final-preview must carry the final_preview role."
+    },
+    {
+      "name": "creative.step.final_preview.product",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.final-preview must be bound to the provided product."
+    },
+    {
+      "name": "creative.step.final_preview.mimeType",
+      "ok": true,
+      "message": "the final preview provided asset must be a real video/mp4."
+    },
+    {
+      "name": "creative.step.final_preview.duration",
+      "ok": true,
+      "message": "the final preview provided asset must declare a real positive duration."
+    },
+    {
+      "name": "creative.step.final_preview.bytes",
+      "ok": true,
+      "message": "provided asset provided.scent-layering.final-preview bytes verified."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.en-v1.scriptLanguage",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.en-v1 must reference the EN creative script version."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.en-v1.videoExists",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.en-v1 videoAssetId must exist in provided-assets."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.en-v1.videoType",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.en-v1 video must be the final preview video."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.en-v1.videoRole",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.en-v1 video must carry the final_preview role."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.en-v1.videoSameAsCreative",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.en-v1 must use the creative final preview asset."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.ar-v1.scriptLanguage",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.ar-v1 must reference the AR creative script version."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.ar-v1.videoExists",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.ar-v1 videoAssetId must exist in provided-assets."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.ar-v1.videoType",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.ar-v1 video must be the final preview video."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.ar-v1.videoRole",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.ar-v1 video must carry the final_preview role."
+    },
+    {
+      "name": "social.scn-scent-layering.social.instagram.ar-v1.videoSameAsCreative",
+      "ok": true,
+      "message": "social post scn-scent-layering.social.instagram.ar-v1 must use the creative final preview asset."
+    }
+  ],
+  "issues": []
+}

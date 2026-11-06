@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "exportId": "prd-export.999a7baa",
+  "createdAt": "2026-11-05T10:03:57.856Z",
+  "mode": "mock",
+  "campaign": {
+    "campaignId": "scn-scent-layering.brief.main",
+    "opportunityId": "scn-scent-layering.analysis.main",
+    "scenarioId": "scn-scent-layering",
+    "scenarioVersion": "1.0.0",
+    "packageHash": "e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468"
+  },
+  "version": {
+    "campaignId": "scn-scent-layering.brief.main",
+    "versionId": "usr.usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.script.1",
+    "sessionId": "usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468"
+  },
+  "language": "ar",
+  "origin": "saved",
+  "confirmationAtExport": "confirmed_current",
+  "noVideo": true,
+  "noRealEmail": true,
+  "attachments": [
+    {
+      "filename": "brief.json",
+      "mimeType": "application/json",
+      "bytes": 3282,
+      "sha256": "5e57c555f9629887b033c4f418ee2370a13eeb4f889d1209568fb34b9b189893"
+    },
+    {
+      "filename": "script.json",
+      "mimeType": "application/json",
+      "bytes": 4730,
+      "sha256": "b8a4717c7a5078543748ef4db09dcc220fb41bdb74e9d4bb59a3be5801c6eaa8"
+    },
+    {
+      "filename": "subtitles-ar.vtt",
+      "mimeType": "text/vtt",
+      "bytes": 297,
+      "sha256": "6b68f0076d58218d25d257dcf2ca8ce99ac6d7f7edc7acde429f4ab22075835f"
+    },
+    {
+      "filename": "storyboard.html",
+      "mimeType": "text/html",
+      "bytes": 4368,
+      "sha256": "41bb57723451cb7e6e77a96766c1a9c6f995cfe6b822aa5723e0d1fbf40c71ef"
+    },
+    {
+      "filename": "media/oud.jpg",
+      "mimeType": "image/jpeg",
+      "bytes": 123608,
+      "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3"
+    },
+    {
+      "filename": "media/perla.png",
+      "mimeType": "image/png",
+      "bytes": 1554254,
+      "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724"
+    },
+    {
+      "filename": "media/logo.png",
+      "mimeType": "image/png",
+      "bytes": 114691,
+      "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966"
+    },
+    {
+      "filename": "README.txt",
+      "mimeType": "text/plain",
+      "bytes": 1061,
+      "sha256": "b5aedb57d262d85b0e297b3436e2c5c89ca3c7600cb24a5c527fc28de065a275"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Main-controller technical intake normalization; original archive and extracted source unchanged",
+  "changes": [
+    {
+      "file": "delivery.json",
+      "pointer": "/data/plans/0/disclosure",
+      "before": "Counterfactual future demo delivery plan. Attachment IDs include a PLANNED 15-second media asset not present; no actual email, attachment transfer or delivery occurred.",
+      "after": "Simulated delivery only. Counterfactual future demo delivery plan. Attachment IDs include a PLANNED 15-second media asset not present; no actual email, attachment transfer or delivery occurred.",
+      "shaBefore": "e35e1414f05a6f12ed880080198ffa608590d1213d1a9ff52ce50c28057f5d79",
+      "shaAfter": "bf1e29635a03029414c178f275d18d6cf02c53e0a86b871806a27fff4d49a141",
+      "reason": "Explicit technical disclosure vocabulary required by current validator; no creative text or media claims changed."
+    },
+    {
+      "file": "video.json",
+      "pointer": "/data/videos/0/disclosure",
+      "before": "PLANNED 15-second, 1080x1920 four-shot English concept film; no matching MP4/poster exists. Resolution/fps are targets, not measurements. The separate user-provided 10.08-second 720x960 clip is independent and must not be treated as this video or paired with its 15-second subtitles.",
+      "after": "Planned pre-produced concept film; NOT PRODUCED OR SUPPLIED. PLANNED 15-second, 1080x1920 four-shot English concept film; no matching MP4/poster exists. Resolution/fps are targets, not measurements. The separate user-provided 10.08-second 720x960 clip is independent and must not be treated as this video or paired with its 15-second subtitles.",
+      "shaBefore": "f4eae9d6fee875246716e340a059f2cc55706b84cff3740935d18da2ed0421df",
+      "shaAfter": "3cbf2cd4144b9b2cad652d6aba76a2bf9bc15da5642602a3af5138706ae29e1a",
+      "reason": "Explicit technical disclosure vocabulary required by current validator; no creative text or media claims changed."
+    },
+    {
+      "file": "manifest.json",
+      "reason": "Recompute only the two modified disclosure file entries; author reviewStatus remains pending.",
+      "shaBefore": "e5c8c67df98e162050f7a4c164a100c64e851df18eda4fa7e0118288c4216297",
+      "shaAfter": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d"
+    }
+  ]
+}

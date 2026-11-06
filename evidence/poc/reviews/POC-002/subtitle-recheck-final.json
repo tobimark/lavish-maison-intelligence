@@ -1,0 +1,73 @@
+{
+  "scope": "TEST_ONLY independent subtitle CLI probe, not a customer package",
+  "inputVtt": "WEBVTT\n\n00:00:00.000 --> 00:00:01.000\nExpected\n\n00:01.000 --> 00:02.000\nUnexpected extra cue\n",
+  "scriptExpectedCueCount": 1,
+  "result": {
+    "exit": 1,
+    "stderr": ""
+  },
+  "report": {
+    "schemaVersion": "1.0.0",
+    "checkedAt": "2026-11-04T11:31:25.398Z",
+    "scope": "scenario",
+    "scenarioId": "scn-scent-layering",
+    "scenarioVersion": "1.0.0",
+    "packageHash": "cef41b3c695cef0c94d63cbd29f2f5810d119faba47d92b070925c37c6a416fa",
+    "layers": [
+      {
+        "name": "L1",
+        "status": "not_run"
+      },
+      {
+        "name": "L2",
+        "status": "not_run"
+      },
+      {
+        "name": "L3",
+        "status": "not_run"
+      },
+      {
+        "name": "L4",
+        "status": "not_run"
+      },
+      {
+        "name": "L5",
+        "status": "fail"
+      }
+    ],
+    "errors": [
+      {
+        "code": "SUBTITLE_CUE_COUNT_MISMATCH",
+        "file": "assets.json",
+        "jsonPointer": "/data/assets/0/uri",
+        "message": "Subtitle has 2 cue(s); bound script scn-scent-layering.script.en has 1."
+      }
+    ],
+    "warnings": [
+      "ffprobe is NOT_RUN: no local ffprobe executable was found. Browser metadata/playback/seek checks still run, but L5 cannot be reported as PASS without codec/pixel-format/duration probing."
+    ],
+    "runnable": false,
+    "media": [
+      {
+        "id": "scn-scent-layering.asset.sub",
+        "kind": "subtitle",
+        "uri": "/scenario-media/scent-layering/1.0.0/review.vtt",
+        "status": "fail",
+        "httpStatus": 200,
+        "finalUrl": "http://127.0.0.1:61843/scenario-media/scent-layering/1.0.0/review.vtt",
+        "contentType": "text/vtt",
+        "bytes": 93,
+        "sha256": "867efef3010b34dc71f176f9df993ff85a0486dc350b5a27fa6e08a89bc01905",
+        "subtitle": {
+          "cues": 2,
+          "scriptVersionId": "scn-scent-layering.script.en",
+          "textMatched": false,
+          "parseErrors": []
+        }
+      }
+    ],
+    "baseUrl": "http://127.0.0.1:61843",
+    "ffprobe": "not_run",
+    "probeAttempted": false
+  }
+}

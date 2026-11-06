@@ -1,0 +1,16 @@
+const fs=require('fs');
+const p='apps/web/components/product/Overview.tsx';
+let s=fs.readFileSync(p,'utf8');
+s=s.replace("import { formatDate, getBrowserApi } from '../poc/browser-api';","import { formatDate, getBrowserApi } from '../poc/browser-api';\nimport { useCampaignWorkspace } from './shared/useCampaignWorkspace';");
+s=s.replace("/** One prepared case, one exact campaign version. The CTA always opens this Journey. */\nconst SERENITY_JOURNEY = '/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0';\n\n","");
+s=s.replace("const CASE_STAGES = [\n  { id: 'insight', index: '01', label: 'Market insight', purpose: 'What the simulated signals suggest' },\n  { id: 'strategy', index: '02', label: 'Campaign idea', purpose: 'Why SERENITY, and the brief behind it' },\n  { id: 'creative', index: '03', label: 'Creative development', purpose: 'How the supplied assets become a story' },\n  { id: 'social', index: '04', label: 'Social post', purpose: 'The Instagram video post, EN and AR' },\n] as const;","const CASE_STAGES = [\n  { id: 'insight', index: '01', label: 'Market insight', purpose: 'What the simulated signals suggest', path: '/radar' },\n  { id: 'strategy', index: '02', label: 'Campaign idea', purpose: 'Why SERENITY, and the brief behind it', path: '/opportunities' },\n  { id: 'creative', index: '03', label: 'Creative development', purpose: 'How the supplied assets become a story', path: '/atelier' },\n  { id: 'social', index: '04', label: 'Social post', purpose: 'The Instagram video post, EN and AR', path: '/deliverables' },\n] as const;");
+s=s.replace("export function Overview() {\n  const [state, setState]", "export function Overview() {\n  const workspace = useCampaignWorkspace();\n  const campaignHref = workspace.hrefFor('/radar');\n  const [state, setState]");
+s=s.replace("href={SERENITY_JOURNEY}\n              className={styles.primaryAction}","href={campaignHref}\n              className={styles.primaryAction}");
+s=s.replace("href={workspace.href}\n                className={styles.workspaceLink}","href={workspace.navHref(workspace.id)}\n                className={styles.workspaceLink}");
+s=s.replace("href={SERENITY_JOURNEY} className={styles.link} data-control-id=\"OV-journey-open\">Open the full journey</Link>","href={campaignHref} className={styles.link} data-control-id=\"OV-journey-open\">Open the campaign</Link>");
+s=s.replace("The Journey explains each stage with its own evidence, brief, provided creative or social preset. Read it in order or open any stage directly.","Each stage now lives in its own workspace: evidence in Radar, the case for SERENITY in Opportunities, the provided creative in Atelier and the social post in Deliverables.");
+s=s.replace("href={`${SERENITY_JOURNEY}&stage=${stage.id}`}","href={workspace.hrefFor(stage.path)}");
+s=s.replace("className={styles.caseStep}","className={styles.caseStep}");
+s=s.replace("{ id: 'overview', label: 'Overview', href: '/' },","{ id: 'overview', label: 'Overview', href: '/' },");
+fs.writeFileSync(p,s);
+console.log('patched overview');

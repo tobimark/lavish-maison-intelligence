@@ -1,0 +1,15 @@
+{
+  "preparedOn": "2026-11-05",
+  "scope": "interactive_mock_product",
+  "routeSpecifications": 6,
+  "taskSpecifications": 9,
+  "taskDependencyGraph": "acyclic",
+  "auditSpecificationRows": 88,
+  "controlIds": "unique",
+  "schemasAndTokens": "frozen hashes unchanged",
+  "typecheck": "pass",
+  "implementation": "not_started",
+  "browserTests": "not_run",
+  "visualReview": "not_run",
+  "dispatch": "not_configured"
+}

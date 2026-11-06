@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "title": "Scent Layering — Your signature. In layers.",
+  "slug": "scent-layering",
+  "mode": "mock",
+  "timeZone": "Asia/Dubai",
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "stages": [
+    "discovery",
+    "analysis",
+    "video",
+    "delivery"
+  ],
+  "entryBriefId": "scn-scent-layering.brief.signature",
+  "entryScriptVersionId": "scn-scent-layering.script.en-v1",
+  "entryVideoId": "scn-scent-layering.video.en-v1",
+  "entryDeliveryId": "scn-scent-layering.delivery.review-pack",
+  "authoring": {
+    "producer": "ChatGPT",
+    "authoredAt": "2026-11-05T00:00:00Z",
+    "reasoningSummary": "Synthetic guide and self-expression signals motivate an exploratory two-product concept; a stable gifting control keeps the recommendation selective. Verified product descriptions support narrative contrast, not a proven blended result. Four timed shots, a preset render narrative and an explicitly simulated review email share one ID chain.",
+    "assumptions": [
+      "The demonstration addresses adult fragrance enthusiasts in the UAE; this audience is an editorial choice, not inferred customer targeting.",
+      "Product exploration is an appropriate call to action for a concept review; no conversion uplift is forecast.",
+      "A pairing concept is acceptable for internal review pending brand approval and sensory testing."
+    ],
+    "limitations": [
+      "DRAFT ONLY: not a runnable or approved customer package.",
+      "There is no live social listening or measured market validation.",
+      "The product pairing has not been sensory-tested or officially endorsed.",
+      "Arabic copy needs native-language and brand review.",
+      "The matching MP4 and poster are not yet supplied.",
+      "Missing MP4/poster assets deliberately have null byte/hash and pending rights, violating runnable Schema until real media is received.",
+      "Only the English script is the proposed entry video; Arabic script/VTT do not imply an Arabic film exists.",
+      "Synthetic time-series and event durations are designed demonstration pacing, not observations or processing-time claims."
+    ],
+    "reviewStatus": "pending"
+  },
+  "files": [
+    {
+      "path": "brand.json",
+      "bytes": 2121,
+      "sha256": "b825fb5c006a7d8f6bc627f1426ec1c2e3b2626de74d085636ea45b6a27845f8"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 5812,
+      "sha256": "3d8b45bd07e222a28f4ad33d852de74f11bce73b32ee3530a5d1a4d827f1bbdd"
+    },
+    {
+      "path": "analysis.json",
+      "bytes": 4116,
+      "sha256": "2b7eba6d97a358d3ad62e5758ace3fd3843a3448bb8246b28613e298d7614881"
+    },
+    {
+      "path": "script.json",
+      "bytes": 9257,
+      "sha256": "dd083d99f0636a24692ad0dd1541974b3bf5c027fecae4e93fff912e35e7ff2c"
+    },
+    {
+      "path": "video.json",
+      "bytes": 981,
+      "sha256": "14b63881d363c662592ea61188e04f4ab8317b676d7b0f02ade74e08d8cf6525"
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 2765,
+      "sha256": "1ac172b78604118fa135befb12b4ff20712b767b92d626213163bde32448b2b4"
+    },
+    {
+      "path": "events.json",
+      "bytes": 15002,
+      "sha256": "e170c82f32ba07e7ed222ab794a3dcebecf2aad7332cf3a9bc7f1ffa8794ea49"
+    },
+    {
+      "path": "assets.json",
+      "bytes": 5995,
+      "sha256": "e1b3db78d1df11eca2a0a56cc8bd5a909841f7e7e1cd760cfd5b577ed820c043"
+    },
+    {
+      "path": "expected.json",
+      "bytes": 6091,
+      "sha256": "8c78da80fa3f22403019aea22ba26b8d533abfe49badac53c1b67f872a784c33"
+    }
+  ]
+}

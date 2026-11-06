@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-04T11:22:10.394Z",
+  "files": [
+    {
+      "path": "scripts/poc/verify-media.mjs",
+      "bytes": 34857,
+      "sha256": "acfbda858d61f59dc4d7cd9e5ed2ff4eca9f5328a840d2e1092430ffab566cd2"
+    },
+    {
+      "path": "tests/poc/media-validation.test.ts",
+      "bytes": 24593,
+      "sha256": "20d3b8e0ec1499df26d26d398ad694bbaa2e09c13db3a5a4de059449b3a1fd57"
+    },
+    {
+      "path": "contracts/poc/scenario.schema.json",
+      "bytes": 108148,
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a"
+    },
+    {
+      "path": "design/tokens.css",
+      "bytes": 2609,
+      "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+    },
+    {
+      "path": "evidence/poc/media/technical-sample-report.json",
+      "bytes": 3062,
+      "sha256": "8bd1b2d6656847a53004d4890b0b56fc17cfb3a57a888e17645b1f1445e746c7"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "mode": "mock",
+  "campaignId": "scn-scent-layering.brief.main",
+  "opportunityId": "scn-scent-layering.analysis.main",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "packageHash": "709abfdeb11f28a316ca6709c751f21cbcabdcb7cf30e4756418d9d8f46f854d",
+  "brief": {
+    "id": "scn-scent-layering.brief.main",
+    "analysisId": "scn-scent-layering.analysis.main",
+    "name": "SERENITY — A Story in Layers",
+    "objective": "Invite Lavish audiences to explore SERENITY through a refined creative story of light, floral feeling and soft musk language, without a performance claim.",
+    "markets": [
+      "UAE",
+      "GCC"
+    ],
+    "audience": "Illustrative premium-fragrance audience in the UAE/GCC interested in the emotional and visual character of a signature scent; not a measured segment.",
+    "productIds": [
+      "scn-scent-layering.product.serenity"
+    ],
+    "concept": "A single SERENITY bottle anchors a sequence of visual impressions: a luminous introduction, floral softness, warm quiet textures and a clear Lavish signature. “Layers” refers to the creative narrative of one perfume, not physical perfume mixing or a verified note sequence.",
+    "tone": "Warm, cinematic, understated, graceful and fact-conscious; spare typography and generous negative space.",
+    "channels": [
+      "Instagram Reels (concept)",
+      "TikTok (concept)"
+    ],
+    "languages": [
+      "en",
+      "ar"
+    ],
+    "keyMessage": "One SERENITY fragrance; more than one way to experience its character through creative storytelling. Official descriptors: citrus, floral, musk.",
+    "cta": "Discover SERENITY"
+  },
+  "analysis": {
+    "id": "scn-scent-layering.analysis.main",
+    "insights": [
+      "The simulated source set suggests a possible creative format: express one fragrance as a succession of sensory impressions, not as a verified combination of different perfumes.",
+      "For SERENITY, the official citrus / floral / musk description provides limited, usable vocabulary. Warm lighting, stone and branch imagery can establish mood but do not prove ingredients.",
+      "A clean SERENITY identity photograph and an independently supplied 10.08-second product preview provide a coherent visual basis for a reviewable creative concept."
+    ],
+    "rationale": "SERENITY is a verified Lavish Perfumes product with official references to citrus, floral and musk. The creative response is to reveal shifting facets of one product through light, texture and a calm closing signature. This fits a product-led luxury editorial without implying the fragrance was tested with other products, identifying décor as ingredients, or asserting top/heart/base note positions.",
+    "recommendation": "Present “SERENITY — A Story in Layers” as a reviewable, single-product creative concept. Lead with the supplied brand images, make an independent 15-second EN/AR four-shot concept script available for editing, and show the real 10.08-second user-provided clip as a separate video preview. Offer no unsupported efficacy or layering claim.",
+    "assumptions": [
+      "A hypothetical UAE/GCC premium-fragrance audience might be receptive to a quiet sensory story, but no survey or platform analytics has established this.",
+      "The supplied SERENITY lifestyle and product-original images may be reused for internal POC presentation, pending separate approval for public advertising.",
+      "The 15-second concept film is a proposed storyboard only; the provided 10.08-second clip is an independent preview, not that completed film."
+    ],
+    "uncertainties": [
+      "All five source signals and both trend series are synthetic demo content; no social platform was queried.",
+      "Product capacity, performance, note pyramid and provenance are not verified by the supplied material.",
+      "The user-provided 10.08-second clip has no validated script/shot timing equivalence to the 15-second concept.",
+      "Arabic translation and visual claims require a native-language and Lavish brand review before publication.",
+      "No 15-second concept MP4/poster or genuine email delivery exists in this authoring bundle."
+    ],
+    "evidenceIds": [
+      "scn-scent-layering.evidence.e1",
+      "scn-scent-layering.evidence.e2",
+      "scn-scent-layering.evidence.e3",
+      "scn-scent-layering.evidence.e4",
+      "scn-scent-layering.evidence.e5"
+    ],
+    "trendIds": [
+      "scn-scent-layering.trend.main",
+      "scn-scent-layering.trend.control"
+    ]
+  }
+}

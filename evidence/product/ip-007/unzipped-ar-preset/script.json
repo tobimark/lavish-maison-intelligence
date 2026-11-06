@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "mode": "mock",
+  "id": "scn-luxury-gifting.script.ar-v1",
+  "campaignId": "scn-luxury-gifting.brief.main",
+  "sessionId": null,
+  "origin": "preset",
+  "language": "ar",
+  "title": "الهدية تبدأ بفكرة.",
+  "hook": "الهدية تبدأ بفكرة.",
+  "message": "هذا تصور إبداعي تجريبي يستلهم المعلومات المعتمدة عن منتجات Lavish Perfumes، ولا يثبت اتجاهات سوقية أو نتائج استخدام.",
+  "cta": "اكتشف العطور.",
+  "durationMs": 15000,
+  "shots": [
+    {
+      "id": "scn-luxury-gifting.shot.ar-1",
+      "startMs": 0,
+      "durationMs": 3200,
+      "visual": "Close opening on a blank matte-ivory typographic card with plenty of negative space. Use no physical gift box; typography alone implies consideration. Place approved PERLA product image as a small partial reveal in a secondary frame, intact. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "الهدية تبدأ بفكرة.",
+      "transition": "Cut from black; fade in text over 180ms.",
+      "assetIds": [
+        "scn-luxury-gifting.asset.perla"
+      ]
+    },
+    {
+      "id": "scn-luxury-gifting.shot.ar-2",
+      "startMs": 3200,
+      "durationMs": 3800,
+      "visual": "Scale up the approved PERLA 50ML UNISEX original product image from a wide ivory background with subtle 2D movement. Keep bottle and label undistorted; no invented packaging or bow. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "اختر بعناية.",
+      "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+      "assetIds": [
+        "scn-luxury-gifting.asset.perla"
+      ]
+    },
+    {
+      "id": "scn-luxury-gifting.shot.ar-3",
+      "startMs": 7000,
+      "durationMs": 4200,
+      "visual": "Position the same PERLA original centrally with a separate unbranded paper-shaped graphic in the background. The graphic is editorial only, not an included card or service. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "واجعل اللحظة شخصية.",
+      "transition": "Soft 180ms cross-dissolve on shot boundary; product marks remain stable.",
+      "assetIds": [
+        "scn-luxury-gifting.asset.perla"
+      ]
+    },
+    {
+      "id": "scn-luxury-gifting.shot.ar-4",
+      "startMs": 11200,
+      "durationMs": 3800,
+      "visual": "End on the original PERLA image and approved Lavish square logo as distinct, separate tiles with the CTA text below, not over the bottle label. Arabic creative version: use right-to-left text alignment and native font, preserve Latin product and brand names.",
+      "voiceover": "",
+      "onScreenText": "Lavish Perfumes · اكتشف العطور.",
+      "transition": "Hold final composition and fade to matte at exactly 15000ms.",
+      "assetIds": [
+        "scn-luxury-gifting.asset.perla",
+        "scn-luxury-gifting.asset.logo"
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "id": "scn-luxury-gifting.subtitle.ar-1",
+      "startMs": 180,
+      "endMs": 3060,
+      "text": "الهدية تبدأ بفكرة."
+    },
+    {
+      "id": "scn-luxury-gifting.subtitle.ar-2",
+      "startMs": 3380,
+      "endMs": 6860,
+      "text": "اختر بعناية."
+    },
+    {
+      "id": "scn-luxury-gifting.subtitle.ar-3",
+      "startMs": 7180,
+      "endMs": 11060,
+      "text": "واجعل اللحظة شخصية."
+    },
+    {
+      "id": "scn-luxury-gifting.subtitle.ar-4",
+      "startMs": 11380,
+      "endMs": 14860,
+      "text": "Lavish Perfumes · اكتشف العطور."
+    }
+  ],
+  "caption": "تصور إبداعي توضيحي لعلامة Lavish Perfumes، وليس دليلاً على اتجاه سوقي فعلي أو نتيجة استخدام مؤكدة.",
+  "hashtags": [
+    "#LavishPerfumes",
+    "#هدايا"
+  ],
+  "sourceScriptVersionId": "scn-luxury-gifting.script.ar-v1",
+  "parentVersionId": "scn-luxury-gifting.script.ar-v1",
+  "confirmation": "unconfirmed",
+  "noVideo": true,
+  "noRealEmail": true
+}

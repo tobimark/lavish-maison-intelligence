@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "brand": {
+      "id": "scn-scent-layering.brand.lavish",
+      "name": "Lavish Perfumes",
+      "logoAssetId": "scn-scent-layering.asset.logo",
+      "tone": [
+        "Refined",
+        "Inviting",
+        "Sensory without performance claims"
+      ],
+      "rules": [
+        "Keep official product names in Latin script in both locales.",
+        "Preserve original bottles, labels, image proportions and supplied Logo.",
+        "Clearly label all discovery, analysis, render events and delivery as Mock or Simulated.",
+        "Present the pairing as an exploration concept, not an officially tested layering formula."
+      ],
+      "prohibitedClaims": [
+        "Unverified longevity, projection or medical benefits.",
+        "Claims that this pairing is officially endorsed or tested by Lavish.",
+        "Invented current sales, growth, customer quotes or platform endorsement.",
+        "Real-time generation or real email delivery claims."
+      ]
+    },
+    "products": [
+      {
+        "id": "scn-scent-layering.product.lavish-oud",
+        "officialName": "LAVISH OUD",
+        "sku": "6290360532790 / 101653",
+        "factsSourceUrl": "https://lavishperfumes.com/product/lavish-oud/",
+        "verifiedFacts": [
+          "Official product title: LAVISH OUD.",
+          "Official description refers to oud, spices and floral notes."
+        ],
+        "imageAssetIds": [
+          "scn-scent-layering.asset.oud"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.product.perla",
+        "officialName": "PERLA 50ML UNISEX",
+        "sku": "6290360532820 / 101691",
+        "factsSourceUrl": "https://lavishperfumes.com/product/perla-50ml-unisex/",
+        "verifiedFacts": [
+          "Official product title: PERLA 50ML UNISEX.",
+          "50 ml; unisex, as stated in the official title.",
+          "Official description refers to floral, fruity and musk notes."
+        ],
+        "imageAssetIds": [
+          "scn-scent-layering.asset.perla"
+        ]
+      }
+    ]
+  }
+}

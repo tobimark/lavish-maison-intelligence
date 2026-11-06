@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "title": "SERENITY — A Story in Layers (Scent Layering concept)",
+  "slug": "scent-layering",
+  "mode": "mock",
+  "timeZone": "Asia/Dubai",
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "stages": [
+    "discovery",
+    "analysis",
+    "video",
+    "delivery"
+  ],
+  "entryBriefId": "scn-scent-layering.brief.main",
+  "entryScriptVersionId": "scn-scent-layering.script.en-v2",
+  "entryVideoId": "scn-scent-layering.video.en-v2",
+  "entryDeliveryId": "scn-scent-layering.plan.en-v2",
+  "authoring": {
+    "producer": "ChatGPT",
+    "authoredAt": "2026-11-05T14:53:11Z",
+    "reasoningSummary": "Offline SERENITY-only concept inference from supplied product facts and media frames. Five explicitly synthetic social-format signals feed two synthetic indices, one product-grounded Lavish analysis, new English and Arabic 15-second scripts and hypothetical future replay/delivery. The supplied 10.08-second video is separately registered as an independent Provided Preview.",
+    "assumptions": [
+      "Scent Layering remains a legacy scenario container; “layers” means a creative sequence of impressions within one SERENITY fragrance, not verified mixing with another product.",
+      "A quiet fragrance story may interest a hypothetical UAE/GCC audience; none of the synthetic data establish demand.",
+      "The three supplied files and user-provided logo may be reused for internal demo; external advertising rights require separate confirmation."
+    ],
+    "limitations": [
+      "No external social platform data was collected; signal values, source examples and chart points are purely synthetic.",
+      "The official source refers to citrus, floral and musk; exact note order, bottle capacity and ingredient origin are not verified.",
+      "The user-supplied 10.08-second, 720x960, 3:4 MP4 is NOT the schema-required 15-second, 1080x1920 concept film, nor an output of this POC.",
+      "The matching 15-second MP4 and poster are absent; bytes/hash/rights remain null/pending and the known corresponding strict schema failures are expected.",
+      "Do not attach 15-second concept subtitles to the 10.08-second provided preview; no exact timing/transcript match was verified.",
+      "The events after analysis are counterfactual future replay fixtures, not proof of actual render, attachment transfer or sent email.",
+      "Arabic text requires native language and Lavish brand review; rights to music and public campaign use remain unverified."
+    ],
+    "reviewStatus": "pending"
+  },
+  "files": [
+    {
+      "path": "brand.json",
+      "bytes": 2744,
+      "sha256": "7efd356edb8030af98a16b3159d471879608b8566643d304b0227a65aa72043a"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 7618,
+      "sha256": "2e476f76968b83cc4c990a32cdf61bc573dbc017eab928111055255168425356"
+    },
+    {
+      "path": "analysis.json",
+      "bytes": 4609,
+      "sha256": "1f1a4d4e864c59b07ff88c3c8cad435615c17dd9f4050af693009af592f4f197"
+    },
+    {
+      "path": "script.json",
+      "bytes": 9951,
+      "sha256": "ea8e1e035bcafcca9b1df85702301151bbb1825c051d97f99ca54eeda8a750ca"
+    },
+    {
+      "path": "video.json",
+      "bytes": 1228,
+      "sha256": "3cbf2cd4144b9b2cad652d6aba76a2bf9bc15da5642602a3af5138706ae29e1a"
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 3443,
+      "sha256": "bf1e29635a03029414c178f275d18d6cf02c53e0a86b871806a27fff4d49a141"
+    },
+    {
+      "path": "events.json",
+      "bytes": 16399,
+      "sha256": "58f0dc85313fd4a656227d19218a28f6c2e20f043a3bce68d5e0dce702d07d0f"
+    },
+    {
+      "path": "assets.json",
+      "bytes": 5381,
+      "sha256": "a944f435207abeacaf47620eac91a62085c165893af11d70cec2791947f99874"
+    },
+    {
+      "path": "expected.json",
+      "bytes": 6244,
+      "sha256": "896ee2f7dbb34dba687692fd94b0a45d1228eb08aa54cf525a3334822f198917"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "data": {
+    "versions": [
+      {
+        "id": "scn-scent-layering.script.en-v2",
+        "briefId": "scn-scent-layering.brief.main",
+        "version": 2,
+        "language": "en",
+        "title": "SERENITY — A Story in Layers",
+        "hook": "A moment of light.",
+        "message": "One fragrance, a quiet sequence of impressions inspired by the official citrus, floral and musk description. This is a visual concept, not a verified scent progression.",
+        "cta": "Discover SERENITY",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-scent-layering.shot.en-v2-1",
+            "startMs": 0,
+            "durationMs": 3200,
+            "visual": "Set SERENITY product-original image at true aspect ratio on a quiet ivory field. A restrained glow enters the frame. A sensory opening is an art-direction device; no literal fruit or top-note order is claimed. Set text in restrained English editorial typography with safe mobile margins.",
+            "voiceover": "",
+            "onScreenText": "A moment of light.",
+            "transition": "Fade up from ivory; gentle light reveal.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-original"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.en-v2-2",
+            "startMs": 3200,
+            "durationMs": 3800,
+            "visual": "Use the approved SERENITY lifestyle hero and soft floral-inspired shadows. The small decorative flower in the image is a prop; do not identify its species as an ingredient. Keep bottle mark fully visible. Set text in restrained English editorial typography with safe mobile margins.",
+            "voiceover": "",
+            "onScreenText": "A floral impression.",
+            "transition": "150ms dissolve preserving bottle label and aspect ratio.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-hero",
+              "scn-scent-layering.asset.serenity-original"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.en-v2-3",
+            "startMs": 7000,
+            "durationMs": 4200,
+            "visual": "Warm amber-lit still-life with SERENITY and stone/branch environment used only as mood. A gentle slow zoom or photographic pan suggests softness, not a demonstrated fragrance effect or ingredient origin. Set text in restrained English editorial typography with safe mobile margins.",
+            "voiceover": "",
+            "onScreenText": "A softer, musk-inspired mood.",
+            "transition": "Gentle transition into warm shadow; no product transformation.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-hero",
+              "scn-scent-layering.asset.serenity-original"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.en-v2-4",
+            "startMs": 11200,
+            "durationMs": 3800,
+            "visual": "Return to a clean SERENITY identity frame and then hold the unaltered Lavish square logo in a properly proportioned tile. End on the product name and editorial CTA with no price, claim, promotion or simulated generation badge embedded in actual creative copy. Set text in restrained English editorial typography with safe mobile margins.",
+            "voiceover": "",
+            "onScreenText": "SERENITY · Lavish Perfumes",
+            "transition": "Hold brand identity; fade to neutral at exactly 15000ms.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-original",
+              "scn-scent-layering.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-scent-layering.subtitle.en-v2-1",
+            "startMs": 180,
+            "endMs": 3040,
+            "text": "A moment of light."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.en-v2-2",
+            "startMs": 3380,
+            "endMs": 6840,
+            "text": "A floral impression."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.en-v2-3",
+            "startMs": 7180,
+            "endMs": 11040,
+            "text": "A softer, musk-inspired mood."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.en-v2-4",
+            "startMs": 11380,
+            "endMs": 14840,
+            "text": "SERENITY · Lavish Perfumes"
+          }
+        ],
+        "caption": "SERENITY, by Lavish Perfumes. A quieter way to explore fragrance through light, floral feeling and a soft musk-inspired mood. Editorial concept for review; no verified application or performance claim. #LavishPerfumes #SERENITY",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#SERENITY"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.script.ar-v2",
+        "briefId": "scn-scent-layering.brief.main",
+        "version": 2,
+        "language": "ar",
+        "title": "SERENITY — حكاية بطبقات من الإحساس",
+        "hook": "لحظة من الضوء.",
+        "message": "عطر واحد، وحكاية بصرية هادئة تستلهم وصفه الرسمي الذي يذكر الحمضيات والزهور والمسك، دون ادعاء ترتيب ثابت للنفحات أو نتيجة مثبتة.",
+        "cta": "اكتشف SERENITY",
+        "durationMs": 15000,
+        "shots": [
+          {
+            "id": "scn-scent-layering.shot.ar-v2-1",
+            "startMs": 0,
+            "durationMs": 3200,
+            "visual": "Set SERENITY product-original image at true aspect ratio on a quiet ivory field. A restrained glow enters the frame. A sensory opening is an art-direction device; no literal fruit or top-note order is claimed. Set text in a readable RTL Arabic font; keep Latin SERENITY and Lavish Perfumes isolated to prevent bidi reordering.",
+            "voiceover": "",
+            "onScreenText": "لحظة من الضوء.",
+            "transition": "Fade up from ivory; gentle light reveal.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-original"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.ar-v2-2",
+            "startMs": 3200,
+            "durationMs": 3800,
+            "visual": "Use the approved SERENITY lifestyle hero and soft floral-inspired shadows. The small decorative flower in the image is a prop; do not identify its species as an ingredient. Keep bottle mark fully visible. Set text in a readable RTL Arabic font; keep Latin SERENITY and Lavish Perfumes isolated to prevent bidi reordering.",
+            "voiceover": "",
+            "onScreenText": "لمسة زهرية.",
+            "transition": "150ms dissolve preserving bottle label and aspect ratio.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-hero",
+              "scn-scent-layering.asset.serenity-original"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.ar-v2-3",
+            "startMs": 7000,
+            "durationMs": 4200,
+            "visual": "Warm amber-lit still-life with SERENITY and stone/branch environment used only as mood. A gentle slow zoom or photographic pan suggests softness, not a demonstrated fragrance effect or ingredient origin. Set text in a readable RTL Arabic font; keep Latin SERENITY and Lavish Perfumes isolated to prevent bidi reordering.",
+            "voiceover": "",
+            "onScreenText": "إحساس ناعم مستوحى من المسك.",
+            "transition": "Gentle transition into warm shadow; no product transformation.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-hero",
+              "scn-scent-layering.asset.serenity-original"
+            ]
+          },
+          {
+            "id": "scn-scent-layering.shot.ar-v2-4",
+            "startMs": 11200,
+            "durationMs": 3800,
+            "visual": "Return to a clean SERENITY identity frame and then hold the unaltered Lavish square logo in a properly proportioned tile. End on the product name and editorial CTA with no price, claim, promotion or simulated generation badge embedded in actual creative copy. Set text in a readable RTL Arabic font; keep Latin SERENITY and Lavish Perfumes isolated to prevent bidi reordering.",
+            "voiceover": "",
+            "onScreenText": "SERENITY · Lavish Perfumes",
+            "transition": "Hold brand identity; fade to neutral at exactly 15000ms.",
+            "assetIds": [
+              "scn-scent-layering.asset.serenity-original",
+              "scn-scent-layering.asset.logo"
+            ]
+          }
+        ],
+        "subtitles": [
+          {
+            "id": "scn-scent-layering.subtitle.ar-v2-1",
+            "startMs": 180,
+            "endMs": 3040,
+            "text": "لحظة من الضوء."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.ar-v2-2",
+            "startMs": 3380,
+            "endMs": 6840,
+            "text": "لمسة زهرية."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.ar-v2-3",
+            "startMs": 7180,
+            "endMs": 11040,
+            "text": "إحساس ناعم مستوحى من المسك."
+          },
+          {
+            "id": "scn-scent-layering.subtitle.ar-v2-4",
+            "startMs": 11380,
+            "endMs": 14840,
+            "text": "SERENITY · Lavish Perfumes"
+          }
+        ],
+        "caption": "SERENITY من Lavish Perfumes. تصوّر بصري هادئ يستلهم الضوء والإحساس الزهري ولمسة المسك في وصف العطر. مادة إبداعية للمراجعة، وليست وعداً بأداء أو نتيجة استخدام. #LavishPerfumes #SERENITY",
+        "hashtags": [
+          "#LavishPerfumes",
+          "#SERENITY"
+        ]
+      }
+    ]
+  }
+}

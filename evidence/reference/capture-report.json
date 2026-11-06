@@ -1,0 +1,721 @@
+{
+  "capturedAt": "2026-11-03T11:53:11.801Z",
+  "browser": "156.0.4314.58",
+  "sourceHash": "040b47018d67e5a73cab999cc8d3dd3996fc2650909c7de433b9291a9c34cb83",
+  "errors": [],
+  "requestsFailed": [],
+  "responses": [
+    {
+      "url": "file:///D:/workspace/maison-intelligence/reference/LAVISH_LiveVision_RealVideo_Demo.html",
+      "status": 200
+    },
+    {
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/57/16/9757168c-3eda-cde0-91f8-e22acac3b7c7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.jpg",
+      "status": 200
+    }
+  ],
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "styles": {
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 246,
+          "height": 1080,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgb(25, 25, 23)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".topbar": {
+          "x": 246,
+          "y": 0,
+          "width": 1674,
+          "height": 77,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "16px",
+          "padding": "0px 38px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".content": {
+          "x": 246,
+          "y": 77,
+          "width": 1674,
+          "height": 1364.09375,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "33px 38px 45px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".headline": {
+          "x": 284,
+          "y": 136,
+          "width": 332.875,
+          "height": 35.375,
+          "font": "Inter, \"Segoe UI\", sans-serif",
+          "fontSize": "29px",
+          "lineHeight": "35.38px",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".subtitle": {
+          "x": 284,
+          "y": 181.375,
+          "width": 332.875,
+          "height": 19.5,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "13px",
+          "lineHeight": "19.5px",
+          "color": "rgb(137, 135, 128)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".tool-btn": {
+          "x": 1793.25,
+          "y": 159.875,
+          "width": 88.75,
+          "height": 39,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "12px",
+          "lineHeight": "normal",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(37, 35, 31)",
+          "gap": "9px",
+          "padding": "0px 13px",
+          "borderRadius": "7px",
+          "grid": "none"
+        },
+        ".main-grid": {
+          "x": 284,
+          "y": 389.0625,
+          "width": 1598,
+          "height": 659.03125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "18px",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "996.969px 583.031px"
+        },
+        ".card": {
+          "x": 284,
+          "y": 389.0625,
+          "width": 996.96875,
+          "height": 338,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "12px",
+          "grid": "none"
+        },
+        ".insight p": {
+          "x": 1363.96875,
+          "y": 815.65625,
+          "width": 274.59375,
+          "height": 17.8125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "11.5px",
+          "lineHeight": "17.825px",
+          "color": "rgb(144, 140, 131)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".brand-logo img": {
+          "x": 13,
+          "y": 22,
+          "width": 49,
+          "height": 49,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "styles": {
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 222,
+          "height": 900,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgb(25, 25, 23)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".topbar": {
+          "x": 222,
+          "y": 0,
+          "width": 1218,
+          "height": 77,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "16px",
+          "padding": "0px 27px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".content": {
+          "x": 222,
+          "y": 77,
+          "width": 1218,
+          "height": 1345.09375,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "27px 27px 35px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".headline": {
+          "x": 249,
+          "y": 130,
+          "width": 332.875,
+          "height": 35.375,
+          "font": "Inter, \"Segoe UI\", sans-serif",
+          "fontSize": "29px",
+          "lineHeight": "35.38px",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".subtitle": {
+          "x": 249,
+          "y": 175.375,
+          "width": 332.875,
+          "height": 19.5,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "13px",
+          "lineHeight": "19.5px",
+          "color": "rgb(137, 135, 128)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".tool-btn": {
+          "x": 1324.25,
+          "y": 153.875,
+          "width": 88.75,
+          "height": 39,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "12px",
+          "lineHeight": "normal",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(37, 35, 31)",
+          "gap": "9px",
+          "padding": "0px 13px",
+          "borderRadius": "7px",
+          "grid": "none"
+        },
+        ".main-grid": {
+          "x": 249,
+          "y": 380.0625,
+          "width": 1164,
+          "height": 659.03125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "18px",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "696.578px 449.422px"
+        },
+        ".card": {
+          "x": 249,
+          "y": 380.0625,
+          "width": 696.578125,
+          "height": 338,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "12px",
+          "grid": "none"
+        },
+        ".insight p": {
+          "x": 1028.578125,
+          "y": 806.65625,
+          "width": 274.59375,
+          "height": 17.8125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "11.5px",
+          "lineHeight": "17.825px",
+          "color": "rgb(144, 140, 131)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".brand-logo img": {
+          "x": 13,
+          "y": 22,
+          "width": 49,
+          "height": 49,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        }
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "styles": {
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 222,
+          "height": 768,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgb(25, 25, 23)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".topbar": {
+          "x": 222,
+          "y": 0,
+          "width": 1144,
+          "height": 77,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "16px",
+          "padding": "0px 27px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".content": {
+          "x": 222,
+          "y": 77,
+          "width": 1144,
+          "height": 1345.09375,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "27px 27px 35px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".headline": {
+          "x": 249,
+          "y": 130,
+          "width": 332.875,
+          "height": 35.375,
+          "font": "Inter, \"Segoe UI\", sans-serif",
+          "fontSize": "29px",
+          "lineHeight": "35.38px",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".subtitle": {
+          "x": 249,
+          "y": 175.375,
+          "width": 332.875,
+          "height": 19.5,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "13px",
+          "lineHeight": "19.5px",
+          "color": "rgb(137, 135, 128)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".tool-btn": {
+          "x": 1250.25,
+          "y": 153.875,
+          "width": 88.75,
+          "height": 39,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "12px",
+          "lineHeight": "normal",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(37, 35, 31)",
+          "gap": "9px",
+          "padding": "0px 13px",
+          "borderRadius": "7px",
+          "grid": "none"
+        },
+        ".main-grid": {
+          "x": 249,
+          "y": 380.0625,
+          "width": 1090,
+          "height": 659.03125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "18px",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "651.594px 420.391px"
+        },
+        ".card": {
+          "x": 249,
+          "y": 380.0625,
+          "width": 651.59375,
+          "height": 338,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "12px",
+          "grid": "none"
+        },
+        ".insight p": {
+          "x": 983.59375,
+          "y": 806.65625,
+          "width": 274.59375,
+          "height": 17.8125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "11.5px",
+          "lineHeight": "17.825px",
+          "color": "rgb(144, 140, 131)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".brand-logo img": {
+          "x": 13,
+          "y": 22,
+          "width": 49,
+          "height": 49,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 442,
+      "styles": {
+        ".sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 58,
+          "height": 844,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgb(25, 25, 23)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".topbar": {
+          "x": 58,
+          "y": 0,
+          "width": 332,
+          "height": 66,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "16px",
+          "padding": "0px 17px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".content": {
+          "x": 58,
+          "y": 66,
+          "width": 332,
+          "height": 2513.328125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "19px 12px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".headline": {
+          "x": 70,
+          "y": 111,
+          "width": 308,
+          "height": 30.5,
+          "font": "Inter, \"Segoe UI\", sans-serif",
+          "fontSize": "25px",
+          "lineHeight": "30.5px",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".subtitle": {
+          "x": 70,
+          "y": 151.5,
+          "width": 308,
+          "height": 39,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "13px",
+          "lineHeight": "19.5px",
+          "color": "rgb(137, 135, 128)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".tool-btn": {
+          "x": 70,
+          "y": 254.5,
+          "width": 82.75,
+          "height": 39,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "12px",
+          "lineHeight": "normal",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(37, 35, 31)",
+          "gap": "9px",
+          "padding": "0px 10px",
+          "borderRadius": "7px",
+          "grid": "none"
+        },
+        ".main-grid": {
+          "x": 70,
+          "y": 641.875,
+          "width": 308,
+          "height": 1526.453125,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "18px",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "308px"
+        },
+        ".card": {
+          "x": 70,
+          "y": 641.875,
+          "width": 308,
+          "height": 363.59375,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(37, 37, 33)",
+          "background": "rgb(255, 254, 252)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "12px",
+          "grid": "none"
+        },
+        ".insight p": {
+          "x": 135,
+          "y": 1882.453125,
+          "width": 221,
+          "height": 35.625,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "11.5px",
+          "lineHeight": "17.825px",
+          "color": "rgb(144, 140, 131)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        },
+        ".brand-logo img": {
+          "x": 7,
+          "y": 11,
+          "width": 49,
+          "height": 49,
+          "font": "Inter, \"Segoe UI\", Roboto, Arial, sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "normal",
+          "color": "rgb(248, 246, 240)",
+          "background": "rgba(0, 0, 0, 0)",
+          "gap": "normal",
+          "padding": "0px",
+          "borderRadius": "0px",
+          "grid": "none"
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "sidebar collapses",
+      "pass": true
+    },
+    {
+      "name": "store changes metrics",
+      "pass": true
+    },
+    {
+      "name": "period changes metric",
+      "pass": true
+    },
+    {
+      "name": "chart switches",
+      "pass": true
+    },
+    {
+      "name": "modal opens",
+      "pass": true
+    },
+    {
+      "name": "modal closes via Escape",
+      "pass": true
+    },
+    {
+      "name": "navigation works",
+      "pass": true
+    },
+    {
+      "name": "CSV export downloads",
+      "pass": true
+    }
+  ],
+  "media": {
+    "images": [
+      {
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/57/16/9757168c-3eda-cde0-91f8-e22acac3b7c7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.jpg",
+        "complete": true,
+        "width": 1200,
+        "height": 630,
+        "display": "block"
+      }
+    ],
+    "videos": [
+      {
+        "src": "file:///D:/workspace/maison-intelligence/reference/LAVISH_Face_Track_Preview.mp4",
+        "width": 1280,
+        "height": 720,
+        "duration": 25.664,
+        "readyState": 4,
+        "error": null
+      },
+      {
+        "src": "file:///D:/workspace/maison-intelligence/reference/LAVISH_Face_Track_Preview.mp4",
+        "width": 1280,
+        "height": 720,
+        "duration": 25.664,
+        "readyState": 4,
+        "error": null
+      }
+    ],
+    "interAvailable": true
+  },
+  "renderedFonts": {
+    "fonts": [
+      {
+        "familyName": "Segoe UI Semibold",
+        "postScriptName": "SegoeUI-Semibold",
+        "isCustomFont": false,
+        "glyphCount": 14
+      }
+    ]
+  }
+}

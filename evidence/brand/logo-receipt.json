@@ -1,0 +1,38 @@
+{
+  "id": "asset-logo-primary-lavish-20261103",
+  "brandId": "brand-lavish",
+  "productId": null,
+  "kind": "logo_primary",
+  "provenance": "User-provided chat attachment in the DSH session (attachment object f5/f504781a…3966). On 2026-11-03 the user (PO / 主控) stated: \"正式的logo是这个。\" (This is the official logo.) The file was copied byte-identically; it is not cropped from the App Store wide image and was not redrawn.",
+  "sourceUrl": null,
+  "retrievedAt": "2026-11-03T22:08:39+08:00",
+  "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+  "bytes": 114691,
+  "mime": "image/png",
+  "width": 294,
+  "height": 294,
+  "technical": {
+    "bitDepth": 8,
+    "colorType": "RGB, no alpha channel",
+    "dpi": "96x96 (declared by the file)",
+    "masterFormat": "raster PNG only; no transparent, reverse or vector master supplied yet",
+    "background": "opaque gold gradient; sampled corner pixels #EBD49E / #D6B56D / #DBBB68 / #D1AD55",
+    "displayGuidance": "with a 294px master, suggested CSS display size is at most 147px at 2x DPR and 98px at 3x DPR"
+  },
+  "localPath": "assets/brand/lavish-logo-primary-294x294-rgb.png",
+  "rightsStatus": "approved",
+  "rightsEvidence": "Provided directly by the client-side owner (user / 主控) in the 2026-11-03 session and explicitly declared official. Approved for internal demo use (M1–M5). External publication still requires written client authorization plus a high-resolution transparent/vector master at the M6 gate.",
+  "reviewedBy": "User (PO / 主控) supplied and declared the asset official; technical constraints recorded by the TASK-001 executor. Full visual/brand acceptance remains with 主控 + PO.",
+  "altEn": "LAVISH PERFUMES official logo: Arabic wordmark above the word LAVISH and the line PERFUMES, in black on a gold gradient square",
+  "altAr": "pending client review — do not publish a self-transcribed Arabic alt text as official",
+  "usageRestrictions": [
+    "Keep the full mark: never crop, stretch, recolor, add filters, or redraw with AI",
+    "The logo is an opaque RGB square; use it on square/reference placements, not over arbitrary photography",
+    "The 294x294 master is display-limited; request a transparent/vector master before final brand acceptance",
+    "This file is not product imagery; product photos remain pending (TASK-004)"
+  ],
+  "relatedDocs": [
+    "docs/BRAND_ASSETS.md",
+    "docs/DESIGN_SYSTEM.md"
+  ]
+}

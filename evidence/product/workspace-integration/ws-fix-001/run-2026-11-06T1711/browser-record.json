@@ -1,0 +1,470 @@
+{
+  "checkedAt": "2026-11-06T09:07:56.804Z",
+  "base": "http://127.0.0.1:3184",
+  "buildId": "EyeTyB_09phuk7IAEkABn",
+  "states": [
+    {
+      "label": "A-start",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "campaign": "scn-scent-layering.brief.main",
+      "version": "1.1.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "B-after-select",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+      "campaign": "scn-luxury-gifting.brief.main",
+      "version": "1.0.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "B-atelier",
+      "url": "http://127.0.0.1:3184/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+      "campaign": "scn-luxury-gifting.brief.main",
+      "version": "1.0.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "B-atelier-refresh",
+      "url": "http://127.0.0.1:3184/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+      "campaign": "scn-luxury-gifting.brief.main",
+      "version": "1.0.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "B-library-back",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+      "campaign": "scn-luxury-gifting.brief.main",
+      "version": "1.0.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "B-deliverables",
+      "url": "http://127.0.0.1:3184/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+      "campaign": "scn-luxury-gifting.brief.main",
+      "version": "1.0.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": "page"
+        }
+      }
+    },
+    {
+      "label": "C-after-select",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-oud-storytelling.brief.main&scenarioVersion=1.0.0&language=en",
+      "campaign": "scn-oud-storytelling.brief.main",
+      "version": "1.0.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-oud-storytelling.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-oud-storytelling.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-oud-storytelling.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-oud-storytelling.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-oud-storytelling.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-oud-storytelling.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "A-return",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "campaign": "scn-scent-layering.brief.main",
+      "version": "1.1.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "A-AR",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=ar",
+      "campaign": "scn-scent-layering.brief.main",
+      "version": "1.1.0",
+      "language": "ar",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=ar",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=ar",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=ar",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "All-campaigns",
+      "url": "http://127.0.0.1:3184/library?language=ar",
+      "campaign": null,
+      "version": null,
+      "language": "ar",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?language=ar",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?language=ar",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?language=ar",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "Clear-filters",
+      "url": "http://127.0.0.1:3184/library",
+      "campaign": null,
+      "version": null,
+      "language": null,
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "A-exact-to-B",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+      "campaign": "scn-luxury-gifting.brief.main",
+      "version": "1.0.0",
+      "language": "en",
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "unknown",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0",
+      "campaign": "scn-does-not-exist.brief.main",
+      "version": "1.0.0",
+      "language": null,
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-does-not-exist.brief.main&scenarioVersion=1.0.0",
+          "active": null
+        }
+      }
+    },
+    {
+      "label": "invalid-version",
+      "url": "http://127.0.0.1:3184/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=9.9.9",
+      "campaign": "scn-scent-layering.brief.main",
+      "version": "9.9.9",
+      "language": null,
+      "nav": {
+        "shell-nav-overview": {
+          "href": "/?campaignId=scn-scent-layering.brief.main&scenarioVersion=9.9.9",
+          "active": null
+        },
+        "shell-nav-radar": {
+          "href": "/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=9.9.9",
+          "active": null
+        },
+        "shell-nav-opportunities": {
+          "href": "/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=9.9.9",
+          "active": null
+        },
+        "shell-nav-atelier": {
+          "href": "/atelier?campaignId=scn-scent-layering.brief.main&scenarioVersion=9.9.9",
+          "active": null
+        },
+        "shell-nav-library": {
+          "href": "/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=9.9.9",
+          "active": "page"
+        },
+        "shell-nav-deliverables": {
+          "href": "/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=9.9.9",
+          "active": null
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "task": "AS-002",
+  "checkedAt": "2026-11-05T20:00:15+08:00",
+  "sidecar": "apps/web/public/presentation-assets/scent-layering.json",
+  "assetSet": {
+    "campaignId": "scn-scent-layering.brief.main",
+    "scenarioVersion": "1.1.0",
+    "contentStatus": "awaiting_serenity_content",
+    "productId": "scn-scent-layering.product.serenity",
+    "assets": [
+      {"id":"provided.scent-layering.hero-serenity","type":"hero_image","bytes":2513070,"sha256":"1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499","roles":["hero","deliverable_asset"]},
+      {"id":"provided.scent-layering.product-serenity","type":"product_original_image","bytes":538290,"sha256":"f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62","roles":["product_identity","storyboard_source","deliverable_asset"]},
+      {"id":"provided.scent-layering.final-preview","type":"final_preview_video","bytes":1315394,"sha256":"15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e","roles":["final_preview","deliverable_asset"]}
+    ]
+  },
+  "api": {
+    "getProvidedAssets": "A 1.1.0 returns the set; wrong campaign/version returns null; B/C/no-source returns null; no writes",
+    "getProvidedAssetDownload": "real bytes for all three; bytes/sha match sidecar; unknown asset NOT_FOUND; no session/export/email",
+    "listLibraryItems": "12 script/storyboard items + 3 provided items (version=null); kind/campaign/query/origin filters; no fake version ids",
+    "exportCampaignPack": "honest NOT-IMPLEMENTED placeholder until AS-005; no fake success or record"
+  },
+  "commands": [
+    {"command":"npm run typecheck","exitCode":0},
+    {"command":"npm run test:unit -- tests/poc/product-assets-api.test.ts tests/poc/product-read.test.ts","exitCode":0,"result":"17 passed"}
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "archive": "evidence/product/ip-007/library-ar-preset-export.zip",
+  "archiveSha256": "826706c08c9e9774b99909a204a96726f19b6011915826f3b489f4a0c24f7d64",
+  "bytes": 1684607,
+  "entries": [
+    "brief.json",
+    "EXPORT.json",
+    "media/logo.png",
+    "media/perla.png",
+    "README.txt",
+    "script.json",
+    "storyboard.html",
+    "subtitles-ar.vtt"
+  ],
+  "scriptId": "scn-luxury-gifting.script.ar-v1",
+  "campaignId": "scn-luxury-gifting.brief.main",
+  "sessionId": null,
+  "language": "ar",
+  "origin": "preset",
+  "title": "الهدية تبدأ بفكرة.",
+  "durationMs": 15000,
+  "shotCount": 4,
+  "subtitleCueCount": 4,
+  "subtitleHasArabic": true,
+  "storyboardMentionsMedia": true,
+  "storyboardShotTimings": 4,
+  "storyboardHasNoScript": true,
+  "briefObjectivePresent": true,
+  "exportManifestSelfExcluded": true,
+  "noMp4": true,
+  "noRealEmailFlag": true,
+  "noVideoFlag": true,
+  "exportManifestAllMatch": true,
+  "manifestChecks": [
+    {
+      "filename": "brief.json",
+      "manifestSha256": "a9097bb439920a855615eda9adf7f1a50358f838bbd332e72689223fad531ec5",
+      "actualSha256": "a9097bb439920a855615eda9adf7f1a50358f838bbd332e72689223fad531ec5",
+      "shaMatch": true,
+      "bytesMatch": true
+    },
+    {
+      "filename": "script.json",
+      "manifestSha256": "6c3d4c2a198d5f80124f789c1afd3ff3c693b41c0a3e69d34e8d6a342b360842",
+      "actualSha256": "6c3d4c2a198d5f80124f789c1afd3ff3c693b41c0a3e69d34e8d6a342b360842",
+      "shaMatch": true,
+      "bytesMatch": true
+    },
+    {
+      "filename": "subtitles-ar.vtt",
+      "manifestSha256": "fbe1de81245e75a77ed4875b38b7a0c3a9c7489d74c722c1ab56259fc6fa3e65",
+      "actualSha256": "fbe1de81245e75a77ed4875b38b7a0c3a9c7489d74c722c1ab56259fc6fa3e65",
+      "shaMatch": true,
+      "bytesMatch": true
+    },
+    {
+      "filename": "storyboard.html",
+      "manifestSha256": "08282ebaadfa7647d9cdf5e10dc856a03cf01bf9330f851dc09e33e1f91947b9",
+      "actualSha256": "08282ebaadfa7647d9cdf5e10dc856a03cf01bf9330f851dc09e33e1f91947b9",
+      "shaMatch": true,
+      "bytesMatch": true
+    },
+    {
+      "filename": "media/perla.png",
+      "manifestSha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+      "actualSha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+      "shaMatch": true,
+      "bytesMatch": true
+    },
+    {
+      "filename": "media/logo.png",
+      "manifestSha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+      "actualSha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+      "shaMatch": true,
+      "bytesMatch": true
+    },
+    {
+      "filename": "README.txt",
+      "manifestSha256": "3d025396dee01d0edaa9cee20125e1030bc0b5f1cef8effe0082728d68ff4fb9",
+      "actualSha256": "3d025396dee01d0edaa9cee20125e1030bc0b5f1cef8effe0082728d68ff4fb9",
+      "shaMatch": true,
+      "bytesMatch": true
+    }
+  ],
+  "referencedAssetChecks": [
+    {
+      "assetId": "scn-luxury-gifting.asset.perla",
+      "assetSha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+      "embeddedFile": "media/perla.png",
+      "shaMatch": true
+    },
+    {
+      "assetId": "scn-luxury-gifting.asset.logo",
+      "assetSha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+      "embeddedFile": "media/logo.png",
+      "shaMatch": true
+    }
+  ],
+  "allReferencedAssetsEmbedded": true
+}

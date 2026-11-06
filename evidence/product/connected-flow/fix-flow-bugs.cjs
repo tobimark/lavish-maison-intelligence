@@ -1,0 +1,16 @@
+const fs=require('fs');
+let p='apps/web/components/product/journey/JourneyPage.tsx';
+let s=fs.readFileSync(p,'utf8');
+s=s.replace("  const load = useCallback(async () => {","  const load = useCallback(async (silent = false) => {");
+s=s.replace("    setState('loading');\n    setError('');\n    setErrorCode('');\n    try {","    if (!silent) setState('loading');\n    setError('');\n    setErrorCode('');\n    try {");
+s=s.replace("      setJourney(result.data);\n      setState('ready');","      setJourney(result.data);\n      setState('ready');");
+s=s.replace("<SocialStage journey={value} onChanged={load} />","<SocialStage journey={value} onChanged={() => load(true)} />");
+fs.writeFileSync(p,s);
+p='apps/web/components/product/journey/social/SocialStage.tsx';
+s=fs.readFileSync(p,'utf8');
+s=s.replace("  const publishingRef = useRef(false);","  const publishingRef = useRef(false);\n  const publishCompletedRef = useRef(false);");
+s=s.replace("  const confirmPublish = async () => {\n    if (publishingRef.current) return;","  const confirmPublish = async () => {\n    if (publishingRef.current || publishCompletedRef.current) return;");
+s=s.replace("    setPublishError('');\n    setPublishDraft(current);\n    setPublishOpen(true);","    setPublishError('');\n    publishCompletedRef.current = false;\n    setPublishDraft(current);\n    setPublishOpen(true);");
+s=s.replace("      setPublishOpen(false);\n      setPublishDraft(null);\n      setPublishResult(attempt);","      publishCompletedRef.current = true;\n      setPublishOpen(false);\n      setPublishDraft(null);\n      setPublishResult(attempt);");
+fs.writeFileSync(p,s);
+console.log('patched');

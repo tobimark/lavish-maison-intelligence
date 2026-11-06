@@ -1,0 +1,102 @@
+{
+  "capturedAt": "2026-11-05T18:34:15.1534464+08:00",
+  "directory": "evidence/poc/prototype",
+  "files": [
+    {
+      "name": "home-1366-en.png",
+      "bytes": 179068,
+      "sha256": "ed8372df0fc45f34965aad1aae22c57197e72d5b4f8a487cfbfac640f8724220",
+      "mtime": "2026-11-05T00:12:30.9104550+08:00"
+    },
+    {
+      "name": "home-1440-en.png",
+      "bytes": 181021,
+      "sha256": "8d9ecfb836a2b9a8684d6f5db5751edc281bee12bd89e26d0725ec80905c3967",
+      "mtime": "2026-11-05T00:12:25.8383037+08:00"
+    },
+    {
+      "name": "home-1920-en.png",
+      "bytes": 184081,
+      "sha256": "5e8b61c107b73d5d362e4b9318ae976e47d49a261debe1886380b260422a3c2a",
+      "mtime": "2026-11-05T00:12:31.6144220+08:00"
+    },
+    {
+      "name": "home-390-en.png",
+      "bytes": 149669,
+      "sha256": "b346da059f65649eb3448e21061c1c62e2487c0257defa567899b9173d5b0e41",
+      "mtime": "2026-11-05T00:12:32.2713378+08:00"
+    },
+    {
+      "name": "preview-1366-en.png",
+      "bytes": 176061,
+      "sha256": "314fa5d3011da4e70799b2aa24fae0aa51c3167c3c2830a441f99c78c1dafd63",
+      "mtime": "2026-11-05T00:12:27.5543214+08:00"
+    },
+    {
+      "name": "preview-1440-en.png",
+      "bytes": 179807,
+      "sha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+      "mtime": "2026-11-05T00:12:26.8534437+08:00"
+    },
+    {
+      "name": "preview-1920-en.png",
+      "bytes": 177259,
+      "sha256": "2cbfb57a618cc6840dec4bac11bd09cfb5699453675737021b6ea770ea8b587d",
+      "mtime": "2026-11-05T00:12:28.2433761+08:00"
+    },
+    {
+      "name": "preview-390-en.png",
+      "bytes": 140941,
+      "sha256": "a02c2f3fdc8690df3314ed2a8f0c4bbbad9464c28fe852d0195462fae1296aa3",
+      "mtime": "2026-11-05T00:12:28.9014127+08:00"
+    },
+    {
+      "name": "preview-analysis-1440-en.png",
+      "bytes": 179807,
+      "sha256": "dc0d7c0a57fa0df29db25f6ee172273436c8144a08f4571795276c048ee52e99",
+      "mtime": "2026-11-05T00:12:29.8377191+08:00"
+    },
+    {
+      "name": "preview-delivery-1440-en.png",
+      "bytes": 189329,
+      "sha256": "58ea41493f860fdd1a12f2e194caedea0f8aa4999b19a8ccfaf66bf3dbcbf2c1",
+      "mtime": "2026-11-05T00:12:34.4544770+08:00"
+    },
+    {
+      "name": "preview-delivery-390-en.png",
+      "bytes": 152307,
+      "sha256": "4d16c9b4e56f2f30aa5fd872a69681a56457345b5e211bfe6f343059be82a112",
+      "mtime": "2026-11-05T00:12:37.2208429+08:00"
+    },
+    {
+      "name": "preview-discovery-1440-en.png",
+      "bytes": 167527,
+      "sha256": "d88f353cced7bbfad44a0c8751af0996bb6acce47532f8fddc2f00dcacf140ed",
+      "mtime": "2026-11-05T00:12:33.3189652+08:00"
+    },
+    {
+      "name": "preview-evidence-drawer-1440.png",
+      "bytes": 120919,
+      "sha256": "ddc39bcadb03576b3cfb829137351e629bb322ac336d3539ba35a989a62c5041",
+      "mtime": "2026-11-05T00:12:35.3632830+08:00"
+    },
+    {
+      "name": "preview-video-1440-en.png",
+      "bytes": 177472,
+      "sha256": "f257c0ba51c2840cf6e5cc74fdd5d5b17aefe1bf3bcc3790e84e74c057a5ea17",
+      "mtime": "2026-11-05T00:12:29.9804091+08:00"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1529,
+      "sha256": "172409e31c80268470db6a4ef902b173556cbdad46019c0824146297cbecf857",
+      "mtime": "2026-11-05T00:13:52.2847096+08:00"
+    },
+    {
+      "name": "restore-manifest.json",
+      "bytes": 7251,
+      "sha256": "8fa2bf14d79d94d9cf8382a89ce35d70de96a3820012529303a234e60e5face3",
+      "mtime": "2026-11-05T18:33:19.8045169+08:00"
+    }
+  ]
+}

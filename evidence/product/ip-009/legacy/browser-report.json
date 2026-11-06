@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-11-06T02:49:23.561Z",
+  "browserVersion": "156.0.8078.4",
+  "logo": {
+    "currentSrc": "http://127.0.0.1:3150/brand/lavish-logo-primary-294x294-rgb.png",
+    "naturalWidth": 294,
+    "naturalHeight": 294,
+    "renderedWidth": 44,
+    "renderedHeight": 44,
+    "objectFit": "contain",
+    "filter": "none",
+    "borderRadius": "0px",
+    "alt": "Lavish Perfumes official logo",
+    "sha256Expected": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966"
+  },
+  "breakpoints": [
+    {
+      "viewport": "1920x1080",
+      "sidebar": 246,
+      "menuButton": "hidden"
+    },
+    {
+      "viewport": "1440x900",
+      "sidebar": 222,
+      "menuButton": "hidden"
+    },
+    {
+      "viewport": "1366x768",
+      "sidebar": 222,
+      "menuButton": "hidden"
+    },
+    {
+      "viewport": "1170x800",
+      "sidebar": 78,
+      "menuButton": "hidden"
+    },
+    {
+      "viewport": "1171x800",
+      "sidebar": 222,
+      "menuButton": "hidden"
+    },
+    {
+      "viewport": "881x800",
+      "sidebar": 78,
+      "menuButton": "hidden"
+    },
+    {
+      "viewport": "880x800",
+      "sidebar": "off-canvas",
+      "menuButton": "visible"
+    }
+  ],
+  "collapse": {
+    "persistedKey": "maison-intelligence:shell:sidebar-collapsed",
+    "collapsedWidth": 78,
+    "expandedWidth": 222,
+    "persistedValueAfterCollapse": "true",
+    "persistedValueAfterExpand": "false",
+    "tooltipVisible": true,
+    "focusRing": {
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(235, 214, 174)"
+    }
+  },
+  "mobileMenu": {
+    "opensWithKeyboard": true,
+    "focusTrap": true,
+    "escapeCloses": true,
+    "backdropCloses": true,
+    "focusReturnedToTrigger": true,
+    "backgroundScrollLocked": true
+  },
+  "screenshots": [
+    {
+      "name": "shell-1920x1080-default.png",
+      "bytes": 168617,
+      "viewport": "1920x1080",
+      "state": "default"
+    },
+    {
+      "name": "shell-1440x900-default.png",
+      "bytes": 153310,
+      "viewport": "1440x900",
+      "state": "default"
+    },
+    {
+      "name": "shell-1366x768-default.png",
+      "bytes": 128816,
+      "viewport": "1366x768",
+      "state": "default"
+    },
+    {
+      "name": "shell-390x844-default.png",
+      "bytes": 72203,
+      "viewport": "390x844",
+      "state": "default"
+    },
+    {
+      "name": "shell-1440x900-focus.png",
+      "bytes": 154241,
+      "viewport": "1440x900",
+      "state": "focus"
+    },
+    {
+      "name": "shell-1440x900-collapsed.png",
+      "bytes": 130658,
+      "viewport": "1440x900",
+      "state": "collapsed"
+    },
+    {
+      "name": "shell-390x844-menu-open.png",
+      "bytes": 41348,
+      "viewport": "390x844",
+      "state": "menu-open"
+    }
+  ],
+  "console": {
+    "errors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "externalRequests": []
+  }
+}

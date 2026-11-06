@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "analyses": [
+      {
+        "id": "scn-luxury-gifting.analysis.main",
+        "trendIds": [
+          "scn-luxury-gifting.trend.main",
+          "scn-luxury-gifting.trend.control"
+        ],
+        "evidenceIds": [
+          "scn-luxury-gifting.evidence.e1",
+          "scn-luxury-gifting.evidence.e2",
+          "scn-luxury-gifting.evidence.e3",
+          "scn-luxury-gifting.evidence.e4",
+          "scn-luxury-gifting.evidence.e5"
+        ],
+        "insights": [
+          "Illustrative signals favour the emotion of choosing a fragrance rather than price or promotional pressure.",
+          "For Lavish, the verified PERLA 50ML UNISEX product may serve as a photographed product option, without asserting it suits every recipient.",
+          "No gift box, bundle SKU, wrapping service or offer is included in this scenario."
+        ],
+        "rationale": "A thoughtful selection narrative uses existing PERLA 50ML UNISEX imagery and the product name/size information only. It avoids false bundle or sale claims and positions gifting as a personal choice.",
+        "assumptions": [
+          "An understated gifting narrative could resonate with a hypothetical UAE luxury-fragrance audience.",
+          "Paper-card graphics are merely a layout device and do not imply a physical product insert.",
+          "The visual identity can stay consistent with the Lavish HTML reference without lifestyle stock imagery."
+        ],
+        "uncertainties": [
+          "These are invented sample signals and not observed seasonal or retail demand.",
+          "No gifting service, gift wrapping, store offer or gift-set SKU is verified.",
+          "Arabic copy needs native review and brand review.",
+          "MP4 and poster are not supplied."
+        ],
+        "recommendation": "Develop a 15-second editorial gift-selection spot emphasizing attention and personal choice; show PERLA bottle in its original photograph, not a fictitious gift set."
+      }
+    ],
+    "briefs": [
+      {
+        "id": "scn-luxury-gifting.brief.main",
+        "analysisId": "scn-luxury-gifting.analysis.main",
+        "name": "A Gesture, Considered",
+        "objective": "Introduce one documented Lavish fragrance as a considered gifting possibility without asserting gift services.",
+        "markets": [
+          "UAE",
+          "GCC"
+        ],
+        "audience": "A conceptual UAE audience choosing a personal fragrance gift; no observed segment or seasonal demand data.",
+        "productIds": [
+          "scn-luxury-gifting.product.perla"
+        ],
+        "concept": "The sequence moves from a quiet thought, to a deliberate selection, to a simple product reveal and invitation.",
+        "tone": "Warm, precise, understated; never discount-led or implying a ready-made gift box.",
+        "channels": [
+          "Instagram Reels (concept)",
+          "Pinterest (concept)"
+        ],
+        "languages": [
+          "en",
+          "ar"
+        ],
+        "keyMessage": "Meaningful gifting begins with attention, not a claim about a perfect product.",
+        "cta": "Explore fragrances"
+      }
+    ]
+  }
+}

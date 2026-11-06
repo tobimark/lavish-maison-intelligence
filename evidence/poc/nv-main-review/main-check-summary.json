@@ -1,0 +1,24 @@
+{
+  "reviewedOn": "2026-11-05",
+  "build": "pass_host_environment",
+  "typecheck": "pass",
+  "generatedTypes": "pass",
+  "unitTests": {
+    "passed": 128,
+    "files": 8
+  },
+  "browserTests": {
+    "passed": 39,
+    "productionServer": true
+  },
+  "scenarioContentValidation": "3 pass content_only L1-L4",
+  "sourceJSON": "30 byte-identical",
+  "ZIP": "3 archives CRC and attachment hashes checked; one documents stale-delivery defect",
+  "reviewDecision": "changes_requested",
+  "blockingFindings": [
+    "R1 unsaved delivery form diverges from confirmed/persisted/exported snapshot",
+    "R2 discarded script ref submitted by save"
+  ],
+  "video": "deferred; not tested or claimed",
+  "fixTask": "tasks/poc/fixes/FIX-NV-BATCH-01.md"
+}

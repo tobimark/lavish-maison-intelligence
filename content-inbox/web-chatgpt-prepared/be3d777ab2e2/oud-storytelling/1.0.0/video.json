@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-oud-storytelling",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "videos": [
+      {
+        "id": "scn-oud-storytelling.video.en-v1",
+        "scriptVersionId": "scn-oud-storytelling.script.en-v1",
+        "storyboardShotIds": [
+          "scn-oud-storytelling.shot.en-1",
+          "scn-oud-storytelling.shot.en-2",
+          "scn-oud-storytelling.shot.en-3",
+          "scn-oud-storytelling.shot.en-4"
+        ],
+        "mp4AssetId": "scn-oud-storytelling.asset.video-en",
+        "posterAssetId": "scn-oud-storytelling.asset.poster-en",
+        "subtitleAssetIds": [
+          "scn-oud-storytelling.asset.vtt-en"
+        ],
+        "durationMs": 15000,
+        "width": 1080,
+        "height": 1920,
+        "frameRate": 30,
+        "productionMode": "preproduced",
+        "disclosure": "PLANNED pre-produced English video for Mock POC; MP4 and poster are pending customer delivery; 1080×1920, 30fps, 15s are TARGET specifications, not probed media; cannot play/download or pass L5 until supplied and validated."
+      }
+    ]
+  }
+}

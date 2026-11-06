@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "events": [
+      {
+        "id": "scn-scent-layering.event.01",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 1,
+        "atMs": 0,
+        "stage": "discovery",
+        "runKey": "scn-scent-layering:1.0.0:discovery:golden",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "discovery"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.02",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 2,
+        "atMs": 2000,
+        "stage": "discovery",
+        "runKey": "scn-scent-layering:1.0.0:discovery:golden",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-scent-layering.evidence.layering-guide"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.signal.layering-guide"
+        ],
+        "payload": {
+          "signalId": "scn-scent-layering.signal.layering-guide"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.03",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 3,
+        "atMs": 4000,
+        "stage": "discovery",
+        "runKey": "scn-scent-layering:1.0.0:discovery:golden",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-scent-layering.evidence.personal-signature"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.signal.personal-signature"
+        ],
+        "payload": {
+          "signalId": "scn-scent-layering.signal.personal-signature"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.04",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 4,
+        "atMs": 6000,
+        "stage": "discovery",
+        "runKey": "scn-scent-layering:1.0.0:discovery:golden",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-scent-layering.evidence.gifting-control"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.signal.gifting-control"
+        ],
+        "payload": {
+          "signalId": "scn-scent-layering.signal.gifting-control"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.05",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 5,
+        "atMs": 8000,
+        "stage": "discovery",
+        "runKey": "scn-scent-layering:1.0.0:discovery:golden",
+        "mode": "mock",
+        "type": "trend.summarized",
+        "inputRefs": [
+          "scn-scent-layering.signal.layering-guide",
+          "scn-scent-layering.signal.personal-signature"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.trend.layering-interest"
+        ],
+        "payload": {
+          "trendId": "scn-scent-layering.trend.layering-interest"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.06",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 6,
+        "atMs": 10000,
+        "stage": "discovery",
+        "runKey": "scn-scent-layering:1.0.0:discovery:golden",
+        "mode": "mock",
+        "type": "trend.summarized",
+        "inputRefs": [
+          "scn-scent-layering.signal.gifting-control"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.trend.gifting-context"
+        ],
+        "payload": {
+          "trendId": "scn-scent-layering.trend.gifting-context"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.07",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 7,
+        "atMs": 12000,
+        "stage": "discovery",
+        "runKey": "scn-scent-layering:1.0.0:discovery:golden",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "discovery"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.08",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 8,
+        "atMs": 14000,
+        "stage": "analysis",
+        "runKey": "scn-scent-layering:1.0.0:analysis:golden",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "analysis"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.09",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 9,
+        "atMs": 16000,
+        "stage": "analysis",
+        "runKey": "scn-scent-layering:1.0.0:analysis:golden",
+        "mode": "mock",
+        "type": "analysis.presented",
+        "inputRefs": [
+          "scn-scent-layering.trend.layering-interest",
+          "scn-scent-layering.trend.gifting-context",
+          "scn-scent-layering.evidence.layering-guide",
+          "scn-scent-layering.evidence.personal-signature",
+          "scn-scent-layering.evidence.gifting-control"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.analysis.layering-opportunity"
+        ],
+        "payload": {
+          "analysisId": "scn-scent-layering.analysis.layering-opportunity"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.10",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 10,
+        "atMs": 18000,
+        "stage": "analysis",
+        "runKey": "scn-scent-layering:1.0.0:analysis:golden",
+        "mode": "mock",
+        "type": "brief.presented",
+        "inputRefs": [
+          "scn-scent-layering.analysis.layering-opportunity",
+          "scn-scent-layering.product.lavish-oud",
+          "scn-scent-layering.product.perla"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.brief.signature"
+        ],
+        "payload": {
+          "briefId": "scn-scent-layering.brief.signature"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.11",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 11,
+        "atMs": 20000,
+        "stage": "analysis",
+        "runKey": "scn-scent-layering:1.0.0:analysis:golden",
+        "mode": "mock",
+        "type": "script.presented",
+        "inputRefs": [
+          "scn-scent-layering.brief.signature"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.script.en-v1"
+        ],
+        "payload": {
+          "scriptVersionId": "scn-scent-layering.script.en-v1"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.12",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 12,
+        "atMs": 22000,
+        "stage": "analysis",
+        "runKey": "scn-scent-layering:1.0.0:analysis:golden",
+        "mode": "mock",
+        "type": "script.presented",
+        "inputRefs": [
+          "scn-scent-layering.brief.signature"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.script.ar-v1"
+        ],
+        "payload": {
+          "scriptVersionId": "scn-scent-layering.script.ar-v1"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.13",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 13,
+        "atMs": 24000,
+        "stage": "analysis",
+        "runKey": "scn-scent-layering:1.0.0:analysis:golden",
+        "mode": "mock",
+        "type": "script.confirmed",
+        "inputRefs": [
+          "scn-scent-layering.script.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "scriptVersionId": "scn-scent-layering.script.en-v1"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.14",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 14,
+        "atMs": 26000,
+        "stage": "analysis",
+        "runKey": "scn-scent-layering:1.0.0:analysis:golden",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "analysis"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.15",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 15,
+        "atMs": 28000,
+        "stage": "video",
+        "runKey": "scn-scent-layering:1.0.0:video:golden",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "video"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.16",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 16,
+        "atMs": 30000,
+        "stage": "video",
+        "runKey": "scn-scent-layering:1.0.0:video:golden",
+        "mode": "mock",
+        "type": "video.queued",
+        "inputRefs": [
+          "scn-scent-layering.script.en-v1",
+          "scn-scent-layering.shot.en-1",
+          "scn-scent-layering.shot.en-2",
+          "scn-scent-layering.shot.en-3",
+          "scn-scent-layering.shot.en-4",
+          "scn-scent-layering.asset.mp4-en",
+          "scn-scent-layering.asset.poster-en",
+          "scn-scent-layering.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.video.en-v1"
+        ],
+        "payload": {
+          "videoId": "scn-scent-layering.video.en-v1"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.17",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 17,
+        "atMs": 32000,
+        "stage": "video",
+        "runKey": "scn-scent-layering:1.0.0:video:golden",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-scent-layering.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-scent-layering.video.en-v1",
+          "progress": 25
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.18",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 18,
+        "atMs": 35000,
+        "stage": "video",
+        "runKey": "scn-scent-layering:1.0.0:video:golden",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-scent-layering.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-scent-layering.video.en-v1",
+          "progress": 65
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.19",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 19,
+        "atMs": 38000,
+        "stage": "video",
+        "runKey": "scn-scent-layering:1.0.0:video:golden",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-scent-layering.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-scent-layering.video.en-v1",
+          "progress": 100
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.20",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 20,
+        "atMs": 40000,
+        "stage": "video",
+        "runKey": "scn-scent-layering:1.0.0:video:golden",
+        "mode": "mock",
+        "type": "video.available",
+        "inputRefs": [
+          "scn-scent-layering.script.en-v1",
+          "scn-scent-layering.shot.en-1",
+          "scn-scent-layering.shot.en-2",
+          "scn-scent-layering.shot.en-3",
+          "scn-scent-layering.shot.en-4",
+          "scn-scent-layering.asset.mp4-en",
+          "scn-scent-layering.asset.poster-en",
+          "scn-scent-layering.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.video.en-v1"
+        ],
+        "payload": {
+          "videoId": "scn-scent-layering.video.en-v1"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.21",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 21,
+        "atMs": 42000,
+        "stage": "video",
+        "runKey": "scn-scent-layering:1.0.0:video:golden",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "video"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.22",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 22,
+        "atMs": 44000,
+        "stage": "delivery",
+        "runKey": "scn-scent-layering:1.0.0:delivery:golden",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "delivery"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.23",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 23,
+        "atMs": 46000,
+        "stage": "delivery",
+        "runKey": "scn-scent-layering:1.0.0:delivery:golden",
+        "mode": "mock",
+        "type": "delivery.queued",
+        "inputRefs": [
+          "scn-scent-layering.script.en-v1",
+          "scn-scent-layering.video.en-v1",
+          "scn-scent-layering.recipient.brand-reviewer",
+          "scn-scent-layering.asset.mp4-en",
+          "scn-scent-layering.asset.poster-en",
+          "scn-scent-layering.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.delivery.review-pack"
+        ],
+        "payload": {
+          "planId": "scn-scent-layering.delivery.review-pack"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.24",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 24,
+        "atMs": 48000,
+        "stage": "delivery",
+        "runKey": "scn-scent-layering:1.0.0:delivery:golden",
+        "mode": "mock",
+        "type": "delivery.simulated",
+        "inputRefs": [
+          "scn-scent-layering.delivery.review-pack"
+        ],
+        "outputRefs": [
+          "scn-scent-layering.record.simulated-success"
+        ],
+        "payload": {
+          "recordId": "scn-scent-layering.record.simulated-success"
+        }
+      },
+      {
+        "id": "scn-scent-layering.event.25",
+        "scenarioId": "scn-scent-layering",
+        "scenarioVersion": "1.0.0",
+        "sequence": 25,
+        "atMs": 50000,
+        "stage": "delivery",
+        "runKey": "scn-scent-layering:1.0.0:delivery:golden",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "delivery"
+        }
+      }
+    ]
+  }
+}

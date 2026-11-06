@@ -1,0 +1,58 @@
+{
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "checkedAt": "2026-11-05T05:33:09Z",
+  "files": 10,
+  "events": 28,
+  "checkpoints": 5,
+  "assets": 7,
+  "schemaErrors": [
+    {
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/bytes",
+      "message": "None is not of type 'integer'"
+    },
+    {
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/rightsStatus",
+      "message": "'approved_for_demo' was expected"
+    },
+    {
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/5/sha256",
+      "message": "None is not of type 'string'"
+    },
+    {
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/bytes",
+      "message": "None is not of type 'integer'"
+    },
+    {
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/rightsStatus",
+      "message": "'approved_for_demo' was expected"
+    },
+    {
+      "file": "assets.json",
+      "jsonPointer": "/data/assets/6/sha256",
+      "message": "None is not of type 'string'"
+    }
+  ],
+  "draftAllowedSchemaExceptionCount": 6,
+  "staticAuthoringChecks": {
+    "manifest_hashes": "pass",
+    "frozen_schema": "fail (expected: missing MP4/poster fields)",
+    "draft_exceptions": "6 known, deliberately blocking runnable media asset properties"
+  },
+  "errors": [],
+  "warnings": [
+    "Frozen schema intentionally fails for 2 pending media assets (6 property errors).",
+    "Runtime reducer comparison, browser/media decode, client brand review: NOT_RUN.",
+    "Simulated delivered and failed records are authored future demo fixtures, not actual results."
+  ],
+  "ready": false,
+  "runnable": false,
+  "passAuthoringNonMedia": true,
+  "l3RuntimeReducer": "NOT_RUN",
+  "l5Media": "NOT_RUN"
+}

@@ -1,0 +1,560 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "events": [
+      {
+        "id": "scn-luxury-gifting.event.0001",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 1,
+        "atMs": 0,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "discovery"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0002",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 2,
+        "atMs": 4500,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-luxury-gifting.evidence.e1"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.signal.s1"
+        ],
+        "payload": {
+          "signalId": "scn-luxury-gifting.signal.s1"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0003",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 3,
+        "atMs": 8500,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-luxury-gifting.evidence.e2"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.signal.s2"
+        ],
+        "payload": {
+          "signalId": "scn-luxury-gifting.signal.s2"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0004",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 4,
+        "atMs": 12000,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-luxury-gifting.evidence.e3"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.signal.s3"
+        ],
+        "payload": {
+          "signalId": "scn-luxury-gifting.signal.s3"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0005",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 5,
+        "atMs": 15000,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-luxury-gifting.evidence.e4"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.signal.s4"
+        ],
+        "payload": {
+          "signalId": "scn-luxury-gifting.signal.s4"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0006",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 6,
+        "atMs": 18500,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "signal.discovered",
+        "inputRefs": [
+          "scn-luxury-gifting.evidence.e5"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.signal.s5"
+        ],
+        "payload": {
+          "signalId": "scn-luxury-gifting.signal.s5"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0007",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 7,
+        "atMs": 25000,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "trend.summarized",
+        "inputRefs": [
+          "scn-luxury-gifting.signal.s1",
+          "scn-luxury-gifting.signal.s2",
+          "scn-luxury-gifting.signal.s3",
+          "scn-luxury-gifting.signal.s4"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.trend.main"
+        ],
+        "payload": {
+          "trendId": "scn-luxury-gifting.trend.main"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0008",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 8,
+        "atMs": 28500,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "trend.summarized",
+        "inputRefs": [
+          "scn-luxury-gifting.signal.s5"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.trend.control"
+        ],
+        "payload": {
+          "trendId": "scn-luxury-gifting.trend.control"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0009",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 9,
+        "atMs": 31500,
+        "stage": "discovery",
+        "runKey": "luxury-gifting-1.0.0-discovery-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "discovery"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0010",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 10,
+        "atMs": 35500,
+        "stage": "analysis",
+        "runKey": "luxury-gifting-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "analysis"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0011",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 11,
+        "atMs": 44000,
+        "stage": "analysis",
+        "runKey": "luxury-gifting-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "analysis.presented",
+        "inputRefs": [
+          "scn-luxury-gifting.trend.main",
+          "scn-luxury-gifting.trend.control",
+          "scn-luxury-gifting.evidence.e1",
+          "scn-luxury-gifting.evidence.e2",
+          "scn-luxury-gifting.evidence.e3",
+          "scn-luxury-gifting.evidence.e4",
+          "scn-luxury-gifting.evidence.e5"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.analysis.main"
+        ],
+        "payload": {
+          "analysisId": "scn-luxury-gifting.analysis.main"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0012",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 12,
+        "atMs": 51500,
+        "stage": "analysis",
+        "runKey": "luxury-gifting-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "brief.presented",
+        "inputRefs": [
+          "scn-luxury-gifting.analysis.main",
+          "scn-luxury-gifting.product.perla"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.brief.main"
+        ],
+        "payload": {
+          "briefId": "scn-luxury-gifting.brief.main"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0013",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 13,
+        "atMs": 58000,
+        "stage": "analysis",
+        "runKey": "luxury-gifting-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "script.presented",
+        "inputRefs": [
+          "scn-luxury-gifting.brief.main"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.script.en-v1"
+        ],
+        "payload": {
+          "scriptVersionId": "scn-luxury-gifting.script.en-v1"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0014",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 14,
+        "atMs": 62000,
+        "stage": "analysis",
+        "runKey": "luxury-gifting-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "script.presented",
+        "inputRefs": [
+          "scn-luxury-gifting.brief.main"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.script.ar-v1"
+        ],
+        "payload": {
+          "scriptVersionId": "scn-luxury-gifting.script.ar-v1"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0015",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 15,
+        "atMs": 65500,
+        "stage": "analysis",
+        "runKey": "luxury-gifting-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "script.confirmed",
+        "inputRefs": [
+          "scn-luxury-gifting.script.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "scriptVersionId": "scn-luxury-gifting.script.en-v1"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0016",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 16,
+        "atMs": 67000,
+        "stage": "analysis",
+        "runKey": "luxury-gifting-1.0.0-analysis-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "analysis"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0017",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 17,
+        "atMs": 70500,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "video"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0018",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 18,
+        "atMs": 73000,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.queued",
+        "inputRefs": [
+          "scn-luxury-gifting.script.en-v1",
+          "scn-luxury-gifting.shot.en-1",
+          "scn-luxury-gifting.shot.en-2",
+          "scn-luxury-gifting.shot.en-3",
+          "scn-luxury-gifting.shot.en-4",
+          "scn-luxury-gifting.asset.video-en",
+          "scn-luxury-gifting.asset.poster-en",
+          "scn-luxury-gifting.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "payload": {
+          "videoId": "scn-luxury-gifting.video.en-v1"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0019",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 19,
+        "atMs": 77000,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-luxury-gifting.video.en-v1",
+          "progress": 12
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0020",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 20,
+        "atMs": 80500,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-luxury-gifting.video.en-v1",
+          "progress": 41
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0021",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 21,
+        "atMs": 85500,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-luxury-gifting.video.en-v1",
+          "progress": 78
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0022",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 22,
+        "atMs": 89500,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.progressed",
+        "inputRefs": [
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "outputRefs": [],
+        "payload": {
+          "videoId": "scn-luxury-gifting.video.en-v1",
+          "progress": 100
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0023",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 23,
+        "atMs": 93500,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "video.available",
+        "inputRefs": [
+          "scn-luxury-gifting.script.en-v1",
+          "scn-luxury-gifting.shot.en-1",
+          "scn-luxury-gifting.shot.en-2",
+          "scn-luxury-gifting.shot.en-3",
+          "scn-luxury-gifting.shot.en-4",
+          "scn-luxury-gifting.asset.video-en",
+          "scn-luxury-gifting.asset.poster-en",
+          "scn-luxury-gifting.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.video.en-v1"
+        ],
+        "payload": {
+          "videoId": "scn-luxury-gifting.video.en-v1"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0024",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 24,
+        "atMs": 97000,
+        "stage": "video",
+        "runKey": "luxury-gifting-1.0.0-video-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "video"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0025",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 25,
+        "atMs": 102000,
+        "stage": "delivery",
+        "runKey": "luxury-gifting-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "stage.started",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "delivery"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0026",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 26,
+        "atMs": 104500,
+        "stage": "delivery",
+        "runKey": "luxury-gifting-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "delivery.queued",
+        "inputRefs": [
+          "scn-luxury-gifting.script.en-v1",
+          "scn-luxury-gifting.video.en-v1",
+          "scn-luxury-gifting.recipient.brand-review",
+          "scn-luxury-gifting.recipient.creative-ops",
+          "scn-luxury-gifting.asset.video-en",
+          "scn-luxury-gifting.asset.vtt-en"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.plan.en-v1"
+        ],
+        "payload": {
+          "planId": "scn-luxury-gifting.plan.en-v1"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0027",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 27,
+        "atMs": 112000,
+        "stage": "delivery",
+        "runKey": "luxury-gifting-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "delivery.simulated",
+        "inputRefs": [
+          "scn-luxury-gifting.plan.en-v1"
+        ],
+        "outputRefs": [
+          "scn-luxury-gifting.record.delivered-2"
+        ],
+        "payload": {
+          "recordId": "scn-luxury-gifting.record.delivered-2"
+        }
+      },
+      {
+        "id": "scn-luxury-gifting.event.0028",
+        "scenarioId": "scn-luxury-gifting",
+        "scenarioVersion": "1.0.0",
+        "sequence": 28,
+        "atMs": 116000,
+        "stage": "delivery",
+        "runKey": "luxury-gifting-1.0.0-delivery-demo",
+        "mode": "mock",
+        "type": "stage.completed",
+        "inputRefs": [],
+        "outputRefs": [],
+        "payload": {
+          "stage": "delivery"
+        }
+      }
+    ]
+  }
+}

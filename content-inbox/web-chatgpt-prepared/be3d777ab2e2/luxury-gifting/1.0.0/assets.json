@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-luxury-gifting",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "assets": [
+      {
+        "id": "scn-luxury-gifting.asset.logo",
+        "kind": "logo",
+        "mimeType": "image/png",
+        "uri": "/scenario-media/luxury-gifting/1.0.0/lavish-logo.png",
+        "bytes": 114691,
+        "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+        "width": 294,
+        "height": 294,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "User-supplied official Lavish Perfumes logo, 2026-11-03; opaque RGB gold square.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "User supplied the official Logo for internal POC use; external advertising requires separate written permission.",
+        "productIds": []
+      },
+      {
+        "id": "scn-luxury-gifting.asset.oud",
+        "kind": "product_image",
+        "mimeType": "image/jpeg",
+        "uri": "/scenario-media/luxury-gifting/1.0.0/lavish-oud.jpg",
+        "bytes": 123608,
+        "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3",
+        "width": 2000,
+        "height": 2000,
+        "durationMs": null,
+        "sourceUrl": "https://lavishperfumes.com/wp-content/uploads/2025/05/1-22.jpg",
+        "sourceNote": "Official original LAVISH OUD product image, recorded and visually checked 2026-11-05.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Project-authorized internal demo reproduction; source being publicly available does not grant public advertising rights.",
+        "productIds": [
+          "scn-luxury-gifting.product.oud"
+        ]
+      },
+      {
+        "id": "scn-luxury-gifting.asset.perla",
+        "kind": "product_image",
+        "mimeType": "image/png",
+        "uri": "/scenario-media/luxury-gifting/1.0.0/perla-50ml-unisex.png",
+        "bytes": 1554254,
+        "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+        "width": 2000,
+        "height": 2000,
+        "durationMs": null,
+        "sourceUrl": "https://lavishperfumes.com/wp-content/uploads/2025/05/3-30.png",
+        "sourceNote": "Official original PERLA 50ML UNISEX image, recorded and visually checked 2026-11-05.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Project-authorized internal demo reproduction; source being publicly available does not grant public advertising rights.",
+        "productIds": [
+          "scn-luxury-gifting.product.perla"
+        ]
+      },
+      {
+        "id": "scn-luxury-gifting.asset.vtt-en",
+        "kind": "subtitle",
+        "mimeType": "text/vtt",
+        "uri": "/scenario-media/luxury-gifting/1.0.0/luxury-gifting-en.vtt",
+        "bytes": 338,
+        "sha256": "caab6b79ca579d9e99abd6efe20e25dad634e1bfca384dfd5ed310c90b6bc54a",
+        "width": null,
+        "height": null,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "Original authored subtitle text from this offline ChatGPT content draft. For planned English cut.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Original subtitles authored for internal demo; Arabic translation remains native/brand review pending.",
+        "productIds": []
+      },
+      {
+        "id": "scn-luxury-gifting.asset.vtt-ar",
+        "kind": "subtitle",
+        "mimeType": "text/vtt",
+        "uri": "/scenario-media/luxury-gifting/1.0.0/luxury-gifting-ar-review.vtt",
+        "bytes": 362,
+        "sha256": "64484738fa3c8429fabde1ca3eac7c97d110f2518725427171718dfc1edfe9bb",
+        "width": null,
+        "height": null,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "Original authored subtitle text from this offline ChatGPT content draft. Arabic for native review; not connected to an Arabic film.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Original subtitles authored for internal demo; Arabic translation remains native/brand review pending.",
+        "productIds": []
+      },
+      {
+        "id": "scn-luxury-gifting.asset.video-en",
+        "kind": "video",
+        "mimeType": "video/mp4",
+        "uri": "/scenario-media/luxury-gifting/1.0.0/luxury-gifting-en-15s.mp4",
+        "bytes": null,
+        "sha256": null,
+        "width": 1080,
+        "height": 1920,
+        "durationMs": 15000,
+        "sourceUrl": null,
+        "sourceNote": "Planned pre-produced 15-second English vertical MP4; NOT RECEIVED, size and checksum unknown. Dimensions and duration are TARGETS, not measurements.",
+        "rightsStatus": "pending",
+        "rightsNote": "Customer will provide; no permission or file validation claimed.",
+        "productIds": [
+          "scn-luxury-gifting.product.perla"
+        ]
+      },
+      {
+        "id": "scn-luxury-gifting.asset.poster-en",
+        "kind": "poster",
+        "mimeType": "image/jpeg",
+        "uri": "/scenario-media/luxury-gifting/1.0.0/luxury-gifting-en-poster.jpg",
+        "bytes": null,
+        "sha256": null,
+        "width": 1080,
+        "height": 1920,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "Planned custom still poster matching frame and Lavish product identity; NOT RECEIVED, size and checksum unknown.",
+        "rightsStatus": "pending",
+        "rightsNote": "Poster to be supplied or separately approved; no current file or rights clearance claimed.",
+        "productIds": [
+          "scn-luxury-gifting.product.perla"
+        ]
+      }
+    ]
+  }
+}

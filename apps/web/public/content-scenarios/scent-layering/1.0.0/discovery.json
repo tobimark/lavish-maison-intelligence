@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "evidence": [
+      {
+        "id": "scn-scent-layering.evidence.e1",
+        "sourceType": "MOCK",
+        "platform": "Pinterest — simulated signal",
+        "title": "Layered fragrance visual boards",
+        "summary": "Editorial collages contrast different bottles, textures and empty negative space.",
+        "simulatedAt": "2026-10-13T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e2",
+        "sourceType": "MOCK",
+        "platform": "TikTok — simulated signal",
+        "title": "Personal scent pairings in short-form formats",
+        "summary": "A hypothetical short-form format focuses on choosing a scent combination without asserting performance.",
+        "simulatedAt": "2026-10-16T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e3",
+        "sourceType": "MOCK",
+        "platform": "YouTube — simulated signal",
+        "title": "Explaining personal fragrance choices",
+        "summary": "A sample educational format suggests audiences may appreciate guidance about exploring fragrance preferences.",
+        "simulatedAt": "2026-10-19T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e4",
+        "sourceType": "MOCK",
+        "platform": "Instagram — simulated signal",
+        "title": "Two-bottle still-life storytelling",
+        "summary": "A staged visual signal contrasts product silhouettes and ingredient-inspired textures without a claim about chemistry.",
+        "simulatedAt": "2026-10-22T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      },
+      {
+        "id": "scn-scent-layering.evidence.e5",
+        "sourceType": "MOCK",
+        "platform": "Pinterest — simulated signal",
+        "title": "Single-fragrance hero photography",
+        "summary": "Control signal: classic single-bottle campaigns remain a usable stable composition.",
+        "simulatedAt": "2026-10-25T09:00:00Z",
+        "disclosure": "Synthetic illustrative signal authored offline for demo. Not a real post, API response, metric, citation, account, or observed trend."
+      }
+    ],
+    "signals": [
+      {
+        "id": "scn-scent-layering.signal.s1",
+        "title": "Layered fragrance visual boards",
+        "topic": "Layering moodboards as visual-language cues",
+        "region": "Dubai",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e1"
+        ],
+        "summary": "MOCK Pinterest / Editorial collages contrast different bottles, textures and empty negative space."
+      },
+      {
+        "id": "scn-scent-layering.signal.s2",
+        "title": "Personal scent pairings in short-form formats",
+        "topic": "Personalization rather than a verified formula",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e2"
+        ],
+        "summary": "MOCK TikTok / A hypothetical short-form format focuses on choosing a scent combination without asserting performance."
+      },
+      {
+        "id": "scn-scent-layering.signal.s3",
+        "title": "Explaining personal fragrance choices",
+        "topic": "Educational editorial hook",
+        "region": "GCC",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e3"
+        ],
+        "summary": "MOCK YouTube / A sample educational format suggests audiences may appreciate guidance about exploring fragrance preferences."
+      },
+      {
+        "id": "scn-scent-layering.signal.s4",
+        "title": "Two-bottle still-life storytelling",
+        "topic": "Visual contrast between two verified products",
+        "region": "Dubai",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e4"
+        ],
+        "summary": "MOCK Instagram / A staged visual signal contrasts product silhouettes and ingredient-inspired textures without a claim about chemistry."
+      },
+      {
+        "id": "scn-scent-layering.signal.s5",
+        "title": "Single-fragrance hero photography",
+        "topic": "Stable creative-format baseline",
+        "region": "UAE",
+        "evidenceIds": [
+          "scn-scent-layering.evidence.e5"
+        ],
+        "summary": "MOCK Pinterest / Control signal: classic single-bottle campaigns remain a usable stable composition."
+      }
+    ],
+    "trends": [
+      {
+        "id": "scn-scent-layering.trend.main",
+        "title": "Interest in personal scent expression (illustrative)",
+        "signalIds": [
+          "scn-scent-layering.signal.s1",
+          "scn-scent-layering.signal.s2",
+          "scn-scent-layering.signal.s3",
+          "scn-scent-layering.signal.s4"
+        ],
+        "direction": "rising",
+        "unit": "synthetic illustrative index (0–100; not platform counts, engagement or growth %)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 38
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 42
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 45
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 51
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 57
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 63
+          }
+        ],
+        "interpretation": "Editorial modelled increase as a deliberately synthetic visual sequence; only a concept to test dashboard logic.",
+        "disclosure": "Entire time series is synthetic, illustrative, authored offline. No real growth, sampling, market demand or statistical confidence inferred."
+      },
+      {
+        "id": "scn-scent-layering.trend.control",
+        "title": "Single-bottle product close-up format (illustrative)",
+        "signalIds": [
+          "scn-scent-layering.signal.s5"
+        ],
+        "direction": "stable",
+        "unit": "synthetic illustrative index (0–100; not platform counts, engagement or growth %)",
+        "window": {
+          "start": "2026-10-01T08:00:00Z",
+          "end": "2026-11-01T08:00:00Z"
+        },
+        "points": [
+          {
+            "at": "2026-10-01T08:00:00Z",
+            "value": 47
+          },
+          {
+            "at": "2026-10-07T08:00:00Z",
+            "value": 48
+          },
+          {
+            "at": "2026-10-13T08:00:00Z",
+            "value": 47
+          },
+          {
+            "at": "2026-10-19T08:00:00Z",
+            "value": 49
+          },
+          {
+            "at": "2026-10-25T08:00:00Z",
+            "value": 48
+          },
+          {
+            "at": "2026-11-01T08:00:00Z",
+            "value": 48
+          }
+        ],
+        "interpretation": "Control series is roughly flat or non-directional; not every invented signal is rising.",
+        "disclosure": "Entire time series is synthetic, illustrative, authored offline. No real growth, sampling, market demand or statistical confidence inferred."
+      }
+    ]
+  }
+}

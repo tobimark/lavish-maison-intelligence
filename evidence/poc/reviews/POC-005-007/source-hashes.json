@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-04T15:57:04.726Z",
+  "files": [
+    {
+      "path": "apps/web/demo/poc/replay/checkpoint.ts",
+      "bytes": 5672,
+      "sha256": "68e9db6c03a02811c26060e473f85cc022693fa92732089876fdda3fb9e67b2a"
+    },
+    {
+      "path": "apps/web/demo/poc/api/mock-api.ts",
+      "bytes": 54817,
+      "sha256": "a1ce9b443e7bce3e33bc6d5b2245436cbe137aeedecc9929841c50a309c952b7"
+    },
+    {
+      "path": "apps/web/components/poc/Overlay.tsx",
+      "bytes": 4593,
+      "sha256": "22376bf25fba30cafbdba045b90f7a06f81529658e5f1fc4d30638b77fd539b8"
+    },
+    {
+      "path": "apps/web/components/poc/poc.module.css",
+      "bytes": 16306,
+      "sha256": "c62a6c4ff4a395b6bfc7b0fd8925e12978c9964eff4a2dbc2112e8f82dcce546"
+    },
+    {
+      "path": "apps/web/app/poc-components/components-demo.tsx",
+      "bytes": 13337,
+      "sha256": "2b4c529fb8f23f6915538f0da1eb2778d47496b3bb6639bee1ddfeba302b4a00"
+    },
+    {
+      "path": "contracts/poc/scenario.schema.json",
+      "bytes": 108148,
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a"
+    },
+    {
+      "path": "design/tokens.css",
+      "bytes": 2609,
+      "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+    }
+  ]
+}

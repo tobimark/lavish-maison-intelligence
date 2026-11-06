@@ -1,0 +1,11 @@
+const fs=require('fs'); let p='apps/web/components/product/journey/CreativeStage.tsx'; let s=fs.readFileSync(p,'utf8');
+s=s.replace("          {ready ? presentation.creative.title : 'How the supplied assets become a campaign creative'}","          {workspaceMode ? 'How the supplied assets become the campaign creative' : ready ? presentation.creative.title : 'How the supplied assets become a campaign creative'}");
+fs.writeFileSync(p,s);
+p='apps/web/components/product/journey/social/SocialStage.tsx'; s=fs.readFileSync(p,'utf8');
+s=s.replace("export function SocialStage({ journey, onChanged }: SocialStageProps) {","export function SocialStage({ journey, onChanged, surface = 'journey' }: SocialStageProps & { surface?: 'journey' | 'deliverables' }) {\n  const workspaceSurface = surface === 'deliverables';");
+s=s.replace("<p className={workspace.eyebrow}>Stage 4 · Social post</p>","<p className={workspace.eyebrow}>{workspaceSurface ? 'Deliverables · social post' : 'Stage 4 · Social post'}</p>");
+fs.writeFileSync(p,s);
+p='apps/web/components/product/deliverables/DeliverablesPage.tsx'; s=fs.readFileSync(p,'utf8');
+s=s.replace('<SocialStage journey={socialJourney} onChanged={() => { void loadSocialJourney(); }} />','<SocialStage journey={socialJourney} surface="deliverables" onChanged={() => { void loadSocialJourney(); }} />');
+fs.writeFileSync(p,s);
+console.log('patched workspace labels');

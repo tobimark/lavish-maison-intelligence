@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.0.0",
+  "data": {
+    "assets": [
+      {
+        "id": "scn-scent-layering.asset.logo",
+        "kind": "logo",
+        "mimeType": "image/png",
+        "uri": "/scenario-media/scent-layering/1.0.0/lavish-logo.png",
+        "bytes": 114691,
+        "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+        "width": 294,
+        "height": 294,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "Exact user-supplied official Logo; evidence/brand/logo-receipt.json.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "User authorized official-site product sourcing and supplied the Logo for this internal Demo. This records project permission, not a transfer of copyright or permission for public advertising.",
+        "productIds": []
+      },
+      {
+        "id": "scn-scent-layering.asset.oud",
+        "kind": "product_image",
+        "mimeType": "image/jpeg",
+        "uri": "/scenario-media/scent-layering/1.0.0/lavish-oud.jpg",
+        "bytes": 123608,
+        "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3",
+        "width": 2000,
+        "height": 2000,
+        "durationMs": null,
+        "sourceUrl": "https://lavishperfumes.com/wp-content/uploads/2025/05/1-22.jpg",
+        "sourceNote": "Original image linked by the official LAVISH OUD product page, downloaded unchanged on 2026-11-05 and visually checked.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "User authorized official-site product sourcing and supplied the Logo for this internal Demo. This records project permission, not a transfer of copyright or permission for public advertising.",
+        "productIds": [
+          "scn-scent-layering.product.lavish-oud"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.asset.perla",
+        "kind": "product_image",
+        "mimeType": "image/png",
+        "uri": "/scenario-media/scent-layering/1.0.0/perla-50ml-unisex.png",
+        "bytes": 1554254,
+        "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+        "width": 2000,
+        "height": 2000,
+        "durationMs": null,
+        "sourceUrl": "https://lavishperfumes.com/wp-content/uploads/2025/05/3-30.png",
+        "sourceNote": "Original image linked by the official PERLA 50ML UNISEX product page, downloaded unchanged on 2026-11-05 and visually checked.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "User authorized official-site product sourcing and supplied the Logo for this internal Demo. This records project permission, not a transfer of copyright or permission for public advertising.",
+        "productIds": [
+          "scn-scent-layering.product.perla"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.asset.vtt-en",
+        "kind": "subtitle",
+        "mimeType": "text/vtt",
+        "uri": "/scenario-media/scent-layering/1.0.0/signature-en.vtt",
+        "bytes": 280,
+        "sha256": "cf58f255ebccc9cce18dcf9819763944249c2e7732e918ffdb364817eb448b98",
+        "width": null,
+        "height": null,
+        "durationMs": 15000,
+        "sourceUrl": null,
+        "sourceNote": "ChatGPT-authored EN script subtitles; AR remains a localization draft and is not attached to the English video.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Prepared within this user-requested internal POC. AR copy requires native review; no customer approval claimed.",
+        "productIds": []
+      },
+      {
+        "id": "scn-scent-layering.asset.vtt-ar",
+        "kind": "subtitle",
+        "mimeType": "text/vtt",
+        "uri": "/scenario-media/scent-layering/1.0.0/signature-ar.vtt",
+        "bytes": 308,
+        "sha256": "a76a79376cdc020e76b3c69ce0455177ac45586ae5cd01bc29fc0610afb25cfd",
+        "width": null,
+        "height": null,
+        "durationMs": 15000,
+        "sourceUrl": null,
+        "sourceNote": "ChatGPT-authored AR script subtitles; AR remains a localization draft and is not attached to the English video.",
+        "rightsStatus": "approved_for_demo",
+        "rightsNote": "Prepared within this user-requested internal POC. AR copy requires native review; no customer approval claimed.",
+        "productIds": []
+      },
+      {
+        "id": "scn-scent-layering.asset.mp4-en",
+        "kind": "video",
+        "mimeType": "video/mp4",
+        "uri": "/scenario-media/scent-layering/1.0.0/signature-en.mp4",
+        "bytes": null,
+        "sha256": null,
+        "width": 1080,
+        "height": 1920,
+        "durationMs": 15000,
+        "sourceUrl": null,
+        "sourceNote": "PENDING: customer will supply a matching pre-produced MP4; poster must be supplied or extracted from the approved film. No file received.",
+        "rightsStatus": "pending",
+        "rightsNote": "Await actual file, provenance and project usage confirmation. Do not infer rights or claim this asset exists.",
+        "productIds": [
+          "scn-scent-layering.product.lavish-oud",
+          "scn-scent-layering.product.perla"
+        ]
+      },
+      {
+        "id": "scn-scent-layering.asset.poster-en",
+        "kind": "poster",
+        "mimeType": "image/jpeg",
+        "uri": "/scenario-media/scent-layering/1.0.0/signature-en-poster.jpg",
+        "bytes": null,
+        "sha256": null,
+        "width": 1080,
+        "height": 1920,
+        "durationMs": null,
+        "sourceUrl": null,
+        "sourceNote": "PENDING: customer will supply a matching pre-produced MP4; poster must be supplied or extracted from the approved film. No file received.",
+        "rightsStatus": "pending",
+        "rightsNote": "Await actual file, provenance and project usage confirmation. Do not infer rights or claim this asset exists.",
+        "productIds": [
+          "scn-scent-layering.product.lavish-oud",
+          "scn-scent-layering.product.perla"
+        ]
+      }
+    ]
+  }
+}

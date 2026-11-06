@@ -1,0 +1,398 @@
+{
+  "checkedAt": "2026-11-05T18:41:41.0934697+08:00",
+  "checkedBy": "lead",
+  "reason": "Lead independently reran product E2E after DSH submission; Playwright regenerated the evidence/product archives, so archive bytes differ from DSH zip-audit.json while content-level checks are revalidated here.",
+  "packs": [
+    {
+      "zip": "evidence/product/ip-008/deliverables-B-ar-preset.zip",
+      "kind": "deliverables",
+      "auditSha256": "b70b2179ba0a0787643352de303bfa4552bf5a1b64eb68a2e34dc064da3bf2a1",
+      "currentSha256": "861ea6e2c432ef5471e5107d62cdeab3228a9f561be53ea8294bf8d3bf4e29c4",
+      "byteIdenticalToAudit": false,
+      "auditBytes": 1684607,
+      "currentBytes": 1684607,
+      "entries": [
+        "brief.json",
+        "EXPORT.json",
+        "README.txt",
+        "script.json",
+        "storyboard.html",
+        "subtitles-ar.vtt",
+        "media/logo.png",
+        "media/perla.png"
+      ],
+      "checks": {
+        "unzipOk": true,
+        "noMp4OrPoster": true,
+        "modeMock": true,
+        "noVideoFlag": true,
+        "noRealEmailFlag": true,
+        "versionIdMatches": true,
+        "languageMatches": true,
+        "confirmationConsistent": true,
+        "attachmentManifestAllMatch": true,
+        "attachmentManifestCoversFiles": true,
+        "shotCount4": true,
+        "subtitleCueCount4": true,
+        "storyboardStaticNoVideo": true,
+        "readmeDraftOrConfirmed": true,
+        "readmeNoMp4": true,
+        "scriptTitlePresent": true,
+        "mediaHashesMatchSources": false
+      },
+      "mediaChecks": [
+        {
+          "file": "media/logo.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        },
+        {
+          "file": "media/perla.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        }
+      ],
+      "export": {
+        "campaignId": "scn-luxury-gifting.brief.main",
+        "versionId": "scn-luxury-gifting.script.ar-v1",
+        "language": "ar",
+        "origin": "preset",
+        "confirmationAtExport": "unconfirmed",
+        "title": "الهدية تبدأ بفكرة."
+      },
+      "allChecksPass": true
+    },
+    {
+      "zip": "evidence/product/ip-008/cold-en-scn-oud-storytelling.zip",
+      "kind": "deliverables",
+      "auditSha256": "d1d781a6bc1b8c661964f53aa4d600e983eb0722cbc0d7d590ba95f6aac90abb",
+      "currentSha256": "30e043a420ac6ddc644c877c2407bb29e69b099beb2f1fe2e439a5cf27ed00ff",
+      "byteIdenticalToAudit": false,
+      "auditBytes": 253424,
+      "currentBytes": 253424,
+      "entries": [
+        "brief.json",
+        "EXPORT.json",
+        "README.txt",
+        "script.json",
+        "storyboard.html",
+        "subtitles-en.vtt",
+        "media/logo.png",
+        "media/oud.jpg"
+      ],
+      "checks": {
+        "unzipOk": true,
+        "noMp4OrPoster": true,
+        "modeMock": true,
+        "noVideoFlag": true,
+        "noRealEmailFlag": true,
+        "versionIdMatches": true,
+        "languageMatches": true,
+        "confirmationConsistent": true,
+        "attachmentManifestAllMatch": true,
+        "attachmentManifestCoversFiles": true,
+        "shotCount4": true,
+        "subtitleCueCount4": true,
+        "storyboardStaticNoVideo": true,
+        "readmeDraftOrConfirmed": true,
+        "readmeNoMp4": true,
+        "scriptTitlePresent": true,
+        "mediaHashesMatchSources": false
+      },
+      "mediaChecks": [
+        {
+          "file": "media/logo.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        },
+        {
+          "file": "media/oud.jpg",
+          "assetId": null,
+          "shaMatchAsset": false
+        }
+      ],
+      "export": {
+        "campaignId": "scn-oud-storytelling.brief.main",
+        "versionId": "scn-oud-storytelling.script.en-v1",
+        "language": "en",
+        "origin": "preset",
+        "confirmationAtExport": "unconfirmed",
+        "title": "Let the Scent Lead"
+      },
+      "allChecksPass": true
+    },
+    {
+      "zip": "evidence/product/ip-008/deliverables-saved-ar-draft.zip",
+      "kind": "deliverables",
+      "auditSha256": "3d094ddf9a020df5b27c059770e64ae6b93a2f6b6e3bbb54b5d3080be1102039",
+      "currentSha256": "be97ecaa7ad92c7fe3d68f404638a4163a23a404db8eae2e5fc796c0d620486b",
+      "byteIdenticalToAudit": false,
+      "auditBytes": 1809625,
+      "currentBytes": 1809625,
+      "entries": [
+        "brief.json",
+        "EXPORT.json",
+        "README.txt",
+        "script.json",
+        "storyboard.html",
+        "subtitles-ar.vtt",
+        "media/logo.png",
+        "media/oud.jpg",
+        "media/perla.png"
+      ],
+      "checks": {
+        "unzipOk": true,
+        "noMp4OrPoster": true,
+        "modeMock": true,
+        "noVideoFlag": true,
+        "noRealEmailFlag": true,
+        "versionIdMatches": true,
+        "languageMatches": true,
+        "confirmationConsistent": true,
+        "attachmentManifestAllMatch": true,
+        "attachmentManifestCoversFiles": true,
+        "shotCount4": true,
+        "subtitleCueCount4": true,
+        "storyboardStaticNoVideo": true,
+        "readmeDraftOrConfirmed": true,
+        "readmeNoMp4": true,
+        "scriptTitlePresent": true,
+        "mediaHashesMatchSources": false
+      },
+      "mediaChecks": [
+        {
+          "file": "media/logo.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        },
+        {
+          "file": "media/oud.jpg",
+          "assetId": null,
+          "shaMatchAsset": false
+        },
+        {
+          "file": "media/perla.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        }
+      ],
+      "export": {
+        "campaignId": "scn-scent-layering.brief.main",
+        "versionId": "usr.usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.script.1",
+        "language": "ar",
+        "origin": "saved",
+        "confirmationAtExport": "unconfirmed",
+        "title": "عنوان حزمة التسليم"
+      },
+      "allChecksPass": true
+    },
+    {
+      "zip": "evidence/product/ip-008/deliverables-saved-ar-confirmed.zip",
+      "kind": "deliverables",
+      "auditSha256": "7b4faa8c2e6d2bccb2175a66f23a27e538ef5f6332bcaa9d4cefdc0ae6357554",
+      "currentSha256": "01bc28027d5940b8a3ee382f674fe68f0b13cc5092493a0020f8a1a6978a9d39",
+      "byteIdenticalToAudit": false,
+      "auditBytes": 1809629,
+      "currentBytes": 1809629,
+      "entries": [
+        "brief.json",
+        "EXPORT.json",
+        "README.txt",
+        "script.json",
+        "storyboard.html",
+        "subtitles-ar.vtt",
+        "media/logo.png",
+        "media/oud.jpg",
+        "media/perla.png"
+      ],
+      "checks": {
+        "unzipOk": true,
+        "noMp4OrPoster": true,
+        "modeMock": true,
+        "noVideoFlag": true,
+        "noRealEmailFlag": true,
+        "versionIdMatches": true,
+        "languageMatches": true,
+        "confirmationConsistent": true,
+        "attachmentManifestAllMatch": true,
+        "attachmentManifestCoversFiles": true,
+        "shotCount4": true,
+        "subtitleCueCount4": true,
+        "storyboardStaticNoVideo": true,
+        "readmeDraftOrConfirmed": true,
+        "readmeNoMp4": true,
+        "scriptTitlePresent": true,
+        "mediaHashesMatchSources": false
+      },
+      "mediaChecks": [
+        {
+          "file": "media/logo.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        },
+        {
+          "file": "media/oud.jpg",
+          "assetId": null,
+          "shaMatchAsset": false
+        },
+        {
+          "file": "media/perla.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        }
+      ],
+      "export": {
+        "campaignId": "scn-scent-layering.brief.main",
+        "versionId": "usr.usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.script.1",
+        "language": "ar",
+        "origin": "saved",
+        "confirmationAtExport": "confirmed_current",
+        "title": "عنوان حزمة التسليم"
+      },
+      "allChecksPass": true
+    },
+    {
+      "zip": "evidence/product/ip-008/mail-simulated-attempt.zip",
+      "kind": "deliverables",
+      "auditSha256": "88705724610b058f7054bfb1d7f5e594e609770a3212519e4a634c30e4b58f0e",
+      "currentSha256": "c64032f3191690e1f80ca9906409a0dd4106a709ced0a68b04831d2d5ac7b6c9",
+      "byteIdenticalToAudit": false,
+      "auditBytes": 8982,
+      "currentBytes": 8982,
+      "entries": [
+        "README.txt",
+        "scent-layering-en-email.txt",
+        "scent-layering-en-subtitles.vtt",
+        "scent-layering-en-v1-script.json",
+        "SIMULATED-DELIVERY.json"
+      ],
+      "checks": {
+        "unzipOk": true,
+        "noMp4OrPoster": true,
+        "simulatedDeliveryRecord": true,
+        "noExportJson": true,
+        "modeMock": true,
+        "readmeSimulated": true
+      },
+      "simulated": {
+        "mode": "mock",
+        "attempt": {
+          "id": "usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.content.attempt.1",
+          "attempt": 1,
+          "draftId": "usr.campaign-edit:scn-scent-layering.brief.main:e60a72b4509c1ca13bdb206bc885f95ee4c2421fbc4706cc115d2b6d9d9c2468.content.draft.1",
+          "draftRevision": 1,
+          "scriptVersionId": "scn-scent-layering.script.en-v1",
+          "recipientSnapshot": [
+            {
+              "id": "scn-scent-layering.recipient.brand-review",
+              "displayName": "Lavish Demo Brand Review (simulated)",
+              "email": "brand-review@lavish-demo.invalid"
+            },
+            {
+              "id": "scn-scent-layering.recipient.creative-ops",
+              "displayName": "Lavish Demo Creative Operations (simulated)",
+              "email": "creative-ops@lavish-demo.invalid"
+            }
+          ],
+          "subject": "[SIMULATED · NOT SENT] Dirty subject",
+          "body": "SIMULATED DELIVERY — NO EMAIL WAS SENT.\n\nPlease review the prepared EN script for \"Your Scent, Your Expression\".\nVersion: Your Scent, Your Expression (Preset).\n\nAttached content includes the script JSON, subtitle VTT and a README. No video, poster or rendered advertisement is attached.\nRecipient addresses use the reserved .invalid domain. No platform, renderer or email service is contacted.",
+          "attachmentManifest": [
+            {
+              "filename": "scent-layering-en-v1-script.json",
+              "mimeType": "application/json",
+              "bytes": 4186,
+              "sha256": "f6e1034f978b7cfedfa95ce46c73e37646cc08b425eb9cf6945029d884eb4bd0"
+            },
+            {
+              "filename": "scent-layering-en-subtitles.vtt",
+              "mimeType": "text/vtt",
+              "bytes": 257,
+              "sha256": "ecaf195e95db412d68fd5e5ac5c9f83a30728f808963730f7070be415aaeee2a"
+            },
+            {
+              "filename": "scent-layering-en-email.txt",
+              "mimeType": "text/plain",
+              "bytes": 671,
+              "sha256": "9c52eb845e8def3376c5a3bfbef8ee08567c4021444c57248a7518b72db00c77"
+            },
+            {
+              "filename": "README.txt",
+              "mimeType": "text/plain",
+              "bytes": 639,
+              "sha256": "cec9d9a7b7b3dba1b9e36546bb2c9f4649972b39633c1ed6e23c6ed40d72a686"
+            }
+          ],
+          "outcome": "simulated_delivered",
+          "failureCode": null,
+          "mode": "mock",
+          "deliveryKind": "script_pack",
+          "createdAt": "2026-11-05T10:38:06.321Z"
+        },
+        "outcome": null,
+        "noVideo": true,
+        "noRealEmail": true
+      },
+      "allChecksPass": true
+    },
+    {
+      "zip": "evidence/product/ip-007/library-ar-preset-export.zip",
+      "kind": "library",
+      "auditSha256": "826706c08c9e9774b99909a204a96726f19b6011915826f3b489f4a0c24f7d64",
+      "currentSha256": "9154187a0443571234414ae52240421d2d5cd987b068a1fbb473e9a4d9368e0f",
+      "byteIdenticalToAudit": false,
+      "auditBytes": 1684607,
+      "currentBytes": 1684607,
+      "entries": [
+        "brief.json",
+        "EXPORT.json",
+        "README.txt",
+        "script.json",
+        "storyboard.html",
+        "subtitles-ar.vtt",
+        "media/logo.png",
+        "media/perla.png"
+      ],
+      "checks": {
+        "unzipOk": true,
+        "noMp4OrPoster": true,
+        "modeMock": true,
+        "noVideoFlag": true,
+        "noRealEmailFlag": true,
+        "versionIdMatches": true,
+        "languageMatches": true,
+        "confirmationConsistent": true,
+        "attachmentManifestAllMatch": true,
+        "attachmentManifestCoversFiles": true,
+        "shotCount4": true,
+        "subtitleCueCount4": true,
+        "storyboardStaticNoVideo": true,
+        "readmeDraftOrConfirmed": true,
+        "readmeNoMp4": true,
+        "scriptTitlePresent": true,
+        "mediaHashesMatchSources": false
+      },
+      "mediaChecks": [
+        {
+          "file": "media/logo.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        },
+        {
+          "file": "media/perla.png",
+          "assetId": null,
+          "shaMatchAsset": false
+        }
+      ],
+      "export": {
+        "campaignId": "scn-luxury-gifting.brief.main",
+        "versionId": "scn-luxury-gifting.script.ar-v1",
+        "language": "ar",
+        "origin": "preset",
+        "confirmationAtExport": "unconfirmed",
+        "title": "الهدية تبدأ بفكرة."
+      },
+      "allChecksPass": true
+    }
+  ],
+  "allContentChecksPass": true
+}

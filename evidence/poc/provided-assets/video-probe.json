@@ -1,0 +1,46 @@
+{
+  "width": 720,
+  "height": 960,
+  "fps": 24.0,
+  "reportedFrameCount": 241,
+  "decodedFrames": 241,
+  "durationByFrameCount": 10.041666666666666,
+  "frames": [
+    {
+      "frame": 0,
+      "path": "evidence\\poc\\provided-assets\\frame-0000.png"
+    },
+    {
+      "frame": 30,
+      "path": "evidence\\poc\\provided-assets\\frame-0030.png"
+    },
+    {
+      "frame": 60,
+      "path": "evidence\\poc\\provided-assets\\frame-0060.png"
+    },
+    {
+      "frame": 90,
+      "path": "evidence\\poc\\provided-assets\\frame-0090.png"
+    },
+    {
+      "frame": 120,
+      "path": "evidence\\poc\\provided-assets\\frame-0120.png"
+    },
+    {
+      "frame": 150,
+      "path": "evidence\\poc\\provided-assets\\frame-0150.png"
+    },
+    {
+      "frame": 180,
+      "path": "evidence\\poc\\provided-assets\\frame-0180.png"
+    },
+    {
+      "frame": 210,
+      "path": "evidence\\poc\\provided-assets\\frame-0210.png"
+    },
+    {
+      "frame": 240,
+      "path": "evidence\\poc\\provided-assets\\frame-0240.png"
+    }
+  ]
+}

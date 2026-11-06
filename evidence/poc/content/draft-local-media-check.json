@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "scope": "Five actual draft-local media only; not public HTTP or MP4 verification",
+  "checks": [
+    {
+      "file": "content-inbox\\scent-layering\\1.0.0\\media\\lavish-logo.png",
+      "bytes": 114691,
+      "sha256": "f504781a6a6bbfd7f0f9a51ac077dc37e54c41dba96060667f38992d136f3966",
+      "dimensions": [
+        294,
+        294
+      ]
+    },
+    {
+      "file": "content-inbox\\scent-layering\\1.0.0\\media\\lavish-oud.jpg",
+      "bytes": 123608,
+      "sha256": "d23108087a08aa9b90edee8b432b98b85b45eed5e4468464fef4880e328423c3",
+      "dimensions": [
+        2000,
+        2000
+      ]
+    },
+    {
+      "file": "content-inbox\\scent-layering\\1.0.0\\media\\perla-50ml-unisex.png",
+      "bytes": 1554254,
+      "sha256": "5ba6a97c07081ce03c89acd7b7ca4ae701c1ee65e3b5cd4f96c873104830b724",
+      "dimensions": [
+        2000,
+        2000
+      ]
+    },
+    {
+      "file": "content-inbox\\scent-layering\\1.0.0\\media\\signature-en.vtt",
+      "bytes": 280,
+      "sha256": "cf58f255ebccc9cce18dcf9819763944249c2e7732e918ffdb364817eb448b98",
+      "scriptAndCueTimings": "match; four cues, 0-15000ms"
+    },
+    {
+      "file": "content-inbox\\scent-layering\\1.0.0\\media\\signature-ar.vtt",
+      "bytes": 308,
+      "sha256": "a76a79376cdc020e76b3c69ce0455177ac45586ae5cd01bc29fc0610afb25cfd",
+      "scriptAndCueTimings": "match; four cues, 0-15000ms"
+    }
+  ],
+  "missing": [
+    "signature-en.mp4",
+    "signature-en-poster.jpg"
+  ],
+  "catalogChanged": false
+}

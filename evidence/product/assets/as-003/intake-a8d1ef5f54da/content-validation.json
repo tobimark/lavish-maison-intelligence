@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "profile": "content_only",
+  "mode": "mock",
+  "checkedAt": "2026-11-05T15:18:09.376Z",
+  "scenarioId": "scn-scent-layering",
+  "scenarioVersion": "1.1.0",
+  "packageHash": "e5c8c67df98e162050f7a4c164a100c64e851df18eda4fa7e0118288c4216297",
+  "contentRunnable": false,
+  "mediaStatus": "deferred",
+  "analysisPrefix": 16,
+  "media": {
+    "realFiles": 5,
+    "pendingFiles": 2
+  },
+  "layers": [
+    {
+      "name": "L1",
+      "status": "pass"
+    },
+    {
+      "name": "L2",
+      "status": "fail"
+    },
+    {
+      "name": "L3",
+      "status": "fail"
+    },
+    {
+      "name": "L4",
+      "status": "pass"
+    }
+  ],
+  "errors": [
+    {
+      "code": "DELIVERY_DISCLOSURE_MISSING",
+      "file": "delivery.json",
+      "jsonPointer": "/data/plans/0/disclosure",
+      "message": "Delivery plan disclosure must explicitly state the delivery is simulated."
+    },
+    {
+      "code": "VIDEO_DISCLOSURE_MISSING",
+      "file": "video.json",
+      "jsonPointer": "/data/videos/0/disclosure",
+      "message": "Video disclosure must explicitly state the video is pre-produced."
+    }
+  ],
+  "warnings": [
+    "Pending MP4/poster are allowed only as deferred media; no video playback/download is claimed.",
+    "Content authoring reviewStatus remains pending; content acceptance is a main-control gate."
+  ]
+}

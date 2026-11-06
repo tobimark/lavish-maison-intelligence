@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-04T15:15:29.249Z",
+  "files": [
+    {
+      "path": "apps/web/demo/poc/api/mock-api.ts",
+      "bytes": 52913,
+      "sha256": "560429b50cfddf266fbed9b561282b2490342ec4da4105c3be8c392e78b9f468"
+    },
+    {
+      "path": "apps/web/demo/poc/storage/types.ts",
+      "bytes": 14229,
+      "sha256": "657b9127dbd8aa38e744cc9669c9df8f8006b63a74eb8b0c37769f9318ee84ed"
+    },
+    {
+      "path": "apps/web/demo/poc/storage/indexeddb.ts",
+      "bytes": 14905,
+      "sha256": "6fe8de44850f58e0c3afd98556e445e3fae0d3c340f43616da3383c94740b38e"
+    },
+    {
+      "path": "apps/web/demo/poc/storage/memory.ts",
+      "bytes": 8648,
+      "sha256": "34a4b32b22b4ba9debc5238b2fb68d7e92044d65fe2e310955b255d94c1b18f9"
+    },
+    {
+      "path": "tests/poc/mock-api.test.ts",
+      "bytes": 32643,
+      "sha256": "2b5a67fd3cd24e69ddaa17c5782a927afad3e8cd109df1e954c970da8c961131"
+    },
+    {
+      "path": "tests/poc/storage.test.ts",
+      "bytes": 13268,
+      "sha256": "13eb78b9acd6ed7f96d2e53e934a3330740e3595522ea74c89230781734d5995"
+    },
+    {
+      "path": "contracts/poc/scenario.schema.json",
+      "bytes": 108148,
+      "sha256": "6676cc09ff186ce88b84f733f98867b5fb16586c053cb8e4a460cf06c150222a"
+    },
+    {
+      "path": "design/tokens.css",
+      "bytes": 2609,
+      "sha256": "07f8b08de74dde44ecdb6dad8b0d107233f394085d7aed3405b619aad5c01814"
+    }
+  ]
+}

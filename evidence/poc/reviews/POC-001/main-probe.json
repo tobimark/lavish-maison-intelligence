@@ -1,0 +1,13 @@
+{
+  "scope": "Independent contract/semantic/error-handling probes only; no customer content/media acceptance",
+  "correctedSchemaAcceptsFiniteFixture": true,
+  "foreignEntity": {
+    "l2Errors": []
+  },
+  "malformedCheckpoint": {
+    "exitCode": 1,
+    "reportExists": true,
+    "stderr": ""
+  },
+  "schemaDefinitions": 36
+}

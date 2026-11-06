@@ -1,0 +1,18 @@
+import { chromium } from 'playwright';
+const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1440,height:900}});
+const url='http://127.0.0.1:3150/campaigns/scn-scent-layering.brief.main/journey?scenarioVersion=1.1.0&stage=social';
+await p.goto(url,{waitUntil:'load'}); await p.waitForTimeout(800);
+await p.getByTestId('SOC-edit-post').click(); await p.waitForTimeout(400);
+await p.getByTestId('SOC-caption-input').fill('EN-AAA'); await p.getByTestId('SOC-save').click(); await p.waitForTimeout(500);
+console.log('EN after save', await p.getByTestId('SOC-caption-input').inputValue());
+await p.getByTestId('SOC-language-ar').click(); await p.waitForTimeout(300);
+await p.getByTestId('SOC-edit-post').click(); await p.waitForTimeout(500);
+await p.getByTestId('SOC-caption-input').fill('AR-BBB'); await p.getByTestId('SOC-save').click(); await p.waitForTimeout(500);
+console.log('AR after save', await p.getByTestId('SOC-caption-input').inputValue());
+await p.reload({waitUntil:'load'}); await p.waitForTimeout(1000);
+console.log('after reload active? enPressed',await p.getByTestId('SOC-language-en').getAttribute('aria-pressed'),'value',await p.getByTestId('SOC-caption-input').inputValue());
+await p.getByTestId('SOC-language-en').click(); await p.waitForTimeout(300);
+console.log('EN view', await p.getByTestId('SOC-caption-input').inputValue());
+await p.getByTestId('SOC-language-ar').click(); await p.waitForTimeout(300);
+console.log('AR view', await p.getByTestId('SOC-caption-input').inputValue());
+await b.close();

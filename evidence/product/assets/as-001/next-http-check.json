@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-11-05T11:10:51.435Z",
+  "base": "http://127.0.0.1:3000",
+  "assets": [
+    {
+      "id": "provided.scent-layering.hero-serenity",
+      "uri": "/provided-assets/scent-layering/1.0.0/hero-serenity.png",
+      "status": 200,
+      "mimeType": "image/png",
+      "bytes": 2513070,
+      "sha256": "1c4e337ba0bed4c2fab0da2cd7fd2fa8d3e8929015923ba23c8353caa0b37499",
+      "rangeStatus": 206,
+      "rangeBytes": 32,
+      "acceptRanges": "bytes",
+      "contentRange": "bytes 0-31/2513070"
+    },
+    {
+      "id": "provided.scent-layering.product-serenity",
+      "uri": "/provided-assets/scent-layering/1.0.0/product-serenity.png",
+      "status": 200,
+      "mimeType": "image/png",
+      "bytes": 538290,
+      "sha256": "f75fa10b2d4fc33df4beb6391895bb8c60cfafc1091de28b1f49f7e9d026af62",
+      "rangeStatus": 206,
+      "rangeBytes": 32,
+      "acceptRanges": "bytes",
+      "contentRange": "bytes 0-31/538290"
+    },
+    {
+      "id": "provided.scent-layering.final-preview",
+      "uri": "/provided-assets/scent-layering/1.0.0/final-preview.mp4",
+      "status": 200,
+      "mimeType": "video/mp4",
+      "bytes": 1315394,
+      "sha256": "15d3756a0e93f591fc767998d84911ed425e3394554272f62120d61f0e31e10e",
+      "rangeStatus": 206,
+      "rangeBytes": 32,
+      "acceptRanges": "bytes",
+      "contentRange": "bytes 0-31/1315394"
+    }
+  ]
+}
