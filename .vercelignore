@@ -1,0 +1,14 @@
+# Vercel deployment context exclusions (anchored to repo root; keep apps/web/app/** routes)
+/evidence/
+/tmp/
+/content-inbox/
+/deliverables/
+/docs/
+/tasks/
+/backend/
+/tests/
+/test-results/
+/reference/
+/assets/
+/playwright-report/
+/coverage/

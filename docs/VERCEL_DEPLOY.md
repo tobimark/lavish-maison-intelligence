@@ -3,6 +3,15 @@
 项目：MAISON INTELLIGENCE（纯前端 Next.js Mock Demo；`backend/` FastAPI 不参与运行）
 仓库：https://github.com/tobimark/lavish-maison-intelligence
 
+## 已部署（2026-11-06）
+
+- **Production URL**：https://lavish-maison-intelligence.vercel.app
+- Vercel 项目：`qiaoyuangcd-8122s-projects/lavish-maison-intelligence`
+- Root Directory：`apps/web`；Framework：Next.js；Node：22.x；无环境变量
+- 部署方式：Vercel CLI（Windows 无 symlink 权限，实际用 WSL Ubuntu + `vercel deploy --prod`）
+- 已验证：六工作区 200、Deliverables 社媒工作台/视频 720×960/10.08s、真实 MP4 200/Range 206、旧 Journey `stage=social` 跳转到 Deliverables。
+- 说明：免登录访问已关闭 Vercel Authentication（`ssoProtection=null`）；项目为内部 Mock Demo，无真实数据/密钥。
+
 ## 推荐方式：Vercel 网页 GitHub Import
 
 1. 打开 https://vercel.com/new
