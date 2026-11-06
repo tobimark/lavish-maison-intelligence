@@ -1,7 +1,6 @@
-Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+Error: locator.click: Error: strict mode violation: getByTestId('deliverables-downloads').locator('summary') resolved to 2 elements:
+    1) <summary class="NgsdPa_downloadsSummary">Downloads and content packs</summary> aka getByText('Downloads and content packs')
+    2) <summary class="NgsdPa_advancedToggle" data-control-id="DEL-preview">Read the selected script</summary> aka getByText('Read the selected script')
+
 Call log:
-[2m  - attempting scroll into view action[22m
-[2m    - waiting for element to be stable[22m
-[2m    - element is not stable[22m
-[2m  - retrying scroll into view action[22m
-[2m    - waiting for element to be stable[22m
+[2m  - waiting for getByTestId('deliverables-downloads').locator('summary')[22m

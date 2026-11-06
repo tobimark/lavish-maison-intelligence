@@ -1,0 +1,118 @@
+{
+  "captureDate": "2026-11-06",
+  "buildId": "EyeTyB_09phuk7IAEkABn",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1
+  },
+  "brand": "Lavish Perfumes",
+  "screenshots": [
+    {
+      "name": "01-overview.png",
+      "url": "http://127.0.0.1:3188/",
+      "bytes": 231575,
+      "sha256": "ff931135def3c6dedb2a5360abe97c299d27471e8c8ea042c57a953e598ac67f"
+    },
+    {
+      "name": "02-radar.png",
+      "url": "http://127.0.0.1:3188/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+      "bytes": 203008,
+      "sha256": "6402c7a87d8fafa16e90e6139aaaddd165bad94977dfb081824cd592f13c3ce7"
+    },
+    {
+      "name": "03-supporting-evidence.png",
+      "url": "http://127.0.0.1:3188/radar?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+      "bytes": 243108,
+      "sha256": "2770ed64ca41e90d74644da53aa644fce5e2a153349aaa86899a5f661b85d18b"
+    },
+    {
+      "name": "04-opportunities.png",
+      "url": "http://127.0.0.1:3188/opportunities?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0",
+      "bytes": 189876,
+      "sha256": "241f98baba017023cb754ecb8c1b3a127b8fb49a2c80415c09e99b4da4d54753"
+    },
+    {
+      "name": "05-campaign-brief.png",
+      "url": "http://127.0.0.1:3188/campaigns/scn-scent-layering.brief.main/brief",
+      "bytes": 515819,
+      "sha256": "97969033d6f58c2cae6a1575c4c84c16a3f7e2b083cd5ac28439e2ae716801c2"
+    },
+    {
+      "name": "06-creative-development.png",
+      "url": "http://127.0.0.1:3188/atelier?campaignId=scn-scent-layering.brief.main",
+      "bytes": 317737,
+      "sha256": "f3481cbbc75f61d772472b7bab54da2d49e597cfe10c4550d2cc0217942a42c3"
+    },
+    {
+      "name": "07-ar-script.png",
+      "url": "http://127.0.0.1:3188/atelier?campaignId=scn-scent-layering.brief.main&language=ar&tab=copy",
+      "bytes": 164358,
+      "sha256": "9a10be9462e19d98d99b46d3d6550b76e940a6259c6463e526b627769379d96a"
+    },
+    {
+      "name": "08-deliverables-preview.png",
+      "url": "http://127.0.0.1:3188/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "bytes": 389379,
+      "sha256": "9a70676bcac702cb4235e3a97a83171544c1749f752805df06e486f688c32e18"
+    },
+    {
+      "name": "09-edit-and-save.png",
+      "url": "http://127.0.0.1:3188/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "bytes": 384662,
+      "sha256": "f48af03bfd4922635645b6bab5f51271eb8da71915d63d9195b92f684101fe7f"
+    },
+    {
+      "name": "10-review-saved-post.png",
+      "url": "http://127.0.0.1:3188/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "bytes": 273724,
+      "sha256": "735d72b30d502aa4ab20488705f544b5499686391a656fa271fd0cb79fa4a028"
+    },
+    {
+      "name": "11-simulate-publish.png",
+      "url": "http://127.0.0.1:3188/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "bytes": 276106,
+      "sha256": "d3406a33637dfd87c9b8e78499fda9c77b5d8c775ebc25f81602e900c039b3df"
+    },
+    {
+      "name": "12-published-record.png",
+      "url": "http://127.0.0.1:3188/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "bytes": 386301,
+      "sha256": "d3df77e1659457381b622aae2d52661720b6ef959ff7ea9f15197b2e4350b2b7"
+    },
+    {
+      "name": "13-simulated-post.png",
+      "url": "http://127.0.0.1:3188/campaigns/scn-scent-layering.brief.main/social/social-attempt.b58f919b.1",
+      "bytes": 293325,
+      "sha256": "59dc05ec64cff47883b72e834f3b8facdb124ddb3e1e6f64e3c30e554c5408db"
+    },
+    {
+      "name": "14-download-content-pack.png",
+      "url": "http://127.0.0.1:3188/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "bytes": 140664,
+      "sha256": "5a10c24615f67b9c24fa24adcc08e5980385680afa5f2961d574e36fef160cbb"
+    },
+    {
+      "name": "15-creative-library.png",
+      "url": "http://127.0.0.1:3188/library?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=en",
+      "bytes": 95635,
+      "sha256": "b466809538d6164d714f71d2796040759ce4b7fc9c4ec6d7a064f05cf8734ab6"
+    },
+    {
+      "name": "16-switch-campaign.png",
+      "url": "http://127.0.0.1:3188/library?campaignId=scn-luxury-gifting.brief.main&scenarioVersion=1.0.0&language=en",
+      "bytes": 111161,
+      "sha256": "e70be4796b664a0c56110a0468a2c32f4571946504cd34b794cfa46a15f8b9db"
+    },
+    {
+      "name": "17-ar-social-preview.png",
+      "url": "http://127.0.0.1:3188/deliverables?campaignId=scn-scent-layering.brief.main&scenarioVersion=1.1.0&language=ar",
+      "bytes": 384268,
+      "sha256": "fccf06a42ac89caac7c685ad77844feca244b008352ca0d7d2aae70846ea9fdf"
+    }
+  ],
+  "editedCaption": "SERENITY — A Story in Layers.\n\nSERENITY, by Lavish Perfumes. A quieter way to explore fragrance through light, floral feeling and a soft musk-inspired mood. Editorial concept for review; no verified application or performance claim.",
+  "downloadVerified": true,
+  "sourceCaptionPreserved": true,
+  "errors": []
+}
